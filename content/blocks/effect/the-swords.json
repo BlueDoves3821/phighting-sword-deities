@@ -1,0 +1,14 @@
+{  
+    "localizedName": "The Swords",
+    "description": "This tech tree contains buildings related to the swords, a group of powerful inphernals.",
+    "alwaysUnlocked": true,
+    "buildVisibility": "editorOnly",
+    "type": "LightBlock",
+    "health": 800,
+    "size": 2,
+   "research": {
+  "root": true,
+  "name": "The Swords",
+  "requiresUnlock": false
+}
+}
