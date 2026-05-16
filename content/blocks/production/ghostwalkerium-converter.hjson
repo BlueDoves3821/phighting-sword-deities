@@ -1,0 +1,27 @@
+type: GenericCrafter
+name: "Ghostwalkerium Converter"
+description: '''
+Converts swordium into ghostwalkerium.
+'''
+size: 2
+health: 400
+consumes: {
+  items: [
+    swordium/1
+  ]
+}
+craftEffect: hitLaserColor
+craftTime: 10
+outputItems: [
+   ghostwalkerium/1
+]
+research: {
+    parent: swordium-maker
+    requirements: [
+    swordium/100
+]
+}
+category: crafting
+requirements: [
+  swordium/50
+]

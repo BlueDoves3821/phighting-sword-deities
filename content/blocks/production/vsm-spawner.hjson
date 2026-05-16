@@ -1,0 +1,26 @@
+Name: Venomshankium Minion Spawner
+description: Spawns venomshankium's minions.
+type: UnitFactory
+size: 1
+consumesPower: false
+plans: [
+  {
+    unit: venomshankium-minion
+    time: 60
+    requirements: [
+venomshankium/5
+    ]
+ }
+]
+requirements: [
+swordium/75
+venomshankium/50
+]
+  research: {
+    parent: venomshankium-converter
+    requirements: [
+      swordium/75
+      venomshankium/50
+]
+}
+category: units
