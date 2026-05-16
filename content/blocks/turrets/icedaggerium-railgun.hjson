@@ -1,0 +1,78 @@
+ type: ItemTurret
+name: "Icedaggerium Railgun"
+description: '''
+Fires a hit-scanning projectile, applies freezing status to enemies.
+'''
+	size: 3
+	health: 950
+	maxAmmo: 80
+	ammoPerShot: 5
+	reload: 100
+	range: 600
+	ammoUseEffect: shockwave
+	targetAir: true
+	targetGround: true
+	recoilAmount: 7
+	shootShake: 8
+	inaccuracy: 0
+	rotateSpeed: 3
+	shootSound: shootForeshadow
+ shootY: 9
+
+	ammoTypes:	{
+	icedaggerium: {
+    type: LaserBulletType
+    damage: 950
+    sideLength: 0
+    sideWidth: 13
+    lifetime: 24
+    length: 600
+    pierce: true
+    pierceCap: 10
+    colors: [
+      29469A,
+      BADDF6,
+      97CCE1,
+      ffffff
+    ]
+shootEffect: [
+      {
+        length: 200
+        cone: 10
+        lifetime: 60
+        particles: 15
+        colorFrom: ffffff
+        colorTo: 97CCE100
+        sizeFrom: 3
+        sizeTo: 1
+      }
+      {
+        length: 240
+        cone: 15
+        lifetime: 60
+        particles: 12
+        colorFrom: ffffff
+        colorTo: 97CCE100
+        sizeFrom: 2
+        sizeTo: 0.5
+      }
+    ]
+ status: freezing
+ statusDuration: 1200
+		}
+	},
+	consumes : {
+		power: 2
+			}
+	requirements: [
+		swordium/170
+  icedaggerium/170
+	]
+	category: turret
+  research: {
+    parent: swordium-laser-turret
+    requirements: [
+      swordium/170
+      icedaggerium/170
+]
+}

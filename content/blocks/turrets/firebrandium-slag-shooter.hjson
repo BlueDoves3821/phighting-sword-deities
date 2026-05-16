@@ -1,0 +1,124 @@
+type: ItemTurret
+name: Firebrandium Slag Shooter
+description: Fires a projectile that shoot out slag at enemies, can optionally take slag for a lowered reload time.
+size: 3
+health: 1000
+range: 550
+maxAmmo: 30
+velocityRnd: 0.1
+reload: 20
+inaccuracy: 1
+shootCone: 15
+shootSound: shootFlame
+loopSound: none
+ammoPerShot: 2
+ammoTypes: {
+  firebrandium: {
+    type: BasicBulletType
+    width: 16
+    height: 16
+    backColor: ffa166
+    frontColor: ffa166
+    ammoMultiplier: 1
+    damage: 250
+    lifetime: 80
+    speed: 7
+    status: melting
+    intervalBullets: 4
+    bulletInterval: 0.5
+    intervalRandomSpread: 30
+    intervalSpread: 50
+    intervalBullet: {
+      type: LiquidBulletType
+      liquid: slag
+      damage: 100
+      drag: 0.001
+      status: melting
+    }
+     pierce: true
+     pierceBuilding: true
+     pierceCap: 10
+shootEffect: [
+      {
+        length: 200
+        cone: 20
+        lifetime: 50
+        particles: 8
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 12
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: 250
+        cone: 32
+        lifetime: 35
+        particles: 6
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 7
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: 200
+        cone: 45
+        lifetime: 25
+        particles: 6
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: 120
+        cone: 37
+        lifetime: 30
+        particles: 8
+        colorFrom: ff852d
+        colorTo: eb571c
+        sizeFrom: 6
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: linear
+      }
+      {
+        length: 100
+        cone: 37
+        lifetime: 22
+        particles: 8
+        colorFrom: ffc547
+        colorTo: f57920
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: linear
+      }
+     ]
+}
+}
+liquidCapacity: 500
+coolantMultiplier: 2.4
+coolEffect: fallSmoke
+coolant: {
+  type: ConsumeLiquid
+  liquid: slag
+  amount: 5
+}
+requirements: [
+  swordium/150
+  firebrandium/150
+]
+category: turret
+research: {
+    parent: swordium-laser-turret
+    requirements: [
+swordium/150
+firebrandium/150
+]
+}

@@ -1,0 +1,94 @@
+type: ItemTurret
+name: "Illuminaium Omni Turret"
+description: '''
+Fires accelerating homing projectiles at enemies.
+'''
+reload: 60
+shootCone: 360
+rotateSpeed: 0
+targetGround: true
+targetAir: true
+range: 850
+recoil: 0
+size: 3
+health: 750
+AmmoPerShot: 10
+maxAmmo: 50
+shootSound: shoot
+shootShake: 4
+shootY: 0
+inaccuracy: 1
+
+shoot: {
+    type: ShootSpread
+    shots: 20
+    spread: 18
+    shotDelay: 5
+}
+ammoTypes: {
+    illuminaium: {
+  type: BasicBulletType
+  shootEffect:{
+    type: MultiEffect
+    effects:[shootSmokeSquareSparse, {
+    type: WaveEffect
+    colorFrom: E8C7F7
+    colorTo: E8C7F7
+    sizeTo: 4
+    strokeFrom: 4
+    lifetime: 24
+    }
+    ]
+}
+  smokeEffect: vapor
+  homingPower: 0.5
+  speed: 0.5
+  drag: -0.005
+  lifetime: 1200
+  trailLength: 30
+  trailWidth: 1.5
+  trailColor: E2BAF5
+  type: BasicBulletType
+  frontColor: ffffff
+  backColor: E8C7F7
+  sprite: circle-bullet
+  damage: 150
+  splashDamage: 80
+  splashDamageRadius: 26
+  hitEffect: hitBulletColor
+  despawnEffect: none
+  fragBullets: 8
+  fragSpread: 90
+  pierce: true
+  pierceCap: 10
+  fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 0
+    toColor: E8C7F7
+    length: 60
+    lifetime: 30
+    width: 12
+    hitLarge: true
+    damage: 100
+    status: slow
+    statusDuration: 1200
+    knockback: 1.2
+    impact: true
+    }
+  fragRandomSpread: 0
+  knockback: 1
+  hitColor: E8C7F7
+}
+    }
+requirements: [
+    swordium/150
+    illuminaium/150
+]
+research: {
+  parent: swordium-laser-turret
+}
+category: turret
+researchCost: [
+  swordium/150
+  illuminaium/150
+]

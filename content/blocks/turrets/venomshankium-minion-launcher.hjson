@@ -1,0 +1,140 @@
+type: ItemTurret
+name: "Venomshankium Minion Launcher"
+description: '''
+Fires a projectile that spawns venomshank's minions.
+'''
+size: 4
+health: 1280
+range: 520
+
+shootWarmupSpeed : 0.09
+
+reload: 85
+rotateSpeed: 2
+shootCone: 180
+
+recoil: 3
+
+inaccuracy: 0
+
+liquidCapacity: 150
+shootY: 5
+
+
+squareSprite: false
+
+loopSound: none
+shootSound: shootSmite
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: none
+	despawnEffect: none
+	fragBullets: 4
+    fragLifeMin: 0.2
+	fragBullet: {
+        lifetime: 12
+        absorbable: false
+        collides: false
+        hittable: false
+        hitEffect: none
+        despawnEffect: none
+        despawnSound: vsm-sfx
+		despawnUnit: venomshankium-minion
+	}
+}
+
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 25
+            cone: 8
+            particles: 25
+            colorFrom: A4C360
+            colorTo: A4C36000
+            length: 55
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            cone: 5
+            particles: 12
+            colorFrom: A4C360
+            colorTo: A4C36000
+            length: 55
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+
+
+
+ammoTypes: {
+    venomshankium: {
+        
+        speed: 4 
+        homingPower: 0.15
+        homingRange: 320
+        lifetime: 150
+    
+        trailChance: 0.5
+        trailEffect: explosion
+    
+        fragSpread: 45
+        fragRandomSpread: 15
+        fragBullets: 8
+        fragAngle: 180
+        fragVelocityMin: 1
+        
+
+        fragBullet: {
+            lifetime: 15
+            speed: 4
+            collidesAir: false
+            collideTerrain: true
+            collidesTiles: true
+            fragBullets: 1
+
+            fragBullet: {
+                lifetime: 60
+                collides: false
+                speed: 0
+                fragBullets: 1
+                despawnSound: vsm-sfx
+                fragBullet: {
+                    spawnUnit: venomshankium-minion
+                }
+            }
+        }
+    }
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowLiquid: true
+  amount: 0.25
+}
+coolantMultiplier: 10
+	requirements: [
+		swordium/160
+  venomshankium/160
+	]
+	category: turret
+  research: {
+    parent: swordium-laser-turret
+    requirements: [
+      swordium/160
+      venomshankium/160
+]
+}

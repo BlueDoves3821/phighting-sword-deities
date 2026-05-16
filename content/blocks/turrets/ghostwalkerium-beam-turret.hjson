@@ -1,0 +1,41 @@
+type: TractorBeamTurret
+name: '''
+Ghostwalkerium Beam Turret
+'''
+  description: '''
+Requires ghostwalkerium to operate, can techically be used as ghostwalkerium storage, It's ghostwalkerium properites allow it to technically not be able to be targeted.
+'''
+  size: 2,
+  force: 0,
+  targetAir: true
+  targetGround: true
+  scaledForce: 0
+  health: 1100
+  range: 400
+  damage: 12
+  rotateSpeed: 10
+  consumes: {
+  items: [
+    ghostwalkerium/1
+  ]
+}
+itemCapacity: 150
+underBullets: true
+priority: -1
+targetable: false
+shootType: {
+  type: ContinuousLaserBulletType
+  trailColor: FFFFFF
+}
+  requirements: [
+      swordium/80
+      ghostwalkerium/80
+  ]
+  category: turret
+  research: {
+    parent: swordium-laser-turret
+    requirements: [
+      swordium/80
+      ghostwalkerium/80
+]
+}

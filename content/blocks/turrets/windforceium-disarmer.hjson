@@ -1,0 +1,55 @@
+type: ItemTurret
+name: "Windforceium Disarmer"
+description: '''
+Disarms enemies from using their weapons.
+'''
+reload: 20
+shootCone: 55
+rotateSpeed: 5
+targetGround: true
+targetAir: true
+range: 520
+recoil: 0
+size: 2
+health: 600
+AmmoPerShot: 5
+shootSound: shootSalvo
+shootShake: 1
+inaccuracy: 1
+
+shoot: {
+    type: ShootSpread
+    shots: 20
+    spread: 1
+    shotDelay: 0.25
+}
+
+ammoTypes: {
+    windforceium: {
+        damage: 15
+        shieldDamageMultiplier: 50
+        backColor: 929EAE
+        frontColor: 929EAE
+        speed: 6
+        height: 15
+        width: 10
+        lifetime: 85
+        pierce: true
+        pierceCap: 35
+        status: windforces-disarmerment
+        statusDuration: 60000
+    }
+
+}
+requirements: [
+      swordium/80
+      windforceium/80
+  ]
+  category: turret
+  research: {
+    parent: swordium-laser-turret
+    requirements: [
+      swordium/80
+      windforceium/80
+]
+}
