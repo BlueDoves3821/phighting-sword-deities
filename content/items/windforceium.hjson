@@ -1,0 +1,9 @@
+name: "Windforceium"
+description: '''
+[#929EAE]currently no quotes from her as of this time.
+'''
+color: 929EAE
+  research: {
+    parent: swordium
+    requirements: []
+}

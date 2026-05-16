@@ -1,0 +1,9 @@
+name: "Ghostwalkerium"
+description: '''
+[#C2C2C2]"Death shall not reach you."
+'''
+color: C2C2C2
+  research: {
+    parent: swordium
+    requirements: []
+}

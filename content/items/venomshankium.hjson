@@ -1,0 +1,9 @@
+name: "Venomshankium"
+description: '''
+[#A4C360]"Rise my minions!"
+'''
+color: A4C360
+  research: {
+    parent: swordium
+    requirements: []
+}

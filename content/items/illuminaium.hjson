@@ -1,0 +1,9 @@
+name: "Illuminaium"
+description: '''
+[#E2BAF5]currently no quotes from him as of this time.
+'''
+color: E2BAF5
+  research: {
+    parent: swordium
+    requirements: []
+}

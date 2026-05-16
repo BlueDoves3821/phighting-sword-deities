@@ -1,0 +1,9 @@
+name: "Darkheartium"
+description: '''
+[#70AC30]"A little bit of chaos is fun.. don't you think?"
+'''
+color: 70AC30
+  research: {
+    parent: swordium
+    requirements: []
+}

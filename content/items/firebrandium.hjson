@@ -1,0 +1,9 @@
+name: "Firebrandium"
+description: '''
+[#861C00]"Set ablaze in the Inpherno!"
+'''
+color: 861C00
+  research: {
+    parent: swordium
+    requirements: []
+}

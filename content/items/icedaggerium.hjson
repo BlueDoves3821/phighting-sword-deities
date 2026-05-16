@@ -1,0 +1,9 @@
+name: "Icedaggerium"
+description: '''
+[#97CCE1]"Here comes the snow!"
+'''
+color: 97CCE1
+  research: {
+    parent: swordium
+    requirements: []
+}
