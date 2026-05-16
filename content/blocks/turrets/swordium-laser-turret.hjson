@@ -1,0 +1,341 @@
+type: ItemTurret
+requirements: [
+swordium/250
+]
+name: "Swordium Laser Turret"
+description: '''
+Utilitizes the swords as ammo, hit-scanning.
+[#ff5959]Swordium: the usual ammo for the turret.
+[#70AC30]Darkheartium: applies darkheart's curse, which makes enemies affected by it more vunerable.
+[#861C00]Firebrandium: applies the melting status to units.
+[#C2C2C2]Ghostwalkerium: deals alot of damage to shield projectors.
+[#97CCE1]Icedaggerium: applies the freezing status to units.
+[#E2BAF5]Illumiaium: Higher damage, but uses more ammo per shot.
+[#A4C360]Venomshankium: applies the corroded status to units.
+[#929EAE]Windforceium: pushes units away whilst applying the unmoving status for a short time.
+'''
+hasShadow: false
+health: 1500
+maxAmmo: 50
+category: turret
+range: 750
+shootEffect: shootSmokeDisperse
+smokeEffect: shootSmokeSquareBig
+shootSound: shootLancer
+chargeSound: chargeLancer
+shootY: 17
+reload: 10
+moveWhileCharging: false
+shoot: {
+  firstShotDelay: 32
+}
+recoil: 2
+shake: 2
+size: 4
+drawer: {
+type: DrawTurret
+parts: [
+{
+suffix: "-barrel"
+progress: recoil
+under: true
+moveY: -3
+}
+]
+}
+ammoTypes: {
+swordium: {
+    type: LaserBulletType
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    colors: [
+      ff5959,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: ff5959
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: ff5959
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+darkheartium: {
+    type: LaserBulletType
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    status: darkhearts-curse
+    statusDuration: 1500
+    colors: [
+      70AC30,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: 70AC30
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: 70AC30
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+firebrandium: {
+    type: LaserBulletType
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    status: melting
+    statusDuration: 2000
+    colors: [
+      861C00,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: 861C00
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: 861C00
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+ghostwalkerium: {
+    type: LaserBulletType
+    shieldDamageMultiplier: 5
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    colors: [
+      C2C2C2,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: C2C2C2
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: C2C2C2
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+icedaggerium: {
+    type: LaserBulletType
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    status: freezing
+    statusDuration: 800
+    colors: [
+      97CCE1,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: 97CCE1
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: 97CCE1
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+illuminaium: {
+    type: LaserBulletType
+    ammoMultiplier: 5
+    buildingDamageMultiplier: 5
+    shieldDamageMultiplier: 5
+    damage: 1800
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    colors: [
+      E2BAF5,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: E2BAF5
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: E2BAF5
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+venomshankium: {
+    type: LaserBulletType
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    status: corroded
+    statusDuration: 1000
+    colors: [
+      A4C360,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: A4C360
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: A4C360
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+windforceium: {
+    type: LaserBulletType
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 750
+    pierce: true
+    knockback: 150
+    status: unmoving
+    statusDuration: 60
+    colors: [
+      929EAE,
+      ffffff
+    ]
+     chargeEffect: [
+      {
+        baseLength: -45
+        length: 45
+        lifetime: 32
+        particles: 15
+        colorFrom: 929EAE
+        colorTo: ffffff
+        sizeFrom: 0
+        sizeTo: 5
+      }
+      {
+        length: 0
+        lifetime: 32
+        particles: 1
+        colorFrom: 929EAE
+        colorTo: ffffff
+        sizeTo: 2
+        sizeTo: 7
+      }
+    ]
+  }
+}
+ammoPerShot: 10
+research: {
+    parent: swordium-maker
+    requirements: [
+swordium/250
+]
+}
