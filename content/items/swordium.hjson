@@ -1,0 +1,9 @@
+name: "Swordium"
+description: '''
+The base material for the swords, can be converted into either of the 7 sword deities.
+'''
+color: ff5959
+  research: {
+    parent: swordium-maker
+    requirements: []
+      }
