@@ -1,0 +1,26 @@
+type: GenericCrafter
+name: "Swordium Maker"
+description: '''
+Creates Swordium, requires power to operate.
+'''
+size: 2
+health: 400
+consumes: {
+  power: 0.5
+  items: [
+  ]
+}
+craftEffect: hitLaserColor
+craftTime: 30
+outputItems: [
+   swordium/5
+]
+  research: {
+    parent: the-swords
+    requirements: [
+]
+}
+category: crafting
+requirements: [
+
+]
