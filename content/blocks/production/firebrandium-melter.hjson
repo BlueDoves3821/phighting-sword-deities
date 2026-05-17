@@ -1,0 +1,42 @@
+type: GenericCrafter
+name: "Firebrandium Melter"
+description: '''
+Melts firebrandium into slag.
+'''
+size: 2
+health: 400
+consumes: {
+  items: [
+    firebrandium/1
+  ]
+}
+craftEffect: none
+ambientSound: loopMachine2
+craftTime: 20
+outputLiquids: [
+   slag/5
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: slag
+  }
+  DrawDefault
+]
+liquidCapacity: 1000
+  research: {
+    parent: firebrandium-converter
+    requirements: [
+      swordium/25
+      firebrandium/25
+]
+}
+category: crafting
+requirements: [
+  swordium/25
+  firebrandium/25
+]

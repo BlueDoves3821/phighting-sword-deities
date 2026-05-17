@@ -1,0 +1,34 @@
+type: GenericCrafter
+name: "SFOTH Factory"
+description: '''
+A factory that converts swordium into the 7 sword deities.
+'''
+health: 560
+size: 3
+consumes: {
+  items: [
+    swordium/7
+  ]
+}
+itemCapacity: 140
+craftEffect: shockwave
+craftTime: 10
+outputItems: [
+   darkheartium/1
+   firebrandium/1
+   ghostwalkerium/1
+   icedaggerium/1
+   illuminaium/1
+   venomshankium/1
+   windforceium/1
+]
+  research: {
+    parent: swordium-maker
+    requirements: [
+      swordium/220
+]
+}
+category: crafting
+	requirements: [
+	 swordium/220
+	]
