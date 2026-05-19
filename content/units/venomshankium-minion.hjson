@@ -41,4 +41,10 @@
      }
     }
   ]
+"research": {
+    parent: vsm-spawner
+    requirements: [
+    
+]
+}
 }
