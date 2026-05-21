@@ -4,7 +4,7 @@ description: Fires a projectile that shoot out slag at enemies, can optionally t
 size: 3
 health: 1000
 range: 550
-maxAmmo: 30
+maxAmmo: 200
 velocityRnd: 0.1
 reload: 20
 inaccuracy: 1
