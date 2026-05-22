@@ -3,7 +3,7 @@ name: "Illuminaium Omni Turret"
 description: '''
 Fires accelerating homing projectiles at enemies.
 '''
-reload: 60
+reload: 50
 shootCone: 360
 rotateSpeed: 0
 targetGround: true
