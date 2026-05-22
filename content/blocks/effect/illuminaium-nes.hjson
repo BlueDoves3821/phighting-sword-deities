@@ -1,0 +1,34 @@
+
+    type: BaseShield
+    name: Illuminaium N.E.S
+    description: '''
+The N.E.S stands for "No-Entry Shield" which means enemies cannot enter the force field, Requires 50 [#E2BAF5]illuminaium []to activate it.
+'''
+	rebuildable: true
+ size: 3
+	smoothRadius: 200
+	sides: 20
+	rotate: 45
+	radius: 200
+ health: 2000
+ hasPower: false
+ hasItems: true
+ itemCapacity: 100
+consumes: {
+  items: [
+    illuminaium/50
+  ]
+}
+requirements: [
+  swordium/500
+  illuminaium/500
+]
+
+research: {
+  parent: illuminaium-converter
+  requirements: [
+    swordium/500
+    illuminaium/500
+  ]
+}
+category: effect
