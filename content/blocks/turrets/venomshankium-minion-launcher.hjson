@@ -5,13 +5,10 @@ Fires a projectile that spawns venomshank's minions.
 '''
 size: 4
 health: 1280
-range: 520
-
-shootWarmupSpeed : 0.09
+range: 850
 
 reload: 85
-rotateSpeed: 2
-shootCone: 180
+rotateSpeed: 3
 
 recoil: 3
 
@@ -19,7 +16,6 @@ inaccuracy: 0
 
 liquidCapacity: 150
 shootY: 5
-
 
 squareSprite: false
 
@@ -37,6 +33,8 @@ destroyBullet: {
 	fragBullets: 4
     fragLifeMin: 0.2
 	fragBullet: {
+        backColor: A4C360
+        frontColor: A4C360
         lifetime: 12
         absorbable: false
         collides: false
@@ -83,10 +81,9 @@ shootEffect: {
 ammoTypes: {
     venomshankium: {
         
-        speed: 4 
-        homingPower: 0.15
-        homingRange: 320
-        lifetime: 150
+        type: ArtilleryBulletType
+        speed: 4
+        lifetime: 220
     
         trailChance: 0.5
         trailEffect: explosion
@@ -99,15 +96,19 @@ ammoTypes: {
         
 
         fragBullet: {
+            backColor: A4C360
+            frontColor: A4C360
             lifetime: 15
-            speed: 4
+            speed: 2
             collidesAir: false
             collideTerrain: true
             collidesTiles: true
             fragBullets: 1
 
             fragBullet: {
-                lifetime: 60
+                backColor: A4C360
+                frontColor: A4C360
+                lifetime: 30
                 collides: false
                 speed: 0
                 fragBullets: 1
