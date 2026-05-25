@@ -1,7 +1,7 @@
  type: ItemTurret
 name: "Icedaggerium Railgun"
 description: '''
-Fires a hit-scanning projectile, applies freezing status to enemies.
+Fires a hit-scanning projectile, applies freezing status to enemies, can optionally take icedaggerium liquid for a lowered cooldown.
 '''
 	size: 3
 	health: 950
@@ -60,10 +60,15 @@ shootEffect: [
  status: freezing
  statusDuration: 1200
 		}
-	},
-	consumes : {
-		power: 2
-			}
+	}
+liquidCapacity: 500
+coolantMultiplier: 0.25
+coolEffect: freezing
+coolant: {
+  type: ConsumeLiquid
+  liquid: icedaggerium-liquid
+  amount: 1
+}
 	requirements: [
 		swordium/170
   icedaggerium/170
