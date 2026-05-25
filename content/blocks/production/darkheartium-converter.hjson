@@ -5,6 +5,7 @@ Converts swordium into darkheartium.
 '''
 size: 2
 health: 400
+itemCapacity: 50
 consumes: {
   items: [
     swordium/1

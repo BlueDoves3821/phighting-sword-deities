@@ -1,10 +1,11 @@
 type: GenericCrafter
 name: "Swordium Maker"
 description: '''
-Creates Swordium, requires power to operate.
+Creates Swordium, the base material for this mod.
 '''
 size: 2
 health: 400
+itemCapacity: 50
 consumes: {
   power: 0.5
   items: [

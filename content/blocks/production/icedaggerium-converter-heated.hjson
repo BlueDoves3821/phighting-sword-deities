@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Illuminaium Converter"
+name: "Icedaggerium Converter (Heated)"
 description: '''
-Converts swordium into illuminaium.
+Converts swordium into icedaggerium, modified to boil off the water byproduct.
 '''
 size: 2
 health: 400
@@ -12,14 +12,14 @@ consumes: {
   ]
 }
 craftEffect: hitLaserColor
+updateEffect: heatReactorSmoke
 craftTime: 10
 outputItems: [
-   illuminaium/1
+   icedaggerium/1
 ]
 research: {
-    parent: swordium-maker
+    parent: icedaggerium-converter
     requirements: [
-    swordium/100
 ]
 }
 category: crafting

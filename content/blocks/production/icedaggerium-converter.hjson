@@ -1,10 +1,11 @@
 type: GenericCrafter
 name: "Icedaggerium Converter"
 description: '''
-Converts swordium into icedaggerium.
+Converts swordium into icedaggerium, creates water as byproduct.
 '''
 size: 2
 health: 400
+itemCapacity: 50
 consumes: {
   items: [
     swordium/1
@@ -12,8 +13,23 @@ consumes: {
 }
 craftEffect: hitLaserColor
 craftTime: 10
+liquidCapacity: 1200
 outputItems: [
    icedaggerium/1
+]
+outputLiquids: [
+   water/2
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: water
+  }
+  DrawDefault
 ]
 research: {
     parent: swordium-maker

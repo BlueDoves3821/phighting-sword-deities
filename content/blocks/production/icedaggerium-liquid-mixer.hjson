@@ -1,0 +1,48 @@
+type: GenericCrafter
+name: "Icedaggerium Liquid Mixer"
+description: '''
+Mixes icedaggerium & water to create icedaggerium liquid.
+'''
+size: 2
+health: 400
+consumes: {
+  items: [
+    icedaggerium/1
+  ]
+  liquids: [
+    water/1.67
+  ]
+}
+craftEffect: none
+ambientSound: loopMachine2
+craftTime: 20
+outputLiquids: [
+   icedaggerium-liquid/1.67
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  { type: DrawLiquidTile
+    drawLiquid: water
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: icedaggerium-liquid
+  }
+  DrawDefault
+]
+liquidCapacity: 1000
+  research: {
+    parent: icedaggerium-converter
+    requirements: [
+      swordium/25
+      icedaggerium/25
+]
+}
+category: crafting
+requirements: [
+  swordium/25
+  icedaggerium/25
+]
