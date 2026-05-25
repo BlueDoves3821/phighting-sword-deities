@@ -1,0 +1,9 @@
+name: "Icedaggerium Liquid"
+description: '''
+A coolant made by mixing icedaggerium with water.
+'''
+color: 97CCE1
+viscosity: 0.5
+temperature: 0.1
+heatCapacity: 4
+research: icedaggerium
