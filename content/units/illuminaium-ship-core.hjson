@@ -1,0 +1,139 @@
+type: payload
+payloadCapacity: 15000
+flying: true
+name: Illuminaium Ship
+description: '''
+A large [#E2BAF5]illuminaium []ship that's the "jack-off-all-trades" of versatilities, it has high health, moderate speed, shielded, the ability to pick up payloads, shoots the same rounds as the [#E2BAF5]illuminaium []turret, higher build & mining range & speed, and an energy field that's powered by [#929EAE]windforceium, []allowing it to disable the weapons of enemies.
+'''
+template: ErekirUnitType
+health: 20000
+speed: 7
+armor: 10
+accel: 0.08
+drag: 0.04
+hitSize: 53
+rotateSpeed: 4
+useEngineElevation: false
+faceTarget: true
+mineRange: 900
+mineFloor: true
+mineSpeed: 50
+mineTier: 100
+mineWalls: true
+itemCapacity: 850
+buildRange: 900
+buildSpeed: 50
+engineSize: 6
+engines: [
+  {
+    x: 0
+    y: -15
+    radius: 6
+    rotation: 270
+  } 
+] 
+
+abilities:[
+
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 45
+	radius: 150
+	regen: 15
+	max: 10000
+	cooldown: 480
+ 
+ }
+ 
+ {
+  type: EnergyFieldAbility
+  damage: 15
+  reload: 40
+  range: 150
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: windforces-disarmerment
+  statusDuration: 360
+  color: E2BAF5
+  maxTargets: 50
+  healPercent: 10
+ }
+ 
+]
+
+weapons:[
+
+    {
+        rotate: false
+        mirror: true
+        name: illuminaium-ship-weapon
+        x: 21.5
+        y: 6.25
+        reload: 5
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: shoot
+        layerOffset: -1
+        heatColor: ab34000ff
+        
+    bullet: {
+  type: BasicBulletType
+  shootEffect:{
+    type: MultiEffect
+    effects:[shootSmokeSquareSparse, {
+    type: WaveEffect
+    colorFrom: E8C7F7
+    colorTo: E8C7F7
+    sizeTo: 4
+    strokeFrom: 4
+    lifetime: 24
+    }
+    ]
+}
+  smokeEffect: heatReactorSmoke
+  homingPower: 0.5
+  speed: 0.5
+  drag: -0.005
+  lifetime: 1200
+  trailLength: 30
+  trailWidth: 1.5
+  trailColor: E2BAF5
+  type: BasicBulletType
+  frontColor: ffffff
+  backColor: E8C7F7
+  sprite: circle-bullet
+  damage: 150
+  splashDamage: 80
+  splashDamageRadius: 26
+  hitEffect: hitBulletColor
+  despawnEffect: none
+  fragBullets: 8
+  fragSpread: 90
+  pierce: true
+  pierceCap: 10
+  fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 0
+    toColor: E8C7F7
+    length: 60
+    lifetime: 30
+    width: 12
+    hitLarge: true
+    damage: 100
+    status: slow
+    statusDuration: 1200
+    knockback: 1.2
+    impact: true
+    }
+  fragRandomSpread: 0
+  knockback: 1
+  hitColor: E8C7F7
+}
+    }
+
+]
+
+
+     alwaysUnlocked: true
