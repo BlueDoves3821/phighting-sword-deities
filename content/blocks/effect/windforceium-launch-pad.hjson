@@ -1,0 +1,25 @@
+name: Windforceium Launch Pad
+description: A compact launch pad with a quick cooldown between launches, can take multiple items in one launch.
+type: LaunchPad
+itemCapacity: 200
+hasItems: true
+health: 1000
+consumesPower: false
+acceptMultipleItems: true
+size: 3
+launchTime: 120
+lightStep: 0
+lightSteps: 1
+lightColor: 929EAE
+requirements: [
+ swordium/200
+ windforceium/200
+]
+category: effect
+  research: {
+    parent: windforceium-converter
+    requirements: [
+      swordium/200
+      windforceium/200
+]
+}

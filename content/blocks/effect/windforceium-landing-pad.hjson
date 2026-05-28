@@ -1,0 +1,26 @@
+name: Windforceium Landing Pad
+description: A compact landing pad with a quick cooldown between landings, does not require water. (despite what the info tells you)
+type: LandingPad
+itemCapacity: 200
+hasItems: true
+health: 1000
+consumeLiquid: water
+consumeLiquidAmount: 0
+liquidCapacity: 0
+coolingEffectChance: 1
+coolingEffect: drillSteam
+size: 3
+cooldownTime: 120
+arrivalDuration: 120
+requirements: [
+ swordium/200
+ windforceium/200
+]
+category: effect
+  research: {
+    parent: windforceium-launch-pad
+    requirements: [
+      swordium/200
+      windforceium/200
+]
+}
