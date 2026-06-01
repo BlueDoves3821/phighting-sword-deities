@@ -1,0 +1,57 @@
+type: flying
+name: Ghostwalkerium Drone
+description: '''
+A small drone, the [#C2C2C2]ghostwalkerium []properites allows it to sneak behind enemy lines, self-destructs, applies unmoving to enemies caught in the radius.
+'''
+health: 150
+speed: 3
+rotateSpeed: 5
+hitSize: 5
+flying: true
+targetable: false
+hittable: false
+circleTarget: true
+engineSize: 0
+engines: [
+  {
+    x: 0
+    y: -6
+    radius: 2
+    rotation: 270
+  } 
+] 
+trailLength: 30
+trailWidth: 1.5
+trailColor: D1D1D1
+
+weapons: [
+    {
+       shootCone: 140
+       mirror: false
+       shootOnDeath: true 
+       shootEffect: none 
+       x: 0
+       y: 0 
+       despawnHit: true 
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 250
+       splashDamage: 2000
+       shieldDamageMultiplier: 50
+       instantDisappear: true 
+       killShooter: true 
+       hittable: false 
+       collidesAir: true 
+       status: unmoving
+       statusDuration: 1200
+       pierce: true
+       hitEffect: scatheLight
+         } 
+     } 
+ ]
+  research: {
+    parent: gwd-builder
+    requirements: [
+]
+}
