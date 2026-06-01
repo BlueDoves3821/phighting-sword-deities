@@ -1,0 +1,29 @@
+Name: Ghostwalkerium Drone Builder
+description: '''
+Builds [#C2C2C2]ghostwalkerium []drones.
+'''
+type: UnitFactory
+size: 1
+consumesPower: false
+targetable: false
+plans: [
+  {
+    unit: ghostwalkerium-drone
+    time: 60
+    requirements: [
+ghostwalkerium/8
+    ]
+ }
+]
+requirements: [
+swordium/75
+ghostwalkerium/50
+]
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/75
+      ghostwalkerium/50
+]
+}
+category: units
