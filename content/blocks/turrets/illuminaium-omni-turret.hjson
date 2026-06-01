@@ -1,9 +1,9 @@
 type: ItemTurret
 name: "Illuminaium Omni Turret"
 description: '''
-Fires accelerating homing projectiles at enemies.
+Fires accelerating homing projectiles at all directions, can home onto enemies & can "slam" them.
 '''
-reload: 50
+reload: 95
 shootCone: 360
 rotateSpeed: 0
 targetGround: true
@@ -14,15 +14,15 @@ size: 3
 health: 750
 AmmoPerShot: 10
 maxAmmo: 50
-shootSound: shoot
+shootSound: shootCyclone
 shootShake: 4
 shootY: 0
 inaccuracy: 1
 
 shoot: {
     type: ShootSpread
-    shots: 20
-    spread: 18
+    shots: 40
+    spread: 9
     shotDelay: 5
 }
 ammoTypes: {

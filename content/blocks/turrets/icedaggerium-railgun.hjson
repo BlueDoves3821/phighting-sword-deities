@@ -62,7 +62,7 @@ shootEffect: [
 		}
 	}
 liquidCapacity: 500
-coolantMultiplier: 0.25
+coolantMultiplier: 0.4
 coolEffect: freezing
 coolant: {
   type: ConsumeLiquid
