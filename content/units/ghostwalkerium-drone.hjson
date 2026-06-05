@@ -20,9 +20,17 @@ engines: [
     rotation: 270
   } 
 ] 
-trailLength: 30
-trailWidth: 1.5
-trailColor: D1D1D1
+abilities: [
+  {
+    type: MoveEffectAbility
+    teamColor: true
+    effect: missileTrailShort
+    x: 0
+    y: -6
+    interval: 3
+    minVelocity: 0.6
+  }
+]
 
 weapons: [
     {
