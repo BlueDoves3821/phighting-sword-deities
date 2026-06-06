@@ -9,8 +9,7 @@ rotateSpeed: 5
 hitSize: 5
 flying: true
 targetable: false
-hittable: false
-circleTarget: true
+defaultController: FlyingAI
 engineSize: 0
 engines: [
   {

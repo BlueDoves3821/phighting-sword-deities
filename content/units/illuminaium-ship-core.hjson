@@ -96,7 +96,7 @@ weapons:[
   homingPower: 0.5
   speed: 0.5
   drag: -0.005
-  lifetime: 1200
+  lifetime: 3200
   trailLength: 30
   trailWidth: 1.5
   trailColor: E2BAF5

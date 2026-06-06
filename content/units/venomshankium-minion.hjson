@@ -37,7 +37,8 @@
       "hitEffect": "none",
       "despawnEffect": "none",
       "shootEffect": "none",
-      "smokeEffect": "none"
+      "smokeEffect": "none",
+      "deathSound": "vsm-sfx",
      }
     }
   ]
