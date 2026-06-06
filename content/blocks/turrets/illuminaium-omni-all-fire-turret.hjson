@@ -17,7 +17,7 @@ maxAmmo: 50
 shootSound: shootCyclone
 shootShake: 4
 shootY: 0
-inaccuracy: 1
+inaccuracy: 2
 
 liquidCapacity: 1500
 coolEffect: vapor
@@ -51,7 +51,7 @@ ammoTypes: {
   homingPower: 0.5
   speed: 0.5
   drag: -0.005
-  lifetime: 1200
+  lifetime: 3200
   trailLength: 30
   trailWidth: 1.5
   trailColor: E2BAF5
@@ -92,7 +92,7 @@ requirements: [
     illuminaium/200
 ]
 research: {
-  parent: swordium-laser-turret
+  parent: illuminaium-omni-turret
 }
 category: turret
 researchCost: [
