@@ -1,0 +1,34 @@
+
+    type: BaseShield
+    name: Large Illuminaium N.E.S
+    description: '''
+The N.E.S stands for "No-Entry Shield" which means enemies cannot enter the force field, Requires 100 [#E2BAF5]illuminaium []to activate it.
+'''
+	rebuildable: true
+ size: 6
+	smoothRadius: 400
+	sides: 40
+	rotate: 45
+	radius: 400
+ health: 4000
+ hasPower: false
+ hasItems: true
+ itemCapacity: 200
+consumes: {
+  items: [
+    illuminaium/100
+  ]
+}
+requirements: [
+  swordium/1000
+  illuminaium/1000
+]
+
+research: {
+  parent: illuminaium-nes
+  requirements: [
+    swordium/1000
+    illuminaium/1000
+  ]
+}
+category: effect
