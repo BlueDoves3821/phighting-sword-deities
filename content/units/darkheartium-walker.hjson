@@ -1,0 +1,100 @@
+  template: ErekirUnitType
+  name: Darkheartium Walker
+  description: '''
+Uses a "donut" shield design, applies [#70AC30]darkheart's []curse to units who crosses the shield, fast movement & healing, can also build.
+'''
+  lightRadius: 200
+  type: legs
+  canDrown: false
+  legCount: 5
+  legLength: 22
+  legSpeed: 0.5
+  legExtension: -3
+  legMoveSpace: 2
+  rotateSpeed: 5
+  speed: 3
+  accel: 0.4
+  drag: 0.4
+  range: 1
+  maxRange: 1
+  faceTarget: true
+  flying: false
+  health: 2000
+  armor: 5
+  hitSize: 18
+  lowAltitude: true
+  drawCell: false
+  buildSpeed: 5
+  buildRange: 750
+  defaultController: GroundAI
+abilities:[
+
+ {
+  type: EnergyFieldAbility
+  damage: 75
+  reload: 10
+  range: 90
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: darkhearts-curse
+  statusDuration: 1200
+  color: 70AC30
+  maxTargets: 100
+  healPercent: 1
+ }
+
+ {
+    type: RepairFieldAbility
+    amount: 500
+    range: 90
+    reload: 30
+ }
+
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 90
+  max: 3000
+  regen: 5
+  cooldown: 120
+  width: 3
+  angle: 360
+  color: A6FF47
+  whenShooting: false
+ }
+
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 35
+  max: 8000
+  regen: 1
+  cooldown: 480
+  width: 3
+  angle: 360
+  color: A6FF47
+  whenShooting: false
+ }
+
+ {
+  type: EnergyFieldAbility
+  damage: 200
+  reload: 1
+  range: 35
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: darkhearts-curse
+  statusDuration: 1200
+  color: 70AC30
+  maxTargets: 100
+  healPercent: 10
+ }
+
+]
+
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      darkheartium/25
+]
+}

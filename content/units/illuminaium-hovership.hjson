@@ -1,77 +1,90 @@
-type: payload
-payloadCapacity: 15000
-flying: true
-name: Illuminaium Ship
-description: '''
-A large [#E2BAF5]illuminaium []ship that's the "jack-off-all-trades" of versatilities, it has high health, moderate speed, shielded, the ability to pick up payloads, shoots the same rounds as the [#E2BAF5]illuminaium []turret, higher build & mining range & speed, and an energy field that's powered by [#929EAE]windforceium, []allowing it to disable the weapons of enemies.
-'''
-template: ErekirUnitType
-health: 20000
-speed: 7
+type: mech
+name: Illuminaium Hovership
+description: Fires the same projectile as the omni turret, albeit faster.
+hovering: true
+hoverable: true
+shadowElevation: 0.2
+mechFrontSway: 0
+mechSideSway: 0
+mechStride: 0
+drag: 0.08
+speed: 5
+rotateSpeed: 5
+accel: 0.095
+groundLayer: 60
+health: 2200
 armor: 10
-accel: 0.08
-drag: 0.04
-hitSize: 53
-rotateSpeed: 4
-useEngineElevation: false
-faceTarget: true
-mineRange: 900
-mineFloor: true
-mineSpeed: 50
-mineTier: 100
-mineWalls: true
-itemCapacity: 850
-buildRange: 900
-buildSpeed: 50
-engineSize: 6
-engines: [
+hitSize: 12
+canDrown: false
+moveSound: loopExtract
+moveSoundVolume: 0.25
+moveSoundPitchMin: 0.25
+moveSoundPitchMax: 1
+engineSize: 0
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      illuminaium/20
+]
+}
+defaultController: GroundAI
+  range: 250
+  maxRange: 300
+abilities: [
   {
+    type: MoveEffectAbility
+    teamColor: true
+    effect: missileTrailShort
     x: 0
-    y: -15
-    radius: 6
-    rotation: 270
-  } 
-] 
-
-abilities:[
-
+    y: -7
+    interval: 9
+    minVelocity: 0.6
+  }
  {
 	type: ForceFieldAbility
 	smoothRadius: 200
 	sides: 20
 	rotate: 45
-	radius: 150
+	radius: 50
 	regen: 15
-	max: 10000
-	cooldown: 480
+	max: 5000
+	cooldown: 240
  
  }
- 
  {
   type: EnergyFieldAbility
-  damage: 15
-  reload: 40
-  range: 150
+  damage: 5
+  reload: 25
+  range: 50
   effectRadius: 0.1
   damageEffect: chainLightning
   status: windforces-disarmerment
   statusDuration: 360
   color: E2BAF5
   maxTargets: 50
-  healPercent: 10
+  healPercent: 5
  }
- 
 ]
-
+engines: [
+  {
+    x: 0
+    y: -7
+    radius: 3
+rotation: -90
+  }
+]
+itemCapacity: 0
+useEngineElevation: false
+lowAltitude: true
 weapons:[
 
     {
         rotate: false
         mirror: true
         name: illuminaium-ship-weapon
-        x: 21.5
-        y: 6.25
-        reload: 5
+        x: 4.5
+        y: 3.75
+        reload: 10
         recoil: 1
         ejectEffect: casing2
         shootSound: shoot
@@ -134,6 +147,3 @@ weapons:[
     }
 
 ]
-
-
-     alwaysUnlocked: true

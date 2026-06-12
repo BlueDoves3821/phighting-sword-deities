@@ -9,7 +9,7 @@ rotateSpeed: 5
 hitSize: 5
 flying: true
 targetable: false
-defaultController: FlyingAI
+defaultController: SuicideAI
 engineSize: 0
 engines: [
   {
@@ -58,7 +58,8 @@ weapons: [
      } 
  ]
   research: {
-    parent: gwd-builder
+    parent: sfoth-unit-factory
     requirements: [
+      ghostwalkerium/20
 ]
 }
