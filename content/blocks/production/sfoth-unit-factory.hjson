@@ -1,0 +1,49 @@
+Name: SFOTH Unit Factory
+description: Constructs multiple types of units.
+type: UnitFactory
+size: 3
+consumesPower: false
+plans: [
+  {
+    unit: venomshankium-minion
+    time: 30
+    requirements: [
+venomshankium/5
+swordium/5
+    ]
+ }
+  {
+    unit: ghostwalkerium-drone
+    time: 120
+    requirements: [
+ghostwalkerium/8
+swordium/8
+    ]
+ }
+  {
+    unit: darkheartium-walker
+    time: 360
+    requirements: [
+darkheartium/20
+swordium/20
+    ]
+ }
+  {
+    unit: illuminaium-hovership
+    time: 120
+    requirements: [
+illuminaium/20
+swordium/20
+    ]
+ }
+]
+requirements: [
+swordium/135
+]
+  research: {
+    parent: swordium-maker
+    requirements: [
+      swordium/135
+]
+}
+category: units
