@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "SFOTH Factory"
 description: '''
-A factory that converts swordium into the 7 sword deities.
+A factory that converts [#ff5959]swordium []into the 7 sword deities.
 '''
 health: 560
 size: 3

@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Icedaggerium Converter"
+name: "[#97CCE1]Icedaggerium []Converter"
 description: '''
-Converts swordium into icedaggerium, creates water as byproduct.
+Converts [#ff5959]swordium []into [#97CCE1]icedaggerium[], creates water as byproduct.
 '''
 size: 2
 health: 400

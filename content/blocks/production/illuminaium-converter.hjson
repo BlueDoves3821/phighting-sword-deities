@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Illuminaium Converter"
+name: "[#E2BAF5]Illuminaium []Converter"
 description: '''
-Converts swordium into illuminaium.
+Converts [#ff5959]swordium []into [#E2BAF5]illuminaium.
 '''
 size: 2
 health: 400

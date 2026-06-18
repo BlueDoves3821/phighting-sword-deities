@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Icedaggerium Converter (Heated)"
+name: "[#97CCE1]Icedaggerium []Converter (Heated)"
 description: '''
-Converts swordium into icedaggerium, modified to boil off the water byproduct.
+Converts [#ff5959]swordium []into [#97CCE1]icedaggerium[], modified to boil off the water byproduct.
 '''
 size: 2
 health: 400

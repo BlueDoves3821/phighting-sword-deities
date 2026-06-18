@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Firebrandium Converter"
+name: "[#861C00]Firebrandium []Converter"
 description: '''
-Converts swordium into firebrandium.
+Converts [#ff5959]swordium []into [#861C00]firebrandium.
 '''
 size: 2
 health: 400

@@ -1,0 +1,45 @@
+type: GenericCrafter
+name: "[#70AC30]Darkheartium []Melter"
+description: '''
+Melts [#70AC30]darkheartium []into a dangerous liquid that can spread in water-containing buildings.
+'''
+details: '''
+it is highly recommended to build this far from any water-containing buildings to avoid accidental contaimination.
+'''
+size: 2
+health: 400
+consumes: {
+  items: [
+    darkheartium/1
+  ]
+}
+craftEffect: none
+ambientSound: loopMachine2
+craftTime: 20
+outputLiquids: [
+   darkheartium-liquid/5
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: darkheartium-liquid
+  }
+  DrawDefault
+]
+liquidCapacity: 1000
+  research: {
+    parent: darkheartium-converter
+    requirements: [
+      swordium/65
+      darkheartium/65
+]
+}
+category: crafting
+requirements: [
+  swordium/65
+  darkheartium/65
+]

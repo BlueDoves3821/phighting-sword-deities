@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Venomshankium Converter"
+name: "[#A4C360]Venomshankium []Converter"
 description: '''
-Converts swordium into venomshankium.
+Converts [#ff5959]swordium []into [#A4C360]venomshankium.
 '''
 size: 2
 health: 400

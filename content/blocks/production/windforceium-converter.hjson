@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Windforceium Converter"
+name: "[#929EAE]Windforceium []Converter"
 description: '''
-Converts swordium into windforceium.
+Converts [#ff5959]swordium []into [#929EAE]windforceium.
 '''
 size: 2
 health: 400

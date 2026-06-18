@@ -1,7 +1,7 @@
 type: GenericCrafter
-name: "Firebrandium Melter"
+name: "[#861C00]Firebrandium []Melter"
 description: '''
-Melts firebrandium into slag.
+Melts [#861C00]firebrandium []into slag.
 '''
 size: 2
 health: 400
