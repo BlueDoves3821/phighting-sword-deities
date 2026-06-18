@@ -1,6 +1,6 @@
-name: "Icedaggerium Liquid"
+name: "[#97CCE1]Icedaggerium []Liquid"
 description: '''
-A coolant made by mixing icedaggerium with water.
+A coolant made by mixing [#97CCE1]icedaggerium []with water.
 '''
 color: 97CCE1
 viscosity: 0.5

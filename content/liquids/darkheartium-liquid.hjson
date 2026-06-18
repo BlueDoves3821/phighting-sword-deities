@@ -1,0 +1,33 @@
+name: '''
+[#70AC30]Darkheartium []Liquid
+'''
+
+description: '''
+A dangerous liquid made by melting [#70AC30]darkheartium []into a liquid, will spread to anything that contains water.
+[grey]and yes i know it's basically a modified neoplasm liquid.
+'''
+
+details: '''
+[#70AC30]a bit of chaos is fun... don't you think?
+'''
+type: CellLiquid
+heatCapacity: 0
+temperature: 0.5
+explosiveness: 2
+viscosity: 0.05
+effect: darkhearts-curse
+boilPoint: 0.55
+coolant: false
+color: 517C22
+colorFrom: 6DA82E
+colorTo: 2B4212
+canStayOn: [water]
+incinerable: false
+spreadTarget: water
+spreadDamage: 1
+spreadConversion: 2
+  research: {
+    parent: darkheartium
+    requirements: [
+]
+}
