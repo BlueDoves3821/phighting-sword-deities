@@ -1,0 +1,30 @@
+  type: MassDriver
+  name: "[#C2C2C2]Ghostwalkerium []Mass Driver"
+  health: 800
+  description: '''
+A mass driver made out of swordium & [#c2c2c2]ghostwalkerium,[] better than a regular mass driver, cannot be auto-targeted.
+'''
+  itemCapacity: 350
+  reload: 30
+  shake: 0.5
+  hasPower: false
+  knockback: 1
+  range: 2000
+  bulletLifetime: 1000
+  bulletSpeed: 11
+  minDistribute: 50
+  size: 2
+  priority: -1
+  targetable: false
+  requirements: [
+      swordium/90
+      ghostwalkerium/90   
+  ]
+  category: distribution
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/90
+      ghostwalkerium/90
+]
+}
