@@ -1,4 +1,4 @@
-name: "Windforce's Disarmerment"
+name: "[#929EAE]Windforce's []Disarmerment"
 description: '''
 [#929EAE]Windforce []has disarmed you.
 '''
@@ -8,8 +8,8 @@ effect: {
     type: MultiEffect
     effects:[coreBurn, {
     type: vaporSmall
-    colorFrom: 929EAE
-    colorTo: 929EAE
+    colorFrom: 929EAEff
+    colorTo: 929EAE00
     sizeTo: 1
     strokeFrom: 4
     lifetime: 24

@@ -1,4 +1,4 @@
-name: "Darkheart's Curse"
+name: "[#70AC30]Darkheart's []Curse"
 description: '''
 [#70AC30]Darkheart []has cursed you to not being able to move, shoot, have half of your max health & slowly lose your health overtime.
 '''
@@ -10,8 +10,8 @@ effect: {
   length: 30
   lifetime: 50
   particles: 1
-  colorFrom: 70AC30
-  colorTo: 787878
+  colorFrom: 70AC30ff
+  colorTo: 78787800
   sizeFrom: 4
   sizeTo: 0
 }
