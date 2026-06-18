@@ -1,0 +1,21 @@
+name: "[#C2C2C2]Ghostwalkerium []Unloader"
+description: '''
+Made with swordium & [#c2c2c2]ghostwalkerium,[] fast unloading speed, cannot be auto-targeted.
+'''
+	type: Unloader
+	health: 200
+	speed: 0.45
+ priority: -1
+ targetable: false
+	requirements: [
+		swordium/10
+  ghostwalkerium/10
+	]
+	category: distribution
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/10
+      ghostwalkerium/10
+]
+}
