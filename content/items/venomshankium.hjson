@@ -1,6 +1,7 @@
-name: "Venomshankium"
+name: "[#A4C360]Venomshankium"
 description: '''
-[#A4C360]"Rise my minions!"
+[#A4C360]"Rise my minions!"[]
+A material mostly used to summon it's minions.
 '''
 color: A4C360
   research: {

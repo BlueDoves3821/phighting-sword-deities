@@ -1,8 +1,10 @@
-name: "Firebrandium"
+name: "[#861C00]Firebrandium"
 description: '''
-[#861C00]"Set ablaze in the Inpherno!"
+[#861C00]"Set ablaze in the Inpherno!"[]
+A highly flammable material, used for anything related to scorching the enemy.
 '''
 color: 861C00
+flammability: 8
   research: {
     parent: swordium
     requirements: []

@@ -1,6 +1,7 @@
-name: "Icedaggerium"
+name: "[#97CCE1]Icedaggerium"
 description: '''
-[#97CCE1]"Here comes the snow!"
+[#97CCE1]"Here comes the snow!"[]
+A material that's related to the cold.
 '''
 color: 97CCE1
   research: {

@@ -1,8 +1,10 @@
-name: "Illuminaium"
+name: "[#E2BAF5]Illuminaium"
 description: '''
-[#E2BAF5]currently no quotes from him as of this time.
+[#E2BAF5]currently no quotes from him as of this time.[]
+An extremly powerful material, slightly charged.
 '''
 color: E2BAF5
+charge: 0.1
   research: {
     parent: swordium
     requirements: []

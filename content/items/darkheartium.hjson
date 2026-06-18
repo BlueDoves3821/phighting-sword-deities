@@ -1,8 +1,10 @@
-name: "Darkheartium"
+name: "[#70AC30]Darkheartium"
 description: '''
-[#70AC30]"A little bit of chaos is fun.. don't you think?"
+[#70AC30]"A little bit of chaos is fun.. don't you think?"[]
+An unstable material, highly explosive, used for chaotic builds.
 '''
 color: 70AC30
+explosiveness: 10
   research: {
     parent: swordium
     requirements: []
