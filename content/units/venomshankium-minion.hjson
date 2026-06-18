@@ -1,8 +1,8 @@
 
 {
   "type": "mech",
-  "description": "[#A4C360]Vemonshankium's []minion, can only attack via melee.",
-  "name": "Venomshankium's Minion",
+  "description": "[#A4C360]Venomshankium's []minion, can only attack via melee.",
+  "name": "[#A4C360]Venomshankium's []Minion",
   "speed": 0.8,
   "hitSize": 8,
   "health": 200,

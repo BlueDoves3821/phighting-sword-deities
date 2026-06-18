@@ -1,5 +1,7 @@
 type: mech
-name: Illuminaium Hovership
+name: '''
+[#E2BAF5]Illuminaium []Hovership
+'''
 description: Fires the same projectile as the omni turret, albeit faster.
 hovering: true
 hoverable: true

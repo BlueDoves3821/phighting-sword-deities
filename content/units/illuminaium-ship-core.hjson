@@ -1,7 +1,9 @@
 type: payload
 payloadCapacity: 15000
 flying: true
-name: Illuminaium Ship
+name: '''
+[#E2BAF5]Illuminaium []Ship
+'''
 description: '''
 A large [#E2BAF5]illuminaium []ship that's the "jack-off-all-trades" of versatilities, it has high health, moderate speed, shielded, the ability to pick up payloads, shoots the same rounds as the [#E2BAF5]illuminaium []turret, higher build & mining range & speed, and an energy field that's powered by [#929EAE]windforceium, []allowing it to disable the weapons of enemies.
 '''

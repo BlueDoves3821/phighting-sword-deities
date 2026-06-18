@@ -1,5 +1,7 @@
 type: flying
-name: Ghostwalkerium Drone
+name: '''
+[#C2C2C2]Ghostwalkerium []Drone
+'''
 description: '''
 A small drone, the [#C2C2C2]ghostwalkerium []properites allows it to sneak behind enemy lines, self-destructs, applies unmoving to enemies caught in the radius.
 '''

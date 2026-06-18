@@ -1,5 +1,8 @@
   template: ErekirUnitType
-  name: Darkheartium Walker
+  name: '''
+[#70AC30]Darkheartium []Walker
+'''
+
   description: '''
 Uses a "donut" shield design, applies [#70AC30]darkheart's []curse to units who crosses the shield, fast movement & healing, can also build.
 '''
