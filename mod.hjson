@@ -12,5 +12,5 @@ BlueDoves3821
 '''
 minGameVersion: 136.1
 version: 1.3
-hideBrowser: true
+hideBrowser: false
 
