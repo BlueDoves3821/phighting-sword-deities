@@ -1,7 +1,7 @@
 type: ItemTurret
-name: "Venomshankium Minion Launcher"
+name: "[#A4C360]Venomshankium []Minion Launcher"
 description: '''
-Fires a projectile that spawns venomshank's minions.
+Fires a projectile that spawns [#A4C360]venomshankium's []minions.
 '''
 size: 4
 health: 1280

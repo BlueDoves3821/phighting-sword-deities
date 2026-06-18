@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "Illuminaium Omni Turret (All-Fire)"
+name: "[#E2BAF5]Illuminaium []Omni Turret (All-Fire)"
 description: '''
 Fires accelerating homing projectiles at all directions, can home onto enemies & can "slam" them, modified to fire all 40 rounds at once, can take coolant, but it's more expensive.
 '''

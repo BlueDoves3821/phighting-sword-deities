@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "Windforceium Disarmer"
+name: "[#929EAE]Windforceium []Disarmer"
 description: '''
 Disarms enemies from using their weapons.
 '''
@@ -36,6 +36,7 @@ ammoTypes: {
         lifetime: 85
         pierce: true
         pierceCap: 35
+        knockback: 25
         status: windforces-disarmerment
         statusDuration: 60000
     }

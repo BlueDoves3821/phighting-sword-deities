@@ -2,7 +2,7 @@ type: ItemTurret
 requirements: [
 swordium/250
 ]
-name: "Swordium Laser Turret"
+name: "[#ff5959]Swordium []Laser Turret"
 description: '''
 Utilitizes the swords as ammo, hit-scanning.
 [#ff5959]Swordium: the usual ammo for the turret.
@@ -12,7 +12,7 @@ Utilitizes the swords as ammo, hit-scanning.
 [#97CCE1]Icedaggerium: applies the freezing status to units.
 [#E2BAF5]Illumiaium: Higher damage, but uses more ammo per shot.
 [#A4C360]Venomshankium: applies the corroded status to units.
-[#929EAE]Windforceium: pushes units away whilst applying the unmoving status for a short time.
+[#929EAE]Windforceium: pushes units away whilst disarmering the units for a short time.
 '''
 hasShadow: false
 health: 1500
@@ -303,8 +303,8 @@ windforceium: {
     length: 750
     pierce: true
     knockback: 150
-    status: unmoving
-    statusDuration: 60
+    status: windforces-disarmerment
+    statusDuration: 600
     colors: [
       929EAE,
       ffffff

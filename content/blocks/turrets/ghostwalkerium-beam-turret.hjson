@@ -1,9 +1,9 @@
 type: TractorBeamTurret
 name: '''
-Ghostwalkerium Beam Turret
+[#c2c2c2]Ghostwalkerium []Beam Turret
 '''
   description: '''
-Requires ghostwalkerium to operate, can techically be used as ghostwalkerium storage, It's ghostwalkerium properites allow it to technically not be able to be targeted.
+Requires [#c2c2c2]ghostwalkerium []to operate, can techically be used as [#c2c2c2]ghostwalkerium []storage, It's [#c2c2c2]ghostwalkerium []properites allows it to be unable to be auto-targeted.
 '''
   size: 2,
   force: 0,

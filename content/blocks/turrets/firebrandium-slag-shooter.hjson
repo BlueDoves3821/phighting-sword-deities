@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Firebrandium Slag Shooter
+name: "[#861C00]Firebrandium []Slag Shooter"
 description: Fires a projectile that shoot out slag at enemies, can optionally take slag for a lowered reload time.
 size: 3
 health: 1000

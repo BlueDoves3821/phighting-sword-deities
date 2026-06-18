@@ -1,0 +1,46 @@
+type: LiquidTurret
+requirements: [
+swordium/135
+darkheartium/135
+]
+name: "[#70AC30]Darkheartium []Liquid Shooter"
+description: '''
+Sprays units with the [#70AC30]darkheartium []liquid, can spread to any water-containing buildings.
+'''
+details: '''
+highly recommended to build the turret setup far from any important buildings, because remember: it can't identify friend or foe.
+'''
+hasShadow: false
+category: turret
+range: 780
+shootEffect: none
+smokeEffect: none
+reload: 1
+shake: 5
+size: 4
+inaccuracy: 8
+velocityRnd: 0.02
+shootCone: 25
+shoot: {
+  shots: 9
+}
+ammoTypes: {
+  darkheartium-liquid: {
+    type: LiquidBulletType
+    liquid: darkheartium-liquid
+    ammoMultiplier: 1
+    damage: 100
+    lifetime: 170
+    speed: 5
+    status: darkhearts-curse
+    statusDuration: 600
+  }
+}
+liquidCapacity: 850
+  research: {
+    parent: darkheartium-turret
+    requirements: [
+      swordium/135
+      darkheartium/135
+]
+}

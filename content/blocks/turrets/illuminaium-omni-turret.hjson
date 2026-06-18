@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "Illuminaium Omni Turret"
+name: "[#E2BAF5]Illuminaium []Omni Turret"
 description: '''
 Fires accelerating homing projectiles at all directions, can home onto enemies & can "slam" them.
 '''

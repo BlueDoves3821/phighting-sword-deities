@@ -1,7 +1,7 @@
  type: ItemTurret
-name: "Icedaggerium Railgun"
+name: "[#97CCE1]Icedaggerium []Railgun"
 description: '''
-Fires a hit-scanning projectile, applies freezing status to enemies, can optionally take icedaggerium liquid for a lowered cooldown.
+Fires a hit-scanning projectile, applies freezing status to enemies, can optionally take [#97CCE1]icedaggerium []liquid for a lowered cooldown.
 '''
 	size: 3
 	health: 950
