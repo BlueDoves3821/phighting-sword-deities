@@ -1,4 +1,6 @@
-name: Windforceium Landing Pad
+name: '''
+[#929EAE]Windforceium []Landing Pad
+'''
 description: A compact landing pad with a quick cooldown between landings, does not require water. (despite what the info tells you)
 type: LandingPad
 itemCapacity: 200

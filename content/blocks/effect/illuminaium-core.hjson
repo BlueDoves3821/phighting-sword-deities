@@ -1,5 +1,7 @@
 type: CoreBlock
-name: "Illiuminaium Core"
+name: '''
+[#E2BAF5]Illiuminaium []Core
+'''
 description: '''
 A large core, with a large ship to go along with it.
 '''

@@ -1,0 +1,21 @@
+{
+  "name": "[#ff5959]Swordium []Core",
+  "description": "A core made for mobile bases, can be upgraded to any core of your choice.",
+  "details": "currently, this core defaults to the gamma core unit, in a future update, it'll have a unique core unit.",
+  "size": 3,
+  "health": 2300,
+  "itemCapacity": 8500,
+  "armor": 10,
+  "requirements": [
+    { "item": "swordium","amount": 350}
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "swordium-maker",
+    "requirements": [
+      "swordium/350"
+    ]
+  },
+  "unitType": "gamma",
+  "unitCapModifier": 15,
+}

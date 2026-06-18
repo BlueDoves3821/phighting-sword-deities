@@ -1,0 +1,30 @@
+type: LightBlock
+name: '''
+[#861C00]Firebrandium []Illuminator
+'''
+description: '''
+Light up the base with this, uses [#861C00]firebrandium []instead of power to operate.
+'''
+consumesPower: false
+health: 150
+size: 2
+category: effect
+brightness: 3
+radius: 500
+consumes: {
+  items: [
+    firebrandium/1
+  ]
+}
+itemCapacity: 5
+requirements: [
+  swordium/10
+  firebrandium/10
+]
+research: {
+    parent: firebrandium-converter
+    requirements: [
+swordium/10
+firebrandium/10
+]
+}

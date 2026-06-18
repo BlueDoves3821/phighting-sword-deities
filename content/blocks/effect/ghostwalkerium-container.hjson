@@ -1,0 +1,25 @@
+name: '''
+[#C2C2C2]Ghostwalkerium []Container
+'''
+description: '''
+A [#c2c2c2]ghostwalkerium []storage containter, slightly bigger storage space, cannot be auto-targeted.
+'''
+type: StorageBlock
+itemCapacity: 1250
+size: 2
+category: effect
+health: 850
+armor: 5
+priority: -1
+targetable: false
+	requirements: [
+		swordium/60
+  ghostwalkerium/60
+	]
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/60
+      ghostwalkerium/60
+]
+}

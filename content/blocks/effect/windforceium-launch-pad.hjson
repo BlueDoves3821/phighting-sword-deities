@@ -1,4 +1,6 @@
-name: Windforceium Launch Pad
+name: '''
+[#929EAE]Windforceium []Launch Pad
+'''
 description: A compact launch pad with a quick cooldown between launches, can take multiple items in one launch.
 type: LaunchPad
 itemCapacity: 200

@@ -1,6 +1,8 @@
 
     type: BaseShield
-    name: Large Illuminaium N.E.S
+    name: '''
+Large [#E2BAF5]Illuminaium []N.E.S
+'''
     description: '''
 The N.E.S stands for "No-Entry Shield" which means enemies cannot enter the force field, Requires 100 [#E2BAF5]illuminaium []to activate it.
 '''
