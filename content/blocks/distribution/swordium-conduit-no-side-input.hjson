@@ -1,0 +1,20 @@
+  type: ArmoredConduit
+  category: liquid
+  name: "[#ff5959]Swordium []Conduit (No Side-Input)",
+  description: "A conduit made out of [#ff5959]swordium, []does not allow side-inputs."
+  leaks: true
+  health: 85
+  liquidCapacity: 30
+  placeableLiquid: true
+  liquidPressure: 1.9
+  bridgeReplacement: swordium-liquid-bridge
+requirements: [
+		swordium/1
+	]
+	category: liquid
+  research: {
+    parent: swordium-conduit
+    requirements: [
+      swordium/5
+]
+}

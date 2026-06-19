@@ -1,0 +1,20 @@
+  type: Conduit
+  category: liquid
+  name: "[#ff5959]Swordium []Conduit",
+  description: "A conduit made out of [#ff5959]swordium."
+  leaks: true
+  health: 85
+  liquidCapacity: 30
+  placeableLiquid: true
+  liquidPressure: 1.9
+  bridgeReplacement: swordium-liquid-bridge
+requirements: [
+		swordium/1
+	]
+	category: liquid
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/5
+]
+}

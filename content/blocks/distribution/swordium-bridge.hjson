@@ -1,0 +1,18 @@
+  type: ItemBridge
+  name: "[#ff5959]Swordium []Bridge",
+  description: "High ranged bridge conveyor, Can be used to skip over large amounts of terrains & buildings.",
+  hasPower: false
+  transportTime: 0.1
+  itemCapacity: 20
+  health: 100
+  range: 30
+	requirements: [
+		swordium/15
+	]
+	category: distribution
+  research: {
+    parent: swordium-duct
+    requirements: [
+      swordium/15
+]
+}
