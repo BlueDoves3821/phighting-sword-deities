@@ -11,7 +11,7 @@ A small solar panel that's surprisingly free, used to start the [#FF5959]swordiu
 	]
 	category: power
   research: {
-    parent: swordium-maker
+    parent: swordium-buildings
     requirements: [
       swordium/20
 ]
