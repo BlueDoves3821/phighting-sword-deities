@@ -334,7 +334,7 @@ windforceium: {
 }
 ammoPerShot: 10
 research: {
-    parent: swordium-maker
+    parent: the-swords
     requirements: [
 swordium/250
 ]
