@@ -11,7 +11,7 @@
   ],
   "category": "effect",
   "research": {
-    "parent": "swordium-maker",
+    "parent": "swordium-buildings",
     "requirements": [
       "swordium/350"
     ]

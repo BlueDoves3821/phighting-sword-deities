@@ -1,0 +1,13 @@
+{  
+    "localizedName": "[#ff5959]Swordium []Buildings",
+    "description": "Buildings that utilizes [#ff5959]swordium.",
+    "alwaysUnlocked": true,
+    "buildVisibility": "editorOnly",
+    "type": "LightBlock",
+    "health": 800,
+    "size": 2,
+   "research": {
+    "parent": the-swords
+  "requiresUnlock": false
+}
+}
