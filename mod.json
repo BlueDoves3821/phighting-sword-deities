@@ -1,0 +1,10 @@
+name: "sword-deities-mod"
+displayName: "PHIGHTING! SWORD DEITIES"
+author: BlueDoves3821
+description: "A mod about The Swords from PHIGHTING!
+Possibly unbalanced content."
+version: "1.4"
+subtitle: "i have a sword!"
+minGameVersion: "136.1"
+dependencies: [ ]
+hidden: false
