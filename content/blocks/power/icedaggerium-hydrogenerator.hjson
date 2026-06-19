@@ -1,0 +1,34 @@
+type: ThermalGenerator
+name: "[#97CCE1]Icedaggerium []Hydrogenerator"
+description: '''
+Generates power when placed on wet locations, for the most amount of power, place it on either icy or snowy locations.
+'''
+health: 350
+category: power
+powerProduction: 5
+effectChance: 0.011
+generateEffect: {
+type: ParticleEffect
+particles: 1
+lifetime: 60
+sizeFrom: 4
+sizeTo: 0
+length: 20
+colorFrom: 97CCE190
+colorTo: 97CCE170
+}
+placeableLiquid: true
+size: 2
+ambientSoundVolume: 0.06
+attribute: water
+	requirements: [
+		swordium/75
+  icedaggerium/75
+	]
+  research: {
+    parent: icedaggerium-converter
+    requirements: [
+      swordium/75
+      icedaggerium/75
+]
+}
