@@ -41,7 +41,7 @@ requirements: [
 swordium/135
 ]
   research: {
-    parent: swordium-maker
+    parent: swordium-buildings
     requirements: [
       swordium/135
 ]

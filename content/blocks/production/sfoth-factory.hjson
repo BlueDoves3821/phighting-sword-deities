@@ -23,7 +23,7 @@ outputItems: [
    windforceium/1
 ]
   research: {
-    parent: swordium-maker
+    parent: swordium-buildings
     requirements: [
       swordium/220
 ]
