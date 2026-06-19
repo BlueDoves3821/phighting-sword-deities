@@ -1,0 +1,29 @@
+type: BeamDrill
+name: "[#c2c2c2]Ghostwalkerium []Laser Bore"
+description: '''
+Basically the [#ff5959]swordium []laser bore with [#c2c2c2]ghostwalkerium []added, cannot be auto-targeted.
+'''
+size: 2
+requirements: [
+swordium/50
+ghostwalkerium/20
+]
+targetable: false
+drillTime: 30
+health: 750
+tier: 10
+hardnessDrillMultiplier: 1
+size: 2
+rotateSpeed: 8
+warmupSpeed: 0.01
+itemCapacity: 150
+range: 15
+sparkColor: ffffff
+  research: {
+    parent: ghostwalkerium-drill
+    requirements: [
+      swordium/50
+      ghostwalkerium/20
+]
+}
+category: production

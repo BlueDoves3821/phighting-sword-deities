@@ -1,0 +1,27 @@
+type: Drill
+
+name: "[#ff5959]Swordium []Drill"
+description: "A great drill, nothing much to say about it."
+requirements: [
+  swordium/50
+]
+drillTime: 30
+health: 750
+tier: 10
+hardnessDrillMultiplier: 1
+size: 2
+rotateSpeed: 8
+warmupSpeed: 0.01
+itemCapacity: 150
+liquidCapacity: 500
+liquidBoostIntensity: 2
+drillEffect: mineSmall
+updateEffect: pulverizeSmall
+updateEffectChance: 0.06
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/50
+]
+}
+category: production

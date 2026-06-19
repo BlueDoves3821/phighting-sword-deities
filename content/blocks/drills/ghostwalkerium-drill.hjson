@@ -1,0 +1,30 @@
+type: Drill
+
+name: "[#c2c2c2]Ghostwalkerium []Drill"
+description: "Basically the [#ff5959]swordium []drill with [#c2c2c2]ghostwalkerium []added, cannot be auto-targeted."
+requirements: [
+  swordium/50
+  ghostwalkerium/20
+]
+targetable: false
+drillTime: 30
+health: 750
+tier: 10
+hardnessDrillMultiplier: 1
+size: 2
+rotateSpeed: 8
+warmupSpeed: 0.01
+itemCapacity: 150
+liquidCapacity: 500
+liquidBoostIntensity: 2
+drillEffect: mineSmall
+updateEffect: pulverizeSmall
+updateEffectChance: 0.06
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/50
+      ghostwalkerium/20
+]
+}
+category: production
