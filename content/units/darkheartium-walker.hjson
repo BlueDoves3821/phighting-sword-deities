@@ -6,6 +6,8 @@
   description: '''
 Uses a "donut" shield design, applies [#70AC30]darkheart's []curse to units who crosses the shield, fast movement & healing, can also build.
 '''
+  envDisabled: 0
+  hidden: false
   lightRadius: 200
   type: legs
   canDrown: false
@@ -26,6 +28,8 @@ Uses a "donut" shield design, applies [#70AC30]darkheart's []curse to units who 
   armor: 5
   hitSize: 18
   lowAltitude: true
+  hovering: true
+  canDrown: false
   drawCell: false
   buildSpeed: 5
   buildRange: 750

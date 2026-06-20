@@ -3,6 +3,8 @@ name: '''
 [#E2BAF5]Illuminaium []Hovership
 '''
 description: Fires the same projectile as the omni turret, albeit faster.
+envDisabled: 0
+hidden: false
 hovering: true
 hoverable: true
 shadowElevation: 0.2

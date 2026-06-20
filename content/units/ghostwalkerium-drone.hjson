@@ -5,6 +5,8 @@ name: '''
 description: '''
 A small drone, the [#C2C2C2]ghostwalkerium []properites allows it to sneak behind enemy lines, self-destructs, applies unmoving to enemies caught in the radius.
 '''
+envDisabled: 0
+hidden: false
 health: 150
 speed: 3
 rotateSpeed: 5

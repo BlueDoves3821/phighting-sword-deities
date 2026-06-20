@@ -4,6 +4,8 @@
   "description": "[#A4C360]Venomshankium's []minion, can only attack via melee.",
   "name": "[#A4C360]Venomshankium's []Minion",
   "speed": 0.8,
+  "envDisabled": 0,
+  "hidden": false,
   "hitSize": 8,
   "health": 200,
   "rotateSpeed": 7,
