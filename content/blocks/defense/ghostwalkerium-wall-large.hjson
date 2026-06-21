@@ -1,0 +1,21 @@
+name: "Large [#c2c2c2]Ghostwalkerium []Wall"
+description: '''
+A wall made out of [#c2c2c2]ghostwalkerium, []can be placed on deep liquids, cannot be auto-targeted.
+'''
+    type: Wall
+    placeableLiquid: true
+    targetable: false
+    health: 3600
+    size: 2
+	requirements: [
+		swordium/24
+  ghostwalkerium/24
+	]
+	category: defense
+  research: {
+    parent: ghostwalkerium-wall
+    requirements: [
+      swordium/24
+      ghostwalkerium/24
+]
+}
