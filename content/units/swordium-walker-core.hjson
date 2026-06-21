@@ -40,6 +40,8 @@ The core unit for the [#ff5959]swordium []core.
   buildRange: 1000
   buildSpeed: 25
   mineBeamOffset: 3
+  range: 700
+  maxRange: 700
 abilities:[
 
  {

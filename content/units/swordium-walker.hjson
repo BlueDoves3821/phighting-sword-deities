@@ -35,6 +35,8 @@ Not as "advanced" as the core unit version.
   buildRange: 1000
   buildSpeed: 15
   defaultController: GroundAI
+  range: 450
+  maxRange: 450
 abilities:[
 
  {
