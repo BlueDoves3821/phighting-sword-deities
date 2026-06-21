@@ -1,0 +1,91 @@
+  template: ErekirUnitType
+  name: '''
+[#ff5959]Swordium []Walker (Core Unit)
+'''
+
+  description: '''
+The core unit for the [#ff5959]swordium []core.
+'''
+  envDisabled: 0
+  hidden: false
+  lightRadius: 200
+  type: legs
+  canDrown: false
+  legCount: 4
+  legLength: 22
+  legSpeed: 0.5
+  legExtension: -3
+  legMoveSpace: 2
+  rotateSpeed: 5
+  speed: 2.5
+  accel: 0.4
+  drag: 0.4
+  range: 1
+  maxRange: 1
+  faceTarget: true
+  flying: false
+  health: 3500
+  armor: 5
+  hitSize: 18
+  lowAltitude: true
+  hovering: true
+  canDrown: false
+  drawCell: false
+  mineRange: 1000
+  mineFloor: true
+  mineSpeed: 25
+  mineTier: 100
+  mineWalls: true
+  itemCapacity: 700
+  buildRange: 1000
+  buildSpeed: 25
+  mineBeamOffset: 3
+abilities:[
+
+ {
+    type: RepairFieldAbility
+    amount: 1500
+    range: 90
+    reload: 120
+ }
+
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 90
+  max: 5500
+  regen: 8.5
+  cooldown: 120
+  width: 3
+  angle: 360
+  color: FF5959
+  whenShooting: false
+ }
+
+]
+weapons: [
+    {
+        rotate: false
+        mirror: true
+        name: sw-laser
+        reload: 15
+        recoil: 1
+        shootSound: shootLancer
+        layerOffset: -1
+        
+    bullet: {
+  type: LaserBulletType
+    damage: 650
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 700
+    pierce: true
+    colors: [
+      ff5959,
+      ffffff
+    ]
+}
+}
+]
+  alwaysUnlocked: true
