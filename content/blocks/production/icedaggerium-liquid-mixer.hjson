@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "[#97CCE1]Icedaggerium []Liquid Mixer"
 description: '''
-Mixes [#97CCE1]icedaggerium []& water to create [#97CCE1]icedaggerium liquid.
+Mixes [#97CCE1]icedaggerium []& water to create [#97CCE1]icedaggerium []liquid.
 '''
 size: 2
 health: 400
