@@ -36,6 +36,13 @@ illuminaium/20
 swordium/20
     ]
  }
+  {
+    unit: swordium-walker
+    time: 360
+    requirements: [
+swordium/40
+    ]
+ }
 ]
 requirements: [
 swordium/135
