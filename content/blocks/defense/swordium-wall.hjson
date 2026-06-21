@@ -1,0 +1,18 @@
+name: "[#ff5959]Swordium []Wall"
+description: '''
+A wall made out of [#ff5959]swordium, []can be placed on deep liquids.
+'''
+    type: Wall
+    placeableLiquid: true
+    health: 850
+    size: 1
+	requirements: [
+		swordium/6
+	]
+	category: defense
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/6
+]
+  }
