@@ -1,0 +1,34 @@
+type: ThermalGenerator
+name: "[#861C00]Firebrandium []Thermal Generator (Mini)"
+description: '''
+Generates power when placed on hot locations, for the most amount of power, place it directly on slag pools, miniaturized to reach tiny spaces.
+'''
+health: 87
+category: power
+powerProduction: 5
+effectChance: 0.011
+generateEffect: {
+type: ParticleEffect
+particles: 1
+lifetime: 60
+sizeFrom: 4
+sizeTo: 0
+length: 20
+colorFrom: 861C0090
+colorTo: 861C0070
+}
+placeableLiquid: true
+size: 1
+ambientSoundVolume: 0.06
+attribute: heat
+	requirements: [
+		swordium/18
+  firebrandium/18
+	]
+  research: {
+    parent: firebrandium-thermal-generator
+    requirements: [
+      swordium/18
+      firebrandium/18
+]
+}
