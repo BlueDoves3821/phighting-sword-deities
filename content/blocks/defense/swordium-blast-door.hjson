@@ -1,0 +1,19 @@
+type: AutoDoor
+  name: "[#FF5959]Swordium []Blast Door"
+description: '''
+A blast door made out of [#ff5959]swordium, []can be placed on deep liquids.
+'''
+  size: 1
+  health: 850
+  category: defense
+  placeableLiquid: true
+requirements: [
+		swordium/8
+	]
+	category: defense
+  research: {
+    parent: swordium-wall
+    requirements: [
+      swordium/8
+]
+}
