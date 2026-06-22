@@ -1,0 +1,64 @@
+type: ItemTurret
+name: "[#861C00]Firebrandium []Scorch Machine"
+description: '''
+Re-enacts the scorch, in which [#861C00]firebrandium []burned down a lost temple city for whatever reason.
+[red]beware: the fire does not know who's friend or foe.
+'''
+size: 2
+health: 800
+range: 660
+maxAmmo: 500
+velocityRnd: 0.1
+reload: 10
+inaccuracy: 20
+shootCone: 360
+rotateSpeed: 0
+shootSound: shootFlame
+shootEffect: fire
+loopSound: none
+ammoPerShot: 1
+shootY: 0
+recoil: 0
+shoot: {
+    type: ShootSpread
+    shots: 40
+    spread: 36
+    shotDelay: 0
+}
+ ammoTypes: {
+    firebrandium: {
+    type: fireBulletType
+    lifetime: 96
+    speed: 7
+    damage: 50
+    radius: 4
+    velMin: 4
+    velMax: 10
+    absorbable: false
+    pierce: true
+    pierceCap: 10
+    pierceBuilding: true
+    status: burning
+    despawnEffect: none
+     }
+   }
+liquidCapacity: 500
+coolantMultiplier: 2.4
+coolEffect: fallSmoke
+coolant: {
+  type: ConsumeLiquid
+  liquid: slag
+  amount: 5
+}
+requirements: [
+  swordium/85
+  firebrandium/85
+]
+category: turret
+research: {
+    parent: firebrandium-slag-shooter
+    requirements: [
+swordium/85
+firebrandium/85
+]
+}

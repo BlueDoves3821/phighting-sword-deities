@@ -1,0 +1,72 @@
+type: LiquidTurret
+requirements: [
+swordium/60
+]
+name: "[#ff5959]Swordium []Liquid Extinguisher"
+description: '''
+Sprays either water, cryofluid or [#97CCE1]icedaggerium []liquid to extinguish fires, high-ranged,
+it can also use [#70AC30]darkheartium []liquid too, although it's not recommended to do that if said liquid leaks, and can only hold a quarter of the liquid.
+'''
+hasShadow: false
+category: turret
+range: 780
+shootEffect: none
+smokeEffect: none
+reload: 1
+shake: 5
+size: 2
+inaccuracy: 8
+velocityRnd: 0.02
+shootCone: 25
+shoot: {
+  shots: 9
+}
+ammoTypes: {
+  water: {
+    type: LiquidBulletType
+    liquid: water
+    ammoMultiplier: 1
+    damage: 0
+    knockback: 10
+    lifetime: 170
+    speed: 5
+  }
+  cryofluid: {
+    type: LiquidBulletType
+    liquid: cryofluid
+    ammoMultiplier: 1
+    damage: 0
+    knockback: 10
+    lifetime: 170
+    speed: 5
+  }
+  icedaggerium-liquid: {
+    type: LiquidBulletType
+    liquid: icedaggerium-liquid
+    ammoMultiplier: 1
+    damage: 0
+    knockback: 10
+    lifetime: 170
+    speed: 5
+    status: freezing
+    statusDuration: 640
+}
+  darkheartium-liquid: {
+    type: LiquidBulletType
+    liquid: darkheartium-liquid
+    ammoMultiplier: 0.25
+    damage: 50
+    knockback: 10
+    lifetime: 170
+    speed: 5
+    status: darkhearts-curse
+    statusDuration: 600
+  }
+}
+liquidCapacity: 450
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/60
+]
+}
