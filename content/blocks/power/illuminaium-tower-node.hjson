@@ -1,0 +1,19 @@
+type: PowerNode
+name: "[#E2BAF5]Illuminaium Tower Node"
+description: "A long-ranged power node, limited connections."
+size: 2
+health: 750
+laserRange: 200
+maxNodes: 5
+	requirements: [
+		swordium/45
+  illuminaium/45
+	]
+	category: power
+  research: {
+    parent: illuminaium-power-node
+    requirements: [
+      swordium/45
+      illuminaium/45
+]
+}

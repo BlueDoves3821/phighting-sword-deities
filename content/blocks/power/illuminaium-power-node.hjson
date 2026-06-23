@@ -1,0 +1,19 @@
+type: PowerNode
+name: "[#E2BAF5]Illuminaium Power Node"
+description: "An excellent power node."
+size: 1
+health: 400
+laserRange: 40
+maxNodes: 20
+	requirements: [
+		swordium/20
+  illuminaium/20
+	]
+	category: power
+  research: {
+    parent: illuminaium-converter
+    requirements: [
+      swordium/20
+      illuminaium/20
+]
+}
