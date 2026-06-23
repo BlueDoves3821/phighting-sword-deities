@@ -1,0 +1,28 @@
+type: SolidPump
+
+name: "[#ff5959]Swordium []Oil Extractor"
+description: "Extracts large amounts of oil, requires 20 [#FF5959]swordium []to operate."
+requirements: [
+  swordium/120
+]
+liquidCapacity: 250
+size: 3
+result: oil
+attribute: oil
+pumpAmount: 0.5
+hasPower: false
+rotateSpeed: 3
+consumes: {
+  items: [
+    swordium/20
+  ]
+}
+itemDuration: 120
+itemCapacity: 20
+	category: production
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/120
+]
+}

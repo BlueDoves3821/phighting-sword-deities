@@ -8,6 +8,7 @@ Does not require power to operate, can hold alot of liquid.
   liquidCapacity: 3000
   pumpAmount: 1.25
   hasPower: false
+  placeableLiquid: true
 	requirements: [
 		swordium/40
 	]
@@ -17,4 +18,4 @@ Does not require power to operate, can hold alot of liquid.
     requirements: [
       swordium/40
 ]
-  }
+}
