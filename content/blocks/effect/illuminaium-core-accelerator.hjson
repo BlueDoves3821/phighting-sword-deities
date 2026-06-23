@@ -1,0 +1,40 @@
+type: Accelerator
+name: "[#E2BAF5]Illuminaium []Core Accelerator"
+description: '''
+An accelerator for the [#E2BAF5]illuminaium []core,
+utilizes [#929EAE]windforceium []and [#97CCE1]icedaggerium []liquid in order to accelerate the core.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+consumes: {
+ power: 20
+ liquids: [
+    icedaggerium-liquid/1.67
+  ]
+}
+health: 15000
+armor: 120
+size: 8
+category: effect
+ringColor: E2BAF5ff
+lightningColor: E2BAF5ff
+liquidCapacity: 1000
+launchBlock: illuminaium-core
+requirements: [
+  swordium/4200
+  illuminaium/4200
+  windforceium/250
+]
+	research: {
+	parent: illuminaium-core
+	requirements: [
+  swordium/4200
+  illuminaium/4200
+  windforceium/250
+  ]
+  objectives: [
+  {
+    type: capturedSector
+    preset: planetaryTerminal
+  }
+  ]
+}

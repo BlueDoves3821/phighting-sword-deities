@@ -1,0 +1,39 @@
+name: "[#70AC30]Darkheartium []Overdrive"
+description: '''
+A high-ranged overdriver, doubles the speed of everything, can optionally take [#70AC30]darkheartium []liquid to bring it to 10x speed.
+'''
+type: OverdriveProjector
+category: effect
+hasBoost: true
+hasPower: false
+hasLiquids: true
+size: 2
+speedBoost: 2
+speedBoostPhase: 9
+rangeBoostPhase: 2
+range: 500
+health: 650
+liquidCapacity: 500
+baseColor: 70AC30
+phaseColor: 6DA82E
+consumes: {
+        liquids: {
+        liquids: [
+        darkheartium-liquid/1.67
+        ]
+        booster: true
+        optional: true
+        }
+    }
+requirements: [
+  swordium/70
+  darkheartium/70
+]
+
+research: {
+  parent: darkheartium-converter
+  requirements: [
+    swordium/70
+    darkheartium/70
+  ]
+}
