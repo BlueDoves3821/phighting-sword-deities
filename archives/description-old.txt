@@ -1,0 +1,2 @@
+description: "A mod about The Swords from PHIGHTING!
+Possibly unbalanced content."
