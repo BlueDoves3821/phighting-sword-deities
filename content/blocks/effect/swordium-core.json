@@ -1,6 +1,7 @@
 {
   "name": "[#ff5959]Swordium []Core",
-  "description": "A core made for mobile bases, can be upgraded to any core of your choice.",
+  "description": "A core made for mobile bases, can be upgraded to any core of your choice.
+  [red]disclaimer: avoid deconstructing this core if it's the only core in the sector!",
   "details": "remember to plan the location if you're planning to upgrade the core.",
   "size": 3,
   "health": 2300,
