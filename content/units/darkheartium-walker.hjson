@@ -97,6 +97,13 @@ abilities:[
   healPercent: 10
  }
 
+ {
+  type: LiquidExplodeAbility
+  liquid: darkheartium-liquid
+  amount: 500
+  radScale: 2
+  radAmountScale: 1
+ }
 ]
 
   research: {

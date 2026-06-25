@@ -24,6 +24,8 @@ moveSound: loopExtract
 moveSoundVolume: 0.25
 moveSoundPitchMin: 0.25
 moveSoundPitchMax: 1
+buildRange: 900
+buildSpeed: 10
 engineSize: 0
   research: {
     parent: sfoth-unit-factory

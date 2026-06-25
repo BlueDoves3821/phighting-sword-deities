@@ -48,7 +48,7 @@ abilities:[
 	cooldown: 480
  
  }
- 
+
  {
   type: EnergyFieldAbility
   damage: 15
@@ -62,7 +62,13 @@ abilities:[
   maxTargets: 50
   healPercent: 10
  }
- 
+
+{
+  type: SpawnDeathAbility
+  unit: illuminaium-hovership
+  amount: 5
+  }
+
 ]
 
 weapons:[
