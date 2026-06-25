@@ -1,0 +1,39 @@
+type: HeatProducer
+  name: "[#861C00]Firebrandium []Heater"
+  description: "Produces a large amount of heat using [#861C00]firebrandium."
+  size: 2
+  health: 600
+  drawer: {
+  type: DrawMulti
+  drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawHeatOutput
+      }
+    ]
+  }
+  consumes: {
+  items: [
+    firebrandium/5
+  ]
+}
+  itemCapacity: 50
+  warmupRate: 2
+  rotateDraw: false
+  heatOutput: 100
+  regionRotated1: 1
+  category: crafting
+  loopSound: loopHum
+ 	requirements: [
+		swordium/50
+  firebrandium/50
+	]
+  research: {
+    parent: firebrandium-converter
+    requirements: [
+      swordium/50
+      firebrandium/50
+]
+}
