@@ -15,7 +15,7 @@ craftEffect: none
 ambientSound: loopMachine2
 craftTime: 20
 outputLiquids: [
-   water/1.67
+   water/3.34
 ]
 drawer: [
   {
