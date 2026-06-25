@@ -1,16 +1,17 @@
-name: "[#70AC30]Darkheartium []Overdrive"
+name: "[#70AC30]Darkheartium []Mender"
 description: '''
-A high-ranged overdriver, doubles the speed of everything, can optionally take [#70AC30]darkheartium []liquid to bring it to 13x speed.
+A high-ranged mender, repairs buildings overtime, can optionally take [#70AC30]darkheartium []liquid to bring it to 13x healing.
 '''
-type: OverdriveProjector
+type: MendProjector
 category: effect
 hasBoost: true
 hasPower: false
 hasLiquids: true
 size: 2
-speedBoost: 2
-speedBoostPhase: 12
-rangeBoostPhase: 2
+healPercent: 10
+reload: 60
+phaseBoost: 120
+phaseRangeBoost: 2
 range: 500
 health: 650
 liquidCapacity: 500
