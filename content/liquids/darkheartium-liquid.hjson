@@ -21,11 +21,13 @@ coolant: false
 color: 517C22
 colorFrom: 6DA82E
 colorTo: 2B4212
-canStayOn: [water]
+#canStayOn: [water]
 incinerable: false
 spreadTarget: water
-spreadDamage: 1
-spreadConversion: 2
+maxSpread: 10
+spreadConversion: 1
+spreadDamage: 150
+removeScaling: 0.6
   research: {
     parent: darkheartium
     requirements: [
