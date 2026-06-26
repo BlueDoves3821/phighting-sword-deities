@@ -1,0 +1,28 @@
+type: Battery
+name: "[#E2BAF5]Illumunaium []Battery"
+description: '''
+A tiny battery that can hold alot of power.
+'''
+    size: 1
+    health: 500
+    emitLight: true
+    hasPower: true
+    baseExplosiveness: 25
+    insulated: false
+    fullLightColor: E2BAF5
+    emptyLightColor: 989AA4
+    consumes: {
+        powerBuffered: 85000
+    }
+	requirements: [
+		swordium/10
+  illuminaium/10
+	]
+	category: power
+  research: {
+    parent: illuminaium-power-node
+    requirements: [
+      swordium/10
+      illuminaium/10
+]
+}
