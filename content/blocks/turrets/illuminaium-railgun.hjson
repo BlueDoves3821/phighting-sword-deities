@@ -1,0 +1,134 @@
+type: ItemTurret
+name: "[#E2BAF5]Illuminaium []Railgun"
+description: '''
+Fires 6 powerful versions of the illuminaium projectile at high velocity, can decimate units, but loses half of it's homing power.
+'''
+reload: 120
+shootCone: 5
+rotateSpeed: 2
+targetGround: true
+targetAir: true
+range: 2500
+recoil: 2
+size: 4
+health: 910
+AmmoPerShot: 20
+maxAmmo: 70
+chargeSound: illuminaium-railgun-charge
+shootSound: illuminaium-railgun-shoot
+soundPitchMin: 1
+soundPitchMax: 1
+shake: 15
+inaccuracy: 0
+moveWhileCharging: false
+heatColor: f9350f
+shoot: {
+firstShotDelay: 90
+    type: ShootSpread
+    shots: 6
+    spread: 2
+}
+drawer: {
+type: DrawTurret
+parts: [
+{
+suffix: "-barrel"
+progress: recoil
+under: true
+moveY: -3
+}
+]
+}
+ammoTypes: {
+    illuminaium: {
+  type: BasicBulletType
+  shootEffect:{
+    type: MultiEffect
+    effects:[shootSmokeSquareSparse, {
+    type: WaveEffect
+    colorFrom: E8C7F7
+    colorTo: E8C7F7
+    sizeTo: 4
+    strokeFrom: 4
+    lifetime: 24
+    }
+    ]
+}
+chargeEffect: {
+type: MultiEffect
+    effects: [
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 7
+    length: 0
+    lifetime: 90
+    colorFrom: E2BAF500
+    colorTo: E8C7F7FF
+    cone: 360
+	}
+    {
+    type: WaveEffect
+    lifetime: 75
+    sizeFrom: 50
+    sizeTo: 0
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: E2BAF500
+    colorTo: E8C7F7FF
+}
+]
+}
+  smokeEffect: vapor
+  homingPower: 0.25
+  speed: 20
+  drag: -0.005
+  lifetime: 3200
+  trailLength: 50
+  trailWidth: 1.5
+  trailColor: E2BAF5
+  type: BasicBulletType
+  frontColor: ffffff
+  backColor: E8C7F7
+  sprite: circle-bullet
+  damage: 750
+  splashDamage: 400
+  splashDamageRadius: 75
+  hitEffect: hitBulletColor
+  despawnEffect: none
+  fragBullets: 12
+  fragSpread: 90
+  pierce: true
+  pierceCap: 50
+  fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 0
+    toColor: E8C7F7
+    length: 60
+    lifetime: 30
+    width: 12
+    hitLarge: true
+    damage: 300
+    status: slow
+    statusDuration: 1200
+    knockback: 1.2
+    impact: true
+    }
+  fragRandomSpread: 0
+  knockback: 1
+  hitColor: E8C7F7
+}
+    }
+requirements: [
+    swordium/230
+    illuminaium/230
+]
+research: {
+  parent: illuminaium-omni-turret
+}
+category: turret
+researchCost: [
+  swordium/230
+  illuminaium/230
+]
