@@ -2,7 +2,7 @@
   name: "[#C2C2C2]Ghostwalkerium []Mass Driver"
   health: 800
   description: '''
-A mass driver made out of swordium & [#c2c2c2]ghostwalkerium,[] better than a regular mass driver, cannot be auto-targeted.
+A mass driver made out of [#ff5959]swordium []& [#c2c2c2]ghostwalkerium,[] better than a regular mass driver, cannot be auto-targeted.
 '''
   itemCapacity: 350
   reload: 30
