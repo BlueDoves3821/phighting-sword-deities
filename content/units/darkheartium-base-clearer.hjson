@@ -1,0 +1,155 @@
+  template: ErekirUnitType
+  name: '''
+[#70AC30]Darkheartium []Base Clearer
+'''
+
+  description: '''
+When self-destructed, explode in a large radius, hopefully clearing that enemy base off the sector.
+'''
+  envDisabled: 0
+  hidden: false
+  lightRadius: 200
+  type: legs
+  canDrown: false
+  legCount: 4
+  legLength: 22
+  legSpeed: 0.5
+  legExtension: -3
+  legMoveSpace: 2
+  rotateSpeed: 5
+  speed: 0.7
+  accel: 0.4
+  drag: 0.4
+  range: 1
+  maxRange: 1
+  faceTarget: true
+  flying: false
+  health: 11000
+  armor: 50
+  hitSize: 18
+  lowAltitude: true
+  hovering: true
+  canDrown: false
+  drawCell: false
+  defaultController: SuicideAI
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 35
+  max: 15000
+  regen: 5
+  cooldown: 480
+  width: 3
+  angle: 360
+  color: A6FF47
+  whenShooting: false
+ }
+ {
+  type: LiquidExplodeAbility
+  liquid: darkheartium-liquid
+  amount: 500
+  radScale: 5
+  radAmountScale: 1
+ }
+]
+weapons: [
+    {
+        shoot: {
+        firstShotDelay: 110
+               }
+        shootOnDeath: true
+        rotate: false
+        mirror: false
+        name: dbc-explosion
+        x: 0
+        y: 0
+        reload: 1
+        ignoreRotation: true
+        shootCone: 360
+        shootSound: explosionReactorNeoplasm
+        chargeSound: chargeCorvus
+        shootSoundVolume: 5
+        chargeSoundVolume: 5
+        shake: 500
+        bullet: {
+        killShooter: true
+        type: BasicBulletType
+        splashDamageRadius: 2000
+        splashDamage: 180
+        splashDamagePierce: true
+        width: 0.000001
+        height: 0.000001
+        damage: 0
+        instantDisappear: true
+        collides: false
+        despawnEffect: {
+            type: MultiEffect
+                lifetime: 1920
+                effects: [
+        {
+            type: ExplosionEffect
+            smokeColor: 959595
+            smokeRad: 90
+            smokes: 48
+            smokeSize: 5
+            smokeSizeBase: 3
+            sparkColor: 70AC30
+            sparkLen: 12
+            sparkRad: 64
+            sparks: 64
+            sparkStroke: 4
+            waveColor: 70AC30
+            waveLife: 240
+            waveRad: 110
+            lifetime: 360
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 6000
+            strokeFrom: 6
+            strokeTo: 64
+            interp: exp5Out
+            lifetime: 240
+            colorFrom: 70AC30FF
+            colorTo: A6FF4700
+        }
+
+                ]
+            }
+chargeEffect: {
+type: MultiEffect
+    effects: [
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 15
+    length: 0
+    lifetime: 110
+    colorFrom: A6FF4700
+    colorTo: 70AC30FF
+    cone: 360
+	}
+    {
+    type: WaveEffect
+    lifetime: 90
+    sizeFrom: 150
+    sizeTo: 0
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: A6FF4700
+    colorTo: 70AC30FF
+}
+]
+}
+        }
+    }
+]
+  research: {
+    parent: darkheartium-walker
+    requirements: [
+      darkheartium/80
+]
+}
