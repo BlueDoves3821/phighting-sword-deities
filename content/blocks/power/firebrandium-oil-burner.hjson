@@ -1,0 +1,44 @@
+type: ConsumeGenerator
+name: "[#861C00]Firebrandium []Oil Burner",
+description: "Generates power by utilizing [#861C00]firebrandium []to burn oil."
+size: 3
+hasPower: true
+hasItems: true
+acceptsItems: true
+itemDuration: 480
+itemCapacity: 20
+liquidCapcity: 800
+health: 700
+powerProduction: 19
+ambientSound: loopDifferential
+ambientSoundVolume: 0.25
+consumes: {
+  items: [
+    firebrandium/2
+  ]
+  liquids: [
+    oil/1.5
+  ]
+}
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  { type: DrawLiquidTile
+    drawLiquid: oil
+  }
+  DrawDefault
+]
+	requirements: [
+		swordium/130
+  firebrandium/130
+	]
+	category: power
+  research: {
+    parent: firebrandium-converter
+    requirements: [
+      swordium/130
+      firebrandium/130
+]
+}

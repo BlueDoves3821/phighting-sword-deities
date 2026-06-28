@@ -1,5 +1,5 @@
 type: PowerNode
-name: "[#E2BAF5]Illuminaium Tower Node"
+name: "[#E2BAF5]Illuminaium []Tower Node"
 description: "A long-ranged power node, limited connections."
 size: 2
 health: 750
