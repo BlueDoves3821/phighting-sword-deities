@@ -1,5 +1,7 @@
 Name: SFOTH Unit Factory
-description: Constructs multiple types of units.
+description: '''
+Constructs multiple types of units by utlizing [#ff5959]swordium []& any sword deities.
+'''
 type: UnitFactory
 size: 3
 consumesPower: false
@@ -14,7 +16,7 @@ swordium/5
  }
   {
     unit: ghostwalkerium-drone
-    time: 120
+    time: 1080
     requirements: [
 ghostwalkerium/8
 swordium/8
@@ -22,15 +24,24 @@ swordium/8
  }
   {
     unit: darkheartium-walker
-    time: 360
+    time: 900
     requirements: [
 darkheartium/20
 swordium/20
     ]
  }
   {
+    unit: darkheartium-base-clearer
+    time: 1500
+    requirements: [
+darkheartium/80
+swordium/80
+    ]
+ }
+
+  {
     unit: illuminaium-hovership
-    time: 120
+    time: 900
     requirements: [
 illuminaium/20
 swordium/20
@@ -38,19 +49,19 @@ swordium/20
  }
   {
     unit: swordium-walker
-    time: 360
+    time: 720
     requirements: [
 swordium/40
     ]
  }
 ]
 requirements: [
-swordium/135
+swordium/140
 ]
   research: {
     parent: swordium-buildings
     requirements: [
-      swordium/135
+      swordium/140
 ]
 }
 category: units
