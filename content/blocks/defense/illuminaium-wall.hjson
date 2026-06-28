@@ -1,0 +1,26 @@
+name: "[#E2BAF5]Illuminaium []Wall"
+description: '''
+A wall made out of [#E2BAF5]illuminaium, []can be placed on deep liquids, deflects most projectiles, shoots out lightning when attacked.
+'''
+    type: Wall
+    placeableLiquid: true
+    health: 1000
+    size: 1
+    chanceDeflect: 100
+    absorbLasers: true
+    lightningChance: 10
+    lightningDamage: 150
+    lightningLength: 32
+    lightningColor: E2BAF5FF
+	requirements: [
+		swordium/6
+  illuminaium/6
+	]
+	category: defense
+  research: {
+    parent: illuminaium-converter
+    requirements: [
+      swordium/6
+      illuminaium/6
+]
+}
