@@ -5,13 +5,14 @@ description: "Extracts large amounts of oil, requires 20 [#FF5959]swordium []to 
 requirements: [
   swordium/120
 ]
-liquidCapacity: 250
+liquidCapacity: 2500
 size: 3
 result: oil
 attribute: oil
-pumpAmount: 0.5
+pumpAmount: 3
 hasPower: false
-rotateSpeed: 3
+rotateSpeed: 8
+ambientSound: loopDrill
 consumes: {
   items: [
     swordium/20
