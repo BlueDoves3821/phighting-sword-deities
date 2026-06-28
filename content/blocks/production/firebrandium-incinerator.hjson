@@ -1,0 +1,22 @@
+type: Incinerator
+name: "[#861C00]Firebrandium []Incinerator"
+description: '''
+Incinerates any inputted items & liquids, perfect for disposing waste.
+'''
+size: 1
+health: 150
+category: crafting
+consumesPower: false
+liquidCapacity: 50
+	requirements: [
+		swordium/10
+  firebrandium/10
+	]
+	category: crafting
+  research: {
+    parent: firebrandium-converter
+    requirements: [
+      swordium/10
+      firebrandium/10
+]
+}
