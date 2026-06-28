@@ -1,0 +1,25 @@
+type: Radar
+name: "[#ff5959]Swordium []Radar"
+description: '''
+A large radar with a high radius, can be placed on deep liquids.
+'''
+size: 5
+health: 2500
+requirements: [
+ swordium/600
+]
+consumesPower: false
+placeableLiquid: true
+category: effect
+fogRadius: 750
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.1
+glowColor: ff5959ff
+glowScl: 10
+rotateSpeed: 0.35
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/600
+]
+}
