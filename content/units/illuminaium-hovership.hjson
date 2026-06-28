@@ -2,7 +2,9 @@ type: mech
 name: '''
 [#E2BAF5]Illuminaium []Hovership
 '''
-description: Fires the same projectile as the omni turret, albeit faster.
+description: '''
+Fires the same projectile as the [#E2BAF5]illuminaium []turret, albeit faster, can also build.
+'''
 envDisabled: 0
 hidden: false
 hovering: true
@@ -27,13 +29,13 @@ moveSoundPitchMax: 1
 buildRange: 900
 buildSpeed: 10
 engineSize: 0
+defaultController: GroundAI
   research: {
     parent: sfoth-unit-factory
     requirements: [
       illuminaium/20
 ]
 }
-defaultController: GroundAI
   range: 250
   maxRange: 300
 abilities: [
