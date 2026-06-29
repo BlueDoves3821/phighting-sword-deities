@@ -1,0 +1,71 @@
+name: "[#70AC30]Darkheartium []Reactor"
+description: "Combines [#70AC30]darkheartium,[] [#E2BAF5]illuminaium []& water to generate power, creates [#70AC30]darkheartium []liquid as by-product, will explode if not removed."
+type: ConsumeGenerator
+size: 3
+health: 850
+liquidCapacity: 300
+itemCapacity: 40
+hasLiquids: true
+hasPower: true
+hasItems: false
+baseExplosiveness: 10
+explosionRadius: 50
+explosionDamage: 500
+explosionShake: 5
+powerProduction: 35
+consumes: {
+  items: [
+    darkheartium/2
+    illuminaium/2
+  ]
+  liquids: [
+    water/1.5
+  ]
+}
+outputLiquid: darkheartium-liquid/0.5
+drawer: {
+type: DrawMulti
+drawers: [
+			{
+				type: DrawRegion
+				suffix: -bottom
+			}
+			{
+				type: DrawLiquidTile
+				drawLiquid: water
+				padding: 3
+			}
+			{
+				type: DrawLiquidTile
+			 drawLiquid: darkheartium-liquid
+				padding: 3
+			}
+			{
+				type: DrawDefault
+			}
+			{
+				type: DrawGlowRegion
+    alpha: 0.25
+			}
+		]
+	}
+	explodeOnFull: true
+	category: power
+	rotate: false
+	ambientSound: loopCultivator
+	itemDuration: 600
+	    explosionPuddles: 80
+     explosionPuddleRange: 30
+     explosionPuddleLiquid: darkheartium-liquid
+     explosionPuddleAmount: 2000
+	requirements: [
+		swordium/200
+  darkheartium/200
+	]
+  research: {
+    parent: darkheartium-converter
+    requirements: [
+      swordium/200
+      darkheartium/200
+]
+}
