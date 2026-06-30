@@ -1,0 +1,35 @@
+type: ThermalGenerator
+name: "[#A4C360]Venomshankium []Spore Generator (Mini)"
+description: '''
+Generates power when placed on spore-y locations, for the most amount of power, place it on very spore-ful areas, miniaturized to reach tiny spaces.
+'''
+details: "i'm sorry if there ain't enough [#A4C360]venomshankium []content"
+health: 87
+category: power
+powerProduction: 5
+effectChance: 0.011
+generateEffect: {
+type: ParticleEffect
+particles: 1
+lifetime: 60
+sizeFrom: 4
+sizeTo: 0
+length: 20
+colorFrom: A4C36090
+colorTo: A4C36070
+}
+placeableLiquid: true
+size: 1
+ambientSoundVolume: 0.06
+attribute: spores
+	requirements: [
+		swordium/18
+  venomshankium/18
+	]
+  research: {
+    parent: venomshankium-spore-generator
+    requirements: [
+      swordium/18
+      venomshankium/18
+]
+}
