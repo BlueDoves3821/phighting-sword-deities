@@ -65,7 +65,7 @@ abilities:[
     reload: 240
     color: ff5959ff
     range: 90
-    duration: 360
+    duration: 1200
   }
 ]
 weapons: [

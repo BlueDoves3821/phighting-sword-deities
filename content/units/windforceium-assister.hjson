@@ -1,0 +1,104 @@
+type: flying
+name: '''
+[#929EAE]Windforceium []Assister
+'''
+description: '''
+Assists units with it's abilites, it boosts units with the [#ff5959]sword's []might, disarms enemies, heals units & defends units.
+'''
+envDisabled: 0
+hidden: false
+health: 1500
+speed: 5
+rotateSpeed: 5
+hitSize: 6
+flying: true
+defaultController: DefenderAI
+engineSize: 0
+engines: [
+  {
+    x: 0
+    y: -6
+    radius: 2
+    rotation: 270
+    engineColor: 929EAE
+  } 
+] 
+abilities: [
+  {
+    type: MoveEffectAbility
+    color: 929EAEC8
+    effect: missileTrailShort
+    x: 0
+    y: -6
+    interval: 3
+    minVelocity: 0.6
+  }
+  {
+    type: RepairFieldAbility
+    amount: 5000
+    range: 100
+    reload: 600
+  }
+  {
+    type: StatusFieldAbility
+    effect: swords-might
+    reload: 120
+    color: ff5959ff
+    range: 100
+    duration: 1500
+  }
+  {
+  type: EnergyFieldAbility
+  damage: 50
+  reload: 40
+  range: 100
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: windforces-disarmerment
+  statusDuration: 600
+  color: 929EAE
+  maxTargets: 50
+  healPercent: 5
+  }
+]
+weapons: [
+    {
+        rotate: false
+        mirror: false
+        name: wa-disarmer
+        reload: 30
+        recoil: 0
+        shootSound: shootSalvo
+        ejectEffect: casing1
+        shootEffect: shootSmall
+        layerOffset: 0.001
+        x: 0
+        y: 0
+        heatColor: ab34000ff
+        
+    bullet: {
+    type: BasicBulletType
+    damage: 50
+    shieldDamageMultiplier: 50
+    backColor: 929EAE
+    frontColor: 929EAE
+    smokeEffect: heatReactorSmoke
+    speed: 6
+    height: 15
+    width: 10
+    lifetime: 85
+    pierce: true
+    pierceCap: 35
+    knockback: 10
+    status: windforces-disarmerment
+    statusDuration: 6000
+}
+}
+]
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      swordium/65
+      windforceium/65
+]
+}
