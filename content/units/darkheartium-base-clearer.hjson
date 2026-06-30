@@ -4,7 +4,8 @@
 '''
 
   description: '''
-When self-destructed, explode in a large radius, hopefully clearing that enemy base off the sector.
+When self-destructed, explode in a large radius, hopefully clearing that enemy base off the sector,
+long charging time.
 '''
   envDisabled: 0
   hidden: false
@@ -56,9 +57,8 @@ abilities:[
 weapons: [
     {
         shoot: {
-        firstShotDelay: 110
+        firstShotDelay: 400
                }
-        shootOnDeath: true
         rotate: false
         mirror: false
         name: dbc-explosion
@@ -67,11 +67,13 @@ weapons: [
         reload: 1
         ignoreRotation: true
         shootCone: 360
-        shootSound: explosionReactorNeoplasm
-        chargeSound: chargeCorvus
-        shootSoundVolume: 5
-        chargeSoundVolume: 5
-        shake: 500
+        shootSound: dbc-shoot
+        chargeSound: dbc-charge
+        shootSoundVolume: 3
+        chargeSoundVolume: 3
+        soundPitchMin: 1
+        soundPitchMax: 1
+        shake: 200
         bullet: {
         killShooter: true
         type: BasicBulletType
@@ -124,17 +126,17 @@ type: MultiEffect
 {
     type: ParticleEffect
     particles: 1
-    sizeFrom: 1
-    sizeTo: 15
+    sizeFrom: 0
+    sizeTo: 10
     length: 0
-    lifetime: 110
+    lifetime: 400
     colorFrom: A6FF4700
     colorTo: 70AC30FF
     cone: 360
 	}
     {
     type: WaveEffect
-    lifetime: 90
+    lifetime: 380
     sizeFrom: 150
     sizeTo: 0
     strokeFrom: 4
@@ -142,6 +144,31 @@ type: MultiEffect
     colorFrom: A6FF4700
     colorTo: 70AC30FF
 }
+
+      {
+    type: ParticleEffect
+    baseLength: -60
+    length: 60
+    lifetime: 390
+    particles: 15
+    colorFrom: A6FF4700
+    colorTo: 70AC30FF
+    sizeFrom: 0
+    sizeTo: 3
+      }
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 15
+    length: 0
+    spin: -10
+    layer: 109
+    lifetime: 400
+    region: large-bomb-back
+    colorFrom: A6FF4700
+    colorTo: 70AC30FF
+    }
 ]
 }
         }
