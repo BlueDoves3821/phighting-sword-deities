@@ -6,7 +6,7 @@ Re-enacts the scorch, in which [#861C00]firebrandium []burned down a lost temple
 '''
 size: 2
 health: 800
-range: 660
+range: 500
 maxAmmo: 500
 velocityRnd: 0.1
 reload: 10
@@ -28,12 +28,12 @@ shoot: {
  ammoTypes: {
     firebrandium: {
     type: fireBulletType
-    lifetime: 96
+    lifetime: 180
     speed: 7
     damage: 50
     radius: 4
-    velMin: 4
-    velMax: 10
+    velMin: 5
+    velMax: 20
     absorbable: false
     pierce: true
     pierceCap: 10
