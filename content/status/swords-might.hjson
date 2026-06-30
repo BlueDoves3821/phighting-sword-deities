@@ -1,0 +1,17 @@
+name: "[#FF5959]Sword's []Might"
+description: '''
+[#FF5959]Sword []has empowered you with 2x reload speed & damage.
+'''
+reloadMultiplier: 2
+damageMultiplier: 2
+effect: {
+    type: ParticleEffect
+    particles: 2
+    colorFrom: ff595940
+    colorTo: ff595900
+    sizeFrom: 2
+    sizeTo: 1
+    strokeFrom: 4
+    strokeTo: 0
+    lifetime: 180
+}
