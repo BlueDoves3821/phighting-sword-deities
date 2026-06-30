@@ -54,6 +54,14 @@ swordium/20
 swordium/40
     ]
  }
+{
+    unit: windforceium-assister
+    time: 900
+    requirements: [
+windforceium/65
+swordium/65
+    ]
+ }
 ]
 requirements: [
 swordium/140
