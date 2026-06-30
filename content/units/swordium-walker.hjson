@@ -4,7 +4,7 @@
 '''
 
   description: '''
-Not as "advanced" as the core unit version.
+Assists units, passively boosts units with the [#ff5959]sword's []might, not as "advanced" as the core unit version.
 '''
   envDisabled: 0
   hidden: false
@@ -34,7 +34,7 @@ Not as "advanced" as the core unit version.
   itemCapacity: 700
   buildRange: 1000
   buildSpeed: 15
-  defaultController: GroundAI
+  defaultController: DefenderAI
   range: 450
   maxRange: 450
 abilities:[
@@ -59,6 +59,14 @@ abilities:[
   whenShooting: false
  }
 
+ {
+    type: StatusFieldAbility
+    effect: swords-might
+    reload: 240
+    color: ff5959ff
+    range: 90
+    duration: 360
+  }
 ]
 weapons: [
     {

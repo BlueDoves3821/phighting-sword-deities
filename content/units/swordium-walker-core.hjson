@@ -4,7 +4,7 @@
 '''
 
   description: '''
-The core unit for the [#ff5959]swordium []core.
+The core unit for the [#ff5959]swordium []core, passively boost units with the [#ff5959]sword's []might.
 '''
   envDisabled: 0
   hidden: false
@@ -64,6 +64,14 @@ abilities:[
   whenShooting: false
  }
 
+ {
+    type: StatusFieldAbility
+    effect: swords-might
+    reload: 180
+    color: ff5959ff
+    range: 90
+    duration: 600
+  }
 ]
 weapons: [
     {
