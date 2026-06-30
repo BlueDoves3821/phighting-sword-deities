@@ -1,8 +1,8 @@
 name: "[#70AC30]Darkheart's []Curse"
 description: '''
-[#70AC30]Darkheart []has cursed you to not being able to move, shoot, have half of your max health & slowly lose your health overtime.
+[#70AC30]Darkheart []has cursed you to move very slow, you're also unable to shoot, have half of your max health & slowly lose your health overtime.
 '''
-speedMultiplier: 0
+speedMultiplier: 0.15
 disarm: true
 healthMultiplier: 0.5
 damage: 3.4
