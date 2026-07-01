@@ -117,7 +117,16 @@ weapons: [
             colorFrom: 70AC30FF
             colorTo: A6FF4700
         }
-
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 8000
+            sizeTo: 8000
+            colorFrom: A6FF47FF
+            colorTo: 70AC3000
+            lifetime: 180
+            particles: 1
+        }
                 ]
             }
 chargeEffect: {
