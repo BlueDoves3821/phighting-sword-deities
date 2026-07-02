@@ -25,10 +25,17 @@ outputItems: [
   research: {
     parent: swordium-buildings
     requirements: [
-      swordium/220
+  swordium/250
+  darkheartium/100
+  firebrandium/100
+  ghostwalkerium/100
+  icedaggerium/100
+  illuminaium/100
+  venomshankium/100
+  windforceium/100
 ]
 }
 category: crafting
 	requirements: [
-	 swordium/220
+	 swordium/250
 	]
