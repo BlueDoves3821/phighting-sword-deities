@@ -38,7 +38,6 @@ darkheartium/80
 swordium/80
     ]
  }
-
   {
     unit: illuminaium-hovership
     time: 900
@@ -60,6 +59,14 @@ swordium/40
     requirements: [
 windforceium/65
 swordium/65
+    ]
+ }
+{
+    unit: illuminaium-empowerer
+    time: 900
+    requirements: [
+illuminaium/50
+swordium/50
     ]
  }
 ]
