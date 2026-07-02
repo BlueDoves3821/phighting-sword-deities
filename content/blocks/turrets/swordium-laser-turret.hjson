@@ -27,25 +27,36 @@ recoil: 2
 shake: 2
 size: 3
 shoot: {
-type: ShootAlternate
+type: shootAlternate
 spread: 9
-barrels: 2
-shots: 2
-}
+    }
+recoils: 2
 drawer: {
 type: DrawTurret
 parts: [
 {
-suffix: "-barrel1"
-progress: recoil
-under: true
-moveY: -1
-}
-{
+type: RegionPart
 suffix: "-barrel2"
 progress: recoil
+heatProgress: recoil
+heatColor: ffffff
+mirror: false
 under: true
-moveY: -1
+recoilIndex: 1
+moveY: -2
+moveRot: -0
+}
+{
+type: RegionPart
+suffix: "-barrel1"
+progress: recoil
+heatProgress: recoil
+heatColor: ffffff
+mirror: false
+under: true
+recoilIndex: 0
+moveY: -2
+moveRot: 0
 }
 ]
 }
@@ -170,7 +181,7 @@ windforceium: {
     ]
   }
 }
-ammoPerShot: 5
+ammoPerShot: 2
 research: {
     parent: the-swords
     requirements: [

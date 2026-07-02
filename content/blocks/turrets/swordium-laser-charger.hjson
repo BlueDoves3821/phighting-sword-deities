@@ -62,8 +62,8 @@ swordium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: ff5959
-        colorTo: ffffff
+        colorFrom: ff595900
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -71,8 +71,8 @@ swordium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: ff5959
-        colorTo: ffffff
+        colorFrom: ff595900ff
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }
@@ -98,8 +98,8 @@ darkheartium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: 70AC30
-        colorTo: ffffff
+        colorFrom: 70AC3000
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -107,8 +107,8 @@ darkheartium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: 70AC30
-        colorTo: ffffff
+        colorFrom: 70AC3000
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }
@@ -134,8 +134,8 @@ firebrandium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: 861C00
-        colorTo: ffffff
+        colorFrom: 861C0000
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -143,8 +143,8 @@ firebrandium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: 861C00
-        colorTo: ffffff
+        colorFrom: 861C0000
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }
@@ -169,8 +169,8 @@ ghostwalkerium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: C2C2C2
-        colorTo: ffffff
+        colorFrom: C2C2C200
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -178,8 +178,8 @@ ghostwalkerium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: C2C2C2
-        colorTo: ffffff
+        colorFrom: C2C2C200
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }
@@ -205,8 +205,8 @@ icedaggerium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: 97CCE1
-        colorTo: ffffff
+        colorFrom: 97CCE100
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -214,8 +214,8 @@ icedaggerium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: 97CCE1
-        colorTo: ffffff
+        colorFrom: 97CCE100
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }
@@ -242,8 +242,8 @@ illuminaium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: E2BAF5
-        colorTo: ffffff
+        colorFrom: E2BAF500
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -251,8 +251,8 @@ illuminaium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: E2BAF5
-        colorTo: ffffff
+        colorFrom: E2BAF500
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }
@@ -278,8 +278,8 @@ venomshankium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: A4C360
-        colorTo: ffffff
+        colorFrom: A4C36000
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -287,8 +287,8 @@ venomshankium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: A4C360
-        colorTo: ffffff
+        colorFrom: A4C36000
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }
@@ -315,8 +315,8 @@ windforceium: {
         length: 45
         lifetime: 32
         particles: 15
-        colorFrom: 929EAE
-        colorTo: ffffff
+        colorFrom: 929EAE00
+        colorTo: ffffffff
         sizeFrom: 0
         sizeTo: 5
       }
@@ -324,8 +324,8 @@ windforceium: {
         length: 0
         lifetime: 32
         particles: 1
-        colorFrom: 929EAE
-        colorTo: ffffff
+        colorFrom: 929EAE00
+        colorTo: ffffffff
         sizeTo: 2
         sizeTo: 7
       }

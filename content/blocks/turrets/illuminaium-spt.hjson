@@ -1,0 +1,155 @@
+type: ContinuousTurret
+name: "[#E2BAF5]Illuminaium []S.P.T"
+description: "S.P.T stands for single point turret, deals extreme damage to a single unit, pierces armor & destroys shields instantly.",
+targetAir: true
+targetGround: true
+health: 1300
+size: 4
+shootCone: 360
+rotateSpeed: 3
+aimChangeSpeed: 3
+range: 1000
+loopSound: beamLustre
+shootSound: ispt-shoot
+chargeSound: ispt-charge
+loopSoundVolume: 2
+shootSoundVolme: 2
+chargeSoundVolume: 2
+shootWarmupSpeed: 2
+itemCapacity: 20
+heatColor: f9350f
+moveWhileCharging: false
+shake: 15
+consumes: {
+  items: [
+    illuminaium/20
+  ]
+}
+shoot: {
+firstShotDelay: 45
+}
+shootType: {
+type: PointLaserBulletType
+damage: 5000
+damageInverval: 0.5
+hitColor: E8C7F7ff
+shieldDamageMultiplier: 500
+pierceArmor: true
+shake: 10
+chargeEffect: {
+type: MultiEffect
+lifetime: 45
+effects: [
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 2
+    sizeTo: 38
+    length: 0
+    spin: 11
+    lifetime: 45
+    layer: 109
+    region: large-bomb
+    colorFrom: E2BAF5ff
+    colorTo: E2BAF5ff
+    cone: 360
+    }
+    {
+    type: ParticleEffect
+    lightOpacity: 0
+    length: 0
+    sizeFrom: 2
+    sizeTo: 30
+    region: large-bomb
+    particles: 1
+    lifetime: 45
+    colorFrom: E8C7F7ff
+    colorTo: E8C7F7ff
+    spin: 6.5
+    }
+    {
+    type: ParticleEffect
+    lightOpacity: 0
+    length: 0
+    sizeFrom: 2
+    sizeTo: 40
+    region: large-bomb
+    particles: 1
+    lifetime: 45
+    colorFrom: E2BAF5
+    colorTo: E2BAF5
+    spin: -6.5
+    }
+    {
+    type: WaveEffect
+    lifetime: 45
+    sizeFrom: 90
+    sizeTo: 0
+    interp: circleOut
+    strokeFrom: 0
+    strokeTo: 8
+    lightColor: E2BAF5ff
+    colorFrom: E2BAF500
+    colorTo: E8C7F7ff
+    }
+    {
+    type: WaveEffect
+    lifetime: 45
+    sizeFrom: 70
+    sizeTo: 0
+    interp: circleOut
+    strokeFrom: 0
+    strokeTo: 8
+    lightColor: E2BAF5ff
+    colorFrom: E2BAF500
+    colorTo: E8C7F7ff
+    }
+    ]
+	}
+shootEffect:{
+    type: MultiEffect
+    effects:[shootSmokeSquareSparse, {
+    type: WaveEffect
+    colorFrom: E8C7F7
+    colorTo: E8C7F7
+    sizeTo: 4
+    strokeFrom: 4
+    lifetime: 24
+    }
+    {
+     type: WaveEffect
+     sizeFrom: 0
+     sizeTo: 600
+     strokeFrom: 6
+     strokeTo: 64
+     interp: exp5Out
+     lifetime: 240
+     colorFrom: E8C7F7FF
+     colorTo: E2BAF500
+     }
+     {
+     type: ParticleEffect
+     length: 0
+     sizeFrom: 100
+     sizeTo: 100
+     colorFrom: E8C7F7FF
+     colorTo: E2BAF500
+     lifetime: 60
+     particles: 1
+        }
+
+    ]
+}
+}
+	requirements: [
+		swordium/350
+  illuminaium/350
+	]
+	category: turret
+  research: {
+    parent: illuminaium-omni-turret
+    requirements: [
+      swordium/350
+      illuminaium/350
+]
+}
