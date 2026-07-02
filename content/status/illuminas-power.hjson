@@ -1,0 +1,21 @@
+name: "[#E2BAF5]Illumina's []Power"
+description: '''
+[#E2BAF5]Illumina []has permanately empowered you with 5x reload speed, 1.5x max health, deal 13x the amount of damage, but move 0.85x slower & slowly get damaged overtime.
+'''
+reloadMultiplier: 5
+healthMultiplier: 1.5
+damageMultiplier: 13
+speedMultiplier: 0.85
+damage: 0.25
+permanent: true
+effect: {
+    type: ParticleEffect
+    particles: 2
+    colorFrom: E2BAF540
+    colorTo: E2BAF500
+    sizeFrom: 2
+    sizeTo: 1
+    strokeFrom: 4
+    strokeTo: 0
+    lifetime: 180
+}
