@@ -4,7 +4,7 @@
 '''
 
   description: '''
-Assists units, passively boosts units with the [#ff5959]sword's []might, not as "advanced" as the core unit version.
+Assists units, passively boosts units with the [#ff5959]sword's []might, but cannot boost itself, not as "advanced" as the core unit version.
 '''
   envDisabled: 0
   hidden: false
@@ -37,6 +37,9 @@ Assists units, passively boosts units with the [#ff5959]sword's []might, not as 
   defaultController: DefenderAI
   range: 450
   maxRange: 450
+  immunities: [
+  swords-might
+]
 abilities:[
 
  {

@@ -109,6 +109,7 @@ abilities:[
   research: {
     parent: sfoth-unit-factory
     requirements: [
+      swordium/25
       darkheartium/25
 ]
 }

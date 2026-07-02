@@ -127,6 +127,7 @@ weapons: [
             lifetime: 180
             particles: 1
         }
+
                 ]
             }
 chargeEffect: {
@@ -186,6 +187,7 @@ type: MultiEffect
   research: {
     parent: darkheartium-walker
     requirements: [
+      swordium/80
       darkheartium/80
 ]
 }

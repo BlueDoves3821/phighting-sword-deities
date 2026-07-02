@@ -1,0 +1,43 @@
+type: flying
+name: '''
+[#E2BAF5]Illuminaium []Empowerer
+'''
+description: '''
+Permanantly empowers units with [#E2BAF5]illumina's []power every 5 seconds, cannot defend itself.
+'''
+envDisabled: 0
+hidden: false
+health: 200
+speed: 7
+rotateSpeed: 5
+hitSize: 6
+flying: true
+defaultController: DefenderAI
+immunities: [
+illuminas-power
+]
+engineSize: 0
+engines: [
+  {
+    x: 0
+    y: -6
+    radius: 2
+    rotation: 270
+  } 
+] 
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: illuminas-power
+    reload: 300
+    color: E2BAF5ff
+    range: 50
+  }
+]
+  research: {
+    parent: illuminaium-hovership
+    requirements: [
+      swordium/65
+      windforceium/65
+]
+}

@@ -4,7 +4,7 @@
 '''
 
   description: '''
-The core unit for the [#ff5959]swordium []core, passively boost units with the [#ff5959]sword's []might.
+The core unit for the [#ff5959]swordium []core, passively boosts itself & other units with the [#ff5959]sword's []might.
 '''
   envDisabled: 0
   hidden: false

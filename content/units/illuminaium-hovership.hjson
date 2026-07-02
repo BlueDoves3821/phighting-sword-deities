@@ -33,6 +33,7 @@ defaultController: GroundAI
   research: {
     parent: sfoth-unit-factory
     requirements: [
+      swordium/20
       illuminaium/20
 ]
 }
