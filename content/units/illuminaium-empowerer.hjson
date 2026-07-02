@@ -38,6 +38,6 @@ abilities: [
     parent: illuminaium-hovership
     requirements: [
       swordium/65
-      windforceium/65
+      illuminaium/65
 ]
 }
