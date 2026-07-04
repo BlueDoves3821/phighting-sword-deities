@@ -1,0 +1,52 @@
+type: mech
+name: "[#ff6a00]Biograftium []Unit"
+description: '''
+An enemy seen on the "Survive The [#ff6100]Biograftium []Units" map, can also be built.
+'''
+envDisabled: 0
+hideDatabase: true
+hidden: true
+drag: 0.15
+speed: 1
+buildSpeed: 10
+mineSpeed: 2
+mineTier: 1
+armor: 5
+faceEnemy: true
+circleEnemy: true
+canBoost: false
+drawCell: false
+hitSize: 5
+defaultController: groundAI
+useUnitCap: false
+health: 100
+flying: false
+itemCapacity: 5
+weapons:[
+    {
+    name: biograftium-unit-weapon
+    shootY: 0
+    targetAir: true
+    targetGround: true
+    rotate: false
+    reload: 10
+    shootCone: 4
+    shootSound: shootHorizon
+    recoil: -1
+    mirror: true
+    top: false
+    bullet: {
+    type: BasicBulletType
+    speed: 10
+    damage: 25
+    lifetime: 4
+    width: 0
+    height: 0
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+     }
+    }
+  ]
+alwaysUnlocked: true
