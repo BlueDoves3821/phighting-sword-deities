@@ -3,9 +3,10 @@
 [#70AC30]Darkheartium []Base Clearer
 '''
 
-  description: '''
+description: '''
 When self-destructed, explode in a large radius, hopefully clearing that enemy base off the sector,
-long charging time.
+long charging time,
+also applies [#70AC30]darkheart's []curse to units caught in the blast.
 '''
   envDisabled: 0
   hidden: false
@@ -50,7 +51,7 @@ abilities:[
   type: LiquidExplodeAbility
   liquid: darkheartium-liquid
   amount: 500
-  radScale: 5
+  radScale: 10
   radAmountScale: 1
  }
 ]
@@ -85,26 +86,28 @@ weapons: [
         damage: 0
         instantDisappear: true
         collides: false
+        status: darkhearts-curse
+        statusDuration: 2100
         despawnEffect: {
             type: MultiEffect
-                lifetime: 1920
+                lifetime: 3000
                 effects: [
-        {
+                {
             type: ExplosionEffect
-            smokeColor: 959595
+            smokeColor: 5B5B5B80
             smokeRad: 90
             smokes: 48
-            smokeSize: 5
-            smokeSizeBase: 3
-            sparkColor: 70AC30
+            smokeSize: 9
+            smokeSizeBase: 0
+            sparkColor: 70AC3080
             sparkLen: 12
-            sparkRad: 64
-            sparks: 64
+            sparkRad: 90
+            sparks: 80
             sparkStroke: 4
             waveColor: 70AC30
             waveLife: 240
             waveRad: 110
-            lifetime: 360
+            lifetime: 600
         }
         {
             type: WaveEffect
@@ -114,8 +117,8 @@ weapons: [
             strokeTo: 64
             interp: exp5Out
             lifetime: 240
-            colorFrom: 70AC30FF
-            colorTo: A6FF4700
+            colorFrom: A6FF47FF
+            colorTo: 70AC3000
         }
         {
             type: ParticleEffect
@@ -179,6 +182,18 @@ type: MultiEffect
     colorFrom: A6FF4700
     colorTo: 70AC30FF
     }
+    {
+    type: WaveEffect
+    lifetime: 400
+    sizeFrom: 0
+    sizeTo: 2000
+    strokeFrom: 5
+    strokeTo: 10
+    interp: sineOut
+    spin: 5
+    colorFrom: A6FF4730
+    colorTo: 70AC3080
+}
 ]
 }
         }
