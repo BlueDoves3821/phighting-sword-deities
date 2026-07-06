@@ -1,7 +1,7 @@
 Name: "[#FF6A00]Biograftium []Unit Factory"
 description: '''
 Can only build [#ff6a00]biograftium []units, sandbox only.
-[grey]note: due to the inability for the factory to be turned off because the unit's hidden, please remove [#ff5959]swordium [grey]from the factory to producing units.
+[grey]note: due to the inability for the factory to be turned off because the unit's hidden, please remove [#ff5959]swordium [grey]from the factory to stop producing units.
 '''
 type: UnitFactory
 size: 3
