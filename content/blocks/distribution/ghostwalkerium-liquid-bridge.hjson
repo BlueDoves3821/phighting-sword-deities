@@ -1,0 +1,21 @@
+  type: LiquidBridge
+  name: "[#c2c2c2]Ghostwalkerium []Liquid Bridge",
+  description: "High ranged liquid bridge, Can be used to skip over large amounts of terrains & buildings, cannot be auto-targeted",
+  hasPower: false
+  transportTime: 0.1
+  liquidCapacity: 10
+  placeableLiquid: true
+  health: 100
+  range: 80
+	requirements: [
+		swordium/25
+  ghostwalkerium/25
+	]
+	category: liquid
+  research: {
+    parent: ghostwalkerium-bridge
+    requirements: [
+      swordium/25
+      ghostwalkerium/25
+]
+}

@@ -1,0 +1,18 @@
+ type: LiquidJunction
+ name: "[#ff5959]Swordium []Liquid Junction",
+ "description": "Made with [#ff5959]swordium, []more durable and faster than the standard liquid junction.",
+ health: 85
+ speed: 1
+ capacity: 5
+ size: 1
+ placeableLiquid: true
+	requirements: [
+		swordium/5
+	]
+	category:  liquid
+  research: {
+    parent: swordium-conduit
+    requirements: [
+      swordium/5
+]
+}

@@ -1,0 +1,17 @@
+ type: Junction
+ name: "[#ff5959]Swordium []Junction",
+ "description": "Made with [#ff5959]swordium, []more durable and faster than the standard junction.",
+ health: 85
+ speed: 1
+ capacity: 5
+ size: 1
+	requirements: [
+		swordium/5
+	]
+	category: distribution
+  research: {
+    parent: swordium-duct
+    requirements: [
+      swordium/5
+]
+}

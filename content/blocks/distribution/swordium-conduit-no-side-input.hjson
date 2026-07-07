@@ -8,6 +8,7 @@
   placeableLiquid: true
   liquidPressure: 1.9
   bridgeReplacement: swordium-liquid-bridge
+  junctionReplacement: swordium-liquid-junction
 requirements: [
 		swordium/1
 	]

@@ -1,0 +1,20 @@
+  type: ItemBridge
+  name: "[#c2c2c2]Ghostwalkerium []Bridge",
+  description: "High ranged bridge conveyor, Can be used to skip over large amounts of terrains & buildings, cannot be auto-targeted",
+  hasPower: false
+  transportTime: 0.1
+  itemCapacity: 5
+  health: 100
+  range: 80
+	requirements: [
+		swordium/25
+  ghostwalkerium/25
+	]
+	category: distribution
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/25
+      ghostwalkerium/25
+]
+}
