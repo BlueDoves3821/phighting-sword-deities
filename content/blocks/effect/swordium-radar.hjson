@@ -4,9 +4,9 @@ description: '''
 A large radar with a high radius, can be placed on deep liquids.
 '''
 size: 5
-health: 2500
+health: 2000
 requirements: [
- swordium/600
+ swordium/500
 ]
 consumesPower: false
 placeableLiquid: true
@@ -20,6 +20,6 @@ rotateSpeed: 0.35
   research: {
     parent: swordium-buildings
     requirements: [
-      swordium/600
+      swordium/500
 ]
 }
