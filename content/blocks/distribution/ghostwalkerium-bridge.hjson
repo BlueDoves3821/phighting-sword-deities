@@ -1,6 +1,6 @@
   type: ItemBridge
   name: "[#c2c2c2]Ghostwalkerium []Bridge",
-  description: "High ranged bridge conveyor, Can be used to skip over large amounts of terrains & buildings, cannot be auto-targeted",
+  description: "High ranged bridge, can be used to skip over large amounts of terrains & buildings, cannot be auto-targeted.",
   hasPower: false
   transportTime: 0.1
   itemCapacity: 5

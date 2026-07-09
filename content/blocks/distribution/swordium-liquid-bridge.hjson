@@ -1,6 +1,6 @@
   type: LiquidBridge
   name: "[#ff5959]Swordium []Liquid Bridge",
-  description: "High ranged liquid bridge, Can be used to skip over large amounts of terrains & buildings.",
+  description: "High ranged liquid bridge, can be used to skip over large amounts of terrains & buildings.",
   hasPower: false
   transportTime: 0.1
   liquidCapacity: 150
