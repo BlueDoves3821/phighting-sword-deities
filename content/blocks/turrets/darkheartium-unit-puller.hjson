@@ -1,0 +1,37 @@
+type: TractorBeamTurret
+name: '''
+[#70AC30]Darkheartium []Unit Puller
+'''
+description: '''
+Aggressively pulls in units towards itself, requires 5 [#70AC30]darkheartium []to operate, applies [#70AC30]darkheart's []curse to units.
+'''
+  size: 2
+  force: 800
+  targetAir: true
+  targetGround: true
+  scaledForce: 800
+  health: 650
+  range: 200
+  damage: 5
+  rotateSpeed: 15
+  consumes: {
+  items: [
+    darkheartium/5
+  ]
+}
+itemCapacity: 5
+retargetTime: 0.5
+  status: darkhearts-curse
+  statusDuration: 60
+  requirements: [
+      swordium/100
+      darkheartium/100
+  ]
+  category: turret
+  research: {
+    parent: darkheartium-turret
+    requirements: [
+      swordium/100
+      darkheartium/100
+]
+}

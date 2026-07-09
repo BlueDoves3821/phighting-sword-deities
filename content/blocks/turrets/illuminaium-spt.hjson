@@ -20,6 +20,8 @@ itemCapacity: 20
 heatColor: f9350f
 moveWhileCharging: false
 shake: 15
+recoil: 0
+timerTarget: 0
 consumes: {
   items: [
     illuminaium/20
@@ -35,7 +37,6 @@ damageInverval: 0.5
 hitColor: E8C7F7ff
 shieldDamageMultiplier: 500
 pierceArmor: true
-shake: 10
 chargeEffect: {
 type: MultiEffect
 lifetime: 45
