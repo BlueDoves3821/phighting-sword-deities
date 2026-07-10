@@ -1,0 +1,19 @@
+type: CanvasBlock
+name: "[#ff5959]Swordium []Canvas (256x256)"
+description: '''
+a drawable canvas, 256x256 pixel resolution.
+'''
+size: 3
+health: 500
+padding: 3
+canvasSize: 256
+category: logic
+	requirements: [
+		swordium/60
+	]
+  research: {
+    parent: swordium-canvas-128
+    requirements: [
+      swordium/60
+]
+}
