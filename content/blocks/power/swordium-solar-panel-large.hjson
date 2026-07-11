@@ -1,0 +1,19 @@
+name: "Large [#FF5959]Swordium []Solar Panel"
+description: '''
+A larger solar panel, used to start the [#FF5959]swordium []maker, or give your base a good amount of power.
+'''
+	type: SolarGenerator
+	health: 675
+	size: 3
+	hasPower: true
+	powerProduction: 5
+	requirements: [
+ swordium/20
+	]
+	category: power
+  research: {
+    parent: swordium-solar-panel
+    requirements: [
+      swordium/20
+]
+}
