@@ -1,0 +1,22 @@
+name: '''
+[#ff5959]Swordium []Container
+'''
+description: '''
+A [#ff5959]swordium []storage containter,
+larger storage space.
+'''
+type: StorageBlock
+itemCapacity: 2000
+size: 2
+category: effect
+health: 900
+armor: 5
+	requirements: [
+		swordium/45
+	]
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/45
+]
+}

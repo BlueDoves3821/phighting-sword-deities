@@ -1,0 +1,24 @@
+name: '''
+[#E2BAF5]Illuminaium []Container
+'''
+description: '''
+An [#E2BAF5]illuminaium []storage containter,
+most expensive of the containers, but can carry alot more.
+'''
+type: StorageBlock
+itemCapacity: 5200
+size: 2
+category: effect
+health: 1100
+armor: 10
+	requirements: [
+		swordium/100
+  illuminaium/100
+	]
+  research: {
+    parent: illuminaium-converter
+    requirements: [
+      swordium/100
+      illuminaium/100
+]
+}

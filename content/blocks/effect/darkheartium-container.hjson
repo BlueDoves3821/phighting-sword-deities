@@ -1,0 +1,25 @@
+name: '''
+[#70AC30]Darkheartium []Container
+'''
+description: '''
+A [#70AC30]darkheartium []storage containter,
+more storage space than the [#ff5959]swordium []container, but is highly explosive.
+'''
+type: StorageBlock
+itemCapacity: 3500
+size: 2
+category: effect
+health: 750
+armor: 5
+baseExplosiveness: 1000
+	requirements: [
+		swordium/80
+  darkheartium/80
+	]
+  research: {
+    parent: darkheartium-converter
+    requirements: [
+      swordium/80
+      darkheartium/80
+]
+}
