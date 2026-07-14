@@ -69,6 +69,13 @@ illuminaium/50
 swordium/50
     ]
  }
+{
+    unit: swordium-mml
+    time: 360
+    requirements: [
+swordium/15
+    ]
+ }
 ]
 requirements: [
 swordium/140
