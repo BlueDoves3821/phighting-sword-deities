@@ -37,8 +37,7 @@ defaultController: GroundAI
       illuminaium/20
 ]
 }
-  range: 250
-  maxRange: 300
+  range: 500
 abilities: [
   {
     type: MoveEffectAbility
