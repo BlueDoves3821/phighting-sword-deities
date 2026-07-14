@@ -23,7 +23,7 @@ abilities:[
   angle: 360
   color: FF5959
   whenShooting: false
-  chanceDeflect: 1
+  chanceDeflect: 0.85
   pushUnots: false
  }
 ]
@@ -46,8 +46,8 @@ weapons: [
     }
 ]
 research: {
-    parent: sword-deities-mod-sfoth-unit-factory
+    parent: sfoth-unit-factory
     requirements: [
-      sword-deities-mod-swordium/15
+      swordium/15
 ]
 }
