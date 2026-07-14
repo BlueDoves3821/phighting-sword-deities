@@ -68,6 +68,7 @@ abilities:[
   angle: 360
   color: A6FF47
   whenShooting: false
+  chanceDeflect: 3
  }
 
  {
@@ -81,6 +82,7 @@ abilities:[
   angle: 360
   color: A6FF47
   whenShooting: false
+  chanceDeflect: 5
  }
 
  {
