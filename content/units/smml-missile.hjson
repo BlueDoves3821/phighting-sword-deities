@@ -1,0 +1,42 @@
+type: missile
+name: "[#ff5959]Swordium []M.M.L Missile"
+template: MissileUnitType
+flying: true
+speed: 9.5
+physics: false
+lifetime: 240
+lowAltitude: true
+homingDelay: 0
+hitSize: 3
+outlineRadius: 1
+rotateSpeed: 10
+useUnitCap: false
+health: 85
+autoFindTarget: true
+circleTarget: false
+faceTarget: true
+targetAir: true
+targetUnderBlocks: false
+drawCell: false
+missileAccelTime: 1
+hidden: true
+engineColor: ff5959
+engineSize: 1
+engineOffset: 2
+fogRadius: 6
+weapons: [
+  {
+    reload: 1
+    shootOnDeath: true
+    mirror: true
+    shootCone: 360
+    shake: 10
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 150
+      splashDamageRadius: 8
+      ammoMultiplier: 1
+      status: slow
+    }
+  }
+]

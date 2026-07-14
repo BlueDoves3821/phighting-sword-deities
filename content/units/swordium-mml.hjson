@@ -1,0 +1,53 @@
+type: flying
+name: "[#ff5959]Swordium []M.M.L"
+description: '''
+M.M.L stands for mosquito missile launcher, fires a volley of missiles, very fast, but has low health.
+'''
+speed: 8
+flying: true
+health: 250
+armor: 3
+hitSize: 10
+range: 1200
+rotateSpeed: 10
+defaultController: FlyingFollowAI
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 10
+  max: 500
+  regen: 20
+  cooldown: 60
+  width: 2
+  angle: 360
+  color: FF5959
+  whenShooting: false
+  chanceDeflect: 1
+  pushUnots: false
+ }
+]
+weapons: [
+    {
+      top: true
+      x:0
+      y:0
+      name: swordium-mml
+      recoil: 0
+      reload: 2
+      mirror: false
+      shootSound: shootMissile
+      heatColor: AB3400FF
+      bullet: {
+        type: BulletType
+        spawnUnit: smml-missile
+        instantDisappear: true
+    }
+    }
+]
+research: {
+    parent: sword-deities-mod-sfoth-unit-factory
+    requirements: [
+      sword-deities-mod-swordium/15
+]
+}
