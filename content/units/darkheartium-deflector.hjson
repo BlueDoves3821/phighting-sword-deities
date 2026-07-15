@@ -1,0 +1,59 @@
+type: payload
+name: '''
+[#70AC30]Darkheartium []Deflector
+'''
+description: '''
+uses it's near-indestructable shield to deflect most projectiles, cannot deflect laser beams, can also pickup units & buildings.
+'''
+envDisabled: 0
+hidden: false
+health: 650
+speed: 7
+rotateSpeed: 5
+hitSize: 20
+flying: true
+buildSpeed: 10
+defaultController: DefenderAI
+engineSize: 0
+payloadCapacity: 8500
+engines: [
+  {
+    x: 0
+    y: -10
+    radius: 3
+    rotation: 270
+  } 
+] 
+abilities: [
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 110
+  max: 1e+04
+  regen: 800
+  cooldown: 1
+  width: 10
+  angle: 365
+  color: A6FF47
+  whenShooting: false
+  chanceDeflect: 5
+ }
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 45
+	radius: 105
+	regen: 800
+	max: 1e+04
+	cooldown: 1
+ 
+ }
+]
+research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      swordium/130
+      darkheartium/130
+]
+}
