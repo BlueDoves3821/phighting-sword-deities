@@ -24,6 +24,7 @@ engineColor: ff5959
 engineSize: 1
 engineOffset: 2
 fogRadius: 6
+deathSound: explosionMissile
 weapons: [
   {
     reload: 1
