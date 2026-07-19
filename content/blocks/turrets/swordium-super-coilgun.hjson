@@ -1,0 +1,94 @@
+type: PowerTurret
+name: "[#ff5959]Swordium []Super Coilgun"
+description: '''
+Accelerates a projectile to extreme speeds, the sheer velocity will decitmate everything in it's way, has 4x building damage & 9x shield damage.
+'''
+  size: 4
+  health: 1720
+  range: 15000
+  reload: 65
+  recoil: 4
+  rotateSpeed: 3
+  shake: 8
+  shootSound: ssc-shoot
+  chargeSound: ssc-charge
+  soundPitchMin: 1
+  soundPitchMax: 1
+  requirements: [
+swordium/450
+]
+  shoot: {
+    firstShotDelay: 60
+  }
+  consumes: {
+    power: 5.5
+  }
+  basPower: true
+  shootType: {
+    type: BasicBulletType
+    sprite: shell-back
+    hitSound: explosionCore
+    hitSoundVolume: 1.25
+    frontColor: ff5959
+    backColor: ff5959
+    chargeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          particles: 1
+          sizeFrom: 0
+          sizeTo: 10
+          length: 0
+          lifetime: 60
+          region: circle-shadow
+          colorFrom: FF595900
+          colorTo: FF5959FF
+          cone: 360
+        }
+        {
+          type: WaveEffect
+          lifetime: 60
+          sizeFrom: 40
+          sizeTo: 0
+          strokeFrom: 0
+          strokeTo: 6
+          colorFrom: FF595900
+          colorTo: FF5959FF
+        }
+      ]
+    }
+    status: unmoving
+    statusDuration: 300
+    damage: 5000
+    knockback: 60
+    splashDamage: 1500
+    splashDamageRadius: 85
+    buildingDamageMultiplier: 5
+    shieldDamageMultiplier: 10
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 50
+    hitShake: 9
+    height: 30
+    width: 30
+    speed: 75
+    lifetime: 100
+    shootEffect: {
+      type: WaveEffect
+      lifetime: 20
+      sizeFrom: 0
+      sizeTo: 50
+      strokeFrom: 0
+      strokeTo: 7
+      colorFrom: ff5959FF
+      colorTo: ff595900
+    }
+  }
+category: turret
+research: {
+    parent: swordium-laser-charger
+    requirements: [
+swordium/450
+]
+}
