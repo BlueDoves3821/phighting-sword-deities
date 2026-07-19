@@ -1,7 +1,7 @@
-type: PowerTurret
+type: ItemTurret
 name: "[#ff5959]Swordium []Super Coilgun"
 description: '''
-Accelerates a projectile to extreme speeds, the sheer velocity will decitmate everything in it's way, has 4x building damage & 9x shield damage.
+Accelerates a [#ff5959]swordium []projectile to extreme speeds, the sheer velocity will decitmate everything in it's way, has 4x building damage & 9x shield damage, cannot target air units.
 '''
   size: 4
   health: 1720
@@ -14,17 +14,20 @@ Accelerates a projectile to extreme speeds, the sheer velocity will decitmate ev
   chargeSound: ssc-charge
   soundPitchMin: 1
   soundPitchMax: 1
+  targetAir: false
   requirements: [
 swordium/450
 ]
   shoot: {
     firstShotDelay: 60
   }
+  moveWhileCharging: false
   consumes: {
     power: 5.5
   }
-  basPower: true
-  shootType: {
+  hasPower: true
+ammoTypes: {
+swordium: {
     type: BasicBulletType
     sprite: shell-back
     hitSound: explosionCore
@@ -85,6 +88,7 @@ swordium/450
       colorTo: ff595900
     }
   }
+}
 category: turret
 research: {
     parent: swordium-laser-charger
