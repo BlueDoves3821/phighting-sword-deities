@@ -1,0 +1,99 @@
+type: flying
+name: '''
+[#929EAE]Windforceium []Core Unit
+'''
+description: '''
+The core unit for the [#929EAE]windforceium []core, stronger version of the [#929EAE]windforceium []assister, can disarm enemies & heal units, but does not have the [#ff5959]sword's []might status field.
+'''
+envDisabled: 0
+hidden: false
+health: 3500
+armor: 5
+speed: 4.85
+rotateSpeed: 15
+hitSize: 12
+flying: true
+engineSize: 0
+mineRange: 1100
+mineFloor: true
+mineSpeed: 30
+mineTier: 120
+mineWalls: true
+itemCapacity: 500
+buildRange: 1100
+buildSpeed: 30
+engines: [
+  {
+    x: 0
+    y: -6
+    radius: 2
+    rotation: 270
+    engineColor: 929EAE
+  } 
+] 
+abilities: [
+  {
+    type: MoveEffectAbility
+    color: 929EAEC8
+    effect: missileTrailShort
+    x: 0
+    y: -6
+    interval: 3
+    minVelocity: 0.6
+  }
+  {
+    type: RepairFieldAbility
+    amount: 2500
+    range: 100
+    reload: 300
+  }
+  {
+  type: EnergyFieldAbility
+  damage: 150
+  reload: 60
+  range: 100
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: windforces-disarmerment
+  statusDuration: 600
+  color: 929EAE
+  maxTargets: 50
+  healPercent: 20
+  }
+]
+weapons: [
+    {
+        rotate: false
+        mirror: false
+        name: wa-disarmer
+        reload: 10
+        recoil: 0
+        shootSound: shootSalvo
+        ejectEffect: casing2
+        shootEffect: shoot
+        layerOffset: 0.001
+        x: 0
+        y: 0
+        heatColor: ab34000ff
+        
+    bullet: {
+    type: BasicBulletType
+    damage: 95
+    shieldDamageMultiplier: 50
+    backColor: 929EAE
+    frontColor: 929EAE
+    smokeEffect: heatReactorSmoke
+    speed: 6
+    height: 15
+    width: 10
+    lifetime: 120
+    homingPower: 0.1
+    pierce: true
+    pierceCap: 35
+    knockback: 10
+    status: windforces-disarmerment
+    statusDuration: 6000
+}
+}
+]
+alwaysUnlocked: true
