@@ -1,0 +1,25 @@
+type: CoreBlock
+name: '''
+[#929EAE]Windforceium []Core
+'''
+description: '''
+A moderately large core, core unit can disarm enemies.
+'''
+health: 11200
+armor: 10
+itemCapacity: 37500
+size: 4
+category: effect
+unitType: windforceium-core-unit
+unitCapModifier: 45
+requirements: [
+  swordium/1200
+  windforceium/1200
+]
+research: {
+    parent: windforceium-converter
+    requirements: [
+swordium/1200
+windforceium/1200
+]
+}

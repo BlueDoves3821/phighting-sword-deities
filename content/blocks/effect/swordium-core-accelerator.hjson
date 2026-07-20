@@ -1,0 +1,36 @@
+type: Accelerator
+name: "[#ff5959]Swordium []Core Accelerator"
+description: '''
+An accelerator for the [#ff5959]swordium []core,
+utilizes [#97CCE1]icedaggerium []liquid in order to accelerate the core.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+consumes: {
+ power: 5
+ liquids: [
+    icedaggerium-liquid/1
+  ]
+}
+health: 6500
+armor: 15
+size: 5
+category: effect
+ringColor: ff5959ff
+lightningColor: ff5959ff
+liquidCapacity: 500
+launchBlock: swordium-core
+requirements: [
+  swordium/1800
+]
+	research: {
+	parent: swordium-core
+	requirements: [
+  swordium/1800
+  ]
+  objectives: [
+  {
+    type: capturedSector
+    preset: planetaryTerminal
+  }
+  ]
+}

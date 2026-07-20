@@ -1,0 +1,38 @@
+type: Accelerator
+name: "[#929EAE]Windforceium []Core Accelerator"
+description: '''
+An accelerator for the [#929EAE]windforceium []core,
+utilizes [#97CCE1]icedaggerium []liquid in order to accelerate the core.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+consumes: {
+ power: 13.34
+ liquids: [
+    icedaggerium-liquid/1
+  ]
+}
+health: 9750
+armor: 35
+size: 6
+category: effect
+ringColor: 929EAEff
+lightningColor: 929EAEff
+liquidCapacity: 750
+launchBlock: windforceium-core
+requirements: [
+  swordium/2300
+  windforceium/2300
+]
+	research: {
+	parent: windforceium-core
+	requirements: [
+  swordium/2300
+  windforceium/2300
+  ]
+  objectives: [
+  {
+    type: capturedSector
+    preset: planetaryTerminal
+  }
+  ]
+}
