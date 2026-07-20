@@ -4,8 +4,8 @@
 [red]disclaimer: avoid deconstructing this core if it's the only core in the sector!",
   "details": "remember to plan the location if you're planning to upgrade the core.",
   "size": 3,
-  "health": 2300,
-  "itemCapacity": 8500,
+  "health": 4800,
+  "itemCapacity": 10000,
   "armor": 10,
   "requirements": [
     { "item": "swordium","amount": 350}
@@ -18,5 +18,5 @@
     ]
   },
   "unitType": "swordium-walker-core",
-  "unitCapModifier": 15,
+  "unitCapModifier": 25,
 }
