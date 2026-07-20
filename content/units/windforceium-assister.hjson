@@ -10,7 +10,7 @@ hidden: false
 health: 1500
 speed: 5
 rotateSpeed: 5
-hitSize: 6
+hitSize: 12
 flying: true
 defaultController: DefenderAI
 engineSize: 0
