@@ -5,9 +5,9 @@ name: '''
 description: '''
 A large core, with a large ship to go along with it.
 '''
-health: 17000
+health: 17500
 armor: 50
-itemCapacity: 55000
+itemCapacity: 76500
 size: 6
 category: effect
 unitType: illuminaium-ship-core
