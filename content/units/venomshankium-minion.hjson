@@ -15,6 +15,7 @@
   "drawCell": false,
   "useUnitCap": false,
   "deathSound": "vsm-sfx",
+  "stepSound": "vsm-step",
   "weapons":[
     {
     "name": "vsm-weapon",

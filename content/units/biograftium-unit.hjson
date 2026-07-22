@@ -1,7 +1,7 @@
 type: mech
 name: "[#ff6a00]Biograftium []Unit"
 description: '''
-An enemy seen on the "Survive The [#ff6100]Biograftium []Units" map, can also be built.
+An enemy seen on the "Survive The [#ff6100]Biograftium []Units" map, can also be built, only in sandbox.
 '''
 envDisabled: 0
 hideDatabase: true
@@ -16,12 +16,13 @@ faceEnemy: true
 circleEnemy: true
 canBoost: false
 drawCell: false
-hitSize: 5
+hitSize: 9
 defaultController: groundAI
 useUnitCap: false
 health: 100
 flying: false
-itemCapacity: 5
+itemCapacity: 20
+stepSound: biograftium-unit-step
 weapons:[
     {
     name: biograftium-unit-weapon
@@ -31,7 +32,7 @@ weapons:[
     rotate: false
     reload: 10
     shootCone: 4
-    shootSound: shootHorizon
+    shootSound: biograftium-unit-shoot
     recoil: -1
     mirror: true
     top: false

@@ -1,0 +1,75 @@
+type: mech
+name: "[#ff5959]Swordium []Melee Unit"
+description: '''
+A [#ff5959]swordium []unit, using a [#ff5959]sword, []obviously... can boost, mine & build.
+'''
+armor: 20
+health: 7500
+range: 65
+rotateSpeed: 8
+hitSize: 13
+canDrown: false
+stepShake: 1
+mineRange: 250
+mineFloor: true
+mineSpeed: 15
+mineTier: 100
+mineWalls: true
+itemCapacity: 400
+buildRange: 250
+buildSpeed: 15
+canBoost: true
+DefaultController: GroundAI
+stepSound: swordium-unit-step
+weapons: [
+{
+name: smu-sword
+reload: 50
+x: 10.5
+y: 12
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+top: false
+chargeSound: smu-atk
+shootSound: none
+soundPitchMin: 1
+soundPitchMax: 1
+recoil: -2
+shoot: {
+shots: 2
+shotDelay: 20
+firstShotDelay: 1
+    }
+bullet: {
+		type: BulletType
+		damage: 950
+		speed: 15
+		splashDamage: 600
+		splashDamageRadius: 6
+		absorbable: true
+  homingPower: 1
+		lifetime: 2
+		pierce: true
+  pierceCap: 5
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		despawnHit: true
+		recoil: -1.5
+}
+}
+]
+accel: 0.2
+drag: 0.1
+speed: 1.45
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      swordium/150
+]
+}

@@ -37,6 +37,8 @@ Assists units, passively boosts units with the [#ff5959]sword's []might, but can
   defaultController: DefenderAI
   range: 450
   maxRange: 450
+  stepSound: swordium-unit-step
+  stepSoundPitch: 0.65
   immunities: [
   swords-might
 ]

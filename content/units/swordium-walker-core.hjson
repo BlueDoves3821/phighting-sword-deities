@@ -42,6 +42,8 @@ The core unit for the [#ff5959]swordium []core, passively boosts itself & other 
   mineBeamOffset: 3
   range: 700
   maxRange: 700
+  stepSound: swordium-unit-step
+  stepSoundPitch: 0.65
 abilities:[
 
  {

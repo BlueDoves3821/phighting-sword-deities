@@ -34,6 +34,8 @@ Uses a "donut" shield design, applies [#70AC30]darkheart's []curse to units who 
   buildSpeed: 5
   buildRange: 750
   defaultController: GroundAI
+  stepSound: darkheartium-unit-step
+  stepSoundPitch: 1.5
 abilities:[
 
  {
