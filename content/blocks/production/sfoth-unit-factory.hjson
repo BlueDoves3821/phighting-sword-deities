@@ -55,6 +55,13 @@ swordium/20
     ]
  }
 {
+    unit: swordium-melee-unit
+    time: 1200
+    requirements: [
+swordium/150
+    ]
+ }
+{
     unit: swordium-mml
     time: 360
     requirements: [
