@@ -3,6 +3,8 @@ name: "[#ff5959]Swordium []Melee Unit"
 description: '''
 A [#ff5959]swordium []unit, using a [#ff5959]sword, []obviously... can mine & build.
 '''
+envDisabled: 0
+hidden: false
 armor: 20
 health: 7500
 range: 65
