@@ -42,12 +42,7 @@ or a ghostwalkerium drone that'll sneak behind enemy lines.
 </p>
 along many more that couldn't fit here!
 
-This mod also includes 3 maps where you have to defend against either biograftium units, venomshankium's minion or 2 darkheartium base clearers.
-<p align="center">
-  <img src="sprites/units/biograftium-unit.png" width="100">
-  <img src="sprites/units/venomshankium-minion.png" width="100">
-  <img src="sprites/units/walkers/darkheartium-base-clearer.png" width="100">
-</p>
+This mod also includes custom maps too, you can either defend your swordium core from enemies, or destroy the enemy illuminaium core.
 
 ## PHIGHTING! SWORD DEITIES has a special ability: It has multi-planetary construction!
 Whether if it's erekir, serpulo or any modded planet, you can use PHIGHTING! SWORD DEITIES on it!
