@@ -3,6 +3,8 @@ name: "[#ff5959]Swordium []M.M.L"
 description: '''
 M.M.L stands for mosquito missile launcher, fires a volley of missiles, very fast, but has low health.
 '''
+envDisabled: 0
+hidden: false
 speed: 8
 flying: true
 health: 250
