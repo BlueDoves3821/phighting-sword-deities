@@ -1,0 +1,90 @@
+Name: SFOTH Unit Factory (2x2)
+description: '''
+Constructs multiple types of units by utlizing [#ff5959]swordium []& any sword deity materials.
+Can only build units up to 2x2 in size.
+'''
+type: UnitFactory
+size: 2
+consumesPower: false
+plans: [
+   {
+    unit: darkheartium-base-clearer
+    time: 1500
+    requirements: [
+darkheartium/80
+swordium/80
+    ]
+ }
+   {
+    unit: darkheartium-walker
+    time: 900
+    requirements: [
+darkheartium/20
+swordium/20
+    ]
+ }
+  {
+    unit: ghostwalkerium-drone
+    time: 1080
+    requirements: [
+ghostwalkerium/8
+swordium/8
+    ]
+ }
+{
+    unit: illuminaium-empowerer
+    time: 900
+    requirements: [
+illuminaium/50
+swordium/50
+    ]
+ }
+  {
+    unit: illuminaium-hovership
+    time: 900
+    requirements: [
+illuminaium/20
+swordium/20
+    ]
+ }
+{
+    unit: swordium-mml
+    time: 360
+    requirements: [
+swordium/15
+    ]
+ }
+  {
+    unit: swordium-walker
+    time: 720
+    requirements: [
+swordium/40
+    ]
+ }
+{
+    unit: venomshankium-minion
+    time: 30
+    requirements: [
+venomshankium/5
+swordium/5
+    ]
+ }
+{
+    unit: windforceium-assister
+    time: 900
+    requirements: [
+windforceium/65
+swordium/65
+    ]
+ }
+]
+requirements: [
+swordium/65
+]
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      swordium/65
+]
+}
+category: units
