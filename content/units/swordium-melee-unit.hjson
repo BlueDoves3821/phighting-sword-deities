@@ -1,7 +1,7 @@
 type: mech
 name: "[#ff5959]Swordium []Melee Unit"
 description: '''
-A [#ff5959]swordium []unit, using a [#ff5959]sword, []obviously... can boost, mine & build.
+A [#ff5959]swordium []unit, using a [#ff5959]sword, []obviously... can mine & build.
 '''
 armor: 20
 health: 7500
@@ -18,7 +18,7 @@ mineWalls: true
 itemCapacity: 400
 buildRange: 250
 buildSpeed: 15
-canBoost: true
+canBoost: false
 DefaultController: GroundAI
 stepSound: swordium-unit-step
 weapons: [
@@ -36,7 +36,7 @@ chargeSound: smu-atk
 shootSound: none
 soundPitchMin: 1
 soundPitchMax: 1
-recoil: -2
+recoil: -3.25
 shoot: {
 shots: 2
 shotDelay: 20
