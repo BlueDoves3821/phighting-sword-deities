@@ -1,5 +1,5 @@
 description: '''
-Rams itself into enemy buildings, has a deflecting shield, can heal itself, can dash & leave behind a trail of fire.
+Rams itself into enemy buildings, has a deflecting shield, can heal itself, can dash & shoot slag.
 '''
 name: "[#861C00]Firebrandium []Ramming Vehicle"
 type: tank
@@ -17,7 +17,7 @@ armor: 45
 speed: 5.22
 rotateSpeed: 7
 itemCapacity: 0
-range: 100
+range: 75
 DefaultController: SuicideAI
 immunities: [burning, melting]
 abilities:[
@@ -25,7 +25,6 @@ abilities:[
     type: RegenAbility
     percentAmount: 0.025
  }
-
  {
   type:ShieldArcAbility
   y: 0
@@ -39,43 +38,59 @@ abilities:[
   whenShooting: false
   chanceDeflect: 10
  }
+ {
+  type: LiquidExplodeAbility
+  liquid: slag
+  amount: 500
+  radScale: 2
+  radAmountScale: 1
+ }
 ]
 weapons: [
 {
-reload: 4
+reload: 60
 x: 0
-y: -8
-name: fbrv-fire-trail
+y: 0
+shootY: -13
+name: fbrv-slag-boost
 mirror: false
 rotate: false
 inaccuracy: 0
 useAmmo: false
-shootSound: none
-alwaysShooting: true
+shootSound: shootFlame
+alwaysShooting: false
+shootCone: 15
+recoil: 0
+shoot: {
+   firstShotDelay: 24
+}
 bullet: {
-		type: BulletType
-		damage: 0
-		width: 1
-		height: 1
-		speed: 0
-		splashDamage: 0
-		splashDamageRadius: 16
-		absorbable: true
-		lifetime: 8
-		pierce: false
-		hitEffect: none
-		shootEffect: none
-		smokeEffect: none
-		despawnEffect: none
-		knockback: 4.7
-		impact: true
-		hitSound: shootFire
-		status: slow
-		statusDuration: 30
-		makeFire: false
-		incendAmount: 10
-		incendSpread: 8
-		incendChance: 2
+		type: BasicBulletType
+    width: 16
+    recoil: 0
+    height: 16
+    backColor: ffa166
+    frontColor: ffa166
+    ammoMultiplier: 1
+    damage: 150
+    lifetime: 80
+    speed: -17
+    status: melting
+    intervalBullets: 4
+    bulletInterval: 0.12
+    intervalRandomSpread: 30
+    intervalSpread: 50
+    intervalBullet: {
+      type: LiquidBulletType
+      liquid: slag
+      damage: 35
+      drag: 0.001
+      status: melting
+    }
+     pierce: true
+     pierceBuilding: true
+     pierceCap: 10
+shootEffect: none
 }
 }
     {
@@ -83,7 +98,9 @@ bullet: {
     shootY: 0
     rotate: false
     mirror: false
-    reload: 40
+    reload: 60
+    x: 0
+    y: 0
     shootCone: 15
     chargeSound: ispt-charge
     shootSound: ispt-shoot
