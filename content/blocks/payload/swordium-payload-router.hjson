@@ -1,0 +1,18 @@
+ name: "[#ff5959]Swordium []Payload Router"
+description: '''
+A faster payload router, enlarged to accomidate larger units.
+'''
+    type: PayloadRouter
+    size: 5
+    moveTime: 25
+    payloadLimit: 5
+    requirements: [
+     swordium/25
+    ]
+    category: units
+research: {
+    parent: swordium-payload-conveyor
+    requirements: [
+      swordium/25
+]
+}

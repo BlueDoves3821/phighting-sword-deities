@@ -1,0 +1,18 @@
+ name: "[#ff5959]Swordium []Payload Conveyor"
+description: '''
+A faster payload conveyor, enlarged to accomidate larger units.
+'''
+    type: PayloadConveyor
+    size: 5
+    moveTime: 25
+    payloadLimit: 5
+    requirements: [
+     swordium/20
+    ]
+    category: units
+research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/20
+]
+}
