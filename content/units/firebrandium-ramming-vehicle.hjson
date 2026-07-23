@@ -1,0 +1,177 @@
+description: '''
+Rams itself into enemy buildings, has a deflecting shield, can heal itself, can dash & leave behind a trail of fire.
+'''
+name: "[#861C00]Firebrandium []Ramming Vehicle"
+type: tank
+hitSize: 32
+accel: 0.05
+drag: 0.08
+crushDamage: 13.5
+template: ErekirUnitType
+envDisabled: 0
+hidden: false
+treadPullOffset: 6
+targetAir: false
+health: 17000
+armor: 45
+speed: 5.22
+rotateSpeed: 7
+itemCapacity: 0
+range: 100
+DefaultController: SuicideAI
+immunities: [burning, melting]
+abilities:[
+ {
+    type: RegenAbility
+    percentAmount: 0.025
+ }
+
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 30
+  max: 10000
+  regen: 10
+  cooldown: 850
+  width: 6
+  angle: 365
+  color: 861C00
+  whenShooting: false
+  chanceDeflect: 10
+ }
+]
+weapons: [
+{
+reload: 4
+x: 0
+y: -8
+name: fbrv-fire-trail
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: none
+alwaysShooting: true
+bullet: {
+		type: BulletType
+		damage: 0
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 0
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 8
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: shootFire
+		status: slow
+		statusDuration: 30
+		makeFire: false
+		incendAmount: 10
+		incendSpread: 8
+		incendChance: 2
+}
+}
+    {
+    name: fbrv-dash
+    shootY: 0
+    rotate: false
+    mirror: false
+    reload: 40
+    shootCone: 15
+    chargeSound: ispt-charge
+    shootSound: ispt-shoot
+    soundPitchMin: 1.5
+    soundPitchMax: 1.5
+    recoil: 0
+    frontColor: 861C00FF
+    backColor: 86100FF
+    top: false
+    shoot: {
+   firstShotDelay: 24
+}
+    shootStatus: unmoving
+    shootStatusDuration: 24
+    bullet: {
+    type: BulletType
+    speed: 1
+    damage: 0
+    lifetime: 0
+    width: 0
+    height: 0
+    recoil: -15
+    hitEffect: none
+    despawnEffect: {
+type: MultiEffect
+    effects: [
+    {
+    type: WaveEffect
+    lifetime: 35
+    sizeFrom: 0
+    sizeTo: 80
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: 861C00FF
+    colorTo: 861C0000
+}
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 90
+    sizeTo: 90
+    length: 0
+    spin: 0
+    layer: 109
+    lifetime: 80
+    region: circle-shadow
+    colorFrom: 861C00FF
+    colorTo: 861C0000
+    }
+]
+}
+    shootEffect: none
+    smokeEffect: none
+chargeEffect: {
+type: MultiEffect
+lifetime: 45
+effects: [
+    {
+    type: WaveEffect
+    lifetime: 24
+    sizeFrom: 90
+    sizeTo: 0
+    interp: circleOut
+    strokeFrom: 0
+    strokeTo: 8
+    colorFrom: 861C0000
+    colorTo: 861C00ff
+    }
+    {
+    type: WaveEffect
+    lifetime: 24
+    sizeFrom: 70
+    sizeTo: 0
+    interp: circleOut
+    strokeFrom: 0
+    strokeTo: 8
+    colorFrom: 861C0000
+    colorTo: 861C00ff
+    }
+    ]
+	}
+     }
+    }
+]
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      swordium/175
+      firebrandium/175
+]
+}
