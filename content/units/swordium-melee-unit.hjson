@@ -7,7 +7,7 @@ envDisabled: 0
 hidden: false
 armor: 20
 health: 7500
-range: 65
+range: 50
 rotateSpeed: 8
 hitSize: 13
 canDrown: false
@@ -52,7 +52,7 @@ bullet: {
 		splashDamageRadius: 6
 		absorbable: true
   homingPower: 1
-		lifetime: 2
+		lifetime: 2.75
 		pierce: true
   pierceCap: 5
 		hitEffect: none
