@@ -30,6 +30,14 @@ darkheartium/20
 swordium/20
     ]
  }
+   {
+    unit: firebrandium-ramming-vehicle
+    time: 1500
+    requirements: [
+firebrandium/175
+swordium/175
+    ]
+ }
   {
     unit: ghostwalkerium-drone
     time: 1080
