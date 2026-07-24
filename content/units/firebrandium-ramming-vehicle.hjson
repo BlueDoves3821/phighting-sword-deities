@@ -184,6 +184,40 @@ effects: [
 	}
      }
     }
+    {
+    name: dbrv-shockwave
+    shootY: 0
+    rotate: false
+    reload: 60
+    shootCone: 15
+    shootSound: shootHorizon
+    recoil: 0
+    mirror: false
+    top: false
+shoot: {
+    firstShotDelay: 24
+    type: ShootSpread
+    shots: 65
+    spread: 10
+}
+    bullet: {
+    type: BasicBulletType
+    speed: 40
+    damage: 140
+    lifetime: 7
+    pierce: true
+    pierceCap: 5
+    pireceBuilding: true
+    width: 2
+    height: 2
+    frontColor: 861C00
+    backColor: 861C00
+    hitEffect: none
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+     }
+    }
 ]
   research: {
     parent: sfoth-unit-factory
