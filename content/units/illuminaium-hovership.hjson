@@ -95,7 +95,7 @@ weapons:[
         reload: 10
         recoil: 1
         ejectEffect: casing2
-        shootSound: shootCyclone
+        shootSound: illuminaium-weapon-shoot
         layerOffset: -1
         heatColor: ab34000ff
         
