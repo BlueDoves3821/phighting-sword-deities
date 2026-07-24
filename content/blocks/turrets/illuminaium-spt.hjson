@@ -51,8 +51,8 @@ effects: [
     lifetime: 45
     layer: 109
     region: large-bomb
-    colorFrom: E2BAF5ff
-    colorTo: E2BAF5ff
+    colorFrom: E8C7F7ff
+    colorTo: E8C7F7ff
     cone: 360
     }
     {
@@ -77,8 +77,8 @@ effects: [
     region: large-bomb
     particles: 1
     lifetime: 45
-    colorFrom: E2BAF5
-    colorTo: E2BAF5
+    colorFrom: E8C7F7
+    colorTo: E8C7F7
     spin: -6.5
     }
     {
@@ -90,7 +90,7 @@ effects: [
     strokeFrom: 0
     strokeTo: 8
     lightColor: E2BAF5ff
-    colorFrom: E2BAF500
+    colorFrom: E8C7F700
     colorTo: E8C7F7ff
     }
     {
@@ -102,7 +102,7 @@ effects: [
     strokeFrom: 0
     strokeTo: 8
     lightColor: E2BAF5ff
-    colorFrom: E2BAF500
+    colorFrom: E8C7F700
     colorTo: E8C7F7ff
     }
     ]
@@ -135,6 +135,7 @@ shootEffect:{
      sizeTo: 100
      colorFrom: E8C7F7FF
      colorTo: E2BAF500
+     region: circle-shadow
      lifetime: 60
      particles: 1
         }
