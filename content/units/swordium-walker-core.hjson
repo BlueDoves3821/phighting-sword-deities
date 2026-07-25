@@ -49,14 +49,14 @@ abilities:[
  {
     type: RepairFieldAbility
     amount: 1500
-    range: 90
+    range: 50
     reload: 120
  }
 
  {
   type:ShieldArcAbility
   y: 0
-  radius: 90
+  radius: 50
   max: 5500
   regen: 8.5
   cooldown: 120
@@ -71,7 +71,7 @@ abilities:[
     effect: swords-might
     reload: 180
     color: ff5959ff
-    range: 90
+    range: 50
     duration: 2400
   }
 ]
@@ -82,7 +82,7 @@ weapons: [
         name: sw-laser
         reload: 15
         recoil: 1
-        shootSound: shootLancer
+        shootSound: swordium-laser-shoot
         layerOffset: -1
         
     bullet: {
