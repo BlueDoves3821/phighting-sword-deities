@@ -21,8 +21,8 @@ category: turret
 range: 750
 shootEffect: shootSmokeDisperse
 smokeEffect: shootSmokeSquareBig
-shootSound: shootLancer
-chargeSound: chargeLancer
+shootSound: swordium-laser-shoot
+chargeSound: swordium-laser-charge
 shootY: 17
 reload: 10
 moveWhileCharging: false

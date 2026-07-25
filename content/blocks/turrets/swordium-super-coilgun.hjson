@@ -30,7 +30,7 @@ ammoTypes: {
 swordium: {
     type: BasicBulletType
     sprite: shell-back
-    hitSound: explosionCore
+    hitSound: explosionPlasmaSmall
     hitSoundVolume: 1.25
     frontColor: ff5959
     backColor: ff5959

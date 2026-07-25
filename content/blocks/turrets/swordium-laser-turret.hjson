@@ -21,7 +21,7 @@ category: turret
 range: 500
 shootEffect: shootSmokeDisperse
 smokeEffect: shootSmokeSquareBig
-shootSound: shootLancer
+shootSound: swordium-laser-shoot
 reload: 20
 recoil: 2
 shake: 2
