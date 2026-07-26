@@ -1,9 +1,10 @@
 name: "[#FF5959]Sword's []Might"
 description: '''
-[#FF5959]Sword []has empowered you with 2x reload speed & damage.
+[#FF5959]Sword []has empowered you with 2x reload speed & damage, you also have slight health regeneration.
 '''
 reloadMultiplier: 2
 damageMultiplier: 2
+damage: -0.8335
 effect: {
     type: ParticleEffect
     particles: 2
