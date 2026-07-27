@@ -1,0 +1,51 @@
+  name: "[#ff5959]Swordium []Power Generator (Flammable)"
+  description: '''
+Generates power by igniting flammable materials.
+  '''
+  type: ConsumeGenerator
+  size: 2
+  health: 540
+  hasItems: true
+  itemCapacity: 50
+  ambientSound: loopCombustion
+  ambientSoundVolume: 0.25
+  powerProduction: 5
+  itemDuration: 600
+  generateEffect: none
+  consumes:
+  {
+    itemFlammable: {}
+  }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    {
+      type: DrawRegion
+      suffix: "-spinner"
+      spinSprite: true
+      rotateSpeed: 8
+    }
+    {
+      type: DrawDefault
+    }
+			{
+				type: DrawGlowRegion
+    alpha: 0.45
+			}
+  ]
+}
+  category: power
+  requirements: [
+    swordium/40
+  ]
+  research:
+  {
+    parent: swordium-buildings
+    requirements: [
+        swordium/40
+    ]
+  }

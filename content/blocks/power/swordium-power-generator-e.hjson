@@ -1,0 +1,51 @@
+  name: "[#ff5959]Swordium []Power Generator (Explosive)"
+  description: '''
+Generates power by safely using explosive materials.
+  '''
+  type: ConsumeGenerator
+  size: 2
+  health: 540
+  hasItems: true
+  itemCapacity: 50
+  ambientSound: loopSmelter
+  ambientSoundVolume: 0.25
+  powerProduction: 5
+  itemDuration: 600
+  generateEffect: none
+  consumes:
+  {
+    itemExplosive: {}
+  }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    {
+      type: DrawRegion
+      suffix: "-spinner"
+      spinSprite: true
+      rotateSpeed: 8
+    }
+    {
+      type: DrawDefault
+    }
+			{
+				type: DrawGlowRegion
+    alpha: 0.45
+			}
+  ]
+}
+  category: power
+  requirements: [
+    swordium/40
+  ]
+  research:
+  {
+    parent: swordium-power-generator-f
+    requirements: [
+        swordium/40
+    ]
+  }
