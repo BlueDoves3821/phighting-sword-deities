@@ -1,0 +1,27 @@
+name: "Large [#70AC30]Darkheartium []Deflecting Wall"
+description: '''
+A wall made out of [#70AC30]darkheartium, []can be placed on deep liquids, deflects most projectiles, in rare cases, it shoots out lightning when attacked, dealing alot of damage, it's also highly explosive, would not recommend to surround your base with this.
+'''
+    type: Wall
+    placeableLiquid: true
+    health: 3400
+    size: 2
+    baseExplosiveness: 450
+    chanceDeflect: 500
+    absorbLasers: true
+    lightningChance: 0.025
+    lightningDamage: 1000
+    lightningLength: 85
+    status: darkhearts-curse
+	requirements: [
+		swordium/24
+  darkheartium/24
+	]
+	category: defense
+  research: {
+    parent: darkheartium-deflecting-wall
+    requirements: [
+      swordium/24
+      darkheartium/24
+]
+}
