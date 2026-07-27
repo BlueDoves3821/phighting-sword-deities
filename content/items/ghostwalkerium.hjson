@@ -1,7 +1,7 @@
 name: "[#C2C2C2]Ghostwalkerium"
 description: '''
 [#C2C2C2]"Death shall not reach you."[]
-Anything built with this material cannot be auto-targeted, and unless if it's manually being targeted, it renders it invisible to enemies.
+Anything built with this material cannot be auto-targeted, and unless if it's manually being targeted, it renders it invisible to enemies, perfect for sneak attacks.
 '''
 color: C2C2C2
   research: {

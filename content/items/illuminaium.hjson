@@ -1,10 +1,10 @@
 name: "[#E2BAF5]Illuminaium"
 description: '''
 [#E2BAF5]currently no quotes from him as of this time.[]
-An extremly powerful material, slightly charged.
+An extremely powerful material, highly effective when used as ammo, heavily charged.
 '''
 color: E2BAF5
-charge: 0.1
+charge: 1.25
   research: {
     parent: swordium
     requirements: []

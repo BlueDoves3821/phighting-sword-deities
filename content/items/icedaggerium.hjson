@@ -1,7 +1,7 @@
 name: "[#97CCE1]Icedaggerium"
 description: '''
 [#97CCE1]"Here comes the snow!"[]
-A material that's related to the cold.
+A cold material, can either be melted into water in times of deficit, or mixed with water to make a highly effective coolant.
 '''
 color: 97CCE1
   research: {

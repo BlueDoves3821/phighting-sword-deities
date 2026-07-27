@@ -1,7 +1,7 @@
 name: "[#861C00]Firebrandium"
 description: '''
 [#861C00]"Set ablaze in the Inpherno!"[]
-A highly flammable material, used for anything related to scorching the enemy.
+A highly flammable material, used to either scorch the enemy or as really efficient fuel to burn.
 '''
 color: 861C00
 flammability: 8

@@ -1,10 +1,11 @@
 name: "[#70AC30]Darkheartium"
 description: '''
 [#70AC30]"A little bit of chaos is fun.. don't you think?"[]
-An unstable material, highly explosive, used for chaotic builds.
+An unstable material, highly explosive & flammable, used for builds that are chaotic in nature.
 '''
 color: 70AC30
 explosiveness: 10
+flammability: 4.5
   research: {
     parent: swordium
     requirements: []

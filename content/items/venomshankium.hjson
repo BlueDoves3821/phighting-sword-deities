@@ -1,9 +1,10 @@
 name: "[#A4C360]Venomshankium"
 description: '''
 [#A4C360]"Rise my minions!"[]
-A material mostly used to summon it's minions.
+A radioactive material mostly used to summon it's minions or draw power from spore areas.
 '''
 color: A4C360
+radioactivity: 1
   research: {
     parent: swordium
     requirements: []
