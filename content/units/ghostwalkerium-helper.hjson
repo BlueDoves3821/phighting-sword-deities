@@ -1,0 +1,138 @@
+type: payload
+payloadCapacity: 2560
+
+speed: 7.15
+name: "[#c2c2c2]Ghostwalkerium []Helper"
+description: "can help you in many ways, it can mine, build, repair, defend and all sorts of things, fires homing bullets that heals allies, requires manual commanding, cannot be auto-targeted.
+"
+engineSize: 0
+envDisabled: 0
+hidden: false
+hitSize: 15
+health: 2500
+armor: 10
+mineTier: 100
+mineWalls: true
+mineSpeed: 20
+itemCapacity: 500
+buildSpeed: 10
+itemOffsetY: 0
+flying: true
+faceTarget: false
+accel: 0.12
+drag: 0.04
+targetable: false
+priority: -1
+moveSound: loopHover
+moveSoundVolume: 0.25
+engines: [
+  {
+    x: 0
+    y: -10
+    radius: 3
+    rotation: 270
+  } 
+]
+weapons:[
+{
+reload: 60
+rotate: true
+x: 0
+y: 0
+mirror: false
+top: true
+shootSound: swordium-laser-shoot
+chargeSound: swordium-laser-charge
+shoot: {
+  firstShotDelay: 32
+  shots: 3
+  shotDelay: 12
+}
+bullet:{
+    type: MissileBulletType
+    width: 10
+    height: 10
+    backColor: c2c2c2
+    frontColor: c2c2c2
+    trailColor: c2c2c255
+    shieldDamageMultiplier: 5
+    damage: 85
+    lifetime: 520
+    speed: 6
+    homingPower: 1
+    collidesTeam: true
+    shootEffect: shootSmokeDisperse
+    smokeEffect: shootSmokeSquare
+    healPercent: 15
+    colors: [
+      C2C2C2,
+      ffffff
+    ]
+     chargeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          particles: 1
+          sizeFrom: 0
+          sizeTo: 5
+          length: 0
+          lifetime: 32
+          region: circle-shadow
+          colorFrom: C2C2C200
+          colorTo: FFFFFFFF
+          cone: 360
+        }
+        {
+          type: WaveEffect
+          lifetime: 32
+          sizeFrom: 20
+          sizeTo: 0
+          strokeFrom: 0
+          strokeTo: 3
+          colorFrom: c2c2c200
+          colorTo: FFFFFFFF
+        }
+      ]
+    }
+}
+}
+]
+abilities:[
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 0
+	radius: 95
+	regen: 8.5
+	max: 2500
+	cooldown: 1
+ 
+ }
+ {
+  type: EnergyFieldAbility
+  damage: 25
+  reload: 30
+  range: 95
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: sapped
+  statusDuration: 360
+  color: c2c2c2
+  maxTargets: 100
+  healPercent: 7.5
+ }
+{
+  type: SpawnDeathAbility
+  unit: ghostwalkerium-drone
+  amount: 2
+  }
+]
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      swordium/150
+      ghostwalkerium/150
+]
+}

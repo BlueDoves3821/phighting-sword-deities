@@ -1,55 +1,54 @@
-
 {
-  "type": "mech",
-  "description": "[#A4C360]Venomshankium's []minion, can only attack via melee.",
-  "name": "[#A4C360]Venomshankium's []Minion",
-  "speed": 0.8,
-  "envDisabled": 0,
-  "hidden": false,
-  "hitSize": 8,
-  "health": 200,
-  "rotateSpeed": 7,
-  "drownTimeMultiplier": 6,
-  "immunities": [],
-  "defaultController": "groundAI",
-  "drawCell": false,
-  "useUnitCap": false,
-  "deathSound": "vsm-sfx",
-  "stepSound": "vsm-step",
-  "weapons":[
+  type: mech
+  description: "[#A4C360]Venomshankium's []minion, can only attack via melee."
+  name: "[#A4C360]Venomshankium's []Minion"
+  speed: 0.8
+  envDisabled: 0
+  hidden: false
+  hitSize: 8
+  health: 200
+  rotateSpeed: 7
+  drownTimeMultiplier: 6
+  immunities: []
+  defaultController: groundAI
+  drawCell: false
+  useUnitCap: false
+  deathSound: vsm-sfx
+  stepSound: vsm-step
+  weapons:[
     {
-    "name": "vsm-weapon",
-    "x": 3,
-    "y": 2,
-    "shootY": 0,
-    "targetAir": true,
-    "targetGround": true,
-    "rotate": false,
-    "reload": 15,
-    "shootCone": 4,
-    "shootSound": "vsm-sfx2",
-    "recoil": -2,
-    "mirror": true,
-    "top": true,
-    "bullet": {
-      "type": "BasicBulletType",
-      "speed": 10,
-      "damage": 55,
-      "lifetime": 4,
-      "width": 0,
-      "height": 0,
-      "hitEffect": "none",
-      "despawnEffect": "none",
-      "shootEffect": "none",
-      "smokeEffect": "none",
+    name: vsm-weapon
+    x: 3
+    y: 2
+    shootY: 0
+    targetAir: true
+    targetGround: true
+    rotate: false
+    reload: 15
+    shootCone: 4
+    shootSound: vsm-sfx2
+    recoil: -2
+    mirror: true
+    top: true
+    bullet: {
+      type: BasicBulletType
+      speed: 10
+      damage: 55
+      lifetime: 4
+      width: 0
+      height: 0
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      smokeEffect: none
      }
     }
   ]
-  "research": {
+  research: {
     parent: sfoth-unit-factory
     requirements: [
-      swordium/10
-      venomshankium/10
+      swordium/5
+      venomshankium/5
 ]
 }
 }

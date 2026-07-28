@@ -10,11 +10,13 @@ hidden: false
 health: 150
 speed: 3
 rotateSpeed: 5
-hitSize: 5
+hitSize: 9
 flying: true
 targetable: false
 defaultController: SuicideAI
 engineSize: 0
+moveSound: loopThruster
+moveSoundVolume: 0.25
 engines: [
   {
     x: 0
@@ -64,7 +66,7 @@ weapons: [
   research: {
     parent: sfoth-unit-factory
     requirements: [
-      swordium/20
-      ghostwalkerium/20
+      swordium/10
+      ghostwalkerium/10
 ]
 }
