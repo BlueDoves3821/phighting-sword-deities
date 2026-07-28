@@ -35,8 +35,16 @@ swordium/20
     unit: ghostwalkerium-drone
     time: 1080
     requirements: [
-ghostwalkerium/8
-swordium/8
+ghostwalkerium/10
+swordium/10
+    ]
+ }
+  {
+    unit: ghostwalkerium-helper
+    time: 1400
+    requirements: [
+ghostwalkerium/150
+swordium/150
     ]
  }
 {
