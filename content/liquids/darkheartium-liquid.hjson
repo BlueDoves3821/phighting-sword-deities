@@ -15,9 +15,9 @@ details: '''
 type: CellLiquid
 heatCapacity: 0
 temperature: 0.5
-explosiveness: 10
+explosiveness: 13
 viscosity: 0.85
-flammability: 0.1
+flammability: 6.66
 effect: darkhearts-curse
 boilPoint: 1
 coolant: false
