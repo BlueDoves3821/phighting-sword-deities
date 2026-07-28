@@ -1,0 +1,54 @@
+type: GenericCrafter
+name: "[#70AC30]Darkheartium []Liquid Solidifier"
+description: '''
+Solidifies [#70ac30]darkheartium []liquid by using [#ff5959]swordium [] as a place for the liquid to bind to.
+'''
+size: 2
+health: 510
+consumes: {
+  liquids: [
+    darkheartium-liquid/1.67
+  ]
+  items: [
+   swordium/1
+  ]
+}
+craftEffect: none
+ambientSound: loopMachineSpin
+craftTime: 20
+outputItems: [
+   darkheartium/1
+]
+drawer: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+  { type: DrawLiquidTile
+    drawLiquid: darkheartium-liquid
+  }
+    {
+      type: DrawRegion
+      suffix: "-spinner"
+      spinSprite: true
+      rotateSpeed: 8
+    }
+
+{
+      type: DrawDefault
+    }
+]
+liquidCapacity: 750
+itemCapacity: 50
+  research: {
+    parent: darkheartium-melter
+    requirements: [
+      swordium/50
+      darkheartium/50
+]
+}
+category: crafting
+requirements: [
+  swordium/50
+  darkheartium/50
+]
