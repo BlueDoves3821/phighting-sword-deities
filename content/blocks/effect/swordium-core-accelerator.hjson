@@ -2,7 +2,7 @@ type: Accelerator
 name: "[#ff5959]Swordium []Core Accelerator"
 description: '''
 An accelerator for the [#ff5959]swordium []core,
-utilizes [#97CCE1]icedaggerium []liquid in order to accelerate the core.
+utilizes [#929EAE]windforceium []and [#97CCE1]icedaggerium []liquid in order to accelerate the core.
 [red]Note: Please capture the planetary launch terminal before unlocking this!
 '''
 consumes: {
@@ -21,11 +21,13 @@ liquidCapacity: 500
 launchBlock: swordium-core
 requirements: [
   swordium/1800
+  windforceium/100
 ]
 	research: {
 	parent: swordium-core
 	requirements: [
   swordium/1800
+  windforceium/100
   ]
   objectives: [
   {
