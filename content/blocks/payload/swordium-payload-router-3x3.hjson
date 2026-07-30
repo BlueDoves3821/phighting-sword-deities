@@ -1,11 +1,11 @@
- name: "[#ff5959]Swordium []Payload Router"
+ name: "[#ff5959]Swordium []Payload Router (3x3)"
 description: '''
 A faster payload router.
 '''
     type: PayloadRouter
     size: 3
     moveTime: 25
-    payloadLimit: 5
+    payloadLimit: 3
     requirements: [
      swordium/15
     ]
