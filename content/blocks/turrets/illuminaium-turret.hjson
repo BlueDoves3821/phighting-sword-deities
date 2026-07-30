@@ -1,36 +1,40 @@
 type: ItemTurret
-name: "[#E2BAF5]Illuminaium []Omni Turret"
+name: "[#E2BAF5]Illuminaium []Turret"
 description: '''
-Fires 40 accelerating homing projectiles at all directions, can home onto enemies & can "slam" them, can take coolant.
+Fires accelerating homing projectiles, can home onto enemies, can take coolant.
 '''
-reload: 95
-shootCone: 360
-rotateSpeed: 0
+reload: 7.25
+shootCone: 5
+rotateSpeed: 6
 targetGround: true
 targetAir: true
 range: 850
-recoil: 0
+recoil: 1
 size: 3
 health: 750
-AmmoPerShot: 10
+AmmoPerShot: 1
 maxAmmo: 50
-shootSound: illuminaium-weapon-shotgun-shoot
+shootSound: illuminaium-weapon-shoot
 shootShake: 4
-shootY: 0
-inaccuracy: 2
-
-liquidCapacity: 1500
-coolEffect: vapor
+inaccuracy: 0
+drawer: {
+type: DrawTurret
+parts: [
+{
+suffix: "-barrel"
+progress: recoil
+under: true
+moveY: -0.25
+}
+]
+}
+liquidCapacity: 600
+coolEffect: vaporSmall
 coolantMultiplier: 10
 consumes: {
   coolant: {
     amount: 0.1
   }
-}
-shoot: {
-    type: ShootSpread
-    shots: 40
-    spread: 9
 }
 ammoTypes: {
     illuminaium: {
@@ -88,14 +92,14 @@ ammoTypes: {
 }
     }
 requirements: [
-    swordium/180
-    illuminaium/180
+    swordium/135
+    illuminaium/135
 ]
 research: {
-  parent: illuminaium-turret
+  parent: swordium-laser-turret
 }
 category: turret
 researchCost: [
-  swordium/180
-  illuminaium/180
+  swordium/135
+  illuminaium/135
 ]

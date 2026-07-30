@@ -1,7 +1,7 @@
 type: ItemTurret
 name: "[#E2BAF5]Illuminaium []Railgun"
 description: '''
-Fires 6 powerful versions of the illuminaium projectile at high velocity, can decimate units, but loses half of it's homing power.
+Fires 10 powerful versions of the illuminaium projectile at high velocity, can decimate units, but loses half of it's homing power.
 '''
 reload: 120
 shootCone: 5
@@ -22,11 +22,13 @@ shake: 15
 inaccuracy: 0
 moveWhileCharging: false
 heatColor: f9350f
+outlineRadius: 3
 shoot: {
 firstShotDelay: 90
     type: ShootSpread
-    shots: 6
-    spread: 2
+    shots: 10
+    shotDelay: 1
+    spread: 0.5
 }
 drawer: {
 type: DrawTurret
@@ -66,6 +68,20 @@ type: MultiEffect
     lifetime: 90
     colorFrom: E2BAF500
     colorTo: E8C7F7FF
+    region: large-orb-back
+    cone: 360
+	}
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 9
+    length: 0
+    lifetime: 90
+    colorFrom: E2BAF500
+    colorTo: E8C7F7FF
+    region: mine-bullet
+    spin: 5
     cone: 360
 	}
     {
@@ -125,7 +141,7 @@ requirements: [
     illuminaium/230
 ]
 research: {
-  parent: illuminaium-omni-turret
+  parent: illuminaium-turret
 }
 category: turret
 researchCost: [
