@@ -130,7 +130,7 @@ abilities:[
   }
 ]
   research: {
-    parent: sfoth-unit-factory
+    parent: ghostwalkerium-drone
     requirements: [
       swordium/150
       ghostwalkerium/150
