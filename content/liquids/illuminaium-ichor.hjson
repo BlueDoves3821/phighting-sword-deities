@@ -1,0 +1,13 @@
+name: "[#E2BAF5]Illuminaium []Ichor"
+description: '''
+A super-coolant made from processing [#E2BAF5]illuminaium, []explosive, will empower units who step in the ichor.
+'''
+color: E2BAF5
+viscosity: 0.025
+temperature: 0.5
+heatCapacity: 10
+explosiveness: 2
+boilPoint: 20
+capPuddles: false
+research: illuminaium
+effect: illuminas-power
