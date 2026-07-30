@@ -1,0 +1,50 @@
+type: GenericCrafter
+name: "[#E2BAF5]Illuminaium []Ichor Maker"
+description: '''
+Makes [#E2BAF5]illuminaium []ichor by tainting cryofluid with [#e2baf5]illuminaium, [][#ff5959]swordium []is also added for stability, requires power to operate.
+'''
+size: 2
+health: 400
+consumes: {
+  items: [
+    illuminaium/1
+    swordium/2
+  ]
+  liquids: [
+    cryofluid/1.67
+  ]
+   power: 2
+}
+craftEffect: none
+ambientSound: loopMachine2
+craftTime: 20
+outputLiquids: [
+   illuminaium-ichor/1.67
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  { type: DrawLiquidTile
+    drawLiquid: cryofluid
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: illuminaium-ichor
+  }
+  DrawDefault
+]
+liquidCapacity: 1000
+  research: {
+    parent: illuminaium-converter
+    requirements: [
+      swordium/70
+      illuminaium/70
+]
+}
+category: crafting
+requirements: [
+  swordium/70
+  illuminaium/70
+]
