@@ -27,8 +27,7 @@ shoot: {
 firstShotDelay: 90
     type: ShootSpread
     shots: 10
-    shotDelay: 1
-    spread: 0.5
+    spread: 0.25
 }
 drawer: {
 type: DrawTurret
