@@ -28,12 +28,12 @@ moveY: -0.25
 }
 ]
 }
-liquidCapacity: 600
+liquidCapacity: 250
 coolEffect: vaporSmall
 coolantMultiplier: 10
 consumes: {
   coolant: {
-    amount: 0.1
+    amount: 0.25
   }
 }
 ammoTypes: {

@@ -19,12 +19,12 @@ shootShake: 4
 shootY: 0
 inaccuracy: 2
 
-liquidCapacity: 1500
+liquidCapacity: 500
 coolEffect: vapor
 coolantMultiplier: 10
 consumes: {
   coolant: {
-    amount: 0.1
+    amount: 0.5
   }
 }
 shoot: {
