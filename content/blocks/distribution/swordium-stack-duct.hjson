@@ -1,0 +1,20 @@
+type: StackConveyor
+name: "[#ff5959]Swordium []Stack Duct"
+description: '''
+A stack duct made from [#ff5959]swordium.
+'''
+health: 110
+speed: 0.32
+itemCapacity: 30
+category: distribution
+bridgeReplacement: swordium-bridge
+junctionReplacement: swordium-junction
+requirements: [
+swordium/2
+]
+research: {
+    parent: swordium-duct
+    requirements: [
+swordium/2
+]
+}

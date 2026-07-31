@@ -2,9 +2,9 @@
   name: "[#929EAE]Windforceium []Mass Driver"
   health: 1000
   description: '''
-A mass driver made out of [#ff5959]swordium []& [#929eae]windforceium,[] extremely fast projectile, cannot be overdriven to avoid projectile missing.
+A mass driver made out of [#ff5959]swordium []& [#929eae]windforceium,[] has a slow projectile.
 '''
-  itemCapacity: 600
+  itemCapacity: 850
   reload: 30
   shake: 0.5
   rotateSpeed: 3.5
@@ -12,11 +12,8 @@ A mass driver made out of [#ff5959]swordium []& [#929eae]windforceium,[] extreme
   knockback: 1
   range: 2300
   bulletLifetime: 1000
-  bulletSpeed: 150
-  minDistribute: 0.1
-  canOverdrive: false
-  soundPitchMin: 0.75
-  soundPitchMax: 0.78
+  bulletSpeed: 5
+  minDistribute: 2
   size: 3
   requirements: [
       swordium/120
