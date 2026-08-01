@@ -1,0 +1,69 @@
+type: ItemTurret
+name: "[#ff5959]Swordium []Shotgun Turret"
+description: '''
+Fires 8 [#ff5959]swordium []piercing blasts that both pulls &  freezes enemies.
+'''
+  size: 2
+  health: 640
+  range: 250
+  reload: 15
+  recoil: 2
+  rotateSpeed: 8
+  shake: 2
+  shootSound: shootFuse
+  soundPitchMin: 1.1
+  soundPitchMax: 1.3
+  liquidCapacity: 100
+  coolEffect: vaporSmall
+  coolantMultiplier: 2.5
+  consumes: {
+  coolant: {
+    amount: 0.25
+  }
+}
+shoot: {
+    type: ShootSpread
+    shots: 8
+    spread: 5
+}
+  requirements: [
+swordium/120
+]
+ammoTypes: {
+swordium: {
+      type: ShrapnelBulletType
+      length: 250
+      damage: 375
+      width: 12
+      toColor: ff5959
+      serrations: 15
+    status: unmoving
+    statusDuration: 150
+    knockback: -15
+    splashDamage: 120
+    splashDamageRadius: 25
+    shieldDamageMultiplier: 2
+    pierce: true
+    pierceArmor: true
+    pierceBuilding: true
+    pierceCap: 20
+    hitShake: 2
+    shootEffect: {
+      type: WaveEffect
+      lifetime: 20
+      sizeFrom: 0
+      sizeTo: 50
+      strokeFrom: 0
+      strokeTo: 7
+      colorFrom: ff5959FF
+      colorTo: ff595900
+    }
+  }
+}
+category: turret
+research: {
+    parent: swordium-laser-charger
+    requirements: [
+swordium/120
+]
+}
