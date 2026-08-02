@@ -3,8 +3,8 @@ name: "[#E2BAF5]Illuminaium []Power Node"
 description: "An excellent power node."
 size: 1
 health: 400
-laserRange: 40
-maxNodes: 20
+laserRange: 80
+maxNodes: 40
 	requirements: [
 		swordium/20
   illuminaium/20

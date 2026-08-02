@@ -1,0 +1,17 @@
+type: PowerNode
+name: "[#ff5959]Swordium []Power Node"
+description: "A good power node."
+size: 1
+health: 400
+laserRange: 40
+maxNodes: 20
+	requirements: [
+		swordium/20
+	]
+	category: power
+  research: {
+    parent: swordium-solar-panel
+    requirements: [
+      swordium/20
+]
+}
