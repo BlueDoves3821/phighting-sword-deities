@@ -25,6 +25,7 @@ engineSize: 1
 engineOffset: 2
 fogRadius: 6
 deathSound: explosionMissile
+shootSound: none
 weapons: [
   {
     reload: 1
@@ -34,8 +35,8 @@ weapons: [
     shake: 10
     bullet: {
       type: ExplosionBulletType
-      splashDamage: 150
-      splashDamageRadius: 8
+      splashDamage: 300
+      splashDamageRadius: 12
       ammoMultiplier: 1
       status: slow
     }
