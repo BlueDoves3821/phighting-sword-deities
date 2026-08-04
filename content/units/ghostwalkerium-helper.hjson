@@ -25,6 +25,8 @@ targetable: false
 priority: -1
 moveSound: loopHover
 moveSoundVolume: 0.25
+moveSoundPitchMin: 0.5
+moveSoundPitchMax: 1.25
 engines: [
   {
     x: 0

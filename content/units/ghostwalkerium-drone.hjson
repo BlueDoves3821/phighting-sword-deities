@@ -17,6 +17,8 @@ defaultController: SuicideAI
 engineSize: 0
 moveSound: loopThruster
 moveSoundVolume: 0.25
+moveSoundPitchMin: 0.5
+moveSoundPitchMax: 1.25
 engines: [
   {
     x: 0
@@ -60,6 +62,7 @@ weapons: [
        statusDuration: 1200
        pierce: true
        hitEffect: scatheLight
+       shootEffect: none
          } 
      } 
  ]
