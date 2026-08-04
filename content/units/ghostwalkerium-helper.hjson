@@ -113,18 +113,28 @@ abilities:[
  
  }
  {
-  type: EnergyFieldAbility
-  damage: 25
-  reload: 30
-  range: 95
-  effectRadius: 0.1
-  damageEffect: chainLightning
-  status: sapped
-  statusDuration: 360
-  color: c2c2c2
-  maxTargets: 100
-  healPercent: 7.5
- }
+    type: RepairFieldAbility
+    amount: 1250
+    range: 95
+    reload: 120
+    healEffect: spawnShockwave
+    activeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 80
+          sizeFrom: 0
+          sizeTo: 95
+          interp: pow3Out
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: c2c2c2FF
+          colorTo: c2c2c200
+        }
+      ]
+    }
+}
 {
   type: SpawnDeathAbility
   unit: ghostwalkerium-drone
