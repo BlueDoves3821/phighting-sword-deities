@@ -1,0 +1,24 @@
+  name: "[#c2c2c2]Ghostwalkerium []Pump",
+  description: '''
+Basically the [#ff5959]swordium []pump with [#c2c2c2]ghostwalkerium []added, cannot be auto-targeted.
+'''
+  type: Pump
+  size: 2
+  health: 560
+  liquidCapacity: 3000
+  pumpAmount: 1.25
+  hasPower: false
+  placeableLiquid: true
+  targetable: false
+	requirements: [
+		swordium/40
+  ghostwalkerium/15
+	]
+	category: liquid
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/40
+      ghostwalkerium/15
+]
+}
