@@ -1,0 +1,10 @@
+note: some sprites don't exactly use the same colors in terms of it's hex code.
+Darkheartium: (Light: 70AC30, Middle: 5E9128, Dark: 45691D)
+Firebrandium: (Light: 861C00, Middle: 701700, Dark: 511100)
+Ghostwalkerium: (Light: C2C2C2, Middle: A3A3A3, Dark: 777777)
+Icedaggerium: (Light: 97CCE1, Middle: 80ACBE, Dark: 5D7D8B)
+Icedaggerium (ALT): (Light: 97CCE1, 2061C4: 1A52A5, Dark: 133C79)
+Illuminaium: (Light: E2BAF5, Middle: BE9DCE, Dark: 8A7297)
+Swordium: (Light: FF5959, Middle: D84B4B, Dark: 9D3838)
+Venomshankium: (Light: A4C360, Middle: 8AA550, Dark: 65773C)
+Windforceium: (Light: 929EAE, Middle: 7C8593, Dark: 5A616B)
