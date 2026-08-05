@@ -5,7 +5,7 @@ darkheartium/150
 ]
 name: "[#70AC30]Darkheartium []Turret"
 description: '''
-Fires a homing projectile at units that slowly gets faster overtime, afflicts [#70AC30]darkheart's []curse status.
+Fires a homing projectile at units that slowly gets faster overtime, afflicts [#70AC30]darkheart's []curse to enemies that were hit by the projectile.
 '''
 hasShadow: false
 health: 1500
@@ -13,7 +13,6 @@ maxAmmo: 20
 category: turret
 range: 600
 shootEffect: shootSmokeTitan
-smokeEffect: scatheLight
 shootSound: shootTank
 chargeSound: chargeVela
 reload: 60
@@ -45,7 +44,7 @@ darkheartium: {
     frontColor: 70AC30
     shieldDamageMultiplier: 1010
     buildingDamageMultiplier: 30
-    damage: 1000
+    damage: 7150
     lifetime: 5000
     drag: -0.0001
     speed: 2
@@ -60,8 +59,50 @@ darkheartium: {
     pierceBuilding: true
     pierceCap: 200
     hittable: false
-    chargeEffect: greenLaserChargeSmall
-    effectColor: 70AC30
+    chargeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 32
+          sizeFrom: 65
+          sizeTo: 0
+          strokeFrom: 3
+          strokeTo: 1
+          interp: sineIn
+          colorFrom: A6FF4700
+          colorTo: 70AC30FF
+        }
+        {
+          type: WaveEffect
+          lifetime: 32
+          sizeFrom: 75
+          sizeTo: 0
+          strokeFrom: 3
+          strokeTo: 1
+          interp: sineIn
+          colorFrom: A6FF4700
+          colorTo: 70AC30FF
+        }
+      ]
+    }
+smokeEffect: {
+type: MultiEffect
+    effects: [
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 90
+    length: 0
+    lifetime: 80
+    interp: pow3Out
+    region: circle-shadow
+    colorFrom: A6FF47FF
+    colorTo: 70AC3000
+    }
+]
+}
    }
 }
 ammoPerShot: 1
