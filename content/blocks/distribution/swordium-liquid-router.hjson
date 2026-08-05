@@ -1,0 +1,21 @@
+type: LiquidRouter
+name: "[#ff5959]Swordium []Liquid Router"
+description: '''
+Made with [#ff5959]swordium, distributes liquids to three outputs equally.
+'''
+size: 1
+solid: false
+underBullets: true
+health: 80
+liquidCapacity: 250
+category: liquid
+squareSprite: false
+requirements: [
+  swordium/2
+]
+  research: {
+    parent: swordium-conduit
+    requirements: [
+      swordium/2
+]
+}
