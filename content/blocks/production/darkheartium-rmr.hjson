@@ -1,0 +1,58 @@
+type: Separator
+  name: "[#70AC30]Darkheartium []R.M.R"
+  description: "R.M.R stands for random material reconstituter, takes [#70AC30]darkheartium []& turns it into random materials, currently, only serpulo, erekir & P[#FF5959]S[]D materials
+[grey]along with 2 hidden materials[] can be made, only available in sandbox."
+	size: 3
+ itemCapacity: 300
+ health: 1100
+	craftTime: 5
+	hasItems: true
+	hasLiquids: false
+	hasPower: true
+ ambientSound: loopCutter
+ ambientSoundVolume: 3.5
+ hideDatabase: true
+	consumes: {
+		power: 2.5
+   items: [
+    darkheartium/1
+  ]
+	}
+	requirements: [
+		swordium/350
+  darkheartium/350
+	]
+	category: crafting
+ BuildVisibility: sandboxOnly
+	results: [
+		copper/1
+  lead/1
+  metaglass/1
+  graphite/1
+  sand/1
+  coal/1
+  titanium/1
+  thorium/1
+  scrap/1
+  silicon/1
+  plastanium/1
+  phase-fabric/1
+  surge-alloy/1
+  spore-pod/1
+  blast-compound/1
+  pyratite/1
+  beryllium/1
+  tungsten/1
+  oxide/1
+  carbide/1
+  darkheartium/1
+  firebrandium/1
+  ghostwalkerium/1
+  icedaggerium/1
+  illuminaium/1
+  swordium/1
+  venomshankium/1
+  windforceium/1
+  fissile-matter/1
+  dormant-cyst/1
+	]
