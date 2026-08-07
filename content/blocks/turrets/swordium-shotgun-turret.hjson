@@ -24,7 +24,7 @@ Fires 8 [#ff5959]swordium []piercing blasts that both pulls &  freezes enemies.
 shoot: {
     type: ShootSpread
     shots: 8
-    spread: 5
+    spread: 3.25
 }
   requirements: [
 swordium/120
@@ -48,16 +48,7 @@ swordium: {
     pierceBuilding: true
     pierceCap: 20
     hitShake: 2
-    shootEffect: {
-      type: WaveEffect
-      lifetime: 20
-      sizeFrom: 0
-      sizeTo: 50
-      strokeFrom: 0
-      strokeTo: 7
-      colorFrom: ff5959FF
-      colorTo: ff595900
-    }
+    shootEffect: none
   }
 }
 category: turret
