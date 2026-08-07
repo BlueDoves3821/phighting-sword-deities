@@ -1,0 +1,96 @@
+type: mech
+name: "[#97CCE1]Icedaggerium []Flame Suppressant Unit"
+description: '''
+Unit design based on the [#ff5959]swordium []melee unit, used for suppressing fire, can tolarate extreme heat, requires manual control.
+[grey]note: as this unit is more about defense, [#c2c2c2]ghostwalkerium [grey]is added to make enemies ignore the unit.
+'''
+envDisabled: 0
+hidden: false
+armor: 20
+health: 8150
+rotateSpeed: 8
+hitSize: 13
+canDrown: false
+stepShake: 1
+mineRange: 125
+mineFloor: true
+mineSpeed: 7.5
+mineTier: 100
+mineWalls: true
+itemCapacity: 400
+buildRange: 250
+buildSpeed: 15
+canBoost: true
+boostMultiplier: 1.75
+stepSound: swordium-unit-step
+engineSize: 4
+engineOffset: 7
+immunities: [burning, melting, freezing, wet]
+targetAir: false
+targetGround: false
+targetable: false
+weapons: [
+{
+reload: 1
+x: 0
+y: 4
+aiControllable: true
+useAmmo: false
+mirror: false
+rotate: false
+shootSound: stepWater
+shootSoundVolume: 1
+shootSoundPitchMin: 0.75
+shootSoundPitchMax: 0.75
+inaccuracy: 19
+velocityRnd: 0.1
+shootCone: 25
+shoot: {
+  shots: 15
+}
+bullet: {
+    type: LiquidBulletType
+    liquid: icedaggerium-liquid
+    ammoMultiplier: 1
+    damage: 5
+    knockback: 12
+    lifetime: 55
+    speed: 6.25
+    status: freezing
+    statusDuration: 640
+}
+}
+]
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 18
+  max: 2400
+  regen: 2.5
+  cooldown: 240
+  width: 4
+  angle: 365
+  color: 97CCE1
+  whenShooting: true
+  pushUnits: false
+ }
+ {
+  type: LiquidExplodeAbility
+  liquid: icedaggerium-liquid
+  amount: 500
+  radScale: 2
+  radAmountScale: 1
+ }
+]
+accel: 0.2
+drag: 0.1
+speed: 1.45
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      swordium/150
+      icedaggerium/50
+      ghostwalkerium/10
+]
+}

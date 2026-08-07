@@ -1,0 +1,122 @@
+type: mech
+name: "[#97CCE1]Icedaggerium []Core Unit"
+description: '''
+A heavily upgraded [#97CCE1]icedaggerium []flame suppressant unit, which was also has a design based on the [#ff5959]swordium []melee unit, core unit of the [#97CCE1]icedaggerium []core.
+'''
+envDisabled: 0
+hidden: false
+armor: 25
+health: 9250
+rotateSpeed: 8
+hitSize: 13
+canDrown: false
+stepShake: 2
+mineRange: 400
+mineFloor: true
+mineSpeed: 45
+mineTier: 100
+mineWalls: true
+itemCapacity: 625
+buildRange: 400
+buildSpeed: 45
+canBoost: true
+boostMultiplier: 2.5
+stepSound: swordium-unit-step
+engineSize: 4
+engineOffset: 7
+immunities: [burning, melting, freezing, wet]
+weapons: [
+{
+reload: 1
+x: 0
+y: 4
+aiControllable: true
+useAmmo: false
+mirror: false
+rotate: false
+shootSound: stepWater
+shootSoundVolume: 1
+shootSoundPitchMin: 0.75
+shootSoundPitchMax: 0.75
+inaccuracy: 19
+velocityRnd: 0.1
+shootCone: 25
+shoot: {
+  shots: 15
+}
+bullet: {
+    type: LiquidBulletType
+    liquid: icedaggerium-liquid
+    ammoMultiplier: 1
+    damage: 30
+    lifetime: 60
+    speed: 17.25
+    status: freezing
+    statusDuration: 640
+}
+}
+{
+ name: idcu-shotgun
+ reload: 20
+ x: 10.5
+ y: 6
+ top: true
+	xRand: 0
+ spacing: 3
+ layerOffset: -0.001
+	innacuracy: 0
+	rotate: false
+	shoot: {
+		type: ShootSpread
+		shots: 5
+		spread: 4
+	}
+	shootCone: 25
+ mirror: true
+ recoil: 1
+	shootSound: shootDiffuse
+ ejectEffect: none
+ bullet: {
+ type: LaserBulletType
+	hitSize: 4
+	lifetime: 12
+	drawSize: 110
+	collidesAir: true
+ damage: 310
+	length: 110
+	toColor: 97CCE1
+	pierce: true
+	pierceCap: 7
+	pierceBuilding: true
+ status: freezing
+ statusDuration: 1200
+ knockback: -10
+ }
+ }
+]
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 18
+  max: 4000
+  regen: 8
+  cooldown: 240
+  width: 4
+  angle: 365
+  color: 97CCE1
+  whenShooting: true
+  pushUnits: false
+ }
+ {
+  type: LiquidExplodeAbility
+  liquid: icedaggerium-liquid
+  amount: 500
+  radScale: 2
+  radAmountScale: 1
+ }
+]
+accel: 0.2
+drag: 0.1
+speed: 1.65
+  alwaysUnlocked: true
