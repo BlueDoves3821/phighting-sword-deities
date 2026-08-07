@@ -1,0 +1,12 @@
+type: Floor
+name: "[#70AC30]Darkheartium []Liquid"
+speedMultiplier: 0.75
+variants: 0
+isLiquid: true
+liquidDrop: darkheartium-liquid
+cacheLayer: tar
+supportsOverlay: true
+liquidMultiplier: 1
+drownTime: 600
+status: darkhearts-curse
+statusDuration: 7200
