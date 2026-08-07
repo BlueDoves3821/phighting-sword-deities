@@ -29,7 +29,7 @@ and convert it into either of the 7 sword deites!
 </p>
 Currently, there are around 120+ pieces of content, which includes a mobile swordium core for mobile bases.
 <p align="center">
-<img src="sprites/blocks/effects/swordium-core.png" width="100">
+<img src="sprites/blocks/effects/cores/swordium-core.png" width="100">
 </p>
 a swordium melee unit that has a sword.
 <p align="center">
