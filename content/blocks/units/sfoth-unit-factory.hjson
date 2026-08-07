@@ -55,6 +55,15 @@ swordium/150
     ]
  }
 {
+    unit: icedaggerium-flame-suppressant-unit
+    time: 1200
+    requirements: [
+swordium/150
+icedaggerium/50
+ghostwalkerium/10
+    ]
+ }
+{
     unit: illuminaium-empowerer
     time: 900
     requirements: [
