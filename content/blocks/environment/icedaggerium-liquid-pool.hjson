@@ -1,0 +1,12 @@
+type: Floor
+name: "[#97CCE1]Icedaggerium []Liquid"
+speedMultiplier: 0.85
+variants: 0
+isLiquid: true
+liquidDrop: icedaggerium-liquid
+cacheLayer: water
+supportsOverlay: true
+liquidMultiplier: 1
+drownTime: 300
+status: freezing
+statusDuration: 2400

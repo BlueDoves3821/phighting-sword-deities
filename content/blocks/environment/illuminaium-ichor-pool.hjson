@@ -1,0 +1,15 @@
+type: Floor
+name: "[#E2BAF5]Illuminaium []Ichor"
+speedMultiplier: 1.25
+variants: 0
+isLiquid: true
+liquidDrop: illuminaium-ichor
+cacheLayer: water
+supportsOverlay: true
+liquidMultiplier: 1
+drownTime: 1200
+status: illuminas-power
+statusDuration: 600
+emitLight: true
+lightRadius: 30
+lightColor: E2BAF5FF
