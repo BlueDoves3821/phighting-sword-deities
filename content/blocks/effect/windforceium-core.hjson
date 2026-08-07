@@ -3,9 +3,9 @@ name: '''
 [#929EAE]Windforceium []Core
 '''
 description: '''
-A moderately large core, core unit can disarm enemies.
+A moderately large core made with [#ff5959]swordium []& [#929eae]windforceium[], the core unit can disarm enemies by shooting them.
 '''
-health: 11200
+health: 11500
 armor: 10
 itemCapacity: 37500
 size: 4

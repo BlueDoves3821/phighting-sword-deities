@@ -3,11 +3,11 @@ name: '''
 [#E2BAF5]Illiuminaium []Core
 '''
 description: '''
-A large core, with a large ship to go along with it.
+A large core made with [#ff5959]swordium []& [#e2baf5]illuminaium[], has a large ship to go along with it, currently the best core yet.
 '''
-health: 17500
+health: 35100
 armor: 50
-itemCapacity: 76500
+itemCapacity: 85000
 size: 6
 category: effect
 unitType: illuminaium-ship-core

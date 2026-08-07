@@ -1,0 +1,36 @@
+type: Accelerator
+name: "[#97CCE1]Icedaggerium []Core Accelerator"
+description: '''
+An accelerator for the [#97CCE1]icedaggerium []core,
+does not require [#97CCE1]icedaggerium []liquid in order to accelerate the core, but it does require [#929EAE]windforceium.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+consumes: {
+ power: 13.34
+}
+health: 11520
+armor: 35
+size: 7
+category: effect
+ringColor: 97CCE1ff
+lightningColor: 97CCE1ff
+launchBlock: icedaggerium-core
+requirements: [
+  swordium/2500
+  icedaggerium/2500
+  windforceium/180
+]
+	research: {
+	parent: icedaggerium-core
+	requirements: [
+  swordium/2500
+  icedaggerium/2500
+  windforceium/180
+  ]
+  objectives: [
+  {
+    type: capturedSector
+    preset: planetaryTerminal
+  }
+  ]
+}

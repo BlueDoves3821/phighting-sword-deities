@@ -1,11 +1,11 @@
 {
   "name": "[#ff5959]Swordium []Core",
-  "description": "A core made for mobile bases, can be upgraded to any core of your choice.
+  "description": "A core made out of [#ff5959]swordium[], made for mobile bases, can be upgraded to any core of your choice that's larger than 3x3.
 [red]disclaimer: avoid deconstructing this core if it's the only core in the sector!",
-  "details": "remember to plan the location if you're planning to upgrade the core.",
+  "details": "remember to plan the location if you're planning to upgrade the core, because once upgraded, it cannot be deconstructed.",
   "size": 3,
-  "health": 4800,
-  "itemCapacity": 10000,
+  "health": 7500,
+  "itemCapacity": 15000,
   "armor": 10,
   "requirements": [
     { "item": "swordium","amount": 350}

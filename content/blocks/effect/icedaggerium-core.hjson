@@ -1,0 +1,25 @@
+type: CoreBlock
+name: '''
+[#97CCE1]Icedaggerium []Core
+'''
+description: '''
+A large core made with [#ff5959]swordium []& [#97CCE1]icedaggerium[], the core unit can suppress fires, but has limited offense capabilities.
+'''
+health: 22000
+armor: 25
+itemCapacity: 55000
+size: 5
+category: effect
+unitType: icedaggerium-core-unit
+unitCapModifier: 80
+requirements: [
+  swordium/1750
+  icedaggerium/1750
+]
+research: {
+    parent: icedaggerium-converter
+    requirements: [
+swordium/1750
+icedaggerium/1750
+]
+}
