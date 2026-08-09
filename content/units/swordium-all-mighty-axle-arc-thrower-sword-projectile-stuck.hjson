@@ -1,0 +1,98 @@
+type: missile
+controller: missileAI
+name: "[#ff5959]Swordium []All-Mighty Axle Arc Sword Projectile (Stuck)"
+speed: 0
+hitSize: 5
+hidden: false
+health: 500
+loopSound: all-mighty-axle-arc-countdown
+loopSoundVolume: 1
+outlines: false
+rotateSpeed: 0
+lifetime: 90
+range: 15
+flying: false
+outlines: false
+template: MissileUnitType
+drawCell: false
+trailEffect: none
+engineSize: 0
+engineOffset: 0
+missileAccelTime: 0
+lowAltitude: true
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+targetAir: false
+targetGround: true
+weapons: [
+	{
+	shootCone: 360
+ mirror: false
+ reload: 0
+ predictTarget: false
+ autoTarget: true
+ shootOnDeath: true
+ x: 0
+ shake: 15
+ y: 0
+ shoot: {
+ shotDelay: 90
+ }
+	bullet: {
+		type: BulletType
+		lifetime: 1
+		hittable: false
+		instantDisappear: true
+		damage: 0
+		collides: false
+		reflectable: false
+		splashDamage: 750
+		splashDamageRadius: 69.6
+		buildingDamageMultiplier: 1.75
+		speed: 0
+				hitEffect: {
+			type: MultiEffect
+			effects: [
+                {
+            type: ExplosionEffect
+            smokeColor: 5B5B5B80
+            smokeRad: 90
+            smokes: 48
+            smokeSize: 9
+            smokeSizeBase: 0
+            sparkColor: FF595980
+            sparkLen: 12
+            sparkRad: 90
+            sparks: 80
+            sparkStroke: 4
+            waveColor: FF5959
+            waveLife: 20
+            waveRad: 110
+            lifetime: 60
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 60
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 20
+            colorFrom: ff5959FF
+            colorTo: ff595900
+        }
+			]
+		}
+		hitSound: all-mighty-axle-arc-explosion
+		hitSoundVolume: 1
+		killShooter: true
+		status: slow
+		statusDuration: 230
+	}
+	}
+]
+
