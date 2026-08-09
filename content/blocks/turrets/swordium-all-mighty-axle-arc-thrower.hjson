@@ -39,7 +39,7 @@ ammoTypes: {
 }
 }
   research: {
-    parent: swordium-laser-turret
+    parent: swordium-laser-charger
     requirements: [
       swordium/115
 ]
