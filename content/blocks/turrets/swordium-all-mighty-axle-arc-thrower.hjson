@@ -1,0 +1,46 @@
+type: ItemTurret
+requirements: [
+swordium/115
+]
+name: "[#ff5959]Swordium []All-Mighty Axle Arc Thrower"
+description: '''
+[#ff5959]"An exploding sword! suprising, isn't it?"
+[]Throws an exploding [#ff5959]sword []at ground units.
+[grey]note: the projectile may insta-explode due it clipping inside buildings.
+'''
+category: turret
+targetAir: false
+range: 840
+smokeEffect: none
+shootSound: all-mighty-axle-arc-throw
+outlineRadius: 0
+reload: 240
+recoil: 3
+shake: 8
+size: 4
+shootEffect: none
+drawer: {
+type: DrawTurret
+parts: [
+{
+suffix: "-sword"
+progress: reload
+color: ffffff
+colorTo: ffffff00
+under: true
+outline: false
+y: 0
+}
+]
+}
+ammoTypes: {
+  swordium: {
+    spawnUnit: swordium-all-mighty-axle-arc-thrower-sword-projectile
+}
+}
+  research: {
+    parent: swordium-laser-turret
+    requirements: [
+      swordium/115
+]
+}
