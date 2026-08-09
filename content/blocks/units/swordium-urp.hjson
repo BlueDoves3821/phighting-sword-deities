@@ -1,0 +1,27 @@
+type: RepairTurret
+name: "[#ff5959]Swordium []U.R.P"
+description: "U.R.P stands for unit repair point, repairs the closest unit nears it's vincinity, can take coolant for extra healing."
+health: 425
+size: 1
+repairSpeed: 5.5
+laserColor: FF5959FF
+beamWidth: 0.9
+pulseRadius: 5
+repairRadius: 120
+consumes: {
+  power: 1
+}
+liquidCapacity: 180
+coolEffect: fuelburn
+coolantMultiplier: 2.5
+acceptCoolant: true
+	requirements: [
+		swordium/35
+	]
+	category: units
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/35
+]
+}
