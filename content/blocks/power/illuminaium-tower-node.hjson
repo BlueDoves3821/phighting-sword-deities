@@ -5,6 +5,8 @@ size: 2
 health: 750
 laserRange: 200
 maxNodes: 5
+laserColor1: E2BAF5ff
+laserColor2: 8A7297ff
 	requirements: [
 		swordium/45
   illuminaium/45

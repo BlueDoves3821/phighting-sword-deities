@@ -5,6 +5,8 @@ size: 1
 health: 400
 laserRange: 40
 maxNodes: 20
+laserColor1: ff5959ff
+laserColor2: 9D3838ff
 	requirements: [
 		swordium/20
 	]
