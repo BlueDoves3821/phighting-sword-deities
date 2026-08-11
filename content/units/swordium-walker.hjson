@@ -34,7 +34,6 @@ Assists units, passively boosts units with the [#ff5959]sword's []might, but can
   itemCapacity: 700
   buildRange: 1000
   buildSpeed: 15
-  defaultController: DefenderAI
   range: 450
   maxRange: 450
   stepSound: swordium-unit-step

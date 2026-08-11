@@ -33,7 +33,6 @@ also applies [#70AC30]darkheart's []curse to units caught in the blast.
   hovering: true
   canDrown: false
   drawCell: false
-  defaultController: SuicideAI
   stepSound: darkheartium-unit-step
 abilities:[
  {

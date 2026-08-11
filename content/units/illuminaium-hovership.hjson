@@ -29,7 +29,6 @@ moveSoundPitchMax: 1
 buildRange: 900
 buildSpeed: 10
 engineSize: 0
-defaultController: GroundAI
   research: {
     parent: sfoth-unit-factory
     requirements: [

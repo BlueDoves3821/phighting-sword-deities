@@ -3,7 +3,7 @@ controller: missileAI
 name: "[#ff5959]Swordium []All-Mighty Axle Arc Sword Projectile (Stuck)"
 speed: 0
 hitSize: 5
-hidden: false
+hidden: true
 health: 500
 loopSound: all-mighty-axle-arc-countdown
 loopSoundVolume: 1

@@ -13,7 +13,6 @@ rotateSpeed: 5
 hitSize: 20
 flying: true
 buildSpeed: 10
-defaultController: DefenderAI
 engineSize: 0
 payloadCapacity: 8500
 engines: [

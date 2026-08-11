@@ -12,7 +12,6 @@ armor: 3
 hitSize: 10
 range: 1200
 rotateSpeed: 10
-defaultController: FlyingFollowAI
 abilities:[
  {
   type:ShieldArcAbility

@@ -21,7 +21,6 @@ itemCapacity: 400
 buildRange: 250
 buildSpeed: 15
 canBoost: false
-DefaultController: GroundAI
 stepSound: swordium-unit-step
 weapons: [
 {

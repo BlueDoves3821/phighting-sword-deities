@@ -18,7 +18,6 @@ speed: 5.22
 rotateSpeed: 7
 itemCapacity: 0
 range: 75
-DefaultController: SuicideAI
 immunities: [burning, melting]
 abilities:[
  {
