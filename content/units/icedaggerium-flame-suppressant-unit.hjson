@@ -1,7 +1,7 @@
 type: mech
 name: "[#97CCE1]Icedaggerium []Flame Suppressant Unit"
 description: '''
-Unit design based on the [#ff5959]swordium []melee unit, used for suppressing fire, can tolarate extreme heat, requires manual control.
+Unit design based on the [#ff5959]swordium []melee unit, used for suppressing fire, can tolerate extreme heat, requires manual control.
 [grey]note: as this unit is more about defense, [#c2c2c2]ghostwalkerium [grey]is added to make enemies ignore the unit.
 '''
 envDisabled: 0
