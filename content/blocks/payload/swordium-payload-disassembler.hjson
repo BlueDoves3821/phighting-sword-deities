@@ -7,6 +7,7 @@ itemCapacity: 750
 size: 5
 category: units
 deconstructSpeed: 2.5
+hasPower: false
 requirements: [
 swordium/200
 ]
