@@ -1,0 +1,20 @@
+name: "[#70AC30]Darkheartium []Unloader"
+description: '''
+Made with [#ff5959]swordium []& [#70AC30]darkheartium,[] extremely fast unloading speed, but it's explosive.
+'''
+	type: Unloader
+	health: 350
+	speed: 0.015
+ baseExplosiveness: 200
+	requirements: [
+		swordium/10
+  darkheartium/10
+	]
+	category: distribution
+  research: {
+    parent: darkheartium-converter
+    requirements: [
+      swordium/10
+      darkheartium/10
+]
+}

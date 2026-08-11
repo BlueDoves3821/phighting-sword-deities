@@ -1,0 +1,15 @@
+type: Sorter
+name: "[#ff5959]Swordium []Sorter"
+description: '''
+If an item matches the filter, proceed forward, otherwise, it's outputted to the sides.
+'''
+	requirements: [
+		swordium/2
+	]
+	category: distribution
+  research: {
+    parent: swordium-duct
+    requirements: [
+      swordium/10
+]
+}

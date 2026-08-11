@@ -1,0 +1,17 @@
+name: "[#ff5959]Swordium []Unloader"
+description: '''
+Made with [#ff5959]swordium, []fast unloading speed.
+'''
+	type: Unloader
+	health: 200
+	speed: 0.45
+	requirements: [
+		swordium/10
+	]
+	category: distribution
+  research: {
+    parent: swordium-duct
+    requirements: [
+      swordium/10
+]
+}

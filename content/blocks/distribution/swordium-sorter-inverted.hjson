@@ -1,0 +1,14 @@
+type: Sorter
+invert: true
+name: "[#ff5959] Swordium []Sorter (Inverted)"
+description: If an item matches the filter, proceed to the sides, otherwise, it's outputted fowards.
+requirements: [
+		swordium/2
+	]
+	category: distribution
+  research: {
+    parent: swordium-sorter
+    requirements: [
+      swordium/10
+]
+}
