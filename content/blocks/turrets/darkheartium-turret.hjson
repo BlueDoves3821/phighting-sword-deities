@@ -1,7 +1,7 @@
 type: ItemTurret
 requirements: [
-swordium/150
-darkheartium/150
+swordium/250
+darkheartium/250
 ]
 name: "[#70AC30]Darkheartium []Turret"
 description: '''
@@ -38,26 +38,29 @@ moveY: -3
 ammoTypes: {
 darkheartium: {
     type: BasicBulletType
-    width: 15
-    height: 15
-    backColor: 70AC30
+    width: 30
+    height: 30
+    backColor: 5E9128
     frontColor: 70AC30
     shieldDamageMultiplier: 1010
     buildingDamageMultiplier: 30
-    damage: 7150
+    sprite: large-bomb
+    backSprite: large-bomb-back
+    spin: 5
+    damage: 7100
     lifetime: 5000
-    drag: -0.0001
-    speed: 2
-    homingPower: 0.5
+    drag: -0.0005
+    speed: 3.25
+    homingPower: 0.85
     homingRange: 2000
     status: darkhearts-curse
     statusDuration: 3000
-    trailEffect: mineHuge
+    trailEffect: fluxVapor
     trailChance: 1
     trailColor: 70AC30
     pierce: true
     pierceBuilding: true
-    pierceCap: 200
+    pierceCap: 220
     hittable: false
     chargeEffect: {
       type: multiEffect
@@ -109,6 +112,7 @@ ammoPerShot: 1
 research: {
     parent: swordium-laser-turret
     requirements: [
-darkheartium/300
+swordium/250
+darkheartium/250
 ]
 }
