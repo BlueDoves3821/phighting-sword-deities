@@ -1,0 +1,208 @@
+type: mech
+name: '''
+[#E2BAF5]Illuminaium []Hovership (Railgun)
+'''
+description: '''
+Fires the same projectile as the [#E2BAF5]illuminaium []railgun, albeit weaker, can also build.
+'''
+envDisabled: 0
+hidden: false
+hovering: true
+hoverable: true
+shadowElevation: 0.2
+mechFrontSway: 0
+mechSideSway: 0
+mechStride: 0
+drag: 0.08
+speed: 3.5
+rotateSpeed: 5
+accel: 0.095
+groundLayer: 60
+health: 2200
+armor: 10
+hitSize: 12
+canDrown: false
+moveSound: loopExtract
+moveSoundVolume: 0.25
+moveSoundPitchMin: 0.25
+moveSoundPitchMax: 0.85
+buildRange: 900
+buildSpeed: 10
+engineSize: 0
+  research: {
+    parent: illuminaium-hovership
+    requirements: [
+      swordium/30
+      illuminaium/30
+]
+}
+  range: 500
+abilities: [
+  {
+    type: MoveEffectAbility
+    teamColor: true
+    effect: missileTrailShort
+    x: 0
+    y: -7
+    interval: 9
+    minVelocity: 0.6
+  }
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 45
+	radius: 50
+	regen: 15
+	max: 5000
+	cooldown: 240
+ 
+ }
+ {
+  type: EnergyFieldAbility
+  damage: 5
+  reload: 25
+  range: 50
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: windforces-disarmerment
+  statusDuration: 360
+  color: E2BAF5
+  maxTargets: 50
+  healPercent: 5
+ }
+]
+engines: [
+  {
+    x: 0
+    y: -7
+    radius: 3
+rotation: -90
+  }
+]
+itemCapacity: 0
+useEngineElevation: false
+lowAltitude: true
+weapons:[
+
+    {
+        rotate: false
+        mirror: true
+        name: illuminaium-ship-weapon
+        x: 4.5
+        y: 3.75
+        reload: 90
+        recoil: 1
+        ejectEffect: casing3
+        shootSound: illuminaium-railgun-shoot
+        chargeSound: illuminaium-railgun-charge
+        soundPitchMin: 1
+        soundPitchMax: 1
+        shootStatus: unmoving
+        shootStatusDuration: 90
+        shake: 3
+        shoot: {
+firstShotDelay: 90
+    type: ShootSpread
+    shots: 3
+    spread: 0.25
+}
+        layerOffset: -1
+        heatColor: ab34000ff
+        
+    bullet: {
+  shootEffect:{
+    type: MultiEffect
+    effects:[shootSmokeSquareSparse, {
+    type: WaveEffect
+    colorFrom: E8C7F7
+    colorTo: E8C7F7
+    sizeTo: 4
+    strokeFrom: 4
+    lifetime: 24
+    }
+    ]
+}
+chargeEffect: {
+type: MultiEffect
+    effects: [
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 7
+    length: 0
+    lifetime: 90
+    colorFrom: E2BAF500
+    colorTo: E8C7F7FF
+    region: large-orb-back
+    cone: 360
+	}
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 9
+    length: 0
+    lifetime: 90
+    colorFrom: E2BAF500
+    colorTo: E8C7F7FF
+    region: mine-bullet
+    spin: 1
+    cone: 360
+	}
+    {
+    type: WaveEffect
+    lifetime: 75
+    sizeFrom: 50
+    sizeTo: 0
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: E2BAF500
+    colorTo: E8C7F7FF
+}
+]
+}
+  smokeEffect: vapor
+  homingPower: 0.25
+  speed: 20
+  recoil: 2
+  drag: -0.005
+  lifetime: 3200
+  trailLength: 50
+  trailWidth: 1.5
+  trailColor: E2BAF5
+  type: BasicBulletType
+  frontColor: ffffff
+  backColor: E8C7F7
+  sprite: circle-bullet
+  damage: 500
+  splashDamage: 310
+  splashDamageRadius: 75
+  hitEffect: hitBulletColor
+  despawnEffect: none
+  fragBullets: 12
+  fragSpread: 90
+  pierce: true
+  pierceCap: 50
+  fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 0
+    toColor: E8C7F7
+    length: 60
+    lifetime: 30
+    width: 12
+    hitLarge: true
+    damage: 140
+    status: slow
+    statusDuration: 1200
+    knockback: 1.2
+    impact: true
+    }
+  fragRandomSpread: 0
+  knockback: 1
+  hitColor: E8C7F7
+}
+    }
+
+]

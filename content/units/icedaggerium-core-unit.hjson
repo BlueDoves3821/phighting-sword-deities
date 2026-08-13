@@ -83,7 +83,7 @@ bullet: {
 	drawSize: 110
 	collidesAir: true
  damage: 310
-	length: 110
+	length: 250
 	toColor: 97CCE1
 	pierce: true
 	pierceCap: 7

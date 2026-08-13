@@ -66,7 +66,12 @@ abilities:[
 {
   type: SpawnDeathAbility
   unit: illuminaium-hovership
-  amount: 5
+  amount: 3
+  }
+{
+  type: SpawnDeathAbility
+  unit: illuminaium-hovership-railgun
+  amount: 2
   }
 
 ]
