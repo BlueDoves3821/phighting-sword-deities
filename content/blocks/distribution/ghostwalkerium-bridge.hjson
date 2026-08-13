@@ -1,6 +1,8 @@
   type: ItemBridge
   name: "[#c2c2c2]Ghostwalkerium []Bridge",
   description: "High ranged bridge, can be used to skip over large amounts of terrains & buildings, cannot be auto-targeted.",
+  priority: -1
+  targetable: false
   hasPower: false
   transportTime: 0.1
   itemCapacity: 5

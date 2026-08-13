@@ -1,6 +1,8 @@
   type: LiquidBridge
   name: "[#c2c2c2]Ghostwalkerium []Liquid Bridge",
   description: "High ranged liquid bridge, can be used to skip over large amounts of terrains & buildings, cannot be auto-targeted.",
+ priority: -1
+ targetable: false
   hasPower: false
   transportTime: 0.1
   liquidCapacity: 10
