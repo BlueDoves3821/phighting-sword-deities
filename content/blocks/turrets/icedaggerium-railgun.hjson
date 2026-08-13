@@ -22,7 +22,7 @@ Fires a hit-scanning projectile, applies freezing status to enemies, can optiona
 	ammoTypes:	{
 	icedaggerium: {
     type: LaserBulletType
-    damage: 950
+    damage: 1350
     sideLength: 0
     sideWidth: 13
     lifetime: 24

@@ -4,7 +4,7 @@ description: '''
 Fires 8 [#ff5959]swordium []piercing blasts that both pulls &  freezes enemies.
 '''
   size: 2
-  health: 640
+  health: 900
   range: 250
   reload: 15
   recoil: 2

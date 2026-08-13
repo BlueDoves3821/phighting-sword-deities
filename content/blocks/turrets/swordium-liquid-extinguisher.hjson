@@ -10,6 +10,7 @@ it can also use [#70AC30]darkheartium []liquid too, although it's not recommende
 hasShadow: false
 category: turret
 range: 780
+health: 640
 shootEffect: none
 smokeEffect: none
 reload: 1
