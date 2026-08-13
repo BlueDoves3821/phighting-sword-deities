@@ -2,7 +2,7 @@ type: missile
 name: "[#ff5959]Swordium []All-Mighty Axle Arc Sword Projectile"
 template: MissileUnitType
 flying: true
-speed: 3.5
+speed: 4.5
 physics: false
 lifetime: 240
 lowAltitude: true
@@ -12,7 +12,7 @@ outlineRadius: 0
 rotateSpeed: 0
 useUnitCap: false
 health: 500
-autoFindTarget: false
+autoFindTarget: true
 faceTarget: false
 targetAir: false
 targetUnderBlocks: false
@@ -25,7 +25,7 @@ loopSound: all-mighty-axle-arc-airtime
 loopSoundVolume: 1.25
 deathSound: none
 trailEffect: none
-range: 15
+range: 120
 weapons: [
   {
     reload: 1

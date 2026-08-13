@@ -10,7 +10,7 @@ loopSoundVolume: 1
 outlines: false
 rotateSpeed: 0
 lifetime: 90
-range: 15
+range: 0
 flying: false
 outlines: false
 template: MissileUnitType
@@ -50,7 +50,7 @@ weapons: [
 		damage: 0
 		collides: false
 		reflectable: false
-		splashDamage: 750
+		splashDamage: 1500
 		splashDamageRadius: 69.6
 		buildingDamageMultiplier: 1.75
 		speed: 0
