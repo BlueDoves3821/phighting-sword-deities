@@ -21,6 +21,13 @@ shake: 8
 size: 4
 predictTarget: false
 shootEffect: none
+liquidCapacity: 150
+coolant: {
+  type: ConsumeCoolant
+  allowLiquid: true
+  amount: 0.25
+}
+coolantMultiplier: 3
 drawer: {
 type: DrawTurret
 parts: [
