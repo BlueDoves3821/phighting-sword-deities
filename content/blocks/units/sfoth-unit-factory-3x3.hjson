@@ -56,6 +56,14 @@ swordium/50
     ]
  }
   {
+    unit: illuminaium-hovership-railgun
+    time: 900
+    requirements: [
+illuminaium/30
+swordium/30
+    ]
+ }
+  {
     unit: illuminaium-hovership
     time: 900
     requirements: [
