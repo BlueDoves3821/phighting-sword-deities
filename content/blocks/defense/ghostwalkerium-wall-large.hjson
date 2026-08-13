@@ -5,6 +5,7 @@ A wall made out of [#c2c2c2]ghostwalkerium, []can be placed on deep liquids, has
     type: Wall
     placeableLiquid: true
     targetable: false
+    priority: -1
     health: 3600
     size: 2
     chanceDeflect: 35
