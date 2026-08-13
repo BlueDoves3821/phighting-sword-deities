@@ -9,6 +9,7 @@ Basically the [#ff5959]swordium []pump with [#c2c2c2]ghostwalkerium []added, can
   pumpAmount: 1.25
   hasPower: false
   placeableLiquid: true
+  priority: -1
   targetable: false
 	requirements: [
 		swordium/40

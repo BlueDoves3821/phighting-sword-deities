@@ -6,6 +6,7 @@ requirements: [
   swordium/50
   ghostwalkerium/20
 ]
+priority: -1
 targetable: false
 drillTime: 30
 health: 750
