@@ -1,21 +1,21 @@
 type: PayloadDeconstructor
-name: "[#ff5959]Swordium []Payload Disassembler"
+name: "Large [#ff5959]Swordium []Payload Disassembler"
 description: '''
 Disassembles buildings & units, returns 100% of the materials used to construct the buildings/units.
 '''
-itemCapacity: 750
-size: 5
+itemCapacity: 1850
+size: 9
 category: units
 deconstructSpeed: 4
 hasPower: false
-maxPayloadSize: 5
+maxPayloadSize: 9
 requirements: [
-swordium/200
+swordium/380
 ]
 category: units
 research: {
-    parent: swordium-payload-conveyor
+    parent: swordium-payload-disassembler
     requirements: [
-      swordium/200
+      swordium/380
 ]
 }
