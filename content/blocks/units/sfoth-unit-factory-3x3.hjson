@@ -47,6 +47,14 @@ ghostwalkerium/150
 swordium/150
     ]
  }
+  {
+    unit: ghostwalkerium-repairer
+    time: 600
+    requirements: [
+ghostwalkerium/40
+swordium/40
+    ]
+ }
 {
     unit: illuminaium-empowerer
     time: 900
