@@ -47,7 +47,7 @@ shootSound: swordium-laser-shoot
 chargeSound: swordium-laser-charge
 shoot: {
   firstShotDelay: 32
-  shots: 3
+  shots: 4
   shotDelay: 12
 }
 bullet:{
@@ -65,7 +65,7 @@ bullet:{
     collidesTeam: true
     shootEffect: shootSmokeDisperse
     smokeEffect: shootSmokeSquare
-    healPercent: 15
+    healPercent: 20
     colors: [
       C2C2C2,
       ffffff
