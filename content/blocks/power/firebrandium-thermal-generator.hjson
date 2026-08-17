@@ -1,12 +1,14 @@
 type: ThermalGenerator
 name: "[#861C00]Firebrandium []Thermal Generator"
 description: '''
-Generates power when placed on hot locations, for the most amount of power, place it directly on slag pools.
+Generates power when placed on hot locations, creates abit of slag as by-product, for the most amount of power, place it directly on slag pools.
 '''
 health: 350
 category: power
 powerProduction: 5
 effectChance: 0.011
+outputLiquid: slag/0.05
+liquidCapacity: 200
 generateEffect: {
 type: ParticleEffect
 particles: 1

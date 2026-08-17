@@ -1,0 +1,38 @@
+type: ThermalGenerator
+description: Generates power from thermal vents, outputs a bit of water.
+size: 3
+name: "[#ff5959]Swordium []Turbine Generator"
+health: 540
+generateEffect: ventSteam
+attribute: steam
+displayEfficiencyScale: 0.25
+displayEfficiency: false
+minEfficiency: 0
+powerProduction: 2
+squareSprite: false
+category: power
+outputLiquid: water/0.25
+liquidCapacity: 200
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: "-rotator"
+      spinSprite: true
+      rotateSpeed: 2
+    }
+  ]
+}
+requirements: [
+      swordium/50
+  ]
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/50
+]
+}
