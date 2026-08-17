@@ -1,26 +1,22 @@
 type: ItemTurret
 name: "[#A4C360]Venomshankium []Minion Launcher"
 description: '''
-Fires a projectile that spawns [#A4C360]venomshankium's []minions.
+Fires a projectile that spawns [#A4C360]venomshankium's []minions, requires manual control.
 '''
 size: 4
 health: 1280
 range: 850
-
 reload: 85
 rotateSpeed: 3
-
 recoil: 3
-
 inaccuracy: 0
-
 liquidCapacity: 150
 shootY: 5
-
 squareSprite: false
-
 loopSound: none
 shootSound: shootSmite
+targetGround: false
+targetAir: false
 
 destroyBulletSameTeam: true
 destroyBullet: {
