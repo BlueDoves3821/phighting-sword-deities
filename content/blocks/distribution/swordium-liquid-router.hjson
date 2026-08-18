@@ -1,7 +1,7 @@
 type: LiquidRouter
 name: "[#ff5959]Swordium []Liquid Router"
 description: '''
-Made with [#ff5959]swordium, distributes liquids to three outputs equally.
+Made with [#ff5959]swordium[], distributes liquids to three outputs equally.
 '''
 size: 1
 solid: false
