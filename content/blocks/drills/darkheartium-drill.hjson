@@ -1,0 +1,39 @@
+name: "[#70AC30]Darkheartium []Drill"
+description: "An extremely fast drill, optionally takes [#70AC30]darkheartium []liquid for a faster mining time."
+  type: Drill
+  health: 800
+  baseExplosiveness: 200
+  hasLiquids: false
+  size: 2
+  itemCapacity: 650
+  tier: 20
+  drawMineItem: true
+  drillTime: 5
+  optionalBoostIntensity: 5
+  warmupSpeed: 2
+  hardnessDrillMultiplier: 1
+  drillEffect: mineHuge
+  updateEffect: pulverize
+  updateEffectChance: 0.06
+  rotateSpeed: 0
+  consumes: {
+  liquids: {
+    liquids: [
+      darkheartium-liquid/0.0416666666667
+    ]
+    optional: true
+    booster: true
+  }
+}
+requirements: [
+      swordium/50
+      darkheartium/35
+]
+  research: {
+    parent: darkheartium-converter
+    requirements: [
+      swordium/50
+      darkheartium/35
+]
+}
+category: production

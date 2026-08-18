@@ -1,7 +1,7 @@
 type: Drill
 
 name: "[#c2c2c2]Ghostwalkerium []Drill"
-description: "Basically the [#ff5959]swordium []drill with [#c2c2c2]ghostwalkerium []added, cannot be auto-targeted."
+description: "Basically the [#ff5959]swordium []drill with [#c2c2c2]ghostwalkerium []added, optionally consumes water to boost speed, cannot be auto-targeted."
 requirements: [
   swordium/50
   ghostwalkerium/20
@@ -15,9 +15,19 @@ hardnessDrillMultiplier: 1
 size: 2
 rotateSpeed: 8
 warmupSpeed: 0.01
-itemCapacity: 150
-liquidCapacity: 500
+itemCapacity: 250
+liquidCapacity: 100
 liquidBoostIntensity: 2
+  consumes:
+  {
+    liquid:
+    {
+      liquid: water
+      amount: 0.31
+      booster: true
+      optional: true
+    }
+  }
 drillEffect: mineSmall
 updateEffect: pulverizeSmall
 updateEffectChance: 0.06

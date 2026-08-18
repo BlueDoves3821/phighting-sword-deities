@@ -14,7 +14,7 @@ hardnessDrillMultiplier: 1
 size: 2
 rotateSpeed: 8
 warmupSpeed: 0.01
-itemCapacity: 150
+itemCapacity: 250
 range: 15
 sparkColor: ffffff
   research: {
