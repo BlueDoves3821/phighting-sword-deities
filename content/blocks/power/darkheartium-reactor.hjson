@@ -12,7 +12,7 @@ baseExplosiveness: 10
 explosionRadius: 50
 explosionDamage: 500
 explosionShake: 5
-powerProduction: 35
+powerProduction: 100
 consumes: {
   items: [
     darkheartium/2
