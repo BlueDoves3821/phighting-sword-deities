@@ -1,7 +1,7 @@
 type: ItemTurret
 name: "[#E2BAF5]Illuminaium []Railgun"
 description: '''
-Fires 10 powerful versions of the [#E2BAF5]illuminaium []projectile at high velocity, can decimate units, but loses half of it's homing power.
+Fires 10 powerful versions of the [#E2BAF5]illuminaium []projectile at high velocity, can decimate units, prioritizes stronger units, but loses half of it's homing power.
 '''
 reload: 120
 shootCone: 5
@@ -11,6 +11,7 @@ targetAir: true
 range: 2500
 recoil: 2
 size: 4
+unitSort: strongest
 health: 910
 AmmoPerShot: 20
 maxAmmo: 70

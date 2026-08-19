@@ -1,10 +1,11 @@
 type: ContinuousTurret
 name: "[#E2BAF5]Illuminaium []S.P.T"
-description: "S.P.T stands for single point turret, deals extreme damage to a single unit, pierces armor & destroys shields instantly.",
+description: "S.P.T stands for single point turret, deals extreme damage to a single unit, prioritizes stronger units, pierces armor & destroys shields instantly.",
 targetAir: true
 targetGround: true
 health: 1300
 size: 4
+unitSort: strongest
 shootCone: 360
 rotateSpeed: 3
 aimChangeSpeed: 3
