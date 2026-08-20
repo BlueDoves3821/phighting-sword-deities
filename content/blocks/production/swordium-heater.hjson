@@ -1,0 +1,34 @@
+type: HeatProducer
+  name: "[#FF5959]Swordium []Heater"
+  description: "Uses power to apply heat to buildings, not as efficent as the [#861C00]firebrandium []counterpart, but useful in tight spaces."
+  size: 1
+  health: 300
+  drawer: {
+  type: DrawMulti
+  drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawHeatOutput
+      }
+    ]
+  }
+  consumes: {
+  power: 1.5
+}
+  warmupRate: 2
+  rotateDraw: false
+  heatOutput: 20
+  regionRotated1: 1
+  category: crafting
+  loopSound: loopHum
+ 	requirements: [
+		swordium/25
+	]
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/25
+]
+}
