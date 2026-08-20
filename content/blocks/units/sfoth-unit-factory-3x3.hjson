@@ -33,7 +33,7 @@ swordium/20
  }
   {
     unit: ghostwalkerium-drone
-    time: 1080
+    time: 300
     requirements: [
 ghostwalkerium/10
 swordium/10

@@ -40,7 +40,7 @@ swordium/175
  }
   {
     unit: ghostwalkerium-drone
-    time: 1080
+    time: 300
     requirements: [
 ghostwalkerium/10
 swordium/10
@@ -60,6 +60,14 @@ swordium/150
     requirements: [
 ghostwalkerium/40
 swordium/40
+    ]
+ }
+  {
+    unit: ghostwalkerium-super-carrier
+    time: 3600
+    requirements: [
+ghostwalkerium/320
+swordium/320
     ]
  }
 {
