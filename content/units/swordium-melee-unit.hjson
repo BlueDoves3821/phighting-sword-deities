@@ -69,7 +69,7 @@ accel: 0.2
 drag: 0.1
 speed: 1.45
   research: {
-    parent: sfoth-unit-factory
+    parent: swordium-walker
     requirements: [
       swordium/150
 ]

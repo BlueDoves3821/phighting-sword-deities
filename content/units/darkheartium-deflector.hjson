@@ -50,7 +50,7 @@ abilities: [
  }
 ]
 research: {
-    parent: sfoth-unit-factory
+    parent: darkheartium-walker
     requirements: [
       swordium/130
       darkheartium/130

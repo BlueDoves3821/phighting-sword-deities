@@ -47,7 +47,7 @@ weapons: [
     }
 ]
 research: {
-    parent: sfoth-unit-factory
+    parent: swordium-walker
     requirements: [
       swordium/15
 ]

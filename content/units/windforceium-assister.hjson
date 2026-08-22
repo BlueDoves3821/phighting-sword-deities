@@ -12,6 +12,14 @@ speed: 5
 rotateSpeed: 5
 hitSize: 12
 flying: true
+mineRange: 400
+mineFloor: true
+mineSpeed: 10
+mineTier: 100
+mineWalls: true
+itemCapacity: 250
+buildRange: 400
+buildSpeed: 10
 engineSize: 0
 engines: [
   {
