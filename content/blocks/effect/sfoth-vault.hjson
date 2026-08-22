@@ -1,0 +1,38 @@
+name: '''
+SFOTH Vault
+'''
+description: '''
+A vault that uses all the materials for it's construction, highly explosive, but it cannot be auto-targeted.
+'''
+type: StorageBlock
+itemCapacity: 16000
+size: 3
+category: effect
+health: 2100
+armor: 20
+baseExplosiveness: 600
+priority: -1
+targetable: false
+	requirements: [
+  darkheartium/140
+  firebrandium/140
+  ghostwalkerium/140
+  icedaggerium/140
+	 illuminaium/140
+  swordium/140
+  venomshankium/140
+  windforceium/140
+	]
+  research: {
+    parent: sfoth-factory
+    requirements: [
+  darkheartium/140
+  firebrandium/140
+  ghostwalkerium/140
+  icedaggerium/140
+	 illuminaium/140
+  swordium/140
+  venomshankium/140
+  windforceium/140
+]
+}
