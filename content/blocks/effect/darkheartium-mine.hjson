@@ -1,0 +1,37 @@
+ type: ShockMine
+ name: "[#70AC30]Darkheartium []Mine"
+ description: "Afflicts [#70AC30]darkheart's []curse onto ground units who stepped on the mine, explodes when destroyed."
+ underBullets: true
+ health: 100
+ cooldown: 1
+ baseExplosiveness: 20
+ lightningColor: 70AC30
+ damage: 25
+ length: 15
+ tendrils: 2
+ tileDamage: 10
+ baseShake: 5
+ priority: -1
+ shootSound: shockBullet
+ bullet: {
+	type: LiquidBulletType
+ liquid: darkheartium-liquid
+ ammoMultiplier: 1
+ damage: 20
+ lifetime: 1
+ speed: 5
+ status: darkhearts-curse
+ statusDuration: 1200
+}
+ category: effect
+  research: {
+parent: darkheartium-converter
+requirements: [
+  swordium/15
+  darkheartium/15
+]
+}
+requirements : [
+        swordium/15
+        darkheartium/15
+    ]
