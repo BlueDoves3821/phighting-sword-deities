@@ -1,14 +1,14 @@
 type: ItemTurret
 name: "[#929EAE]Windforceium []Disarmer"
 description: '''
-Disarms enemies from using their weapons.
+Fires 20 projectiles, each projectile disarms enemies from using their weapons, slightly homing.
 '''
 reload: 20
 shootCone: 55
 rotateSpeed: 5
 targetGround: true
 targetAir: true
-range: 520
+range: 640
 recoil: 0
 size: 2
 health: 600
@@ -33,10 +33,11 @@ ammoTypes: {
         speed: 6
         height: 15
         width: 10
-        lifetime: 85
+        lifetime: 105
         pierce: true
         pierceCap: 35
         knockback: 25
+        homingPower: 0.125
         status: windforces-disarmerment
         statusDuration: 60000
     }
