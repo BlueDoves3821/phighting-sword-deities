@@ -12,14 +12,14 @@
  tileDamage: 10
  baseShake: 5
  priority: -1
- shootSound: shockBullet
  bullet: {
 	type: LiquidBulletType
  liquid: darkheartium-liquid
  ammoMultiplier: 1
  damage: 20
- lifetime: 1
- speed: 5
+ lifetime: 3
+ speed: 1
+ knockback: 0
  status: darkhearts-curse
  statusDuration: 1200
 }
