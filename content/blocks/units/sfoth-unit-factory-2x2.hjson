@@ -93,6 +93,14 @@ windforceium/65
 swordium/65
     ]
  }
+{
+    unit: windforceium-mobile-disarmer
+    time: 1500
+    requirements: [
+windforceium/150
+swordium/150
+    ]
+ }
 ]
 requirements: [
 swordium/65
