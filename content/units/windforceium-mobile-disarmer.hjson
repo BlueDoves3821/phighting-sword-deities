@@ -1,0 +1,203 @@
+  template: ErekirUnitType
+  name: '''
+[#929EAE]Windforceium []Mobile Disarmer
+'''
+
+description: '''
+Disarms units after charging up it's attack, does not have a shield to protect itself, but has higher health, cannot be disarmed.
+'''
+  envDisabled: 0
+  hidden: false
+  lightRadius: 200
+  type: legs
+  canDrown: false
+  immunities: [windforces-disarmerment]
+  legCount: 4
+  legLength: 22
+  legSpeed: 0.75
+  legExtension: -3
+  legMoveSpace: 1
+  rotateSpeed: 15
+  speed: 1.35
+  accel: 0.4
+  drag: 0.4
+  range: 640
+  maxRange: 640
+  itemCapacity: 150
+  buildRange: 300
+  buildSpeed: 10
+  forceMultiTarget: true
+  alwaysShootWhenMoving: true
+  faceTarget: true
+  flying: false
+  health: 25000
+  armor: 75
+  hitSize: 18
+  lowAltitude: true
+  hovering: true
+  canDrown: false
+  drawCell: false
+  stepSound: swordium-unit-step
+abilities:[
+]
+weapons: [
+    {
+        shoot: {
+        firstShotDelay: 85
+               }
+        rotate: false
+        mirror: false
+        name: wmd-weapon
+        x: 0
+        y: 0
+        reload: 120
+        ignoreRotation: true
+        shootCone: 360
+        shootSound: wmd-shoot
+        chargeSound: wmd-charge
+        soundPitchMin: 1
+        soundPitchMax: 1
+        shake: 25
+        shootStatus: slow
+        shootStatusDuration: 85
+        bullet: {
+        killShooter: false
+        type: MissileBulletType
+        splashDamageRadius: 640
+        splashDamage: 20
+        splashDamagePierce: true
+        width: 0.05
+        height: 0.05
+        speed: 85
+        lifetime: 60
+        damage: 0
+        instantDisappear: true
+        collides: false
+        status: windforces-disarmerment
+        statusDuration: 30000
+        despawnEffect: none
+        trailEffect: none
+        shootEffect: {
+            type: MultiEffect
+                lifetime: 3000
+                effects: [
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 1200
+            strokeFrom: 6
+            strokeTo: 64
+            interp: exp5Out
+            lifetime: 240
+            colorFrom: 929EAEff
+            colorTo: 5A616B00
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 640
+            sizeTo: 640
+            interp: exp5Out
+            region: circle-shadow
+            colorFrom: 929EAEff
+            colorTo: 5A616B00
+            lifetime: 240
+            particles: 1
+        }
+
+                ]
+            }
+chargeEffect: {
+type: MultiEffect
+    effects: [
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 10
+    length: 0
+    lifetime: 85
+    colorFrom: 5A616B00
+    colorTo: 929EAEff
+    cone: 360
+	}
+    {
+    type: WaveEffect
+    lifetime: 85
+    sizeFrom: 640
+    sizeTo: 0
+    interp: exp5In
+    strokeFrom: 0
+    strokeTo: 4
+    colorFrom: 5A616B00
+    colorTo: 929EAEff
+}
+
+      {
+    type: ParticleEffect
+    baseLength: -60
+    length: 60
+    lifetime: 85
+    particles: 15
+    colorFrom: 5A616B00
+    colorTo: 929EAEff
+    sizeFrom: 0
+    sizeTo: 3
+      }
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 15
+    length: 0
+    spin: -10
+    layer: 109
+    lifetime: 85
+    region: large-bomb-back
+    colorFrom: 5A616B00
+    colorTo: 929EAEff
+    }
+]
+}
+        }
+    }
+    {
+        rotate: false
+        mirror: false
+        name: wmd-laser
+        reload: 120
+        recoil: 0
+        x: 0
+        y: 2.65
+        shootSound: none
+        shootCone: 360
+        shoot: {
+        firstShotDelay: 85
+}
+        layerOffset: -1
+        
+    bullet: {
+    type: LaserBulletType
+    damage: 950
+    sideLength: 0
+    sideWidth: 20
+    lifetime: 32
+    length: 320
+    pierce: true
+    knockback: -25
+    status: unmoving
+    statusDuration: 1800
+    colors: [
+      929EAE,
+      ffffff
+    ]
+}
+}
+]
+  research: {
+    parent: windforceium-assister
+    requirements: [
+      swordium/150
+      windforceium/150
+]
+}
