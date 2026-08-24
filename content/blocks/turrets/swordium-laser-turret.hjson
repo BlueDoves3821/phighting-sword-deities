@@ -31,6 +31,14 @@ type: shootAlternate
 spread: 9
     }
 recoils: 2
+liquidCapacity: 200
+coolEffect: vaporSmall
+coolantMultiplier: 2
+consumes: {
+  coolant: {
+    amount: 0.25
+  }
+}
 drawer: {
 type: DrawTurret
 parts: [
