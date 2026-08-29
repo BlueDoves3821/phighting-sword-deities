@@ -126,7 +126,8 @@ type: MultiEffect
     lifetime: 85
     sizeFrom: 640
     sizeTo: 0
-    interp: exp5In
+    interp: exp5Out
+    sizeInterp: exp5In
     strokeFrom: 0
     strokeTo: 4
     colorFrom: 5A616B00
