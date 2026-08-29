@@ -1,0 +1,22 @@
+type: Constructor
+name: "[#ff5959]Swordium []Building Constructor"
+description: 
+'''
+Constructs buildings up to 4x4 in size, does not require power.
+''' 
+size: 5
+hasPower: false
+maxBlockSize: 4
+buildSpeed: 2
+filter: [
+]
+requirements: [
+swordium/200
+]
+category: units
+research: {
+    parent: swordium-payload-conveyor
+    requirements: [
+      swordium/200
+]
+}
