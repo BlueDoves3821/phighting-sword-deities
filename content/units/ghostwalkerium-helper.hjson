@@ -15,6 +15,7 @@ mineTier: 100
 mineWalls: true
 mineSpeed: 20
 itemCapacity: 500
+mineItems: []
 buildSpeed: 10
 itemOffsetY: 0
 flying: true

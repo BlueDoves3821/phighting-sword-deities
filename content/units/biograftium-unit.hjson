@@ -10,7 +10,7 @@ drag: 0.15
 speed: 1
 buildSpeed: 10
 mineSpeed: 2
-mineTier: 1
+mineTier: 3
 armor: 5
 faceEnemy: true
 circleEnemy: true
@@ -22,6 +22,9 @@ useUnitCap: false
 health: 100
 flying: false
 itemCapacity: 20
+boostWhileMining: false
+boostWhileBuilding: false
+mineItems: []
 stepSound: biograftium-unit-step
 weapons:[
     {

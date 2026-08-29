@@ -37,6 +37,7 @@ The core unit for the [#ff5959]swordium []core, passively boosts itself & other 
   mineTier: 100
   mineWalls: true
   itemCapacity: 800
+  mineItems: []
   buildRange: 1000
   buildSpeed: 25
   mineBeamOffset: 3

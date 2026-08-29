@@ -18,9 +18,12 @@ mineSpeed: 15
 mineTier: 100
 mineWalls: true
 itemCapacity: 400
+mineItems: []
 buildRange: 250
 buildSpeed: 15
 canBoost: false
+boostWhileBuilding: false
+boostWhileMining: false
 stepSound: swordium-unit-step
 weapons: [
 {

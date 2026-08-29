@@ -18,6 +18,7 @@ mineSpeed: 10
 mineTier: 100
 mineWalls: true
 itemCapacity: 250
+mineItems: []
 buildRange: 400
 buildSpeed: 10
 engineSize: 0

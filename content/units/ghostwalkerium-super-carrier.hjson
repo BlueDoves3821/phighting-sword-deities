@@ -18,6 +18,7 @@ mineSpeed: 30
 mineRange: 600
 mineBeamOffset: 15
 itemCapacity: 2000
+mineItems: []
 buildSpeed: 50
 buildRange: 600
 itemOffsetY: 0

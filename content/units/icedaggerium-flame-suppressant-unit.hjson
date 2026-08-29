@@ -18,6 +18,7 @@ mineSpeed: 7.5
 mineTier: 100
 mineWalls: true
 itemCapacity: 400
+mineItems: []
 buildRange: 250
 buildSpeed: 15
 canBoost: true
