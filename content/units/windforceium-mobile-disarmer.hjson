@@ -11,7 +11,7 @@ Disarms units after charging up it's attack, does not have a shield to protect i
   lightRadius: 200
   type: legs
   canDrown: false
-  immunities: [windforces-disarmerment]
+  immunities: [windforces-disarmerment, disarmed]
   legCount: 4
   legLength: 22
   legSpeed: 0.75
