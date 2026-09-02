@@ -104,6 +104,13 @@ swordium/20
     ]
  }
 {
+    unit: swordium-melee-unit-all-mighty-axle-arc
+    time: 1500
+    requirements: [
+swordium/160
+    ]
+ }
+{
     unit: swordium-melee-unit
     time: 1200
     requirements: [
