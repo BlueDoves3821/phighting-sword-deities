@@ -1,0 +1,28 @@
+type: ConsumeGenerator
+name: "[#E2BAF5]Illuminaium []Charger"
+description: '''
+Generates power by using the charge properities of [#E2BAF5]illuminaium.
+'''
+size: 1
+health: 500
+category: power
+consumeEffect: pickup
+requirements: [
+  swordium/20
+  illuminaium/20
+]
+consumes: {
+  items: [
+    illuminaium/1
+  ]
+}
+itemDuration: 640
+powerProduction: 2
+category: power
+research: {
+    parent: illuminaium-converter
+    requirements: [
+      swordium/20
+      illuminaium/20
+]
+}
