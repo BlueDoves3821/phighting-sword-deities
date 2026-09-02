@@ -16,11 +16,13 @@ range: 975
 shootEffect: none
 smokeEffect: none
 reload: 1
+recoil: 0
 shake: 5
 size: 4
 inaccuracy: 8
 velocityRnd: 0.02
 shootCone: 25
+shootY: 6.1
 shoot: {
   shots: 9
 }
@@ -30,8 +32,8 @@ ammoTypes: {
     liquid: darkheartium-liquid
     ammoMultiplier: 1
     damage: 150
-    lifetime: 213
-    speed: 5
+    lifetime: 58
+    speed: 18
     status: darkhearts-curse
     statusDuration: 600
   }

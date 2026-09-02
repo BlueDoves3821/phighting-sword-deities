@@ -61,8 +61,8 @@ shootEffect: [
  statusDuration: 1200
 		}
 	}
-liquidCapacity: 500
-coolantMultiplier: 0.4
+liquidCapacity: 300
+coolantMultiplier: 0.5
 coolEffect: freezing
 coolant: {
   type: ConsumeLiquid
@@ -70,14 +70,14 @@ coolant: {
   amount: 1
 }
 	requirements: [
-		swordium/170
-  icedaggerium/170
+		swordium/130
+  icedaggerium/130
 	]
 	category: turret
   research: {
     parent: swordium-laser-turret
     requirements: [
-      swordium/170
-      icedaggerium/170
+      swordium/130
+      icedaggerium/130
 ]
 }

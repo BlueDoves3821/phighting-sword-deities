@@ -1,0 +1,52 @@
+type: LiquidTurret
+requirements: [
+swordium/150
+darkheartium/150
+]
+name: "[#70AC30]Darkheartium []Liquid Rainer"
+description: '''
+Rains down [#70AC30]darkheartium []liquid, can spread to any water-containing buildings.
+'''
+details: '''
+this could go "well" with a water turret...
+'''
+hasShadow: false
+category: turret
+range: 960
+shootEffect: none
+smokeEffect: none
+reload: 1
+recoil: 0
+shake: 5
+size: 3
+rotateSpeed: 0
+inaccuracy: 360
+velocityRnd: 0.1
+shootCone: 360
+shootY: 0
+shoot: {
+  shots: 30
+}
+ammoTypes: {
+  darkheartium-liquid: {
+    type: LiquidBulletType
+    liquid: darkheartium-liquid
+    ammoMultiplier: 0.75
+    damage: 30
+    lifetime: 85
+    speed: 12
+    puddleSize: 20
+    orbSize: 4
+    absorbable: false
+    status: darkhearts-curse
+    statusDuration: 600
+  }
+}
+liquidCapacity: 500
+  research: {
+    parent: darkheartium-liquid-shooter
+    requirements: [
+      swordium/150
+      darkheartium/150
+]
+}
