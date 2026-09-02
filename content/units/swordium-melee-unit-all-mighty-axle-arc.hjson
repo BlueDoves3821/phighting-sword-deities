@@ -1,0 +1,99 @@
+type: mech
+name: "[#ff5959]Swordium []Melee Unit (All-Mightly Axle Arc)"
+description: '''
+[#ff5959]"Learned that one from a [][#4365B3]friend [][#ff5959]of mine!"
+[]A [#ff5959]swordium []unit, using a [#ff5959]sword, []obviously... that can be thrown, exploding after sticking itself to the ground, can mine & build.
+'''
+envDisabled: 0
+hidden: false
+armor: 20
+health: 7500
+range: 50
+rotateSpeed: 8
+hitSize: 13
+canDrown: false
+stepShake: 1
+mineRange: 250
+mineFloor: true
+mineSpeed: 15
+mineTier: 100
+mineWalls: true
+itemCapacity: 400
+mineItems: []
+buildRange: 250
+buildSpeed: 15
+canBoost: false
+boostWhileBuilding: false
+boostWhileMining: false
+stepSound: swordium-unit-step
+weapons: [
+{
+name: smu-sword
+reload: 50
+x: 10.5
+y: 12
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+top: false
+chargeSound: smu-atk
+shootSound: none
+soundPitchMin: 1
+soundPitchMax: 1
+recoil: -3.25
+shoot: {
+shots: 2
+shotDelay: 20
+firstShotDelay: 1
+    }
+bullet: {
+		type: BulletType
+		damage: 950
+		speed: 15
+		splashDamage: 600
+		splashDamageRadius: 6
+		absorbable: true
+  homingPower: 1
+		lifetime: 2.75
+		pierce: true
+  pierceCap: 5
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		despawnHit: true
+		recoil: -1.5
+}
+}
+{
+name: smu-sword-amaa
+reload: 600
+x: 10.5
+y: 12
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+top: false
+shootSound: all-mighty-axle-arc-throw
+soundPitchMin: 1
+soundPitchMax: 1
+recoil: 0
+bullet: {
+shootEffect: none
+spawnUnit: swordium-all-mighty-axle-arc-thrower-sword-projectile
+}
+}
+]
+accel: 0.2
+drag: 0.1
+speed: 1.45
+  research: {
+    parent: swordium-melee-unit
+    requirements: [
+      swordium/160
+]
+}

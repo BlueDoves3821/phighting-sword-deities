@@ -23,6 +23,7 @@ engineSize: 0
 fogRadius: 6
 loopSound: all-mighty-axle-arc-airtime
 loopSoundVolume: 1.25
+drawSoftShadow: false
 deathSound: none
 trailEffect: none
 range: 120

@@ -5,7 +5,7 @@ speed: 0
 hitSize: 5
 hidden: true
 health: 500
-loopSound: all-mighty-axle-arc-countdown
+loopSound: none
 loopSoundVolume: 1
 outlines: false
 rotateSpeed: 0
@@ -28,6 +28,7 @@ createWreck: false
 createScorch: false
 targetAir: false
 targetGround: true
+drawSoftShadow: false
 weapons: [
 	{
 	shootCone: 360
@@ -94,5 +95,64 @@ weapons: [
 		statusDuration: 230
 	}
 	}
+{
+        rotate: false
+        mirror: false
+        x: 0
+        y: 0
+        reload: 95
+        alwaysShooting: true
+        shootCone: 360
+        shootSound: all-mighty-axle-arc-countdown
+        chargeSound: none
+        soundPitchMin: 1
+        soundPitchMax: 1
+        bullet: {
+   type: BulletType
+		lifetime: 0
+		hittable: false
+		instantDisappear: true
+		damage: 0
+  shootEffect: {
+			type: MultiEffect
+			effects: [
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 30
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 30
+            colorFrom: ff5959FF
+            colorTo: ff595900
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 30
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 30
+            colorFrom: ff5959FF
+            colorTo: ff595900
+            startDelay: 27
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 30
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 30
+            colorFrom: ff5959FF
+            colorTo: ff595900
+            startDelay: 57
+        }
+			]
+		}
+}
+}
 ]
-
