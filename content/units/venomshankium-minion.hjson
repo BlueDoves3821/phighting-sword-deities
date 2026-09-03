@@ -47,8 +47,8 @@
   research: {
     parent: sfoth-unit-factory
     requirements: [
-      swordium/5
-      venomshankium/5
+      swordium/10
+      venomshankium/10
 ]
 }
 }
