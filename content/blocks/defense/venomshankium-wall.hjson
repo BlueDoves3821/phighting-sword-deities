@@ -1,0 +1,29 @@
+name: "[#A4C360]Venomshankium []Wall"
+description: '''
+A wall made out of [#A4C360]venomshankium, []can be placed on deep liquids, when destroyed, it spawns [#A4C360]venomshankium's []minions.
+'''
+    type: Wall
+    placeableLiquid: true
+    health: 900
+    size: 1
+	requirements: [
+		swordium/16
+   venomshankium/16
+	]
+	category: defense
+  destroyBulletSameTeam: true
+  destroyBullet: {
+  instantDisappear: true
+  fragBullets: 8
+  fragBullet: {
+  spawnUnit: venomshankium-minion
+  instantDisappear: true
+  }
+}
+  research: {
+    parent: venomshankium-converter
+    requirements: [
+      swordium/16
+      venomshankium/16
+]
+  }
