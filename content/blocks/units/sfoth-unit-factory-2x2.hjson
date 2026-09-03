@@ -81,8 +81,8 @@ swordium/40
     unit: venomshankium-minion
     time: 30
     requirements: [
-venomshankium/5
-swordium/5
+venomshankium/2
+swordium/2
     ]
  }
 {
