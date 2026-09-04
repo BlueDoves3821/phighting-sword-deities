@@ -1,0 +1,21 @@
+type: BuildTurret
+name: "[#ff5959]Swordium []Build Tower",
+description: "Automatically rebuilds destroyed buildings, it'll also assists construction with other units with building capabilities."
+requirements: [
+swordium/160
+]
+  health: 980
+  size: 3
+  range: 520
+  buildSpeed: 3.5
+  hasPower: true
+  consumes: {
+    power: 2.5
+  }
+  category: effect
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/160
+]
+  }
