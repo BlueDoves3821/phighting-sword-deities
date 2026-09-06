@@ -1,0 +1,45 @@
+type: TractorBeamTurret
+name: '''
+[#97CCE1]Icedaggerium []Anti-Aircraft Beam Turret
+'''
+description: '''
+Pulls in air units, dealing massive damage, high-ranged, but it's incredibly demanding, requiring power, 20 [#97CCE1]icedaggeriums []& [#97CCE1]icedaggerium []liquid to cool down the components, prioritizes stronger units.
+'''
+  size: 4
+  force: 200
+  targetAir: true
+  targetGround: false
+  scaledForce: 0
+  health: 1450
+  range: 1200
+  damage: 75
+  retargetTime: 0.1
+  shootCone: 15
+  rotateSpeed: 5
+  unitSort: strongest
+  shootLength: 9
+  consumes: {
+  items: [
+  icedaggerium/20
+  ]
+  liquids: [
+  icedaggerium-liquid/0.5
+  ]
+  power: 5
+}
+  itemCapacity: 20
+  liquidCapacity: 200
+  status: freezing
+  statusDuration: 300
+  requirements: [
+      swordium/300
+      icedaggerium/300
+  ]
+  category: turret
+  research: {
+    parent: icedaggerium-railgun
+    requirements: [
+      swordium/300
+      icedaggerium/300
+]
+}
