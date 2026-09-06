@@ -26,7 +26,10 @@ moveThroughBlocks: true
 color: 517C22
 colorFrom: 6DA82E
 colorTo: 2B4212
-#canStayOn: [water]
+canStayOn: [
+    "water",
+    "illuminaium-ichor",
+  ],
 incinerable: true
 spreadTarget: water
 maxSpread: 10
