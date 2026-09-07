@@ -1,0 +1,47 @@
+type: ContinuousTurret
+requirements: [
+swordium/185
+windforceium/185  
+]
+name: "[#929EAE]Windforceium []Disarming Beamer"
+description: '''
+Fires a continuous beam that disarms units, requires power to operate.
+'''
+category: turret
+shootEffect: none
+smokeEffect: none
+loopSound: beamMeltdown
+shootSound: shootBeamPlasma
+range: 800
+recoil: 0
+shake: 2
+size: 3
+shootCone: 5
+rotateSpeed: 7
+
+shoot: {
+    type: ShootSpread
+    shots: 4
+    spread: 1
+}
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 20
+  colors: [5A616B, 7C8593, 929EAE, FFFFFF]
+  length: 800
+  width: 4
+  damageInterval: 1
+  status: windforces-disarmerment
+  statusDuration: 60000
+  incendChance: 0
+}
+consumes: {
+power: 3.33333333
+}
+  research: {
+    parent: windforceium-disarmer
+    requirements: [
+      swordium/185
+      windforceium/185
+]
+}
