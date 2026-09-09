@@ -1,0 +1,39 @@
+ type: ShockMine
+ name: "[#A4C360]Venomshankium []Minion Mine"
+ description: "Spawns [#A4C360]venomshankium's []minions when stepped on, slowly destroys itself if not mended."
+ underBullets: true
+ health: 250
+ size: 2
+ cooldown: 1
+ lightningColor: A4C360
+ damage: 5
+ length: 5
+ tendrils: 2
+ tileDamage: 15
+ baseShake: 2
+ priority: -1
+ bullet: {
+	instantDisappear: true
+  fragBullets: 1
+  fragBullet: {
+  instantDisappear: true
+  collides: false
+  fragBullets: 1
+  despawnSound: vsm-sfx
+  fragBullet: {
+  spawnUnit: venomshankium-minion
+              }
+}
+}
+ category: effect
+  research: {
+parent: venomshankium-converter
+requirements: [
+  swordium/40
+  venomshankium/40
+]
+}
+requirements : [
+        swordium/40
+        venomshankium/40
+    ]
