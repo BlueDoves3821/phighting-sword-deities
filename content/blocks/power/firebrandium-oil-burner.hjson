@@ -9,12 +9,12 @@ itemDuration: 480
 itemCapacity: 20
 liquidCapcity: 800
 health: 700
-powerProduction: 19
+powerProduction: 66.6666667
 ambientSound: loopDifferential
 ambientSoundVolume: 0.25
 consumes: {
   items: [
-    firebrandium/2
+    firebrandium/5
   ]
   liquids: [
     oil/1.5
