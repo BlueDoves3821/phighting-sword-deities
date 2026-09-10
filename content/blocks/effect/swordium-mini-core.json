@@ -1,0 +1,22 @@
+{
+  "name": "[#ff5959]Swordium []Mini Core",
+  "description": "A core made out of [#ff5959]swordium[], made for mobile bases, can be upgraded to any core of your choice that's larger than 2x2, cheaper than it's 3x3 counterpart, but also weaker.
+[red]disclaimer: avoid deconstructing this core if it's the only core in the sector!",
+  "details": "due to the small size of this core, an accelerator for the core is not viable, cannot be deconstructed once upgraded.",
+  "size": 2,
+  "health": 3750,
+  "itemCapacity": 7500,
+  "armor": 5,
+  "requirements": [
+    { "item": "swordium","amount": 175}
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "swordium-core",
+    "requirements": [
+      "swordium/175"
+    ]
+  },
+  "unitType": "swordium-mini-core-unit",
+  "unitCapModifier": 10,
+}
