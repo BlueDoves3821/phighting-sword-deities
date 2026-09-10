@@ -1,0 +1,130 @@
+type: payload
+name: '''
+[#FF5959]Swordium []Mini Core Unit
+'''
+description: '''
+Core unit of the [#ff5959]swordium []mini core, can carry payloads.
+'''
+envDisabled: 0
+hidden: false
+health: 1600
+payloadCapacity: 1300
+speed: 3.25
+rotateSpeed: 10
+hitSize: 12
+flying: true
+moveSound: loopThruster
+moveSoundVolume: 0.35
+moveSoundPitchMin: 0.85
+moveSoundPitchMax: 1.125
+engineSize: 0
+mineRange: 850
+mineFloor: true
+mineSpeed: 40
+mineTier: 100
+mineWalls: true
+itemCapacity: 450
+mineItems: []
+buildRange: 850
+buildSpeed: 40
+engines: [
+  {
+    x: 0
+    y: -7
+    radius: 3
+    rotation: 270
+  } 
+] 
+abilities:[
+
+ {
+    type: RepairFieldAbility
+    amount: 300
+    range: 25
+    reload: 20
+    activeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 80
+          sizeFrom: 0
+          sizeTo: 25
+          interp: pow3Out
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: ff5959ff
+          colorTo: ff595900
+        }
+      ]
+    }
+}
+
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 15
+  max: 300
+  regen: 5
+  cooldown: 60
+  width: 3
+  angle: 360
+  color: FF5959
+  whenShooting: false
+ }
+
+ {
+    type: StatusFieldAbility
+    effect: swords-might
+    reload: 240
+    color: ff5959ff
+    range: 25
+    duration: 7200
+  }
+  {
+    type: MoveEffectAbility
+    color: ff5959c8
+    effect: missileTrail
+    x: 6
+    y: -6
+    interval: 3
+    minVelocity: 0.1
+  }
+  {
+    type: MoveEffectAbility
+    color: ff5959c8
+    effect: missileTrail
+    x: -6
+    y: -6
+    interval: 3
+    minVelocity: 0.1
+  }
+]
+weapons: [
+    {
+        rotate: false
+        mirror: false
+        name: smcu-laser
+        x: 0
+        y: 4
+        reload: 15
+        recoil: 1
+        shootSound: swordium-laser-shoot
+        layerOffset: -1
+        
+    bullet: {
+  type: LaserBulletType
+    damage: 300
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 400
+    pierce: true
+    colors: [
+      ff5959,
+      ffffff
+    ]
+}
+}
+]
+  alwaysUnlocked: true

@@ -46,6 +46,22 @@ abilities: [
     amount: 5000
     range: 100
     reload: 600
+    activeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 80
+          sizeFrom: 0
+          sizeTo: 100
+          interp: pow3Out
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: 929eaeff
+          colorTo: 929eae00
+        }
+      ]
+    }
   }
   {
     type: StatusFieldAbility
