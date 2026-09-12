@@ -1,11 +1,13 @@
 name: "[#70AC30]Darkheart's []Curse"
 description: '''
-[#70AC30]Darkheart []has cursed you to move very slow, you're also unable to shoot, have half of your max health & slowly lose your health overtime.
+[#70AC30]Darkheart []has cursed you to move very slow, you're also unable to shoot, have half of your max health & slowly lose your health overtime, reacts with wet status, dealing large transition damage.
 '''
 speedMultiplier: 0.15
 disarm: true
 healthMultiplier: 0.5
 damage: 3.4
+transitionDamage: 5000
+affinities: [wet]
 effect: {
   length: 30
   lifetime: 50
