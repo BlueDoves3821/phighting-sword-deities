@@ -10,7 +10,7 @@
   rotateSpeed: 7
   drownTimeMultiplier: 6
   immunities: []
-  defaultController: groundAI
+  defaultController: AttackerAI
   drawCell: false
   useUnitCap: false
   deathSound: vsm-sfx

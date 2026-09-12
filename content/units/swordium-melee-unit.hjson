@@ -25,6 +25,7 @@ canBoost: false
 boostWhileBuilding: false
 boostWhileMining: false
 stepSound: swordium-unit-step
+commands: [move, enterPayload, mine, rebuild]
 weapons: [
 {
 name: smu-sword
