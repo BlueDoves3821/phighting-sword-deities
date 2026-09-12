@@ -38,6 +38,7 @@ Disarms units after charging up it's attack, does not have a shield to protect i
   canDrown: false
   drawCell: false
   stepSound: swordium-unit-step
+  commands: [move, enterPayload, assist, rebuild]
 abilities:[
 ]
 weapons: [

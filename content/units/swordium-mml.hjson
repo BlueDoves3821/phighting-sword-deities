@@ -12,6 +12,7 @@ armor: 3
 hitSize: 10
 range: 1200
 rotateSpeed: 10
+commands: [move, enterPayload, assist]
 abilities:[
  {
   type:ShieldArcAbility
