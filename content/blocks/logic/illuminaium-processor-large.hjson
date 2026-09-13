@@ -1,0 +1,20 @@
+type: LogicBlock
+name: "[#E2BAF5]Illuminaium []Large Processor"
+description: "An upgraded logic processor made out of [#ff5959]swordium []& [#E2BAF5]illuminaium[], can be used to control units, factories & other things."
+instructionsPerTick: 15
+size: 2
+health: 500
+requirements: [
+	swordium/50
+	illuminaium/50
+]
+range: 512
+	research: {
+	parent: illuminaium-processor
+ requirements: [
+	swordium/50
+ illuminaium/50
+]
+
+	}
+category: logic

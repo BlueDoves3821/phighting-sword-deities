@@ -1,0 +1,14 @@
+type: messageBlock
+name: "[#ff5959]Swordium []Message Block"
+description: Displays a message for allies, can be used by processors.
+size: 1
+requirements: [
+	swordium/5
+]
+research: {
+		parent: swordium-buildings
+		requirements: [
+	swordium/5
+]
+	}
+category: logic

@@ -1,0 +1,15 @@
+type: logicDisplay
+name: "[#ff5959]Swordium []Logic Display"
+description: Displays images given by processors.
+size: 3
+displaySize: 80
+requirements: [
+	swordium/20
+]
+	research: {
+	parent: swordium-message-block
+	requirements: [
+	swordium/20
+]
+	}
+category: logic

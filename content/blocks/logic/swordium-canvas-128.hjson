@@ -12,7 +12,7 @@ category: logic
 		swordium/50
 	]
   research: {
-    parent: swordium-buildings
+    parent: swordium-message-block
     requirements: [
       swordium/50
 ]

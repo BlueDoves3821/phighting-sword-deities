@@ -1,0 +1,14 @@
+type: switchBlock
+name: "[#ff5959]Swordium []Switch"
+description: A simple switch, can be used by processors as an on/off switch.
+size: 1
+requirements: [
+	swordium/5
+]
+research: {
+		parent: swordium-message-block
+ requirements: [
+	swordium/5
+]
+	}
+category: logic
