@@ -1,0 +1,27 @@
+  type: MassDriver
+  name: "[#ff5959]Swordium []Mass Driver"
+  health: 250
+  description: '''
+A mini mass driver made out of [#ff5959]swordium[], useful for tight spaces.
+'''
+  itemCapacity: 30
+  reload: 20
+  shake: 0.1
+  rotateSpeed: 7
+  hasPower: false
+  knockback: 0.25
+  range: 1200
+  bulletLifetime: 1000
+  bulletSpeed: 12
+  minDistribute: 2
+  size: 1
+  requirements: [
+      swordium/30
+  ]
+  category: distribution
+  research: {
+    parent: swordium-duct
+    requirements: [
+      swordium/30
+]
+}
