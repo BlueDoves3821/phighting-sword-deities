@@ -55,6 +55,14 @@ swordium/150
     ]
  }
   {
+    unit: ghostwalkerium-miner
+    time: 600
+    requirements: [
+ghostwalkerium/40
+swordium/40
+    ]
+ }
+  {
     unit: ghostwalkerium-repairer
     time: 600
     requirements: [
