@@ -27,6 +27,14 @@ moveSound: loopHover2
 moveSoundVolume: 0.25
 moveSoundPitchMin: 1.0
 moveSoundPitchMax: 1.25
+engines: [
+  {
+    x: 0
+    y: -5
+    radius: 2
+    rotation: 270
+  } 
+]
 abilities:[
  {
 	type: ForceFieldAbility
