@@ -29,6 +29,7 @@ moveSoundPitchMax: 1
 buildRange: 900
 buildSpeed: 10
 engineSize: 0
+commands: [move, enterPayload, assist, rebuild]
   research: {
     parent: sfoth-unit-factory
     requirements: [

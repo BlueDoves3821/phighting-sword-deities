@@ -1,0 +1,49 @@
+type: flying
+speed: 10
+name: "[#c2c2c2]Ghostwalkerium []Miner"
+description: "Mines ores from floors/walls, ignores ore hardness, does not have the ability to build or attack back, cannot be auto-targeted.
+"
+engineSize: 0
+envDisabled: 0
+hidden: false
+hitSize: 10
+health: 800
+armor: 2
+mineTier: 200
+mineWalls: true
+mineSpeed: 125
+itemCapacity: 1000
+mineRange: 1500
+mineItems: []
+mineHardnessScaling: false
+itemOffsetY: 0
+flying: true
+faceTarget: false
+accel: 0.12
+drag: 0.04
+targetable: false
+priority: -1
+moveSound: loopHover2
+moveSoundVolume: 0.25
+moveSoundPitchMin: 1.0
+moveSoundPitchMax: 1.25
+abilities:[
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 0
+	radius: 10
+	regen: 5
+	max: 500
+	cooldown: 1
+ 
+ }
+]
+  research: {
+    parent: ghostwalkerium-drone
+    requirements: [
+      swordium/40
+      ghostwalkerium/40
+]
+}

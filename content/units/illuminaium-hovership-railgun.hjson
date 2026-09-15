@@ -29,6 +29,7 @@ moveSoundPitchMax: 0.85
 buildRange: 900
 buildSpeed: 10
 engineSize: 0
+commands: [move, enterPayload, assist, rebuild]
   research: {
     parent: illuminaium-hovership
     requirements: [
