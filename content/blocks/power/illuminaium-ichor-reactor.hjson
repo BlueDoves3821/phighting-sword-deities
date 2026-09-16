@@ -1,0 +1,169 @@
+type: ConsumeGenerator
+name: "[#E2BAF5]Illuminaium []Ichor Reactor"
+description: "Combines [#E2BAF5]illuminaium[], [#ff5959]swordium[], [#c2c2c2]ghostwalkerium []& cryofluid to generate power, creates [#E2BAF5]illuminaium []ichor as by-product, won't explode if the ichor's full."
+details: '''
+If the reactor explodes, it'll empower all units caught in the blast, [scarlet]enemies []included, be sure to protect it well, less you want a stronger [scarlet]enemy []unit attacking your base.
+'''
+size: 4
+health: 2500
+category: power
+squareSprite: false
+requirements: [
+swordium/380
+illuminaium/380
+]
+hasLiquids: true
+consumes: {
+  items: [
+    swordium/5
+    illuminaium/5
+    ghostwalkerium/2
+  ]
+  liquids: [
+    cryofluid/2
+  ]
+}
+outputLiquid: illuminaium-ichor/2
+liquidCapacity: 1250
+hasItems: true
+itemCapacity: 60
+powerProduction: 200
+explodeOnFull: false
+generateEffect: none
+ambientSound: loopFlux
+ambientSoundVolume: 0.12
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: cryofluid
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: illuminaium-ichor
+    }
+    {
+      type: DrawRegion
+      suffix: "-spinner"
+      spinSprite: true
+      rotateSpeed: 2
+    }
+    {
+      type: DrawParticles
+      color: C09DCF
+      particleSize: 1
+      particleRad: 14
+      particleLife: 30
+      particles: 50
+      reverse: true
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: E2BAF555
+    }
+  ]
+}
+research: {
+  parent: illuminaium-converter
+  requirements: [
+  swordium/380
+  illuminaium/380
+]
+}
+explosionRadius: 120
+explosionDamage: 500
+explosionPuddles: 80
+explosionPuddleRange: 45
+explosionPuddleAmount: 2000
+explosionPuddleLiquid: illuminaium-ichor
+explosionShake: 12
+explosionSound: explosionReactorNeoplasm
+explodeEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 0
+            sizeTo: 350
+            strokeFrom: 8
+            strokeTo: 0
+            colorFrom: E2BAF5FF
+            colorTo: 8A729700
+            interp: sineOut
+            lifetime: 90
+        }
+        {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 0
+            sizeTo: 360
+            strokeFrom: 8
+            strokeTo: 0
+            colorFrom: E2BAF5FF
+            colorTo: 8A729700
+            interp: sineOut
+            lifetime: 90
+        }
+        {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 0
+            sizeTo: 800
+            strokeFrom: 8
+            strokeTo: 0
+            colorFrom: E2BAF5FF
+            colorTo: 8A729700
+            colorInterp: pow2In
+            sizeInterp: pow2Out
+            lifetime: 100
+        }
+        {
+            type: ParticleEffect
+            particles: 125
+            sizeFrom: 1
+            sizeTo: 80
+            line: true
+            sizeInterp: circleOut
+            colorInterp: smooth2
+            lifetime: 280
+            cone: 360
+            length: 1300
+            colorFrom: E2BAF5AA
+            colorTo: 8A729700
+        }
+        {
+            type: ParticleEffect
+            particles: 80
+            sizeFrom: 1
+            sizeTo: 50
+            sizeInterp: circleOut
+            colorInterp: smooth2
+            lifetime: 280
+            cone: 360
+            length: 1300
+            colorFrom: E2BAF5AA
+            colorTo: 8A729700
+        }
+    ]
+}
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 800
+splashDamage: 1
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: illuminas-power
+despawnEffect: none
+trailEffect: none
+}
