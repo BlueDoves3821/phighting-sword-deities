@@ -13,7 +13,7 @@ mineTier: 200
 mineWalls: true
 mineSpeed: 125
 itemCapacity: 1000
-mineRange: 1500
+mineRange: 250
 mineItems: []
 mineHardnessScaling: false
 itemOffsetY: 0
