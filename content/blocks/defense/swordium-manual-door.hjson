@@ -1,0 +1,18 @@
+type: Door
+name: "[#ff5959]Swordium []Manual Door"
+description: '''
+A door made out of [#ff5959]swordium[], requires manual activation, can be placed on deep liquids.
+'''
+health: 850
+size: 1
+placeableLiquid: true
+requirements: [
+		swordium/8
+	]
+	category: defense
+  research: {
+    parent: swordium-blast-door
+    requirements: [
+      swordium/8
+]
+}
