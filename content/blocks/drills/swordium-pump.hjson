@@ -9,6 +9,7 @@ Does not require power to operate, can hold alot of liquid.
   pumpAmount: 1.25
   hasPower: false
   placeableLiquid: true
+  squareSprite: false
 	requirements: [
 		swordium/40
 	]
