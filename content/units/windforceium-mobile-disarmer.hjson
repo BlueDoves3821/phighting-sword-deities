@@ -78,6 +78,26 @@ weapons: [
         statusDuration: 30000
         despawnEffect: none
         trailEffect: none
+        intervalBullets: 1
+        bulletInterval: 0.5
+        intervalRandomSpread: 0
+        intervalSpread: 0
+        intervalBullet: {
+        type: LaserBulletType
+        damage: 950
+        sideLength: 0
+        sideWidth: 20
+        lifetime: 32
+        length: 320
+        pierce: true
+        knockback: -25
+        status: unmoving
+        statusDuration: 1800
+        colors: [
+        929EAE,
+        ffffff
+        ]
+        }
         shootEffect: {
             type: MultiEffect
                 lifetime: 3000
@@ -163,38 +183,6 @@ type: MultiEffect
 }
         }
     }
-    {
-        rotate: false
-        mirror: false
-        name: wmd-laser
-        reload: 120
-        recoil: 0
-        x: 0
-        y: 2.65
-        shootSound: none
-        shootCone: 360
-        shoot: {
-        firstShotDelay: 85
-}
-        layerOffset: -1
-        
-    bullet: {
-    type: LaserBulletType
-    damage: 950
-    sideLength: 0
-    sideWidth: 20
-    lifetime: 32
-    length: 320
-    pierce: true
-    knockback: -25
-    status: unmoving
-    statusDuration: 1800
-    colors: [
-      929EAE,
-      ffffff
-    ]
-}
-}
 ]
   research: {
     parent: windforceium-assister
