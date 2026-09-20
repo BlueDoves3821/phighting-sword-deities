@@ -15,9 +15,9 @@ armor: 5
 faceEnemy: true
 circleEnemy: true
 canBoost: false
-drawCell: false
+drawCell: true
 hitSize: 9
-defaultController: groundAI
+defaultController: HugAI
 useUnitCap: false
 health: 100
 flying: false
@@ -26,17 +26,20 @@ boostWhileMining: false
 boostWhileBuilding: false
 mineItems: []
 stepSound: biograftium-unit-step
+outlines: false
 weapons:[
     {
     name: biograftium-unit-weapon
-    shootY: 0
+    x: 0
+    y: 0
+    shootY: 2.5
     targetAir: true
     targetGround: true
     rotate: false
     reload: 10
     shootCone: 4
     shootSound: biograftium-unit-shoot
-    recoil: -1
+    recoil: -0.3
     mirror: true
     top: false
     bullet: {

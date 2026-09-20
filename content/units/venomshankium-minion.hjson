@@ -10,11 +10,12 @@
   rotateSpeed: 7
   drownTimeMultiplier: 6
   immunities: []
-  defaultController: AttackerAI
+  defaultController: HugAI
   drawCell: false
   useUnitCap: false
   deathSound: vsm-sfx
   stepSound: vsm-step
+  outlines: false
   weapons:[
     {
     name: vsm-weapon
