@@ -10,8 +10,8 @@ plans: [
     unit: darkheartium-base-clearer
     time: 1500
     requirements: [
-darkheartium/80
-swordium/80
+darkheartium/100
+swordium/100
     ]
  }
    {
@@ -26,8 +26,8 @@ swordium/130
     unit: darkheartium-walker
     time: 900
     requirements: [
-darkheartium/20
-swordium/20
+darkheartium/40
+swordium/40
     ]
  }
    {
