@@ -20,8 +20,6 @@ Uses a "donut" shield design, applies [#70AC30]darkheart's []curse to units who 
   speed: 3
   accel: 0.4
   drag: 0.4
-  range: 1
-  maxRange: 1
   faceTarget: true
   flying: false
   health: 2000
@@ -35,6 +33,7 @@ Uses a "donut" shield design, applies [#70AC30]darkheart's []curse to units who 
   buildRange: 750
   stepSound: darkheartium-unit-step
   stepSoundPitch: 1.5
+  commands: [move, enterPayload, assist, rebuild]
 abilities:[
 
  {
@@ -109,10 +108,38 @@ abilities:[
  }
 ]
 
+weapons: [
+    {
+        rotate: false
+        mirror: true
+        name: dw-laser
+        reload: 50
+        recoil: 1
+        shootSound: swordium-laser-shoot
+        layerOffset: -1
+        
+    bullet: {
+type: LaserBulletType
+    damage: 1000
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 450
+    pierce: true
+    recoil: 2
+    status: darkhearts-curse
+    statusDuration: 1500
+    colors: [
+      70AC30,
+      ffffff
+    ]
+}
+}
+]
   research: {
     parent: sfoth-unit-factory
     requirements: [
-      swordium/25
-      darkheartium/25
+      swordium/40
+      darkheartium/40
 ]
 }

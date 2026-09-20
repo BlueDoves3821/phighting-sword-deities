@@ -203,7 +203,7 @@ type: MultiEffect
   research: {
     parent: darkheartium-walker
     requirements: [
-      swordium/80
-      darkheartium/80
+      swordium/100
+      darkheartium/100
 ]
 }
