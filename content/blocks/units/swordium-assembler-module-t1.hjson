@@ -1,0 +1,15 @@
+type: UnitAssemblerModule
+name: "[#ff5959]Swordium []Assembler Module"
+description: Adds a tier to a unit assembler when placed next to it's construction boundary, can also be used as an alternative payload input.
+size: 3
+health: 850
+requirements: [
+		swordium/120
+	]
+	category: units
+  research: {
+  parent: swordium-payload-conveyor
+  requirements: [
+  swordium/120
+]
+}
