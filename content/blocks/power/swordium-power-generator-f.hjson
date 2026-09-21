@@ -44,7 +44,7 @@ drawer: {
   ]
   research:
   {
-    parent: swordium-buildings
+    parent: swordium-solar-panel
     requirements: [
         swordium/40
     ]
