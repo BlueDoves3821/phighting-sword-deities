@@ -5,7 +5,7 @@ swordium/100
 name: "[#ff5959]Swordium []Pressurized Extinguisher"
 description: '''
 Sprays either water, cryofluid or [#97CCE1]icedaggerium []liquid at much higher velocities, requires power to operate,
-it can also use [#70AC30]darkheartium []liquid too, although it's not recommended to do that if said liquid leaks, and can only hold a quarter of the liquid.
+it can also use [#70AC30]darkheartium []liquid too, although it's not recommended to do that due to the extinguisher's inability to target units & said liquid leaks, and can only hold a quarter of the liquid.
 '''
 hasShadow: false
 category: turret
@@ -13,12 +13,16 @@ range: 850
 health: 820
 shootEffect: none
 smokeEffect: none
-reload: 1
+targetAir: false
+targetGround: false
+TargetBlocks: true
+reload: 0.5
 shake: 8
 size: 3
 inaccuracy: 17
 velocityRnd: 0.2
 shootCone: 25
+shootY: 5
 shoot: {
   shots: 9
 }

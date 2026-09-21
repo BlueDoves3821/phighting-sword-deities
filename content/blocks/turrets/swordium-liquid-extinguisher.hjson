@@ -5,7 +5,7 @@ swordium/60
 name: "[#ff5959]Swordium []Liquid Extinguisher"
 description: '''
 Sprays either water, cryofluid or [#97CCE1]icedaggerium []liquid to extinguish fires, high-ranged,
-it can also use [#70AC30]darkheartium []liquid too, although it's not recommended to do that if said liquid leaks, and can only hold a quarter of the liquid.
+it can also use [#70AC30]darkheartium []liquid too, although it's not recommended to do that due to the extinguisher's inability to target units & said liquid leaks, and can only hold a quarter of the liquid.
 '''
 hasShadow: false
 category: turret
@@ -13,7 +13,10 @@ range: 780
 health: 640
 shootEffect: none
 smokeEffect: none
-reload: 1
+targetAir: false
+targetGround: false
+TargetBlocks: true
+reload: 0.5
 shake: 5
 size: 2
 inaccuracy: 8
