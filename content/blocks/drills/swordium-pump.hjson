@@ -15,7 +15,7 @@ Does not require power to operate, can hold alot of liquid.
 	]
 	category: liquid
   research: {
-    parent: swordium-buildings
+    parent: swordium-conduit
     requirements: [
       swordium/40
 ]

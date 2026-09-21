@@ -22,7 +22,7 @@ itemDuration: 120
 itemCapacity: 20
 	category: production
   research: {
-    parent: swordium-buildings
+    parent: swordium-drill
     requirements: [
       swordium/120
 ]
