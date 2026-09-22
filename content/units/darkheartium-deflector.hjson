@@ -15,6 +15,7 @@ flying: true
 buildSpeed: 10
 engineSize: 0
 payloadCapacity: 8500
+immunities: [darkhearts-curse]
 engines: [
   {
     x: 0
