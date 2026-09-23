@@ -1,0 +1,76 @@
+type: CoreBlock
+name: '''
+[#70AC30]Darkheartium []Core
+'''
+description: '''
+A core made with [#ff5959]swordium []& [#70ac30]darkheartium[], very high item capacity for it's size, but will cause trouble if destroyed.
+'''
+health: 8000
+armor: 7.5
+itemCapacity: 50000
+size: 3
+category: effect
+unitType: darkheartium-core-unit
+unitCapModifier: 20
+priority: 5
+requirements: [
+  swordium/650
+  darkheartium/650
+]
+research: {
+    parent: darkheartium-converter
+    requirements: [
+swordium/650
+darkheartium/650
+]
+}
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 600
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: darkhearts-curse
+statusDuration: 7200
+despawnEffect: [
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 90
+smokes: 48
+smokeSize: 9
+smokeSizeBase: 0
+sparkColor: 70AC3080
+sparkLen: 12
+sparkRad: 90
+sparks: 80
+sparkStroke: 4
+waveColor: 70AC30
+waveLife: 240
+waveRad: 110
+lifetime: 540
+}
+{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 450
+strokeFrom: 6
+strokeTo: 2
+interp: exp5Out
+lifetime: 240
+colorFrom: A6FF47FF
+colorTo: 70AC3000
+}
+{
+type: SoundEffect
+sound: dbc-shoot
+maxPitch: 1
+minPitch: 1
+minVolume: 10
+maxVolume: 10
+effect: none
+}
+]
+trailEffect: none
+}
