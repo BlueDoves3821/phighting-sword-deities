@@ -4,6 +4,7 @@ description: '''
 '''
 disarm: true
 reloadMultiplier: 0
+outline: false
 effect: {
     type: MultiEffect
     effects:[coreBurn, {

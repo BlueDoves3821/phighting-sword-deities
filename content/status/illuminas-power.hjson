@@ -8,6 +8,7 @@ damageMultiplier: 13
 speedMultiplier: 0.85
 damage: 0.25
 permanent: true
+outline: false
 effect: {
     type: ParticleEffect
     particles: 2

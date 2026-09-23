@@ -8,6 +8,7 @@ healthMultiplier: 0.5
 damage: 3.4
 transitionDamage: 5000
 affinities: [wet]
+outline: false
 effect: {
   length: 30
   lifetime: 50

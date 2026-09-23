@@ -5,6 +5,7 @@ description: '''
 reloadMultiplier: 2
 damageMultiplier: 2
 damage: -0.8335
+outline: false
 effect: {
     type: ParticleEffect
     particles: 2
