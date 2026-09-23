@@ -12,6 +12,7 @@ size: 5
 category: effect
 unitType: icedaggerium-core-unit
 unitCapModifier: 80
+thrusterLength: 16
 requirements: [
   swordium/1750
   icedaggerium/1750

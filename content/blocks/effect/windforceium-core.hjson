@@ -12,6 +12,7 @@ size: 4
 category: effect
 unitType: windforceium-core-unit
 unitCapModifier: 45
+thrusterLength: 12
 requirements: [
   swordium/1200
   windforceium/1200
