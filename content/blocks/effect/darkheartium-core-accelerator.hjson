@@ -1,0 +1,39 @@
+type: Accelerator
+name: "[#70ac30]Darkheartium []Core Accelerator"
+description: '''
+An accelerator for the [#70ac30]darkheartium []core,
+utilizes [#929EAE]windforceium []and [#70ac30]darkheartium []liquid in order to accelerate the core, does not require power to operate.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+consumes: {
+ liquids: [
+    darkheartium-liquid/1
+  ]
+}
+health: 6500
+armor: 15
+size: 5
+category: effect
+ringColor: 70ac30ff
+lightningColor: 70ac30ff
+liquidCapacity: 500
+launchBlock: darkheartium-core
+requirements: [
+  swordium/1100
+  darkheartium/1100
+  windforceium/150
+]
+	research: {
+	parent: darkheartium-core
+	requirements: [
+  swordium/1100
+  darkheartium/1100
+  windforceium/150
+  ]
+  objectives: [
+  {
+    type: capturedSector
+    preset: planetaryTerminal
+  }
+  ]
+}
