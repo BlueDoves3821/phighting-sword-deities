@@ -1,0 +1,40 @@
+type: Drill
+
+name: "[#E2BAF5]Illuminaium []Drill"
+description: "An excellent drill, ignores ore hardness, requires power to operate, optionally consumes [#e2baf5]illuminaium []ichor to boost speed."
+requirements: [
+  swordium/120
+  illuminaium/120
+]
+drillTime: 15
+health: 1000
+tier: 10
+hardnessDrillMultiplier: 0
+size: 3
+rotateSpeed: 20
+warmupSpeed: 0.025
+itemCapacity: 1000
+liquidCapacity: 150
+liquidBoostIntensity: 2
+  consumes:
+  {
+    power: 3
+    liquid:
+    {
+      liquid: illuminaium-ichor
+      amount: 0.31
+      booster: true
+      optional: true
+    }
+  }
+drillEffect: mineBig
+updateEffect: pulverize
+updateEffectChance: 0.06
+  research: {
+    parent: illuminaium-converter
+    requirements: [
+      swordium/120
+      illuminaium/120
+]
+}
+category: production
