@@ -1,0 +1,113 @@
+  template: ErekirUnitType
+  name: '''
+[#70AC30]Darkheartium []Core Unit
+'''
+
+  description: '''
+Core unit of the [#70ac30]darkheartium []core, applies [#70AC30]darkheart's []curse to units who touches/crosses the shield.
+'''
+  envDisabled: 0
+  hidden: false
+  lightRadius: 200
+  type: legs
+  canDrown: false
+  legCount: 4
+  legLength: 22
+  legSpeed: 0.5
+  legExtension: -3
+  legMoveSpace: 1.45
+  rotateSpeed: 8
+  speed: 4.25
+  accel: 0.4
+  drag: 0.4
+  faceTarget: true
+  flying: false
+  health: 7500
+  armor: 10
+  hitSize: 18
+  lowAltitude: true
+  hovering: true
+  canDrown: false
+  drawCell: false
+  mineRange: 700
+  mineFloor: true
+  mineSpeed: 40
+  mineTier: 100
+  mineWalls: true
+  itemCapacity: 1200
+  mineItems: []
+  mineBeamOffset: 3
+  buildSpeed: 40
+  buildRange: 700
+  stepSound: darkheartium-unit-step
+  stepSoundPitch: 1.15
+  commands: [move, enterPayload, mine, rebuild, assist]
+  immunities: [darkhearts-curse]
+abilities:[
+ {
+  type: EnergyFieldAbility
+  damage: 200
+  reload: 10
+  range: 30
+  effectRadius: 0.1
+  damageEffect: chainLightning
+  status: darkhearts-curse
+  statusDuration: 1200
+  color: 70AC30
+  maxTargets: 100
+  healPercent: 1
+ }
+ {
+    type: RegenAbility
+    percentAmount: 1
+ }
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 30
+  max: 8000
+  regen: 1
+  cooldown: 480
+  width: 3
+  angle: 360
+  color: A6FF47
+  whenShooting: false
+  chanceDeflect: 5
+ }
+ {
+  type: LiquidExplodeAbility
+  liquid: darkheartium-liquid
+  amount: 750
+  radScale: 4
+  radAmountScale: 1
+ }
+]
+
+weapons: [
+    {
+        rotate: false
+        mirror: true
+        name: dcu-laser
+        reload: 10
+        recoil: 1
+        shootSound: swordium-laser-shoot
+        layerOffset: -1
+        
+    bullet: {
+type: LaserBulletType
+    damage: 500
+    sideLength: 0
+    sideWidth: 5
+    lifetime: 18
+    length: 450
+    pierce: true
+    status: darkhearts-curse
+    statusDuration: 1500
+    colors: [
+      70AC30,
+      ffffff
+    ]
+}
+}
+]
+  alwaysUnlocked: true
