@@ -1,9 +1,12 @@
 {
 "name": "sword-deities-mod"
-"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES"
+"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES [#A4C360[]]2.0"
 author: BlueDoves3821
 "description": '''
 [#ff5959[]]PREPARE YOURSELF!
+
+[#ffffff[]]To coincide with the "CROSSROADS MUST FALL" update,
+PHIGHTING! [#ff5959[]]SWORD [#ffffff[]]DEITIES [#A4C360[]]2.0 [#ffffff[]]is being released, there's new cores & stuff!
 
 [#ffffff[]]A mod about [#ff5959[]]sword [#ffffff[]]& the 7 sword deities from PHIGHTING!
 
@@ -17,7 +20,7 @@ What's special about this mod is that it can be utilized in either erekir, serpu
   
 [red[]]note: this mod can be considered as unfair to some, but then again, play it your own way!
 '''
-"version": "1.92"
+"version": "2.0"
 "subtitle": "i have a [#ff5959[]]sword!"
 "minGameVersion": "136.1"
 "dependencies": [ ]
