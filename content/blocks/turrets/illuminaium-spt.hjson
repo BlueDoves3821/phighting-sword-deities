@@ -12,10 +12,8 @@ aimChangeSpeed: 3
 range: 1250
 loopSound: beamLustre
 shootSound: ispt-shoot
-chargeSound: ispt-charge
 loopSoundVolume: 2
 shootSoundVolme: 2
-chargeSoundVolume: 2
 shootWarmupSpeed: 2
 itemCapacity: 20
 heatColor: f9350f
@@ -23,91 +21,23 @@ moveWhileCharging: false
 shake: 15
 recoil: 0
 timerTarget: 0
+shootY: 14
 consumes: {
+  power: 2.5
   items: [
     illuminaium/20
   ]
 }
-shoot: {
-firstShotDelay: 45
-}
 shootType: {
 type: PointLaserBulletType
+oscScl: 5
+oscMag: 0.025
 damage: 5000
 damageInverval: 0.5
+color: E2BAF5
 hitColor: E8C7F7ff
 shieldDamageMultiplier: 500
 pierceArmor: true
-chargeEffect: {
-type: MultiEffect
-lifetime: 45
-effects: [
-    {
-    type: ParticleEffect
-    particles: 1
-    sizeFrom: 2
-    sizeTo: 38
-    length: 0
-    spin: 11
-    lifetime: 45
-    layer: 109
-    region: large-bomb
-    colorFrom: E8C7F7ff
-    colorTo: E8C7F7ff
-    cone: 360
-    }
-    {
-    type: ParticleEffect
-    lightOpacity: 0
-    length: 0
-    sizeFrom: 2
-    sizeTo: 30
-    region: large-bomb
-    particles: 1
-    lifetime: 45
-    colorFrom: E8C7F7ff
-    colorTo: E8C7F7ff
-    spin: 6.5
-    }
-    {
-    type: ParticleEffect
-    lightOpacity: 0
-    length: 0
-    sizeFrom: 2
-    sizeTo: 40
-    region: large-bomb
-    particles: 1
-    lifetime: 45
-    colorFrom: E8C7F7
-    colorTo: E8C7F7
-    spin: -6.5
-    }
-    {
-    type: WaveEffect
-    lifetime: 45
-    sizeFrom: 90
-    sizeTo: 0
-    interp: circleOut
-    strokeFrom: 0
-    strokeTo: 8
-    lightColor: E2BAF5ff
-    colorFrom: E8C7F700
-    colorTo: E8C7F7ff
-    }
-    {
-    type: WaveEffect
-    lifetime: 45
-    sizeFrom: 70
-    sizeTo: 0
-    interp: circleOut
-    strokeFrom: 0
-    strokeTo: 8
-    lightColor: E2BAF5ff
-    colorFrom: E8C7F700
-    colorTo: E8C7F7ff
-    }
-    ]
-	}
 shootEffect:{
     type: MultiEffect
     effects:[shootSmokeSquareSparse, {
@@ -121,19 +51,19 @@ shootEffect:{
     {
      type: WaveEffect
      sizeFrom: 0
-     sizeTo: 600
-     strokeFrom: 6
-     strokeTo: 64
+     sizeTo: 50
+     strokeFrom: 4
+     strokeTo: 0
      interp: exp5Out
-     lifetime: 240
+     lifetime: 120
      colorFrom: E8C7F7FF
      colorTo: E2BAF500
      }
      {
      type: ParticleEffect
      length: 0
-     sizeFrom: 100
-     sizeTo: 100
+     sizeFrom: 20
+     sizeTo: 20
      colorFrom: E8C7F7FF
      colorTo: E2BAF500
      region: circle-shadow
