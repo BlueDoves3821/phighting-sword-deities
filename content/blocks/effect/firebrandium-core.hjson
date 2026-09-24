@@ -1,0 +1,27 @@
+type: CoreBlock
+name: '''
+[#861C00]Firebrandium []Core
+'''
+description: '''
+A moderately large core made with [#ff5959]swordium []& [#861C00]firebrandium[], tanky for it's size, the core unit can re-enact the scorch.
+[grey](which is when [#861C00]firebrand []decided to burn a lost temple city for whatever reason that we don't know.)
+'''
+health: 25000
+armor: 30
+itemCapacity: 45000
+size: 4
+category: effect
+unitType: firebrandium-core-unit
+unitCapModifier: 50
+thrusterLength: 12
+requirements: [
+  swordium/1400
+  firebrandium/1400
+]
+research: {
+    parent: firebrandium-converter
+    requirements: [
+swordium/1400
+firebrandium/1400
+]
+}

@@ -1,0 +1,37 @@
+type: CoreBlock
+name: '''
+[#A4C360]Venomshankium []Core
+'''
+description: '''
+A large core made with [#ff5959]swordium []& [#A4C360]venomshankium[], the core unit, nicknamed "Sisyphus" can create minions to assist itself.
+'''
+details: '''
+THE CROSSROADS IS FALLING.
+'''
+health: 30000
+armor: 32
+itemCapacity: 65000
+size: 5
+category: effect
+unitType: venomshankium-core-unit
+unitCapModifier: 60
+thrusterLength: 12
+requirements: [
+  swordium/2000
+  venomshankium/2000
+]
+research: {
+    parent: venomshankium-converter
+    requirements: [
+swordium/2000
+venomshankium/2000
+]
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+instantDisappear: true
+fragBullets: 200
+fragBullet: {
+spawnUnit: venomshankium-minion
+}
+}

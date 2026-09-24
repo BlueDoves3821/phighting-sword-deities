@@ -1,0 +1,50 @@
+type: CoreBlock
+name: '''
+[#C2C2C2]Ghostwalkerium []Core
+'''
+description: '''
+A core made with [#ff5959]swordium []& [#C2C2C2]ghostwalkerium[], haa a chance for enemy non-laser projectiles to miss & fly over the core unless if explicitly targeted, same health as the [#ff5959]swordium []core, but has half the armor.
+'''
+details: '''
+Disclaimer: due to this building being a core block, enemies will still attempt to target the core, because it's hard-wired to target it.
+'''
+health: 7500
+armor: 5
+itemCapacity: 10000
+size: 3
+category: effect
+unitType: ghostwalkerium-core-unit
+unitCapModifier: 20
+priority: -5
+targetable: false
+underBullets: true
+requirements: [
+  swordium/475
+  ghostwalkerium/475
+]
+research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+swordium/475
+ghostwalkerium/475
+]
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+instantDisappear: true
+  fragBullets: 3
+  fragBullet: {
+  backColor: A3A3A3
+  frontColor: C2C2C2
+  lifetime: 5
+  collides: false
+  speed: 1
+  shrinkY: 0
+  fragBullets: 1
+  despawnSound: unitCreateBig
+  sprite: large-orb
+  fragBullet: {
+  spawnUnit: ghostwalkerium-drone
+              }
+}
+}

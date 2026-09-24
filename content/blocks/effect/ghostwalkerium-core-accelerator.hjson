@@ -1,0 +1,36 @@
+type: Accelerator
+name: "[#c2c2c2]Ghostwalkerium []Core Accelerator"
+description: '''
+An accelerator for the [#c2c2c2]ghostwalkerium []core,
+utilizes [#929EAE]windforceium[], does not require power & [#97CCE1]icedaggerium []liquid to operate in an attempt to stealthy launch cores.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+health: 7000
+armor: 10
+size: 5
+category: effect
+ringColor: FFFFFFff
+lightningColor: FFFFFFff
+launchBlock: ghostwalkerium-core
+consumesPower: false
+targetable: false
+priority: -1
+requirements: [
+  swordium/1000
+  ghostwalkerium/1000
+  windforceium/120
+]
+	research: {
+	parent: ghostwalkerium-core
+	requirements: [
+  swordium/1000
+  ghostwalkerium/1000
+  windforceium/120
+  ]
+  objectives: [
+  {
+    type: capturedSector
+    preset: planetaryTerminal
+  }
+  ]
+}

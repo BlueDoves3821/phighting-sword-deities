@@ -1,0 +1,40 @@
+type: Accelerator
+name: "[#A4C360]Venomshankium []Core Accelerator"
+description: '''
+An accelerator for the [#A4C360]venomshankium []core,
+utilizes [#929ae]windforceium []& [#97CCE1]icedaggerium []liquid in order to accelerate the core.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+consumes: {
+ power: 13.34
+ liquids: [
+    icedaggerium-liquid/1
+  ]
+}
+health: 13000
+armor: 45
+size: 7
+category: effect
+ringColor: A4C360ff
+lightningColor: A4C360ff
+liquidCapacity: 800
+launchBlock: venomshankium-core
+requirements: [
+  swordium/3200
+  venomshankium/3200
+  windforceium/380
+]
+	research: {
+	parent: venomshankium-core
+	requirements: [
+  swordium/3200
+  venomshankium/3200
+  windforceium/380
+  ]
+  objectives: [
+  {
+    type: capturedSector
+    preset: planetaryTerminal
+  }
+  ]
+}
