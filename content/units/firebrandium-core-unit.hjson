@@ -1,0 +1,281 @@
+type: mech
+name: "[#861C00]Firebrandium []Core Unit"
+description: '''
+Core unit of the [#861C00]firebrandium []core, can set the area on fire, igniting any flammable materials, fires the same projectile as the slag shooter.
+'''
+details: '''
+this unit can cause extreme trouble near flammable materials, especially [#70ac30]darkheartium []liquid.
+'''
+envDisabled: 0
+hidden: false
+armor: 20
+health: 8500
+rotateSpeed: 8
+hitSize: 17
+canDrown: false
+stepShake: 2
+mineRange: 400
+mineFloor: true
+mineSpeed: 30
+mineTier: 100
+mineWalls: true
+itemCapacity: 1660
+mineItems: []
+buildRange: 400
+buildSpeed: 30
+canBoost: true
+boostMultiplier: 1
+stepSound: swordium-unit-step
+engineSize: 4
+engineOffset: 7
+immunities: [burning, melting]
+range: 400
+maxRange: 400
+weapons: [
+  {
+ shoot: {
+ firstShotDelay: 60
+  }
+  bullet: {
+  type: ExplosionBulletType
+  splashDamage: 5
+  splashDamageRadius: 120
+  hitSound: none
+  hitColor: 861C00
+  despawnEffect: titanExplosionLarge
+  incendAmount: 500
+  incendChance: 100
+  status: burning
+  collidesAir: false
+  statusDuration: 360
+  incendSpread: 120
+  killShooter: false
+  shootEffect: {
+            type: MultiEffect
+                effects: [
+        {
+            type: WaveEffect
+            sizeFrom: 120
+            sizeTo: 240
+            strokeFrom: 3
+            strokeTo: 0
+            sizeInterp: exp5Out
+            colorInterp: exp5In
+            lifetime: 240
+            colorFrom: 511100AA
+            colorTo: 861C0000
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 120
+            sizeTo: 120
+            colorFrom: 861C00AA
+            colorTo: 51110000
+            lifetime: 240
+            particles: 1
+        }
+{
+type: SoundEffect
+sound: firebrandium-unit-shoot
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+
+                ]
+            }
+chargeEffect: {
+type: MultiEffect
+    effects: [
+    {
+    type: WaveEffect
+    lifetime: 60
+    sizeFrom: 120
+    sizeTo: 120
+    colorInterp: exp5Out
+    strokeFrom: 0
+    strokeTo: 3
+    colorFrom: 861C0000
+    colorTo: 511100AA
+}
+
+      {
+    type: ParticleEffect
+    baseLength: -80
+    length: 80
+    lifetime: 60
+    particles: 17
+    colorFrom: 861C0000
+    colorTo: 511100ff
+    sizeFrom: 0
+    sizeTo: 5
+      }
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 120
+    sizeTo: 120
+    length: 0
+    lifetime: 60
+    colorFrom: 51110000
+    colorTo: 861C00AA
+    }
+{
+type: SoundEffect
+sound: firebrandium-unit-charge
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}
+  }
+  reload: 540
+  x: 0
+  y: 0
+  mirror: false
+  }
+{
+    x: 0
+    y: 2
+    name: fcu-weapon
+    reload: 5
+    rotate: false
+    mirror: false
+    shootSound: shootFlame
+bullet: {
+type: BasicBulletType
+    width: 16
+    height: 16
+    backColor: ffa166
+    frontColor: ffa166
+    ammoMultiplier: 1
+    damage: 250
+    lifetime: 160
+    speed: 7
+    status: melting
+    intervalBullets: 4
+    bulletInterval: 0.5
+    intervalRandomSpread: 8
+    intervalSpread: 12
+    intervalBullet: {
+      type: LiquidBulletType
+      liquid: slag
+      damage: 100
+      drag: 0.001
+      status: melting
+      fragSpread: 10
+      fragBullets: 3
+      fragBullet: {
+      type: fireBulletType
+      lifetime: 1
+      speed: 1
+      damage: 50
+      radius: 5
+      absorbable: false
+      pierce: true
+      pierceCap: 4
+      pierceBuilding: true
+      status: burning
+      despawnEffect: none
+    }
+    }
+     pierce: true
+     pierceBuilding: true
+     pierceCap: 10
+shootEffect: [
+      {
+        length: 200
+        cone: 20
+        lifetime: 50
+        particles: 8
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 12
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: 250
+        cone: 32
+        lifetime: 35
+        particles: 6
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 7
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: 200
+        cone: 45
+        lifetime: 25
+        particles: 6
+        colorFrom: 787878
+        colorTo: 787878
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: 120
+        cone: 37
+        lifetime: 30
+        particles: 8
+        colorFrom: ff852d
+        colorTo: eb571c
+        sizeFrom: 6
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: linear
+      }
+      {
+        length: 100
+        cone: 37
+        lifetime: 22
+        particles: 8
+        colorFrom: ffc547
+        colorTo: f57920
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: linear
+      }
+     ]
+}
+}
+]
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 20
+  max: 4000
+  regen: 8
+  cooldown: 240
+  width: 4
+  angle: 365
+  color: 861C00
+  whenShooting: false
+  pushUnits: false
+ }
+ {
+  type: LiquidExplodeAbility
+  liquid: slag
+  amount: 500
+  radScale: 3
+  radAmountScale: 1
+ }
+]
+accel: 0.2
+drag: 0.1
+speed: 1
+  alwaysUnlocked: true

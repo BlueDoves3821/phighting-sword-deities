@@ -1,0 +1,113 @@
+type: payload
+payloadCapacity: 2560
+
+speed: 7.15
+name: "[#c2c2c2]Ghostwalkerium []Core Unit"
+description: "Core unit of the [#c2c2c2]ghostwalkerium []core, basically a stronger version of the [#c2c2c2]ghostwalkerium []helper.
+"
+engineSize: 0
+envDisabled: 0
+hidden: false
+hitSize: 15
+health: 3250
+armor: 10
+mineTier: 100
+mineWalls: true
+mineSpeed: 25
+mineRange: 350
+itemCapacity: 650
+mineItems: []
+buildSpeed: 25
+itemOffsetY: 0
+flying: true
+faceTarget: false
+accel: 0.12
+drag: 0.04
+targetable: false
+priority: -1
+moveSound: loopHover
+moveSoundVolume: 0.25
+moveSoundPitchMin: 0.5
+moveSoundPitchMax: 1.25
+engines: [
+  {
+    x: 0
+    y: -10
+    radius: 3
+    rotation: 270
+  } 
+]
+weapons:[
+{
+reload: 8
+rotate: true
+x: 0
+y: 0
+mirror: false
+top: true
+shootSound: swordium-laser-shoot
+bullet:{
+    type: MissileBulletType
+    width: 10
+    height: 10
+    backColor: c2c2c2
+    frontColor: c2c2c2
+    trailColor: c2c2c255
+    shieldDamageMultiplier: 5
+    damage: 100
+    lifetime: 520
+    speed: 8
+    homingPower: 1
+    collidesTeam: true
+    shootEffect: shootSmokeDisperse
+    smokeEffect: shootSmokeSquare
+    healPercent: 25
+    colors: [
+      C2C2C2,
+      ffffff
+    ]
+}
+}
+]
+abilities:[
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 0
+	radius: 95
+	regen: 8.5
+	max: 3000
+	cooldown: 1
+ 
+ }
+ {
+    type: RepairFieldAbility
+    amount: 1500
+    range: 95
+    reload: 120
+    healEffect: spawnShockwave
+    activeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 80
+          sizeFrom: 0
+          sizeTo: 95
+          interp: pow3Out
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: c2c2c2FF
+          colorTo: c2c2c200
+        }
+      ]
+    }
+}
+{
+  type: SpawnDeathAbility
+  unit: ghostwalkerium-drone
+  amount: 3
+  }
+]
+  alwaysUnlocked: true

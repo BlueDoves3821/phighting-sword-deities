@@ -1,0 +1,158 @@
+type: flying
+name: '''
+[#A4C360]Venomshankium []Core Unit
+'''
+description: '''
+The core unit for the [#A4C360]venomshankium []core, nicknamed "Sisyphus" after their pet crow & their set of wings, fires a projectile that frags into [#A4C360]venomshankium []minions, can disrupt enemy repair blocks in a radius.
+'''
+envDisabled: 0
+hidden: false
+health: 5500
+armor: 10
+speed: 3.45
+rotateSpeed: 5
+hitSize: 40
+flying: true
+engineSize: 0
+mineRange: 650
+mineFloor: true
+mineSpeed: 40
+mineTier: 120
+mineWalls: true
+itemCapacity: 1100
+mineItems: []
+buildRange: 650
+buildSpeed: 40
+targetAir: false
+moveSound: loopThruster
+moveSoundVolume: 0.25
+moveSoundPitchMin: 0.25
+moveSoundPitchMax: 0.75
+engines: [
+  {
+    x: 0
+    y: -18
+    radius: 6
+    rotation: 270
+  } 
+] 
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 8000
+    range: 240
+    reload: 600
+    layer: 110
+    activeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 120
+          sizeFrom: 0
+          sizeTo: 240
+          interp: pow3Out
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: A4C360FF
+          colorTo: 65773C00
+        }
+      ]
+}
+  }
+ {
+	type: ForceFieldAbility
+	sides: 360
+	rotate: 0
+	radius: 240
+	regen: 10
+	max: 4000
+	cooldown: 240
+ 
+ }
+  {
+  type: EnergyFieldAbility
+  damage: 300
+  reload: 60
+  range: 240
+  effectRadius: 0.1
+  layer: 110
+  damageEffect: chainLightning
+  status: corroded
+  statusDuration: 1200
+  color: A4C360
+  maxTargets: 20
+  healPercent: 10
+  }
+{
+type: SuppressionFieldAbility
+orbRadius: 3
+range: 240
+particles: 0
+layer: 110
+color: A4C360ff
+particleColor: A4C360ff
+effectColor: A4C360ff
+reload: 240
+maxDelay: 240
+}
+{
+  type: SpawnDeathAbility
+  unit: venomshankium-minion
+  amount: 150
+  }
+]
+weapons:[
+{
+x: 0
+y: 0
+shootSound: shootRipple
+rotate: false
+mirror: true
+recoil: 0.5
+shootCone: 15
+reload: 15
+inaccuracy: 5
+name: vcu-weapon
+top: false
+shootX: 18
+shootY: 12.8
+bullet:{
+type: ArtilleryBulletType
+spin: 5
+shootEffect: shootBig
+lifetime: 35
+frontColor: A4C360
+backColor: 8AA550
+shrinkY: 0
+shrinkX: 0
+width: 20
+height: 20
+layer: 65
+speed: 7
+keepVelocity: false
+trailEffect: none
+splashDamage: 180
+splashDamageRadius: 25
+hitEffect: flakExplosion
+sprite: large-bomb
+fragSpread: 45
+fragRandomSpread: 15
+fragBullets: 10
+fragBullet: {
+backColor: 8AA550
+frontColor: A4C360
+lifetime: 5
+speed: 1
+collidesAir: false
+collideTerrain: true
+collidesTiles: true
+fragBullets: 1
+fragBullet: {
+spawnUnit: venomshankium-minion
+}
+}
+}
+}
+]
+alwaysUnlocked: true
