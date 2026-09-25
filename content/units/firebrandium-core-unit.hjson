@@ -32,12 +32,21 @@ immunities: [burning, melting]
 range: 400
 maxRange: 400
 weapons: [
-  {
+{
+rotate: false
+mirror: false
+name: fcu-area-fire
+x: 0
+y: 0
+reload: 240
+ignoreRotation: true
+shootCone: 360
  shoot: {
  firstShotDelay: 60
   }
   bullet: {
-  type: ExplosionBulletType
+  type: MissileBulletType
+  instantDisappear: true
   splashDamage: 5
   splashDamageRadius: 120
   hitSound: none
@@ -49,7 +58,6 @@ weapons: [
   collidesAir: false
   statusDuration: 360
   incendSpread: 120
-  killShooter: false
   shootEffect: {
             type: MultiEffect
                 effects: [
@@ -135,10 +143,6 @@ effect: none
 ]
 }
   }
-  reload: 540
-  x: 0
-  y: 0
-  mirror: false
   }
 {
     x: 0
