@@ -1,0 +1,134 @@
+type: CoreBlock
+name: '''
+SFOTH Core
+'''
+description: '''
+This is it, the largest core in PHIGHTING! [#ff5959]SWORD []DEITIES, every material was used to build this core, you best believe it's worth it in the end.
+'''
+details: '''
+Due to the extremely large size for a core block, an accelerator is not viable, besides, it'll be too expensive to mantain it.
+'''
+health: 87500
+armor: 80
+itemCapacity: 250000
+size: 8
+category: effect
+unitType: sfoth-core-mothership
+unitCapModifier: 250
+thrusterLength: 30
+baseExplosiveness: 8500
+targetable: false
+priority: -10
+underBullets: true
+requirements: [
+  darkheartium/4500
+  firebrandium/4500
+  ghostwalkerium/4500
+  icedaggerium/4500
+  illuminaium/4500
+  swordium/4500
+  venomshankium/4500
+  windforceium/4500
+]
+research: {
+    parent: sfoth-factory
+    requirements: [
+  darkheartium/4500
+  firebrandium/4500
+  ghostwalkerium/4500
+  icedaggerium/4500
+  illuminaium/4500
+  swordium/4500
+  venomshankium/4500
+  windforceium/4500
+]
+objectives: ["darkheartium-core", "firebrandium-core", "ghostwalkerium-core", "icedaggerium-core", "illuminaium-core", "swordium-core", "venomshankium-core", "windforceium-core"]
+}
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 1200
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: darkhearts-curse
+statusDuration: 24000
+fragBullets: 1
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 1200
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: windforces-disarmerment
+statusDuration: 24000
+}
+despawnEffect: [
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 90
+smokes: 48
+smokeSize: 9
+smokeSizeBase: 0
+sparkColor: FF595980
+sparkLen: 12
+sparkRad: 90
+sparks: 80
+sparkStroke: 4
+waveColor: FF5959
+waveLife: 640
+waveRad: 110
+lifetime: 540
+}
+{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 750
+strokeFrom: 6
+strokeTo: 2
+interp: exp5Out
+lifetime: 640
+colorFrom: FF5959FF
+colorTo: 9D383800
+}
+{
+type: ParticleEffect
+particles: 650
+sizeFrom: 1
+sizeTo: 80
+line: true
+sizeInterp: circleOut
+colorInterp: smooth2
+lifetime: 540
+cone: 360
+length: 1300
+colorFrom: FF5959AA
+colorTo: 9D383800
+}
+{
+type: ParticleEffect
+particles: 80
+sizeFrom: 1
+sizeTo: 50
+sizeInterp: circleOut
+colorInterp: smooth2
+lifetime: 280
+cone: 360
+length: 1300
+colorFrom: FF5959AA
+colorTo: 9D383800
+}
+{
+type: SoundEffect
+sound: sfoth-core-explosion
+maxPitch: 1
+minPitch: 1
+minVolume: 5
+maxVolume: 5
+effect: none
+}
+]
+trailEffect: none
+}

@@ -3,7 +3,7 @@ name: '''
 [#E2BAF5]Illiuminaium []Core
 '''
 description: '''
-A large core made with [#ff5959]swordium []& [#e2baf5]illuminaium[], has a large ship to go along with it, currently the best core yet.
+A large core made with [#ff5959]swordium []& [#e2baf5]illuminaium[], has a large ship to go along with it.
 '''
 health: 35100
 armor: 50
@@ -23,4 +23,66 @@ research: {
 swordium/2000
 illuminaium/2000
 ]
+}
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 720
+splashDamage: 0
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: illuminas-power
+despawnEffect: [
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 120
+smokes: 48
+smokeSize: 9
+smokeSizeBase: 0
+sparkColor: E2BAF580
+sparkLen: 15
+sparkRad: 150
+sparks: 120
+sparkStroke: 4
+waveColor: E2BAF5
+waveLife: 240
+waveRad: 720
+lifetime: 540
+}
+{
+type: WaveEffect
+sizeFrom: 720
+sizeTo: 1200
+strokeFrom: 6
+strokeTo: 2
+interp: pow4Out
+lifetime: 240
+colorFrom: E2BAF5C8
+colorTo: 8A729700
+}
+{
+type: ParticleEffect
+particles: 1
+sizeFrom: 720
+sizeTo: 720
+length: 0
+spin: 0
+layer: 109
+lifetime: 240
+interp: pow4Out
+colorFrom: E2BAF5C8
+colorTo: 8A729700
+}
+{
+type: SoundEffect
+sound: explosionReactor2
+maxPitch: 1
+minPitch: 1
+minVolume: 3
+maxVolume: 3
+effect: none
+}
+]
+trailEffect: none
 }

@@ -24,3 +24,28 @@ swordium/1200
 windforceium/1200
 ]
 }
+destroyBulletSameTeam: true
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 480
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: windforces-disarmerment
+statusDuration: 7200
+despawnEffect: [
+{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 450
+strokeFrom: 6
+strokeTo: 2
+interp: exp5Out
+lifetime: 240
+colorFrom: 929EAEFF
+colorTo: 5A616B00
+}
+]
+trailEffect: none
+}
