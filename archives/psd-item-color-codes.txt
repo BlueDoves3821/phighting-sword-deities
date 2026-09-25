@@ -1,6 +1,7 @@
 note: some sprites don't exactly use the same colors in terms of it's hex code.
 Darkheartium: (Light: 70AC30, Middle: 5E9128, Dark: 45691D)
 Firebrandium: (Light: 861C00, Middle: 701700, Dark: 511100)
+Firebrandium (ALT): (Light: D9724F, Middle: BE6445, Dark: A6573C)
 Ghostwalkerium: (Light: C2C2C2, Middle: A3A3A3, Dark: 777777)
 Icedaggerium: (Light: 97CCE1, Middle: 80ACBE, Dark: 5D7D8B)
 Icedaggerium (ALT): (Light: 2061C4, Middle: 1A52A5, Dark: 133C79)
