@@ -1,0 +1,53 @@
+type: UnitAssembler
+name: SFOTH Mothership Assembler
+description: Constructs the sfoth mothership using buildings.
+size: 5
+health: 6500
+targetable: false
+priority: -1
+underBullets: true
+baseExplosiveness: 500
+category: units
+droneType: assembly-drone
+requirements: [
+  darkheartium/1500
+  firebrandium/1500
+  ghostwalkerium/1500
+  icedaggerium/1500
+  illuminaium/1500
+  swordium/1500
+  venomshankium/1500
+  windforceium/1500
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: sfoth-mothership
+    requirements: [
+    sword-deities-mod-darkheartium-reactor/1
+    sword-deities-mod-firebrandium-scorch-machine/2
+    sword-deities-mod-ghostwalkerium-repairer/5
+    sword-deities-mod-icedaggerium-flame-suppressant-unit/2
+    sword-deities-mod-illuminaium-turret/2
+    sword-deities-mod-swordium-walker/4
+    sword-deities-mod-venomshankium-minion-launcher/2
+    sword-deities-mod-windforceium-disarmer/2
+    ]
+    time: 14400
+  }
+]
+squareSprite: false
+areaSize: 13
+research: {
+    parent: sfoth-core
+requirements: [
+  darkheartium/1500
+  firebrandium/1500
+  ghostwalkerium/1500
+  icedaggerium/1500
+  illuminaium/1500
+  swordium/1500
+  venomshankium/1500
+  windforceium/1500
+]
+}
