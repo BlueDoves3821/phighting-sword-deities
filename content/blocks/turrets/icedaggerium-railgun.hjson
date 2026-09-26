@@ -57,7 +57,7 @@ shootEffect: [
         sizeTo: 0.5
       }
     ]
- status: freezing
+ status: icedaggers-freezing
  statusDuration: 1200
 		}
 	}

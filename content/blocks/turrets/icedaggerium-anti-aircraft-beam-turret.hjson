@@ -29,7 +29,7 @@ Pulls in air units, dealing massive damage, high-ranged, but it's incredibly dem
 }
   itemCapacity: 20
   liquidCapacity: 200
-  status: freezing
+  status: icedaggers-freezing
   statusDuration: 300
   requirements: [
       swordium/300
