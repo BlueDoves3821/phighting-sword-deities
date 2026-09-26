@@ -13,7 +13,7 @@ armor: 80
 itemCapacity: 250000
 size: 8
 category: effect
-unitType: sfoth-core-mothership
+unitType: sfoth-mothership
 unitCapModifier: 250
 thrusterLength: 30
 baseExplosiveness: 8500
