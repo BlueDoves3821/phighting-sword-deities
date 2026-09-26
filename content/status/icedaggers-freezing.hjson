@@ -1,0 +1,23 @@
+name: "[#97CCE1]Icedagger's []Freezing"
+description: '''
+[#97CCE1]Icedagger []has frozen you, can be synergized with the blasted status for extra damage.
+'''
+speedMultiplier: 0.45
+healthMultiplier: 0.7
+affinities: [blasted]
+transitionDamage: 35
+damage: 0.01
+opposites: [burning, melting]
+outline: false
+effect: {
+    type: MultiEffect
+    effects:[freezing, {
+    type: steam
+    colorFrom: 97CCE1ff
+    colorTo: 97CCE100
+    sizeTo: 1
+    strokeFrom: 4
+    lifetime: 24
+    }
+    ]
+}
