@@ -134,6 +134,16 @@ maxDelay: 240
   unit: swordium-walker
   amount: 3
   }
+{
+  type: SpawnDeathAbility
+  unit: firebrandium-ramming-vehicle
+  amount: 1
+  }
+{
+  type: SpawnDeathAbility
+  unit: icedaggerium-flame-suppressant-unit
+  amount: 2
+  }
 ]
 
 weapons:[
