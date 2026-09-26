@@ -1,0 +1,40 @@
+type: BeamDrill
+name: "[#e2baf5]Illuminaium []Laser Bore"
+description: '''
+Bore wall ores at incredible speeds, Can optionally take [#e2baf5]illuminaium []ichor to boost speeds.
+'''
+size: 3
+requirements: [
+swordium/120
+illuminaium/120
+]
+drillTime: 5
+health: 1000
+tier: 10
+hardnessDrillMultiplier: 0
+rotateSpeed: 8
+warmupSpeed: 0.01
+itemCapacity: 1000
+range: 30
+sparkColor: ffffff
+liquidCapacity: 200
+optionalBoostIntensity: 4
+  consumes:
+  {
+    power: 3
+    liquid:
+    {
+      liquid: illuminaium-ichor
+      amount: 0.31
+      booster: true
+      optional: true
+    }
+  }
+  research: {
+    parent: illuminaium-drill
+    requirements: [
+      swordium/120
+      illuminaium/120
+]
+}
+category: production

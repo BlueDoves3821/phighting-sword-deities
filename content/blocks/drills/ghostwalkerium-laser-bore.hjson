@@ -10,11 +10,10 @@ ghostwalkerium/20
 ]
 priority: -1
 targetable: false
-drillTime: 30
+drillTime: 15
 health: 750
 tier: 10
 hardnessDrillMultiplier: 1
-size: 2
 rotateSpeed: 8
 warmupSpeed: 0.01
 itemCapacity: 250
