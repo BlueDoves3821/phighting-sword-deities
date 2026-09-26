@@ -237,7 +237,7 @@ bullet: {
     knockback: 12
     lifetime: 55
     speed: 12
-    status: freezing
+    status: icedaggers-freezing
     statusDuration: 640
 }
 }

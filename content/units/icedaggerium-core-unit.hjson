@@ -25,7 +25,7 @@ boostMultiplier: 2.5
 stepSound: swordium-unit-step
 engineSize: 4
 engineOffset: 7
-immunities: [burning, melting, freezing, wet]
+immunities: [burning, melting, freezing, icedaggers-freezing, wet]
 weapons: [
 {
 reload: 1
@@ -52,7 +52,7 @@ bullet: {
     damage: 30
     lifetime: 60
     speed: 17.25
-    status: freezing
+    status: icedaggers-freezing
     statusDuration: 640
 }
 }
@@ -89,7 +89,7 @@ bullet: {
 	pierce: true
 	pierceCap: 7
 	pierceBuilding: true
- status: freezing
+ status: icedaggers-freezing
  statusDuration: 1200
  knockback: -10
  }
