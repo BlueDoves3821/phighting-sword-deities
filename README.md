@@ -7,6 +7,9 @@
 ### Disclaimer!
 This mod is considered to be unfair due to some of the content being OP,
 but then again, play it your own way!
+
+## What's Next With PHIGHTING! SWORD DEITIES
+Version 2.1 Will add 3 new materials, all of them are related to the swords: Ban-Hammerium, Vakium & Domium, It'll be alot more content added, but it takes time to add all of it, be patient!
 ### Information About This Mod
 PHIGHTING! SWORD DEITES Is a mindustry mod made by BlueDoves3821.
 
