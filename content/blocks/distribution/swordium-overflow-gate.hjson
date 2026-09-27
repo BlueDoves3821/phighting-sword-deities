@@ -1,0 +1,15 @@
+type: OverflowGate
+name: "[#ff5959]Swordium []Overflow Gate"
+description: Outputs items to the sides if the front's blocked.
+health: 40
+size: 1
+requirements: [
+  swordium/2
+]
+category: distribution
+research: {
+  parent: swordium-sorter
+  requirements: [
+    swordium/2
+  ]
+}
