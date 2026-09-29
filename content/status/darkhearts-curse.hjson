@@ -18,3 +18,28 @@ effect: {
   sizeFrom: 4
   sizeTo: 0
 }
+applyEffect: {
+type: MultiEffect
+effects:[
+       {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 50
+        strokeFrom: 3
+        strokeTo: 2
+        interp: sineOut
+        lifetime: 80
+        colorFrom: 70AC30ff
+        colorTo: 78787800
+        }
+{
+type: SoundEffect
+sound: darkhearts-curse-apply-sfx
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}
