@@ -30,7 +30,7 @@ Disarms units after charging up it's attack, does not have a shield to protect i
   alwaysShootWhenMoving: true
   faceTarget: true
   flying: false
-  health: 25000
+  health: 18000
   armor: 75
   hitSize: 18
   lowAltitude: true
