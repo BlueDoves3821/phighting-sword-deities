@@ -25,3 +25,44 @@ swordium/1400
 firebrandium/1400
 ]
 }
+destroyBullet: {
+  type: MissileBulletType
+  instantDisappear: true
+  splashDamage: 5
+  splashDamageRadius: 200
+  hitSound: none
+  hitColor: 861C00
+  despawnEffect: titanExplosionLarge
+  incendAmount: 750
+  incendChance: 125
+  status: burning
+  collidesAir: false
+  statusDuration: 360
+  incendSpread: 200
+  despawnEffect: {
+            type: MultiEffect
+            effects: [
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 250
+            strokeFrom: 3
+            strokeTo: 0
+            sizeInterp: pow5Out
+            colorInterp: exp5In
+            lifetime: 240
+            colorFrom: 511100AA
+            colorTo: 861C0000
+        }
+{
+type: SoundEffect
+sound: blockExplodeFlammable
+maxPitch: 1
+minPitch: 1
+minVolume: 2
+maxVolume: 2
+effect: none
+}
+]
+}
+}
