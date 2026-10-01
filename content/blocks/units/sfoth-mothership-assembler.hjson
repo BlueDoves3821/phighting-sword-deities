@@ -1,6 +1,16 @@
 type: UnitAssembler
 name: SFOTH Mothership Assembler
-description: Constructs the sfoth mothership using buildings.
+description: "Constructs the sfoth mothership using buildings."
+details: ''' SFOTH Mothership Recipe:
+1 [#70AC30]Darkheartium []Reactor
+2 [#861C00]Firebrandium []Scorch Machines
+5 [#C2C2C2]Ghostwalkerium []Repairers
+2 [#97CCE1]Icedaggerium []Flame Suppressant Units
+2 [#E2BAF5]Illuminaium []Turrets
+4 [#FF5959]Swordium []Walkers
+2 [#A4C360]Venomshankium []Minion Launchers
+2 [#929EAE]Windforceium []Disarmers
+'''
 size: 5
 health: 6500
 targetable: false
