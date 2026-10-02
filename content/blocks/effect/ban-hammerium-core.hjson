@@ -1,0 +1,80 @@
+type: CoreBlock
+name: '''
+[#3A3A82]Ban-Hammerium []Core
+'''
+description: '''
+A moderately large core made with [#ff5959]swordium[], [#3A3A82]ban-hammerium[] & [#929EAE]windforceium[], really tanky for it's size.
+'''
+health: 55000
+armor: 50
+itemCapacity: 56000
+size: 4
+category: effect
+unitType: ban-hammerium-core-unit
+unitCapModifier: 60
+thrusterLength: 12
+requirements: [
+  swordium/2000
+  ban-hammerium/2000
+  windforceium/500
+]
+research: {
+    parent: ban-hammerium-converter
+    requirements: [
+swordium/2000
+ban-hammerium/2000
+windforceium/500
+]
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 480
+splashDamage: 50
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: windforces-disarmerment
+statusDuration: 7200
+fragSpread: 0
+fragRandomSpread: 0
+fragBullets: 1
+fragAngle: 0
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 480
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+trailEffect: none
+collides: false
+absorbable: false
+status: ban-hammers-stun
+statusDuration: 600
+}
+despawnEffect: [
+{
+type: WaveEffect
+sizeFrom: 480
+sizeTo: 720
+strokeFrom: 6
+strokeTo: 2
+interp: exp5Out
+lifetime: 240
+colorFrom: 929EAEFF
+colorTo: 2D2D6400
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 480
+sizeTo: 480
+interp: exp5Out
+colorFrom: 929EAEC8
+colorTo: 2D2D6400
+lifetime: 240
+particles: 1
+}
+]
+trailEffect: none
+}
