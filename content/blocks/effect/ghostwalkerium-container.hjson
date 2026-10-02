@@ -12,6 +12,7 @@ health: 850
 armor: 5
 priority: -1
 targetable: false
+underBullets: true
 	requirements: [
 		swordium/45
   ghostwalkerium/45

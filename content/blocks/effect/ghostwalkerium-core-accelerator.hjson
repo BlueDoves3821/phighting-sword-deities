@@ -15,6 +15,7 @@ launchBlock: ghostwalkerium-core
 consumesPower: false
 targetable: false
 priority: -1
+underBullets: true
 requirements: [
   swordium/1000
   ghostwalkerium/1000
