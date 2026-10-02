@@ -8,6 +8,7 @@ requirements: [
 ]
 priority: -1
 targetable: false
+underBullets: true
 drillTime: 30
 health: 750
 tier: 10

@@ -10,6 +10,7 @@ ghostwalkerium/20
 ]
 priority: -1
 targetable: false
+underBullets: true
 drillTime: 15
 health: 750
 tier: 10

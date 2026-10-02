@@ -12,6 +12,7 @@ Basically the [#ff5959]swordium []pump with [#c2c2c2]ghostwalkerium []added, can
   squareSprite: false
   priority: -1
   targetable: false
+  underBullets: true
 	requirements: [
 		swordium/40
   ghostwalkerium/15
