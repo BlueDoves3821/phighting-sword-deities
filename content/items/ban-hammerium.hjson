@@ -1,0 +1,14 @@
+name: "[#3A3A82]Ban-Hammerium"
+description: '''
+[#3A3A82]"Your verdict is... Guilty!"[]
+A tanky material, used for tanky/high damage output purposes, blood related to [#ff5959]swordium[], but doesn't know each-other, are cousins to both [#EBE161]■■■■■■■ []& [#C46BE3]■■■■■■[], and caretaken by [#929EAE]windforceium[].
+'''
+color: 3A3A82
+details: '''
+[#3A3A82]"Gotta make momma proud!"
+'''
+explosiveness: 0.65
+  research: {
+    parent: windforceium
+    requirements: []
+}
