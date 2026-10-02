@@ -8,6 +8,15 @@ size: 3
 consumesPower: false
 plans: [
    {
+    unit: ban-hammerium-shield-repairer
+    time: 600
+    requirements: [
+      ban-hammerium/35
+      swordium/35
+      windforceium/10
+    ]
+ }
+   {
     unit: darkheartium-base-clearer
     time: 1500
     requirements: [
