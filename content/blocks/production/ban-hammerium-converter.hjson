@@ -1,0 +1,30 @@
+type: GenericCrafter
+name: "[#3A3A82]Ban-Hammerium []Converter"
+description: '''
+Converts [#929EAE]windforceium []into [#3A3A82]ban-hammerium.
+'''
+size: 2
+health: 400
+itemCapacity: 50
+consumes: {
+  items: [
+    windforceium/1
+  ]
+}
+craftEffect: hitLaserColor
+craftTime: 10
+outputItems: [
+   ban-hammerium/1
+]
+research: {
+    parent: swordium-maker
+    requirements: [
+    swordium/100
+    windforceium/50
+]
+}
+category: crafting
+requirements: [
+  swordium/50
+  windforceium/25
+]
