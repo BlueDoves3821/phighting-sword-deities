@@ -16,6 +16,7 @@ A mass driver made out of [#ff5959]swordium []& [#c2c2c2]ghostwalkerium,[] bette
   size: 2
   priority: -1
   targetable: false
+  underBullets: true
   requirements: [
       swordium/90
       ghostwalkerium/90   
