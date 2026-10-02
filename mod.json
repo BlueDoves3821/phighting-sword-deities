@@ -1,12 +1,12 @@
 {
 "name": "sword-deities-mod"
-"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES [#A4C360[]]2.0"
+"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES [#3A3A82[]]2.1"
 author: BlueDoves3821
 "description": '''
 [#ff5959[]]PREPARE YOURSELF!
 
-[#ffffff[]]To coincide with the "CROSSROADS MUST FALL" update,
-PHIGHTING! [#ff5959[]]SWORD [#ffffff[]]DEITIES [#A4C360[]]2.0 [#ffffff[]]is being released, there's new cores & stuff!
+[#ffffff[]]Version 2.1 introduces a new material called [#3A3A82[]]Ban-Hammerium[#ffffff[]].
+A material for tanky/high damage output purposes made from converting [#929EAE[]]windforceium[#ffffff[]].
 
 [#ffffff[]]A mod about [#ff5959[]]sword [#ffffff[]]& the 7 sword deities from PHIGHTING!
 
@@ -20,8 +20,8 @@ What's special about this mod is that it can be utilized in either erekir, serpu
   
 [red[]]note: this mod can be considered as unfair to some, but then again, play it your own way!
 '''
-"version": "2.0"
-"subtitle": "i have a [#ff5959[]]sword!"
+"version": "2.1"
+"subtitle": "i have a [#3A3A82[]]hammer!"
 "minGameVersion": "136.1"
 "dependencies": [ ]
 "hideBrowser": false
