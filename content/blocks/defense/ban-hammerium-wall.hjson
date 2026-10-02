@@ -1,0 +1,23 @@
+name: "[#3A3A82]Ban-Hammerium []Wall"
+description: '''
+A wall made out of [#3A3A82]ban-hammerium []& a bit of [#929eae]windforceium[], can be placed on deep liquids, very tanky for it's size, absorbs laser projectiles.
+'''
+    type: Wall
+    placeableLiquid: true
+    health: 2500
+    size: 1
+    absorbLasers: true
+	requirements: [
+		swordium/10
+  ban-hammerium/10
+  windforceium/4
+	]
+	category: defense
+  research: {
+    parent: ban-hammerium-converter
+    requirements: [
+      swordium/10
+      ban-hammerium/10
+      windforceium/4
+]
+}
