@@ -1,0 +1,171 @@
+type: ItemTurret
+name: "[#3A3A82]Ban-Hammerium []Judgement Turret",
+description: "Instantly kills enemies caught in a small radius, but has an extremely long cooldown time of 50 seconds.
+[grey]unless if overdrived.",
+details: '''
+[#3A3A82]"Banland's calling!"
+'''
+    targetAir: true
+    targetBlocks: false
+    targetGround: true
+    health: 3500
+    size: 4
+    reload: 5000
+    unitSort: strongest
+    fogRadiusMultiplier: 0.5
+    rotateSpeed: 0
+    range: 120
+    maxAmmo: 60
+    recoil: 0
+    shake: 20
+    shootY: 0
+    smokeEffect: none
+    shootSound: none
+    ammoPerShot: 20
+    shootCone: 360
+    drawer: {
+    type: DrawTurret
+    parts: [
+    {
+    suffix: "-cooldown"
+    progress: reload
+    color: 414192FF
+    colorTo: 2D2D6400
+    top: true
+    outline: false
+    y: 0
+    }
+    {
+    suffix: "-text"
+    progress: reload
+    color: FFFFFFFF
+    colorTo: FFFFFF00
+    top: true
+    outline: false
+    y: 0
+    }
+    ]
+    }
+ammoTypes: {
+ban-hammerium: {
+type: MissileBulletType
+splashDamageRadius: 120
+splashDamage: 750
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: ban-hammers-stun
+statusDuration: 240
+absorbable: false
+knockback: -70
+shootEffect: [
+{
+type: WaveEffect
+sizeFrom: 120
+sizeTo: 120
+strokeFrom: 5
+strokeTo: 5
+colorInterp: exp5Out
+lifetime: 120
+colorFrom: 2D2D6400
+colorTo: 3A3A82FF
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 0
+sizeTo: 120
+interp: exp5Out
+colorFrom: 2D2D6400
+colorTo: 3A3A82C8
+lifetime: 120
+particles: 1
+}
+{
+type: ParticleEffect
+    baseLength: -120
+    length: 120
+    particles: 50
+    colorFrom: 41419200
+    colorTo: 3A3A82FF
+    sizeInterp: pow10In
+    colorInterp: pow10Out
+    interp: pow10In
+    sizeFrom: 7
+    sizeTo: 0
+    strokeTo: 0
+    region: circle-shadow
+    lifetime: 120
+}
+]
+despawnEffect: [
+{
+type: WaveEffect
+sizeFrom: 120
+sizeTo: 400
+strokeFrom: 5
+strokeTo: 0
+sizeInterp: pow5Out
+colorInterp: exp5Out
+lifetime: 240
+colorFrom: 3A3A82FF
+colorTo: 2D2D6400
+startDelay: 120
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 120
+sizeTo: 120
+interp: exp5Out
+colorFrom: 3A3A82C8
+colorTo: 2D2D6400
+lifetime: 240
+particles: 1
+startDelay: 120
+}
+{
+type: SoundEffect
+sound: ban-hammerium-turret-strike
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+fragSpread: 0
+fragRandomSpread: 0
+fragBullets: 1
+fragAngle: 0
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 120
+splashDamage: 1e+09
+splashDamagePierce: true
+lifetime: 120
+speed: 0
+width: 0
+height: 0
+backColor: 00000000
+frontColor: 00000000
+trailEffect: none
+collides: false
+absorbable: false
+status: ban-hammers-banned-vfx
+statusDuration: 30
+}
+}
+}
+researchCost: [
+  swordium/1000
+  ban-hammerium/1000
+  windforceium/250
+]
+category: turret
+research: swordium-laser-turret
+requirements: [
+  swordium/1000
+  ban-hammerium/1000
+  windforceium/250
+]
