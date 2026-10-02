@@ -1,0 +1,52 @@
+name: "[#3A3A82]Ban-Hammer's []Stun"
+description: '''
+Ouch! [#3A3A82]Ban-Hammer []has stunned you!
+'''
+speedMultiplier: 0.0025
+buildSpeedMultiplier: 0
+reloadMultiplier: 0
+dragMultiplier: 10
+disarm: true
+outline: false
+effect: none
+applyEffect: {
+    type: MultiEffect
+    effects:[
+       {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 30
+        strokeFrom: 1
+        strokeTo: 0
+        interp: sineOut
+        lifetime: 80
+        colorFrom: 3A3A82c8
+        colorTo: 3A3A8200
+        }
+{
+   type: ParticleEffect
+    baseLength: 0
+    length: 30
+    particles: 25
+    colorFrom: FFFF00c8
+    colorTo: FFFF0000
+    sizeFrom: 3
+    sizeTo: 1
+    spin: 5
+    region: large-bomb
+    sizeInterp: sineOut
+    strokeFrom: 4
+    strokeTo: 0
+    lifetime: 50
+}
+{
+type: SoundEffect
+sound: ban-hammers-stun-sfx
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}

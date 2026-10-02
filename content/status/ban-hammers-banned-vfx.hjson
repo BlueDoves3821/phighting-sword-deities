@@ -1,0 +1,66 @@
+name: "[#3A3A82]Ban-Hammer's []Banned VFX"
+description: '''
+A vfx status effect for the [#3A3A82]ban-hammerium []judgement turret's kill effect.
+'''
+outline: false
+effect: none
+hideDatabase: true
+hidden: true
+applyEffect: {
+    type: MultiEffect
+    effects:[
+       {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 60
+        strokeFrom: 6
+        strokeTo: 0
+        interp: sineOut
+        lifetime: 120
+        colorFrom: 3A3A82C8
+        colorTo: 3A3A8200
+        }
+        {
+            type: ParticleEffect
+            baseLength: 20
+            length: 50
+            sizeFrom: 10
+            sizeTo: 45
+            colorInterp: sineOut
+            sizeInterp: exp5Out
+            colorFrom: FFFFFFFF
+            colorTo: FFFFFF00
+            region: sword-deities-mod-ban-hammers-banned-vfx-text  
+            lifetime: 240
+            particles: 1
+            useRotation: false
+            layer: 220
+        }
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 90
+smokes: 48
+smokeSize: 9
+smokeSizeBase: 0
+sparkColor: 3A3A8280
+sparkLen: 12
+sparkRad: 90
+sparks: 80
+sparkStroke: 4
+waveColor: 3A3A82
+waveLife: 240
+waveRad: 110
+lifetime: 540
+}
+{
+type: SoundEffect
+sound: ban-hammerium-turret-kill
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}
