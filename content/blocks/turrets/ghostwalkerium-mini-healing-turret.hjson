@@ -16,6 +16,7 @@ name: "[#c2c2c2]Ghostwalkerium []Mini Healing Turret"
     targetAir: false
     targetable: false
     priority: -1
+    underBullets: true
     shootY: 2
     shootType: {
     collides: true
