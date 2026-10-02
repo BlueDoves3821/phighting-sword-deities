@@ -9,13 +9,13 @@ This mod is considered to be unfair due to some of the content being OP,
 but then again, play it your own way!
 
 ## What's Next With PHIGHTING! SWORD DEITIES
-Version 2.1 will Ban-Hammerium.
+Version 2.15 will add the flipside brothers of valkium & domium.
 <p align="center">
-  <img src="archives/hq item icons/ban-hammerium-hq.png" width="120"
+  <img src="archives/hq item icons/valkium-hq.png" width="100">
+  <img src="archives/hq item icons/domium-hq.png" width="100">
 </p>
-
-a material converted from windforceium, It'll be used for tanky purposes & large damage output, it'll be alot more content added, but it takes time to add all of it, be patient!
-originally i was gonna add valkium & domium too, but that could wait for an another update.
+  
+2 materials converted from swordium, It'll be used for supporting allies, please wait while i make such content.
 ### Information About This Mod
 PHIGHTING! SWORD DEITES Is a mindustry mod made by BlueDoves3821.
 
@@ -36,14 +36,19 @@ and convert it into either of the 7 sword deites!
   <img src="archives/hq item icons/venomshankium-hq.png" width="100">
   <img src="archives/hq item icons/windforceium-hq.png" width="100">
 </p>
+
+You're also able to create ban-hammerium by converting windforceium.
+<p align="center">
+  <img src="archives/hq item icons/ban-hammerium-hq.png" width="120"
+</p>
+
 Currently, there are around 200+ pieces of content, which includes a mobile swordium core for mobile bases.
 <p align="center">
 <img src="sprites/blocks/effects/cores/swordium-core.png" width="100">
 </p>
-a swordium melee unit that has a sword.
+a ban-hammerium judgement turret that tells you that your verdict is... guilty!
 <p align="center">
-  <img src="sprites/units/swordium-melee-unit.png" width="100">
-  <img src="sprites/units/weapons & heat/smu-sword.png" width="40">
+  <img src="sprites/blocks/turrets/ban-hammerium-judgement-turret-preview.png" width="100">
 </p>
 a illuminaium n.e.s to invalidate an area to the enemy.
 <p align="center">
