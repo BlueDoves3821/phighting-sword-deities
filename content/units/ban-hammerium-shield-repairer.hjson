@@ -1,0 +1,58 @@
+type: flying
+speed: 5
+name: "[#3A3A82]Ban-Hammerium []Shield Repairer"
+description: "Repairs ally shields by a large amount, best paired with the [#3A3A82]ban-hammerium []melee tank due to their slow self-regenerating shield.
+"
+engineSize: 0
+envDisabled: 0
+hidden: false
+hitSize: 14
+health: 1000
+armor: 3
+itemCapacity: 0
+flying: true
+faceTarget: false
+accel: 0.12
+drag: 0.04
+priority: 0.1
+moveSound: loopThruster2
+moveSoundVolume: 0.25
+moveSoundPitchMin: 1.0
+moveSoundPitchMax: 1.0
+commands: [move, enterPayload, assist]
+engines: [
+  {
+    x: 0
+    y: -7
+    radius: 2
+    rotation: 270
+  } 
+]
+abilities:[
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 0
+	radius: 10
+	regen: 5
+	max: 850
+	cooldown: 60
+ }
+  {
+    type: ShieldRegenFieldAbility
+    reload: 120
+    range: 50
+    amount: 750
+    max: 20000
+    soundVolume: 0.5
+  }
+]
+  research: {
+    parent: ban-hammerium-melee-tank
+    requirements: [
+      swordium/35
+      ban-hammerium/35
+      windforceium/10
+]
+}

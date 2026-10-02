@@ -1,0 +1,86 @@
+type: mech
+name: "[#3A3A82]Ban-hammerium []Melee Tank"
+description: '''
+A [#3A3A82]ban-hammerium []unit, can only melee, has an extremely high shield health, but regenerates it slowly, is mostly resistant to knockback.
+'''
+envDisabled: 0
+hidden: false
+armor: 50
+health: 25000
+range: 50
+rotateSpeed: 4
+hitSize: 25
+canDrown: false
+stepShake: 10
+itemCapacity: 0
+canBoost: false
+stepSound: darkheartium-unit-step
+legSplashDamage: 100
+legSplashRange: 20
+commands: [move, enterPayload]
+immunities: [ban-hammers-stun, unmoving]
+knockbackMultiplier: 0.05
+abilities: [
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 90
+	rotate: 0
+	radius: 22
+	regen: 1.66666667
+	max: 20000
+	cooldown: 600
+ }
+]
+weapons: [
+{
+name: bhmt-hammer
+reload: 60
+x: 13
+y: 12
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+top: true
+shootSound: ban-hammerium-unit-melee
+soundPitchMin: 1
+soundPitchMax: 1
+recoil: -1.65
+shootStatus: slow
+shootStatusDuration: 30
+bullet: {
+		type: BulletType
+		damage: 4000
+		speed: 15
+		splashDamage: 1500
+		splashDamageRadius: 30
+		absorbable: true
+  homingPower: 1
+		lifetime: 3
+		pierce: true
+  pierceCap: 10
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 0
+		impact: true
+		despawnHit: true
+		recoil: -0.5
+   status: ban-hammers-stun
+   statusDuration: 120
+}
+}
+]
+accel: 0.2
+drag: 0.1
+speed: 0.6
+  research: {
+    parent: sfoth-unit-factory
+    requirements: [
+      ban-hammerium/200
+      swordium/200
+      windforceium/60
+]
+}

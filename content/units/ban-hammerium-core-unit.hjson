@@ -1,0 +1,160 @@
+type: payload
+payloadCapacity: 12000
+
+speed: 3.52
+name: "[#3A3A82]Ban-hammerium []Core Unit"
+description: "Core unit of the [#3A3A82]ban-hammerium []core, fires an aoe attack that stuns enemies, can also pickup units/buildings.
+"
+engineSize: 0
+envDisabled: 0
+hidden: false
+hitSize: 30
+health: 18500
+armor: 35
+mineTier: 100
+mineWalls: true
+mineSpeed: 20
+mineRange: 500
+itemCapacity: 800
+mineItems: []
+buildSpeed: 20
+buildRange: 500
+itemOffsetY: 0
+flying: true
+faceTarget: false
+accel: 0.5
+drag: 0.1
+moveSound: loopHover2
+moveSoundVolume: 0.25
+moveSoundPitchMin: 0.15
+moveSoundPitchMax: 0.5
+immunities: [ban-hammers-stun, unmoving]
+knockbackMultiplier: 0.05
+engines: [
+  {
+    x: 0
+    y: -15
+    radius: 4
+    rotation: 270
+  } 
+]
+weapons:[
+{
+reload: 60
+rotate: false
+x: 0
+y: 0
+mirror: false
+top: true
+shootStatus: slow
+shootStatusDuration: 30
+shootCone: 360
+layerOffset: 5
+shootSound: none
+shoot: {
+firstShotDelay: 30
+}
+bullet:{
+type: MissileBulletType
+instantDisappear: true
+damage: 0
+shootEffect: none
+smokeEffect: none
+absorbable: false
+fragSpread: 0
+fragRandomSpread: 0
+fragBullets: 1
+fragAngle: 0
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 80
+splashDamage: 2500
+splashDamagePierce: true
+instantDisappear: true
+speed: 0
+width: 0
+height: 0
+backColor: 00000000
+frontColor: 00000000
+trailEffect: none
+collides: false
+absorbable: false
+status: ban-hammers-stun
+statusDuration: 240
+}
+chargeEffect: [
+{
+type: WaveEffect
+sizeFrom: 80
+sizeTo: 80
+strokeFrom: 5
+strokeTo: 5
+colorInterp: exp5Out
+lifetime: 30
+colorFrom: 2D2D6400
+colorTo: 3A3A82FF
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 0
+sizeTo: 80
+interp: exp5Out
+colorFrom: 2D2D6400
+colorTo: 3A3A82C8
+lifetime: 30
+particles: 1
+}
+{
+type: SoundEffect
+sound: ban-hammerium-core-unit-attack
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+despawnEffect: [
+{
+type: WaveEffect
+sizeFrom: 80
+sizeTo: 160
+strokeFrom: 5
+strokeTo: 0
+sizeInterp: pow5Out
+colorInterp: exp5Out
+lifetime: 240
+colorFrom: 3A3A82FF
+colorTo: 2D2D6400
+startDelay: 0
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 80
+sizeTo: 80
+interp: exp5Out
+colorFrom: 3A3A82C8
+colorTo: 2D2D6400
+lifetime: 240
+particles: 1
+startDelay: 0
+}
+]
+}
+}
+]
+abilities:[
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 20
+	rotate: 0
+	radius: 30
+	regen: 1.5
+	max: 17500
+	cooldown: 1
+}
+]
+  alwaysUnlocked: true
