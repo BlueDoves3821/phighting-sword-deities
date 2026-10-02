@@ -2,7 +2,7 @@ name: '''
 SFOTH Vault
 '''
 description: '''
-A vault that uses all the materials for it's construction, highly explosive, but it cannot be auto-targeted.
+A vault that uses all the sword deity materials for it's construction, highly explosive, but it cannot be auto-targeted.
 '''
 type: StorageBlock
 itemCapacity: 16000
@@ -13,6 +13,7 @@ armor: 20
 baseExplosiveness: 600
 priority: -1
 targetable: false
+underBullets: true
 	requirements: [
   darkheartium/140
   firebrandium/140
