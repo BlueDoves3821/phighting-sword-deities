@@ -1,7 +1,7 @@
 type: GenericCrafter
 size: 3
 name: "[#97CCE1]Icedaggerium []Liquid Electrolyzer"
-liquidOutputDirections: [1,2,3]
+liquidOutputDirections: [1,4,3]
 description: "Splits [#97CCE1]icedaggerium []liquid into hydrogen, ozone & water, requires power to operate, more efficient than it's water counterpart."
 health: 750
 craftTime: 10
