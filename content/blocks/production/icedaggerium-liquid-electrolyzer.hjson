@@ -1,0 +1,69 @@
+type: GenericCrafter
+size: 3
+name: "[#97CCE1]Icedaggerium []Liquid Electrolyzer"
+liquidOutputDirections: [1,2,3]
+description: "Splits [#97CCE1]icedaggerium []liquid into hydrogen, ozone & water, requires power to operate, more efficient than it's water counterpart."
+health: 750
+craftTime: 10
+liquidCapacity: 1500
+hasLiquids: true
+rotate: true
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: icedaggerium-liquid
+  }
+  {
+    type: DrawBubbles
+    color: 97CCE1C8
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 28
+  }
+  {
+    type: DrawBubbles
+    color: 97CCE1C8
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 10
+}
+{
+type: DrawRegion
+}
+{
+type: drawLiquidOutputs
+}
+]
+consumes: {
+  liquids: [
+    icedaggerium-liquid/2
+  ]
+  power: 1
+}
+outputLiquids: [
+  hydrogen/1.66666667
+  water/1.66666667
+  ozone/1.66666667
+]
+category: crafting
+requirements: [
+  swordium/85
+  icedaggerium/85
+]
+  research: {
+    parent: icedaggerium-electrolyzer
+    requirements: [
+      swordium/85
+      icedaggerium/85
+]
+}
+ambientSound: loopElectricHum
+ambientSoundVolume: 0.085
