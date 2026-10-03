@@ -1,0 +1,35 @@
+type: ForceProjector
+name: "[#3A3A82]Ban-Hammerium []Shield Projector"
+description: '''
+Shields buildimgs with it's tanky shield, does not protect against laser weapons.
+'''
+size: 3
+health: 1400
+category: effect
+squareSprite: false
+phaseRadiusBoost: 0
+phaseShieldBoost: 0
+phaseUseTime: 0
+radius: 400
+sides: 4
+shieldRotation: 45
+shieldHealth: 50000
+cooldownNormal: 5
+cooldownLiquid: 7.5
+cooldownBrokenBase: 5
+consumes: {
+	power: 1.6667
+}
+requirements: [
+    swordium/650
+    ban-hammerium/650
+    windforceium/325
+]
+research: {
+    parent: ban-hammerium-converter
+    requirements: [
+    swordium/650
+    ban-hammerium/650
+    windforceium/325
+    ]
+}
