@@ -1,0 +1,16 @@
+type: UnitAssemblerModule
+name: "[#ff5959]Swordium []Assembler Module (T2)"
+description: Adds an extra tier to a unit assembler when placed next to it's construction boundary, can also be used as an alternative payload input, requires the previous tier module to upgrade it.
+size: 3
+health: 850
+tier: 2
+requirements: [
+		swordium/180
+	]
+	category: units
+  research: {
+  parent: swordium-assembler-module-t1
+  requirements: [
+  swordium/180
+]
+}
