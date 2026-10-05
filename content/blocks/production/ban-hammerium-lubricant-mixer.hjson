@@ -1,0 +1,73 @@
+type: HeatCrafter
+name: "[#3A3A82]Ban-Hammerium []Lubricant Mixer"
+description: '''
+Mixes [#3A3A82]ban-hammerium[], water & oil, along with a bit of heat, to create a thick lubricant.
+'''
+size: 5
+health: 1100
+squareSprite: false
+consumes: {
+  items: [
+    ban-hammerium/2
+  ]
+  liquids: [
+  water/1.66666667
+  oil/0.833333334
+]
+}
+itemCapacity: 40
+craftEffect: none
+ambientSound: loopMachine2
+craftTime: 120
+heatRequirement: 10
+maxEfficiency: 10
+hasHeat: true
+outputLiquids: [
+ ban-hammerium-lubricant/2.5
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: "-bottom"
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: water
+    padding: 6
+  }
+  {
+    type: DrawRegion
+    suffix: "-mid"
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: oil
+    padding: 13
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: ban-hammerium-lubricant
+    padding: 4
+  }
+{
+  type: DrawDefault
+}
+  	{
+     type : DrawHeatInput
+	 	}
+]
+liquidCapacity: 1700
+  research: {
+    parent: ban-hammerium-converter
+    requirements: [
+    swordium/150
+    ban-hammerium/150
+    windforceium/75
+]
+}
+category: crafting
+requirements: [
+  swordium/150
+  ban-hammerium/150
+  windforceium/75
+]
