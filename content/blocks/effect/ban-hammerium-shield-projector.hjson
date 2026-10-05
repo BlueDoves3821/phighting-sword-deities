@@ -1,24 +1,32 @@
 type: ForceProjector
 name: "[#3A3A82]Ban-Hammerium []Shield Projector"
 description: '''
-Shields buildimgs with it's tanky shield, does not protect against laser weapons.
+Shields buildings with it's tanky shield, does not protect against laser weapons, optionally takes [#3A3A82]ban-hammerium []lubricant for a stronger shield.
 '''
 size: 3
 health: 1400
 category: effect
 squareSprite: false
 phaseRadiusBoost: 0
-phaseShieldBoost: 0
-phaseUseTime: 0
+phaseShieldBoost: 50
+phaseUseTime: 640
 radius: 400
 sides: 4
 shieldRotation: 45
 shieldHealth: 50000
 cooldownNormal: 5
-cooldownLiquid: 7.5
+cooldownLiquid: 2.5
 cooldownBrokenBase: 5
+liquidCapacity: 250
 consumes: {
 	power: 1.6667
+liquids: {
+        liquids: [
+        ban-hammerium-lubricant/0.25
+        ]
+        booster: true
+        optional: true
+        }
 }
 requirements: [
     swordium/650
