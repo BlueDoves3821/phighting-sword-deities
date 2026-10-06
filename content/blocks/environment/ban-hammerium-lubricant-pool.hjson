@@ -1,0 +1,12 @@
+type: Floor
+name: "[#3A3A82]Ban-Hammerium []Lubricant"
+speedMultiplier: 0.75
+variants: 0
+isLiquid: true
+liquidDrop: ban-hammerium-lubricant
+cacheLayer: tar
+supportsOverlay: true
+liquidMultiplier: 1
+drownTime: 600
+status: slow
+statusDuration: 7200
