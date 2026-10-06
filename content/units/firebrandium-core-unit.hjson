@@ -28,6 +28,7 @@ boostMultiplier: 1
 stepSound: swordium-unit-step
 engineSize: 4
 engineOffset: 7
+engineColor: 861C00
 immunities: [burning, melting]
 range: 400
 maxRange: 400

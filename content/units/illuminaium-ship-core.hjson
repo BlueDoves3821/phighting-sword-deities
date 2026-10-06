@@ -27,6 +27,7 @@ mineItems: []
 buildRange: 900
 buildSpeed: 50
 engineSize: 6
+engineColor: E2BAF5
 engines: [
   {
     x: 0

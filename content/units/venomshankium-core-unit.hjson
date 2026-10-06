@@ -28,6 +28,7 @@ moveSound: loopThruster
 moveSoundVolume: 0.25
 moveSoundPitchMin: 0.25
 moveSoundPitchMax: 0.75
+engineColor: A4C360
 engines: [
   {
     x: 0

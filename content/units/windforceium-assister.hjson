@@ -22,13 +22,13 @@ mineItems: []
 buildRange: 400
 buildSpeed: 10
 engineSize: 0
+engineColor: 929EAE
 engines: [
   {
     x: 0
     y: -6
     radius: 2
     rotation: 270
-    engineColor: 929EAE
   } 
 ] 
 abilities: [

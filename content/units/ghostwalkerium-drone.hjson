@@ -19,6 +19,7 @@ moveSound: loopThruster
 moveSoundVolume: 0.25
 moveSoundPitchMin: 0.5
 moveSoundPitchMax: 1.25
+engineColor: C2C2C2
 engines: [
   {
     x: 0

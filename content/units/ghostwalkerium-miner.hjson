@@ -27,6 +27,7 @@ moveSound: loopHover2
 moveSoundVolume: 0.25
 moveSoundPitchMin: 1.0
 moveSoundPitchMax: 1.25
+engineColor: C2C2C2
 engines: [
   {
     x: 0

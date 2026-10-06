@@ -30,6 +30,7 @@ moveSoundPitchMin: 0.15
 moveSoundPitchMax: 0.5
 immunities: [ban-hammers-stun, unmoving]
 knockbackMultiplier: 0.05
+engineColor: 3A3A82
 engines: [
   {
     x: 0

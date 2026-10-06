@@ -27,6 +27,7 @@ itemCapacity: 450
 mineItems: []
 buildRange: 850
 buildSpeed: 40
+engineColor: FF5959
 engines: [
   {
     x: 0

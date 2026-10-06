@@ -17,6 +17,7 @@ immunities: [
 illuminas-power
 ]
 engineSize: 0
+engineColor: E2BAF5
 engines: [
   {
     x: 0

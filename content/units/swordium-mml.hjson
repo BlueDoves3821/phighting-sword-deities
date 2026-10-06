@@ -13,6 +13,7 @@ hitSize: 10
 range: 1200
 rotateSpeed: 10
 commands: [move, enterPayload, assist]
+engineColor: FF5959
 abilities:[
  {
   type:ShieldArcAbility
@@ -26,7 +27,7 @@ abilities:[
   color: FF5959
   whenShooting: false
   chanceDeflect: 0.85
-  pushUnots: false
+  pushUnits: false
  }
 ]
 weapons: [

@@ -30,6 +30,7 @@ buildSpeed: 150
 loopSound: loopHover2
 loopSoundVolume: 1
 engineSize: 6
+engineColor: FF5959
 engines: [
   {
     x: 0

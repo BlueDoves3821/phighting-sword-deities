@@ -26,6 +26,7 @@ boostMultiplier: 1.75
 stepSound: swordium-unit-step
 engineSize: 4
 engineOffset: 7
+engineColor: 2061C4
 immunities: [burning, melting, freezing, icedaggers-freezing, wet]
 targetAir: false
 targetGround: false

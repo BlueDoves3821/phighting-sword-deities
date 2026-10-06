@@ -16,6 +16,7 @@ buildSpeed: 10
 engineSize: 0
 payloadCapacity: 8500
 immunities: [darkhearts-curse]
+engineColor: 70AC30
 engines: [
   {
     x: 0
