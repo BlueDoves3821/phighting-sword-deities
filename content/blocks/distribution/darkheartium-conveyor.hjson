@@ -1,0 +1,21 @@
+type: Conveyor
+name: "[#70ac30]Darkheartium []Conveyor"
+description: "A really fast conveyor, can push ground units unlike the [#ff5959]swordium []ducts, explosive."
+baseExplosiveness: 25
+health: 90
+category: distribution
+speed: 4
+displayedSpeed: 1
+bridgeReplacement: darkheartium-bridge
+junctionReplacement: swordium-junction
+requirements: [
+swordium/5
+darkheartium/5
+]
+research: {
+parent: darkheartium-converter
+requirements: [
+swordium/5
+darkheartium/5
+]
+}
