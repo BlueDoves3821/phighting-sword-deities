@@ -1,0 +1,33 @@
+type: ShockwaveTower
+name: "[#3A3A82]Ban-Hammerium []Shockwave Tower"
+description: '''
+Creates rapid shockwaves that destroys enemy bullets that aren't laser-oriented,
+requires a steady supply of [#3A3A82]ban-hammerium []lubricant & power.
+'''
+size: 3
+range: 360
+reload: 2.5
+health: 1500
+armor: 10
+liquidCapacity: 400
+bulletDamage: 1000
+waveColor: 3A3A82FF
+shapeColor: 4949A4FF
+consumes: {
+  power: 2
+  liquid: ban-hammerium-lubricant/0.833333333
+}
+category: effect
+research: {
+parent: ban-hammerium-converter
+requirements: [
+swordium/100
+ban-hammerium/100
+windforceium/50
+]
+}
+requirements: [
+  swordium/100
+  ban-hammerium/100
+  windforceium/50
+]
