@@ -3,7 +3,7 @@ name: '''
 [#A4C360]Venomshankium []Core Unit
 '''
 description: '''
-The core unit for the [#A4C360]venomshankium []core, nicknamed "Sisyphus" after their pet crow & their set of wings, fires a projectile that frags into [#A4C360]venomshankium []minions, can disrupt enemy repair blocks in a radius.
+The core unit for the [#A4C360]venomshankium []core, nicknamed "Sisyphus" after their pet crow & their set of wings, fires both a projectile & a beam that frags into [#A4C360]venomshankium []minions, can disrupt enemy repair blocks in a radius.
 '''
 envDisabled: 0
 hidden: false
@@ -119,6 +119,7 @@ top: false
 shootX: 18
 shootY: 12.8
 bullet:{
+recoil: 1
 type: ArtilleryBulletType
 spin: 5
 shootEffect: shootBig
@@ -155,5 +156,37 @@ spawnUnit: venomshankium-minion
 }
 }
 }
+  {
+    x: 0
+    y: 16
+    mirror: false
+    name: vcu-beam
+    continuous: true
+    alwaysContinuous: true
+    ejectEffect: none
+    shootSound: beamLustre
+    shootSoundVolume: 0.6
+    shootY: 0
+    bullet: {
+      recoil: 0.25
+      collides: true
+      collidesTiles: true
+      collidesAir: true
+      collidesGround: true
+      type: ContinuousFlameBulletType
+      colors: [65773C, 8AA550, A4C360, ffffff]
+      length: 210
+      width: 4
+      drawFlare: false
+      damageInterval: 2.5
+      damage: 50
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 1
+      fragBullet: {
+      spawnUnit: venomshankium-minion
+      }
+    }
+  }
 ]
 alwaysUnlocked: true

@@ -6,7 +6,7 @@
   envDisabled: 0
   hidden: false
   hitSize: 8
-  health: 200
+  health: 250
   rotateSpeed: 7
   drownTimeMultiplier: 6
   immunities: []
@@ -34,7 +34,7 @@
     bullet: {
       type: BasicBulletType
       speed: 10
-      damage: 55
+      damage: 65
       lifetime: 4
       width: 0
       height: 0
