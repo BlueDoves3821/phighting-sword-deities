@@ -13,6 +13,7 @@ smokeEffect: none
 loopSound: beamMeltdown
 shootSound: shootBeamPlasma
 range: 800
+health: 850
 recoil: 0
 shake: 2
 size: 3

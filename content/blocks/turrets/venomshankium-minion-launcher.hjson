@@ -86,7 +86,7 @@ ammoTypes: {
     
         fragSpread: 45
         fragRandomSpread: 15
-        fragBullets: 8
+        fragBullets: 12
         fragAngle: 180
         fragVelocityMin: 1
         
@@ -124,14 +124,14 @@ coolant: {
 }
 coolantMultiplier: 10
 	requirements: [
-		swordium/160
-  venomshankium/160
+		swordium/170
+  venomshankium/170
 	]
 	category: turret
   research: {
     parent: swordium-laser-turret
     requirements: [
-      swordium/160
-      venomshankium/160
+      swordium/170
+      venomshankium/170
 ]
 }

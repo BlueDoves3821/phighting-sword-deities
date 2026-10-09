@@ -1,0 +1,78 @@
+type: ContinuousTurret
+requirements: [
+swordium/200
+venomshankium/200
+]
+name: "[#A4C360]Venomshankium []Beam Turret"
+description: '''
+Fires a continuous beam that upon hit registration, spawns [#A4C360]venomshankium []minions at the location where the hit registraion took place, requires power & 20 [#A4C360]venomshankium []to operate.
+'''
+category: turret
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 25
+            cone: 8
+            particles: 25
+            colorFrom: A4C360
+            colorTo: A4C36000
+            length: 55
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            cone: 5
+            particles: 12
+            colorFrom: A4C360
+            colorTo: A4C36000
+            length: 55
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+smokeEffect: none
+loopSound: beamLustre
+shootSound: shootArtillerySapBig
+range: 600
+health: 900
+recoil: 0.25
+shake: 2
+size: 3
+shootCone: 5
+rotateSpeed: 5
+hasItems: true
+itemCapacity: 20
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 20
+  pointyScaling: 7
+  colors: [65773C, 8AA550, A4C360, ffffff]
+  length: 600
+  width: 6.25
+  damageInterval: 1
+  fragBullets: 1
+  status: corroded
+  statusDuration: 7200
+  fragBullet: {
+  spawnUnit: venomshankium-minion
+  }
+  incendChance: 0
+}
+consumes: {
+power: 3.33333333
+items: venomshankium/20
+}
+  research: {
+    parent: venomshankium-minion-launcher
+    requirements: [
+      swordium/200
+      venomshankium/200
+]
+}
