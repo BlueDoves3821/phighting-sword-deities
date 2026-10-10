@@ -10,13 +10,13 @@ itemCapacity: 2000
 size: 2
 category: effect
 health: 900
-armor: 5
+armor: 4
 	requirements: [
-		swordium/45
+		swordium/40
 	]
   research: {
-    parent: swordium-buildings
+    parent: swordium-crate
     requirements: [
-      swordium/45
+      swordium/40
 ]
 }

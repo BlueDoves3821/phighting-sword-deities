@@ -1,0 +1,22 @@
+name: '''
+[#ff5959]Swordium []Crate
+'''
+description: '''
+A tiny [#ff5959]swordium []storage crate,
+useful for storing less items than needed.
+'''
+type: StorageBlock
+itemCapacity: 500
+size: 1
+category: effect
+health: 225
+armor: 1
+	requirements: [
+		swordium/10
+	]
+  research: {
+    parent: swordium-buildings
+    requirements: [
+      swordium/10
+]
+}
