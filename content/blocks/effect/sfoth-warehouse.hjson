@@ -1,0 +1,39 @@
+name: '''
+SFOTH Warehouse
+'''
+description: '''
+A warehouse that uses all the sword deity materials for it's construction, highly explosive, but it cannot be auto-targeted.
+'''
+type: StorageBlock
+itemCapacity: 35000
+size: 5
+category: effect
+health: 6000
+armor: 25
+baseExplosiveness: 600
+priority: -1
+targetable: false
+underBullets: true
+	requirements: [
+  darkheartium/215
+  firebrandium/215
+  ghostwalkerium/215
+  icedaggerium/215
+	 illuminaium/215
+  swordium/215
+  venomshankium/215
+  windforceium/215
+	]
+  research: {
+    parent: sfoth-vault
+    requirements: [
+  darkheartium/215
+  firebrandium/215
+  ghostwalkerium/215
+  icedaggerium/215
+	 illuminaium/215
+  swordium/215
+  venomshankium/215
+  windforceium/215
+]
+}
