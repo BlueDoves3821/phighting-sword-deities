@@ -5,7 +5,7 @@ description: '''
 A warehouse that uses all the sword deity materials for it's construction, highly explosive, but it cannot be auto-targeted.
 '''
 type: StorageBlock
-itemCapacity: 35000
+itemCapacity: 40000
 size: 5
 category: effect
 health: 6000
