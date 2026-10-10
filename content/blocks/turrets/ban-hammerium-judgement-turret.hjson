@@ -1,7 +1,7 @@
 type: ItemTurret
 name: "[#3A3A82]Ban-Hammerium []Judgement Turret",
 description: "Instantly kills enemies caught in a small radius, but has an extremely long cooldown time of 50 seconds.
-[grey]unless if overdrived.",
+[grey]unless if overdrived and/or cooled with [#3A3A82]ban-hammerium [grey]lubricant.",
 details: '''
 [#3A3A82]"Banland's calling!"
 '''
@@ -23,6 +23,13 @@ details: '''
     shootSound: none
     ammoPerShot: 20
     shootCone: 360
+    liquidCapacity: 500
+    coolantMultiplier: 2
+    coolant: {
+    type: ConsumeLiquid
+    liquid: ban-hammerium-lubricant
+    amount: 1.66666667
+    }
     drawer: {
     type: DrawTurret
     parts: [
