@@ -5,7 +5,7 @@ description: '''
 A vault that uses all the sword deity materials for it's construction, highly explosive, but it cannot be auto-targeted.
 '''
 type: StorageBlock
-itemCapacity: 16000
+itemCapacity: 18000
 size: 3
 category: effect
 health: 2100
