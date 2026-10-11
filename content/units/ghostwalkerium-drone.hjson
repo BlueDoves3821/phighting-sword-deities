@@ -56,6 +56,7 @@ weapons: [
        splashDamage: 2000
        shieldDamageMultiplier: 50
        instantDisappear: true 
+       absorbable: false
        killShooter: true 
        hittable: false 
        collidesAir: true 

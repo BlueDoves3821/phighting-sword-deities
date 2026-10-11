@@ -120,7 +120,12 @@ abilities:[
 {
   type: SpawnDeathAbility
   unit: ghostwalkerium-drone
-  amount: 5
+  amount: 4
+  }
+{
+  type: SpawnDeathAbility
+  unit: ghostwalkerium-drone-suppressor
+  amount: 1
   }
 ]
   research: {

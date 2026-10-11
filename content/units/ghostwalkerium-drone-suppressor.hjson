@@ -1,0 +1,81 @@
+type: flying
+name: '''
+[#C2C2C2]Ghostwalkerium []Drone (Suppressor)
+'''
+description: '''
+An upgraded small drone with repair suppression ability, the [#C2C2C2]ghostwalkerium []properites allows it to sneak behind enemy lines, self-destructs, applies unmoving to enemies caught in the radius.
+'''
+envDisabled: 0
+hidden: false
+health: 150
+speed: 3
+rotateSpeed: 5
+hitSize: 9
+flying: true
+targetable: false
+defaultController: SuicideAI
+engineSize: 0
+moveSound: loopThruster
+moveSoundVolume: 0.25
+moveSoundPitchMin: 0.5
+moveSoundPitchMax: 1.25
+engineColor: C2C2C2
+engines: [
+  {
+    x: 0
+    y: -6
+    radius: 2
+    rotation: 270
+  } 
+] 
+abilities: [
+  {
+    type: MoveEffectAbility
+    teamColor: true
+    effect: missileTrailShort
+    x: 0
+    y: -6
+    interval: 3
+    minVelocity: 0.6
+  }
+]
+
+weapons: [
+    {
+       shootCone: 140
+       mirror: false
+       shootOnDeath: true 
+       shootEffect: none 
+       x: 0
+       y: 0 
+       despawnHit: true 
+       
+        bullet: {
+       type: BombBulletType
+       splashDamageRadius: 250
+       splashDamage: 2000
+       shieldDamageMultiplier: 50
+       suppressionRange: 250
+       suppressionDuration: 1200
+       suppressionEffectChance: 50
+       suppressColor: C8C8C8C2
+       instantDisappear: true 
+       absorbable: false
+       killShooter: true 
+       hittable: false 
+       collidesAir: true 
+       status: unmoving
+       statusDuration: 1200
+       pierce: true
+       hitEffect: scatheLight
+       shootEffect: none
+         } 
+     } 
+ ]
+  research: {
+    parent: ghostwalkerium-drone
+    requirements: [
+      swordium/20
+      ghostwalkerium/20
+]
+}

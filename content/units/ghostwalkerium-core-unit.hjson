@@ -108,7 +108,12 @@ abilities:[
 {
   type: SpawnDeathAbility
   unit: ghostwalkerium-drone
-  amount: 3
+  amount: 2
+  }
+{
+  type: SpawnDeathAbility
+  unit: ghostwalkerium-drone-suppressor
+  amount: 1
   }
 ]
   alwaysUnlocked: true
