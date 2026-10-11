@@ -41,6 +41,14 @@ swordium/40
     ]
  }
   {
+    unit: ghostwalkerium-drone-suppressor
+    time: 600
+    requirements: [
+ghostwalkerium/20
+swordium/20
+    ]
+ }
+  {
     unit: ghostwalkerium-drone
     time: 300
     requirements: [
