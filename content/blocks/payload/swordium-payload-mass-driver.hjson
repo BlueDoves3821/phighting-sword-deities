@@ -1,5 +1,5 @@
 type: PayloadMassDriver
-name: "[#ff5959]swordium []Payload Mass Driver"
+name: "[#ff5959]Swordium []Payload Mass Driver"
 description: '''
 Transports payloads over massive distances.
 '''
