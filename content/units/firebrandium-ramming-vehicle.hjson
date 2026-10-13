@@ -1,5 +1,6 @@
 description: '''
-Rams itself into enemy buildings, has a deflecting shield, can heal itself, can dash & shoot slag.
+Can ram & dash itself into enemy buildings, has a deflecting shield, can heal itself either by self-regenerating or absorbing spilled slag on the ground.
+[grey]note: it does not repair itself when in slag pools.
 '''
 name: "[#861C00]Firebrandium []Ramming Vehicle"
 type: tank
@@ -36,6 +37,14 @@ abilities:[
   color: 861C00
   whenShooting: false
   chanceDeflect: 10
+ }
+ {
+ type: LiquidRegenAbility
+ liquid: slag
+ regenPerSlurp: 2.5
+ slurpSpeed: 3
+ slurpEffectChance: 0.8
+ slurpEffect: lava
  }
  {
   type: LiquidExplodeAbility

@@ -27,6 +27,8 @@ engineSize: 4
 engineOffset: 7
 engineColor: 2061C4
 immunities: [burning, melting, freezing, icedaggers-freezing, wet]
+targetHealing: true
+commands: [move, enterPayload, mine, assist, repair, rebuild]
 weapons: [
 {
 reload: 1
@@ -55,6 +57,8 @@ bullet: {
     speed: 17.25
     status: icedaggers-freezing
     statusDuration: 640
+    collidesTeam: true
+    healPercent: 2.5
 }
 }
 {

@@ -1,7 +1,8 @@
 type: mech
 name: "[#861C00]Firebrandium []Core Unit"
 description: '''
-Core unit of the [#861C00]firebrandium []core, can set the area on fire, igniting any flammable materials, fires the same projectile as the slag shooter.
+Core unit of the [#861C00]firebrandium []core, can set the area on fire, igniting any flammable materials, fires the same projectile as the slag shooter, can repair itself by absorbing slag that has spill on the ground.
+[grey]note: it does not repair itself in slag pools.
 '''
 details: '''
 this unit can cause extreme trouble near flammable materials, especially [#70ac30]darkheartium []liquid.
@@ -271,6 +272,14 @@ abilities:[
   color: 861C00
   whenShooting: false
   pushUnits: false
+ }
+ {
+ type: LiquidRegenAbility
+ liquid: slag
+ regenPerSlurp: 4.25
+ slurpSpeed: 3
+ slurpEffectChance: 0.8
+ slurpEffect: lava
  }
  {
   type: LiquidExplodeAbility
