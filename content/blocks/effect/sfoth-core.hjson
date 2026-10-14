@@ -50,6 +50,10 @@ splashDamageRadius: 1200
 splashDamage: 20
 splashDamagePierce: true
 instantDisappear: true
+suppressionRange: 1200
+suppressionDuration: 1200
+suppressionEffectChance: 50
+suppressColor: FF5959C2
 collides: false
 status: darkhearts-curse
 statusDuration: 24000
