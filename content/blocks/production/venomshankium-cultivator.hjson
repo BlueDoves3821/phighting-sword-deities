@@ -1,0 +1,60 @@
+type: AttributeCrafter
+name: "[#A4C360]Venomshankium []Cultivator"
+description: '''
+Cultivates atmospheric spores & turns it into spore pods, creates more spore pods in spore areas.
+'''
+outputItem: spore-pod/6
+hasItems: true
+hasLiquids: true
+hasPower: true
+consumes: {
+liquids: {
+liquids: [water/0.5]
+}
+power: 1.5
+}
+craftEffect: none
+liquidCapacity: 200
+itemCapacity: 60
+craftTime: 180
+health: 750
+size: 2
+legacyReadWarmup: true
+maxBoost: 4
+attribute: spores
+ambientSound: loopCultivator
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: "water"
+}
+{
+type: DrawCultivator
+}
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: "-top"
+}
+]
+}
+research: {
+parent: venomshankium-converter
+requirements: [
+swordium/50
+venomshankium/50
+]
+}
+category: production
+requirements: [
+swordium/50
+venomshankium/50
+]
