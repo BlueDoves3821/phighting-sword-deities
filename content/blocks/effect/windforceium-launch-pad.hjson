@@ -14,14 +14,14 @@ lightStep: 0
 lightSteps: 1
 lightColor: 929EAE
 requirements: [
- swordium/200
- windforceium/200
+ swordium/250
+ windforceium/250
 ]
 category: effect
   research: {
     parent: windforceium-converter
     requirements: [
-      swordium/200
-      windforceium/200
+      swordium/250
+      windforceium/250
 ]
 }

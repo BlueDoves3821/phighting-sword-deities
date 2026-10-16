@@ -15,14 +15,14 @@ size: 3
 cooldownTime: 120
 arrivalDuration: 120
 requirements: [
- swordium/200
- windforceium/200
+ swordium/140
+ windforceium/140
 ]
 category: effect
   research: {
     parent: windforceium-launch-pad
     requirements: [
-      swordium/200
-      windforceium/200
+      swordium/140
+      windforceium/140
 ]
 }

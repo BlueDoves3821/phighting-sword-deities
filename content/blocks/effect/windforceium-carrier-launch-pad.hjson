@@ -1,0 +1,30 @@
+name: '''
+[#929EAE]Windforceium []Carrier Launch Pad
+'''
+description: '''
+Like the large [#929EAE]windforceium []launch pad, but can only launch one item type, but can send alot more items per launch.
+'''
+type: LaunchPad
+itemCapacity: 1000
+hasItems: true
+health: 1750
+consumesPower: false
+acceptMultipleItems: false
+squareSprite: false
+size: 4
+launchTime: 240
+lightStep: 1
+lightSteps: 3
+lightColor: 929EAE
+requirements: [
+ swordium/450
+ windforceium/450
+]
+category: effect
+  research: {
+    parent: windforceium-launch-pad-large
+    requirements: [
+      swordium/450
+      windforceium/450
+]
+}
