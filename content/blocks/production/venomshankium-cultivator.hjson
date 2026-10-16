@@ -3,6 +3,9 @@ name: "[#A4C360]Venomshankium []Cultivator"
 description: '''
 Cultivates atmospheric spores & turns it into spore pods, creates more spore pods in spore areas.
 '''
+details: '''
+just don't ask why there's spores in the atmosphere in any other planet other than serpulo.
+'''
 outputItem: spore-pod/6
 hasItems: true
 hasLiquids: true
