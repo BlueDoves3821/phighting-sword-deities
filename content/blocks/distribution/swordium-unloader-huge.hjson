@@ -1,0 +1,18 @@
+name: "Huge [#ff5959]Swordium []Unloader"
+description: '''
+Made with [#ff5959]swordium, []fast unloading speed, much larger.
+'''
+	type: Unloader
+	health: 1800
+	speed: 0.1
+ size: 3
+	requirements: [
+		swordium/45
+	]
+	category: distribution
+  research: {
+    parent: swordium-unloader-large
+    requirements: [
+      swordium/45
+]
+}

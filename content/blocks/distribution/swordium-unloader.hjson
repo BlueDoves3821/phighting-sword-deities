@@ -6,12 +6,12 @@ Made with [#ff5959]swordium, []fast unloading speed.
 	health: 200
 	speed: 0.45
 	requirements: [
-		swordium/10
+		swordium/5
 	]
 	category: distribution
   research: {
     parent: swordium-duct
     requirements: [
-      swordium/10
+      swordium/5
 ]
 }

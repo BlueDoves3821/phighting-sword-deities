@@ -1,0 +1,22 @@
+type: StackConveyor
+name: "[#e2baf5]Illuminaium []Stack Duct"
+description: '''
+A stack duct made from [#ff5959]swordium []& [#e2baf5]illuminaium[], can carry alot more items than it's [#ff5959]swordium []counter-part, but it's slightly slower & more expensive.
+'''
+health: 250
+speed: 0.25
+itemCapacity: 150
+category: distribution
+bridgeReplacement: swordium-bridge
+junctionReplacement: swordium-junction
+requirements: [
+swordium/6
+illuminaium/6
+]
+research: {
+    parent: illuminaium-converter
+    requirements: [
+swordium/6
+illuminaium/6
+]
+}

@@ -4,7 +4,7 @@ Made with [#ff5959]swordium []& [#70AC30]darkheartium,[] extremely fast unloadin
 '''
 	type: Unloader
 	health: 350
-	speed: 0.015
+	speed: 0.005
  baseExplosiveness: 200
 	requirements: [
 		swordium/10
