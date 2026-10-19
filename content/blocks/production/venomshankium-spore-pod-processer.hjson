@@ -1,0 +1,53 @@
+type: GenericCrafter
+name: "[#A4C360]Venomshankiun []Spore Pod Processer"
+description: '''
+Processes spore pods into oil, requires power to operate.
+'''
+size: 2
+health: 700
+craftTime: 10
+liquidCapacity: 750
+itemCapacity: 40
+hasItems: true
+hasLiquids: true
+hasPower: true
+consumes: {
+items: {
+items: [
+spore-pod/2
+]
+}
+power: 0.666666667
+}
+ambientSound: loopCutter
+ambientSoundVolume: 0.08
+craftEffect: none
+outputLiquid: oil/1
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: oil
+}
+{
+type: DrawDefault
+}
+]
+}
+requirements: [
+swordium/45
+venomshankium/45
+]
+category: crafting
+research: {
+parent: venomshankium-cultivator
+requirements: [
+swordium/45
+venomshankium/45
+]
+}
