@@ -1,3 +1,4 @@
+// Depercated on september 2nd due to addition of the swordium power generator
 type: ConsumeGenerator
 name: "[#E2BAF5]Illuminaium []Charger"
 description: '''
