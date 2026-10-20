@@ -11,6 +11,7 @@ details: ''' SFOTH Mothership Recipe:
 2 [#A4C360]Venomshankium []Minion Launchers
 2 [#929EAE]Windforceium []Disarmers
 '''
+hideDetails: false
 size: 5
 health: 6500
 targetable: false
@@ -18,7 +19,7 @@ priority: -1
 underBullets: true
 baseExplosiveness: 500
 category: units
-droneType: assembly-drone
+droneType: ghostwalkerium-assembly-drone
 requirements: [
   darkheartium/1500
   firebrandium/1500
