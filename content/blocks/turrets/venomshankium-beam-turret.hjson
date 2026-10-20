@@ -37,7 +37,7 @@ shootEffect: {
         }
     ]
 }
-smokeEffect: none
+smokeEffect: shootSmokeTitan
 loopSound: beamLustre
 shootSound: shootArtillerySapBig
 range: 600
@@ -55,7 +55,7 @@ shootType: {
   pointyScaling: 7
   colors: [65773C, 8AA550, A4C360, ffffff]
   length: 600
-  width: 6.25
+  width: 3.25
   damageInterval: 1
   fragBullets: 1
   status: corroded
