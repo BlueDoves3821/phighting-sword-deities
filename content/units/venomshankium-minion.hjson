@@ -16,6 +16,7 @@
   deathSound: vsm-sfx
   stepSound: vsm-step
   outlines: false
+  createScorch: false
   weapons:[
     {
     name: vsm-weapon
