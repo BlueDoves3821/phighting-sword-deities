@@ -1,0 +1,27 @@
+type: RepairTurret
+name: "[#ff5959]Swordium []U.R.T"
+description: "U.R.T stands for unit repair turret, a stronger version of the [#ff5959]swordium []u.r.p, repairs the closest unit nears it's vincinity, can take coolant for extra healing."
+health: 750
+size: 2
+repairSpeed: 7.5
+laserColor: FF5959FF
+beamWidth: 0.9
+pulseRadius: 5
+repairRadius: 600
+consumes: {
+  power: 1.5
+}
+liquidCapacity: 250
+coolEffect: fuelburn
+coolantMultiplier: 2.5
+acceptCoolant: true
+	requirements: [
+		swordium/70
+	]
+	category: units
+  research: {
+    parent: swordium-urp
+    requirements: [
+      swordium/70
+]
+}

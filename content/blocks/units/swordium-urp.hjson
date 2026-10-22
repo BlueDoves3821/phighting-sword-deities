@@ -7,7 +7,7 @@ repairSpeed: 5.5
 laserColor: FF5959FF
 beamWidth: 0.9
 pulseRadius: 5
-repairRadius: 120
+repairRadius: 200
 consumes: {
   power: 1
 }
