@@ -170,7 +170,7 @@ researchCost: [
   windforceium/250
 ]
 category: turret
-research: swordium-laser-turret
+research: ban-hammerium-stunner
 requirements: [
   swordium/1000
   ban-hammerium/1000
