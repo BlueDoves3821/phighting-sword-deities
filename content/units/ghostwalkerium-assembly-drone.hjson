@@ -1,6 +1,8 @@
 type: tether
 name: "[#C2C2C2]Ghostwalkerium []Assembly Drone"
 description: "Assembles units too big for the sfoth unit factory"
+envDisabled: 0
+hidden: false
 flying: true
 drag: 0.085
 hitSize: 9
