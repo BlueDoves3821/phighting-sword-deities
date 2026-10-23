@@ -125,7 +125,6 @@ startDelay: 0
     shrinkY: 0
     shrinkX: 0
 	   sprite: large-bomb
-    spin: 0.25
   }
     }
 category: turret
