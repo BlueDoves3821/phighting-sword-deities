@@ -1,3 +1,4 @@
+// block may be considered for depercation, but for now, it'll be kept as a sandbox exclusive block.
 type: Separator
   name: "[#70AC30]Darkheartium []R.M.R"
   description: "R.M.R stands for random material reconstituter, takes [#70AC30]darkheartium []& turns it into random materials, currently, only serpulo, erekir & P[#FF5959]S[]D materials
@@ -45,6 +46,7 @@ type: Separator
   tungsten/1
   oxide/1
   carbide/1
+  ban-hammerium/1
   darkheartium/1
   firebrandium/1
   ghostwalkerium/1
