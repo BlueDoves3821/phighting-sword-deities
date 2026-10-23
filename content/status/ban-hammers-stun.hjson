@@ -8,7 +8,28 @@ reloadMultiplier: 0
 dragMultiplier: 10
 disarm: true
 outline: false
-effect: none
+effect: {
+    type: MultiEffect
+    effects:[
+{
+   type: ParticleEffect
+    baseLength: 10
+    length: 30
+    particles: 1
+    colorFrom: FFFF00c8
+    colorTo: FFFF0000
+    sizeFrom: 3
+    sizeTo: 1
+    spin: 5
+    region: large-bomb
+    sizeInterp: sineOut
+    strokeFrom: 4
+    strokeTo: 0
+    lifetime: 25
+}
+]
+}
+effectChance: 1
 applyEffect: {
     type: MultiEffect
     effects:[
