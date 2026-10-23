@@ -96,8 +96,8 @@ statusDuration: 2400
 despawnEffect: [
 {
 type: WaveEffect
-sizeFrom: 120
-sizeTo: 240
+sizeFrom: 80
+sizeTo: 160
 strokeFrom: 5
 strokeTo: 0
 sizeInterp: pow5Out
@@ -110,8 +110,8 @@ startDelay: 0
 {
 type: ParticleEffect
 length: 0
-sizeFrom: 120
-sizeTo: 120
+sizeFrom: 80
+sizeTo: 80
 interp: exp5Out
 colorFrom: 3A3A82C8
 colorTo: 2D2D6400
