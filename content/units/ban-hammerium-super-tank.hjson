@@ -9,7 +9,7 @@ armor: 85
 health: 75000
 range: 50
 rotateSpeed: 4
-hitSize: 48
+hitSize: 40
 canDrown: false
 stepShake: 16
 itemCapacity: 0
