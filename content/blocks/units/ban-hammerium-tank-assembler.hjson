@@ -1,0 +1,62 @@
+type: UnitAssembler
+name: "[#3A3A82]Ban-Hammerium []Tank Assembler"
+description: "Constructs large [#3A3A82]ban-hammerium []tanks using buildings, requires power & a bit of [#3A3A82]ban-hammerium []lubricant to operate."
+details: '''
+Note: The tank assembler uses [#c2c2c2]ghostwalkerium []assembly drones to assemble tanks, for this reason, [#c2c2c2]ghostwalkerium []is used in the construction of the tank assembler, which also makes the building unable to be auto-targeted.
+'''
+hideDetails: false
+size: 5
+health: 5500
+targetable: false
+priority: -1
+underBullets: true
+baseExplosiveness: 500
+category: units
+droneType: ghostwalkerium-assembly-drone
+consumes: {
+  power: 4
+  liquid: ban-hammerium-lubricant/0.25
+}
+liquidCapacity: 650
+requirements: [
+  swordium/1200
+  ban-hammerium/1200
+  windforceium/600
+  ghostwalkerium/80
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: ban-hammerium-super-tank
+    requirements: [
+    sword-deities-mod-ban-hammerium-wall-large/10
+    sword-deities-mod-ban-hammerium-shield-projector/1
+    sword-deities-mod-ban-hammerium-melee-tank/2
+    ]
+    time: 14400
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: ban-hammerium-judgement-tank
+    requirements: [
+    sword-deities-mod-ban-hammerium-wall-large/20
+    sword-deities-mod-ban-hammerium-shield-projector/2
+    sword-deities-mod-ban-hammerium-judgement-turret/2
+    sword-deities-mod-ban-hammerium-stunner/2
+    sword-deities-mod-ban-hammerium-melee-tank/5
+    sword-deities-mod-swordium-laser-charger/1
+    ]
+    time: 28800
+  }
+]
+squareSprite: false
+areaSize: 13
+research: {
+    parent: ban-hammerium-converter
+requirements: [
+  swordium/1200
+  ban-hammerium/1200
+  windforceium/600
+  ghostwalkerium/80
+]
+}
