@@ -1,0 +1,349 @@
+type: mech
+name: "[#3A3A82]Ban-hammerium []Judgement Tank"
+description: '''
+A [#3A3A82]ban-hammerium []tank that's basically a mobile & more powerful version of both the judgement turret & stunner.
+there are 3 weapons:
+
+the side weapons fires stunning projectiles that deal alot of damage, and unlike it's stationary turret form, it does building damage.
+
+the center weapon fires hit-scanning lasers that slow enemies down, doesn't deal much damage.
+
+finally, the unit's judgement phinisher, it instantly kills enemies caught in a radius, but has a 2 minute cooldown after using the phinisher.
+[grey](unless if given status effects that decreases reload time)
+
+[]has an extremely high shield health, but regenerates it slowly, completely immune to knockback, very expensive.
+'''
+details: "Note: unit is vulnerable to unmoving for unknown reasons."
+envDisabled: 0
+hidden: false
+armor: 100
+health: 100000
+range: 480
+maxRange: 480
+rotateSpeed: 2
+hitSize: 40
+canDrown: false
+stepShake: 20
+itemCapacity: 0
+canBoost: false
+stepSound: darkheartium-unit-step
+legSplashDamage: 1000
+legSplashRange: 50
+commands: [move, enterPayload]
+immunities: [ban-hammers-stun]
+knockbackMultiplier: 0
+abilities: [
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 90
+	rotate: 0
+	radius: 45
+	regen: 5
+	max: 100000
+	cooldown: 600
+ }
+ {
+  type: LiquidExplodeAbility
+  liquid: ban-hammerium-lubricant
+  amount: 1200
+  radScale: 2
+  radAmountScale: 1
+ }
+]
+weapons: [
+{
+name: bhjt-judgement
+reload: 7200
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: none
+shootCone: 360
+top: true
+recoil: 0
+shootStatus: unmoving
+shootStatusDuration: 120
+bullet: {
+type: LaserBulletType
+laserEffect: none
+pierce: false
+damage: 0
+lifetime: 0
+length: 240
+colors: [
+3A3A82,
+ffffff
+]
+shootEffect: [
+{
+type: WaveEffect
+sizeFrom: 240
+sizeTo: 240
+strokeFrom: 5
+strokeTo: 5
+colorInterp: exp5Out
+lifetime: 120
+colorFrom: 2D2D6400
+colorTo: 3A3A82FF
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 0
+sizeTo: 240
+interp: exp5Out
+colorFrom: 2D2D6400
+colorTo: 3A3A82C8
+lifetime: 120
+particles: 1
+}
+{
+type: ParticleEffect
+    baseLength: -240
+    length: 240
+    particles: 100
+    colorFrom: 41419200
+    colorTo: 3A3A82FF
+    sizeInterp: pow10In
+    colorInterp: pow10Out
+    interp: pow10In
+    sizeFrom: 7
+    sizeTo: 0
+    strokeTo: 0
+    region: circle-shadow
+    lifetime: 120
+}
+]
+fragSpread: 0
+fragRandomSpread: 0
+fragBullets: 1
+fragAngle: 0
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 240
+splashDamage: 900
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: ban-hammers-stun
+statusDuration: 240
+absorbable: false
+knockback: -70
+despawnEffect: [
+{
+type: WaveEffect
+sizeFrom: 240
+sizeTo: 480
+strokeFrom: 5
+strokeTo: 0
+sizeInterp: pow5Out
+colorInterp: exp5Out
+lifetime: 240
+colorFrom: 3A3A82FF
+colorTo: 2D2D6400
+startDelay: 120
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 240
+sizeTo: 240
+interp: exp5Out
+colorFrom: 3A3A82C8
+colorTo: 2D2D6400
+lifetime: 240
+particles: 1
+startDelay: 120
+}
+{
+type: SoundEffect
+sound: ban-hammerium-turret-strike
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+fragSpread: 0
+fragRandomSpread: 0
+fragBullets: 1
+fragAngle: 0
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 240
+splashDamage: 1e+09
+splashDamagePierce: true
+lifetime: 120
+speed: 0
+width: 0
+height: 0
+backColor: 00000000
+frontColor: 00000000
+trailEffect: none
+collides: false
+absorbable: false
+status: ban-hammers-banned-vfx
+statusDuration: 30
+}
+}
+}
+}
+
+{
+name: bhjt-weapon
+reload: 30
+x: 24.5
+y: 0
+mirror: true
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: none
+shootCone: 10
+top: false
+recoil: 4
+shootSound: shootTank
+bullet: {
+recoil: 0.25
+type: ArtilleryBulletType
+trailWidth: 8
+trailLength: 15
+frontColor: 3A3A82
+backColor: 333372
+trailColor: 3A3A82
+width: 40
+height: 40
+spin: 2
+speed: 8
+lifetime: 120
+damage: 0
+inaccuracy: 0
+burstSpacing: 4
+absorbable: false
+shootEffect: {
+type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 85
+            cone: 8
+            particles: 25
+            colorFrom: 3A3A82ff
+            colorTo: 2D2D6400
+            length: 85
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 120
+            cone: 5
+            particles: 12
+            colorFrom: 3A3A82ff
+            colorTo: 2D2D6400
+            length: 85
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+smokeEffect: shootBigSmoke
+hitEffect: none
+fragSpread: 0
+fragBullets: 1
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 40
+splashDamage: 2000
+splashDamagePierce: true
+instantDisappear: true
+trailEffect: none
+collides: false
+absorbable: false
+status: ban-hammers-stun
+statusDuration: 1200
+despawnEffect: [
+{
+type: WaveEffect
+sizeFrom: 40
+sizeTo: 120
+strokeFrom: 5
+strokeTo: 0
+sizeInterp: pow5Out
+colorInterp: exp5Out
+lifetime: 240
+colorFrom: 3A3A82FF
+colorTo: 2D2D6400
+startDelay: 0
+}
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 40
+sizeTo: 40
+interp: exp5Out
+colorFrom: 3A3A82C8
+colorTo: 2D2D6400
+lifetime: 240
+particles: 1
+startDelay: 0
+}
+]
+}
+ammoMultiplier: 1
+shrinkY: 0
+shrinkX: 0
+sprite: large-bomb
+}
+}
+{
+name: bhjt-laser
+reload: 30
+x: 0
+y: 12
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: none
+shootCone: 10
+top: false
+recoil: 0
+shootSound: swordium-laser-shoot
+bullet: {
+  type: LaserBulletType
+  damage: 1500
+  length: 480
+  width: 50
+  sideAngle: 35
+  lifetime: 30
+  pierceArmor: true
+  pierce: true
+  pierceCap: 20
+  colors: [
+  2D2D64,
+  333372,
+  3A3A82,
+  ffffff
+]
+}
+}
+]
+accel: 0.2
+drag: 0.1
+speed: 0.27
+  research: {
+    parent: ban-hammerium-super-tank
+    requirements: [
+swordium/1200
+ban-hammerium/1200
+windforceium/600
+]
+}

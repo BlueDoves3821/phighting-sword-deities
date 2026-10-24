@@ -1,0 +1,90 @@
+type: mech
+name: "[#3A3A82]Ban-hammerium []Super Tank"
+description: '''
+A [#3A3A82]ban-hammerium []tank, can pursuit enemies via very fast boost, has an extremely high shield health, but regenerates it slowly, immune to knockback.
+'''
+envDisabled: 0
+hidden: false
+armor: 85
+health: 75000
+range: 50
+rotateSpeed: 4
+hitSize: 48
+canDrown: false
+stepShake: 16
+itemCapacity: 0
+canBoost: true
+boostMultiplier: 15
+engineSize: 8
+engineOffset: 12
+engineColor: 3A3A82
+stepSound: darkheartium-unit-step
+legSplashDamage: 650
+legSplashRange: 35
+commands: [move, enterPayload]
+immunities: [ban-hammers-stun, unmoving]
+knockbackMultiplier: 0
+abilities: [
+ {
+	type: ForceFieldAbility
+	smoothRadius: 200
+	sides: 90
+	rotate: 0
+	radius: 38
+	regen: 1.66666667
+	max: 100000
+	cooldown: 600
+ }
+]
+weapons: [
+{
+name: bhmt-hammer
+reload: 60
+x: 21
+y: 13
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+top: true
+shootSound: ban-hammerium-unit-melee
+soundPitchMin: 1
+soundPitchMax: 1
+recoil: -1.65
+shootStatus: slow
+shootStatusDuration: 30
+bullet: {
+		type: BulletType
+		damage: 9000
+		speed: 15
+		splashDamage: 2500
+		splashDamageRadius: 40
+		absorbable: true
+  homingPower: 1
+		lifetime: 6
+		pierce: true
+  pierceCap: 10
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 0
+		impact: true
+		despawnHit: true
+		recoil: -0.5
+   status: ban-hammers-stun
+   statusDuration: 480
+}
+}
+]
+accel: 0.2
+drag: 0.1
+speed: 0.4
+  research: {
+    parent: ban-hammerium-tank-assembler
+    requirements: [
+swordium/500
+ban-hammerium/500
+windforceium/250
+]
+}
