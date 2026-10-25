@@ -9,13 +9,15 @@ This mod is considered to be unfair due to some of the content being OP,
 but then again, play it your own way!
 
 ## What's Next With PHIGHTING! SWORD DEITIES
-Currently, major updates will be temporarily slowed due to burnout, which means version 2.15, which would've added the flipside brothers of valkium & domium.
+Currently, major updates will be temporarily slowed due to burnout, which means version 2.2, which would've added the flipside brothers of valkium & domium.
 <p align="center">
   <img src="archives/hq item icons/valkium-hq.png" width="100">
   <img src="archives/hq item icons/domium-hq.png" width="100">
 </p>
   
 will be released way later, and to that, i'm sorry about it.
+
+(note: the flipside update has been moved from version 2.15 to 2.2 to free up space for minor updates.)
 ### Information About This Mod
 PHIGHTING! SWORD DEITES Is a mindustry mod made by BlueDoves3821.
 
