@@ -29,6 +29,7 @@ createScorch: false
 targetAir: false
 targetGround: true
 drawSoftShadow: false
+targetable: false
 weapons: [
 	{
 	shootCone: 360

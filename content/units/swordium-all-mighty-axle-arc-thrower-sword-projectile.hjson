@@ -36,7 +36,15 @@ weapons: [
     shake: 0
     shootSound: none
     bullet: {
+    type: ExplosionBulletType
+    damage: 0
+    splashDamage: 0
+    splashDamageRadius: 12
+    status: slow
+    fragBullets: 1
+    fragBullet: {
     spawnUnit: swordium-all-mighty-axle-arc-thrower-sword-projectile-stuck
+    }
     killShooter: true
     shootEffect: none
     }
