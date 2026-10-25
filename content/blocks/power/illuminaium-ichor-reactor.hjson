@@ -73,7 +73,7 @@ drawer: {
   ]
 }
 research: {
-  parent: illuminaium-converter
+  parent: illuminaium-power-node
   requirements: [
   swordium/380
   illuminaium/380
