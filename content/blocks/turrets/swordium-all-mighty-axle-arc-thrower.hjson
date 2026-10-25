@@ -1,3 +1,4 @@
+// there was supposed to be a rework with this turret, but it was scrapped in favor of updating the projectiles instead.
 type: ItemTurret
 requirements: [
 swordium/115
@@ -13,7 +14,6 @@ targetAir: false
 range: 250
 health: 1000
 smokeEffect: none
-shootSound: all-mighty-axle-arc-throw
 outlineRadius: 0
 reload: 150
 recoil: 3
@@ -44,6 +44,7 @@ y: 0
 }
 ammoTypes: {
   swordium: {
+shootSound: all-mighty-axle-arc-throw
     spawnUnit: swordium-all-mighty-axle-arc-thrower-sword-projectile
 }
 }
