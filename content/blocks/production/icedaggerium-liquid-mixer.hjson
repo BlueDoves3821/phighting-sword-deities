@@ -35,7 +35,7 @@ drawer: [
 ]
 liquidCapacity: 1000
   research: {
-    parent: icedaggerium-converter
+    parent: icedaggerium-melter
     requirements: [
       swordium/25
       icedaggerium/25
