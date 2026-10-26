@@ -1,0 +1,60 @@
+type: HeatCrafter
+name: "[#97CCE1]Icedaggerium []Cryofluid Factory"
+description: '''
+Mixes [#97CCE1]icedaggerium[] & water into what would've been [#97CCE1]icedaggerium []liquid, however, it is heated, degrading the liquid into cryofluid, more efficent than the [#97CCE1]icedaggerium []liquid downgrader.
+'''
+size: 3
+health: 650
+consumes: {
+  items: [
+    icedaggerium/2
+  ]
+  liquids: [
+  water/3
+]
+}
+itemCapacity: 50
+craftEffect: none
+ambientSound: loopMachine2
+craftTime: 120
+heatRequirement: 10
+maxEfficiency: 2.5
+hasHeat: true
+outputLiquids: [
+ cryofluid/3
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: "-bottom"
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: water
+    padding: 0
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: cryofluid
+    padding: 0
+  }
+{
+  type: DrawDefault
+}
+  	{
+     type : DrawHeatInput
+	 	}
+]
+liquidCapacity: 1500
+  research: {
+    parent: icedaggerium-liquid-downgrader
+    requirements: [
+    swordium/55
+    icedaggerium/55
+]
+}
+category: crafting
+requirements: [
+  swordium/55
+  icedaggerium/55
+]
