@@ -6,7 +6,7 @@ utilizes [#929eae]windforceium []& uses slag instead of [#97CCE1]icedaggerium []
 [red]Note: Please capture the planetary launch terminal before unlocking this!
 '''
 consumes: {
- power: 13.34
+ power: 13.33333334
  liquids: [
     slag/0.5
   ]

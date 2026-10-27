@@ -2,11 +2,11 @@ type: Accelerator
 name: "[#A4C360]Venomshankium []Core Accelerator"
 description: '''
 An accelerator for the [#A4C360]venomshankium []core,
-utilizes [#929eae]windforceium []& [#97CCE1]icedaggerium []liquid in order to accelerate the core.
+utilizes [#929EAE]windforceium []& [#97CCE1]icedaggerium []liquid in order to accelerate the core.
 [red]Note: Please capture the planetary launch terminal before unlocking this!
 '''
 consumes: {
- power: 13.34
+ power: 13.33333334
  liquids: [
     icedaggerium-liquid/1
   ]

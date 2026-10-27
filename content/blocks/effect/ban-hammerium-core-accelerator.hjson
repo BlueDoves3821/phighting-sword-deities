@@ -6,7 +6,7 @@ utilizes [#929eae]windforceium []& [#3A3A82]ban-hammerium []lubricant in order t
 [red]Note: Please capture the planetary launch terminal before unlocking this!
 '''
 consumes: {
- power: 13.34
+ power: 13.33333334
 liquids: [
     ban-hammerium-lubricant/0.25
   ]
