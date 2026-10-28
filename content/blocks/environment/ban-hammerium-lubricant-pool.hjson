@@ -7,6 +7,5 @@ liquidDrop: ban-hammerium-lubricant
 cacheLayer: tar
 supportsOverlay: true
 liquidMultiplier: 1
-drownTime: 600
 status: slow
 statusDuration: 7200

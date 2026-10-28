@@ -7,6 +7,5 @@ liquidDrop: icedaggerium-liquid
 cacheLayer: water
 supportsOverlay: true
 liquidMultiplier: 1
-drownTime: 300
-status: freezing
+status: icedaggers-freezing
 statusDuration: 2400

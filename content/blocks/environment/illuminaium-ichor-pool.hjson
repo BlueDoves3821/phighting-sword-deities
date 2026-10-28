@@ -7,7 +7,6 @@ liquidDrop: illuminaium-ichor
 cacheLayer: water
 supportsOverlay: true
 liquidMultiplier: 1
-drownTime: 1200
 status: illuminas-power
 statusDuration: 600
 emitLight: true
