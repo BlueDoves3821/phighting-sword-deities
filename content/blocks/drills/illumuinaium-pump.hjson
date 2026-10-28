@@ -1,0 +1,27 @@
+  name: "[#E2BAF5]Illuminaium []Pump",
+  description: '''
+requires power to operate, can hold the equivalent of 1 & a half ponds as liquid reserve.
+'''
+  type: Pump
+  size: 3
+  health: 1000
+  liquidCapacity: 8500
+  pumpAmount: 2.25
+  hasPower: true
+  consumes: {
+  power: 1.5
+  }
+  placeableLiquid: true
+  squareSprite: false
+	requirements: [
+		swordium/110
+  illuminaium/110
+	]
+	category: liquid
+  research: {
+    parent: illuminaium-converter
+    requirements: [
+      swordium/110
+      illuminaium/110
+]
+}
