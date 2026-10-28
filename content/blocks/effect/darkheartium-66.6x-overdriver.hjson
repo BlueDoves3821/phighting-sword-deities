@@ -1,0 +1,26 @@
+name: "[#70AC30]Darkheartium []66.6x Overdriver"
+description: '''
+An extremely fast overdriver, increases the speed of everything to 66.6x, but is extremely short-ranged, cannot be boosted.
+'''
+type: OverdriveProjector
+category: effect
+hasBoost: false
+hasPower: false
+hasLiquids: false
+size: 1
+speedBoost: 67.6
+range: 32
+health: 600
+baseColor: 70AC30
+phaseColor: 6DA82E
+requirements: [
+  swordium/150
+  darkheartium/150
+]
+research: {
+    parent: darkheartium-overdrive
+    requirements: [
+      swordium/150
+      darkheartium/150
+]
+}

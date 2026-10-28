@@ -1,0 +1,152 @@
+type: Accelerator
+name: "SFOTH Core Accelerator"
+description: '''
+An accelerator for the sfoth core,
+requires 100k battery power & a pool of [#97cce1]icedaggerium []liquid to accelerate the core.
+[red]Note: Please capture the planetary launch terminal & research all of the core accelerators before unlocking this!
+'''
+details: '''
+[red]Avoid launching this core if the planet doesn't allow customizable loadout like at serpulo, all of your items will not carry over to the landing sector!
+'''
+hideDetails: false
+consumes: {
+ power: 50
+ liquids: [
+    icedaggerium-liquid/2.5
+  ]
+}
+powerBufferRequirement: 100000
+squareSprite: false
+health: 27500
+armor: 150
+size: 10
+baseExplosiveness: 8000
+targetable: false
+priority: -10
+underBullets: true
+category: effect
+ringColor: ff5959ff
+lightningColor: ff5959ff
+liquidCapacity: 5000
+launchBlock: sfoth-core
+requirements: [
+  darkheartium/8500
+  firebrandium/8500
+  ghostwalkerium/8500
+  icedaggerium/8500
+  illuminaium/8500
+  swordium/8500
+  venomshankium/8500
+  windforceium/8500
+]
+	research: {
+	parent: sfoth-core
+	requirements: [
+  darkheartium/8500
+  firebrandium/8500
+  ghostwalkerium/8500
+  icedaggerium/8500
+  illuminaium/8500
+  swordium/8500
+  venomshankium/8500
+  windforceium/8500
+  ]
+  objectives: [ "darkheartium-core-accelerator", "firebrandium-core-accelerator", "ghostwalkerium-core-accelerator", "icedaggerium-core-accelerator", "illuminaium-core-accelerator", "swordium-core-accelerator", "venomshankium-core-accelerator", "windforceium-core-accelerator",
+  {
+    type: sectorComplete
+    preset: planetaryTerminal
+  }
+]
+}
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 2400
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+suppressionRange: 2400
+suppressionDuration: 2400
+suppressionEffectChance: 50
+suppressColor: FF5959C2
+collides: false
+status: darkhearts-curse
+statusDuration: 24000
+fragBullets: 1
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 2400
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: windforces-disarmerment
+statusDuration: 24000
+}
+despawnEffect: [
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 90
+smokes: 48
+smokeSize: 14
+smokeSizeBase: 0
+sparkColor: FF595980
+sparkLen: 16
+sparkRad: 90
+sparks: 80
+sparkStroke: 4
+waveColor: FF5959
+waveLife: 640
+waveRad: 110
+lifetime: 540
+}
+{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 1200
+strokeFrom: 6
+strokeTo: 2
+interp: exp5Out
+lifetime: 640
+colorFrom: FF5959FF
+colorTo: 9D383800
+}
+{
+type: ParticleEffect
+particles: 650
+sizeFrom: 1
+sizeTo: 80
+line: true
+sizeInterp: circleOut
+colorInterp: smooth2
+lifetime: 540
+cone: 360
+length: 18000
+colorFrom: FF5959AA
+colorTo: 9D383800
+}
+{
+type: ParticleEffect
+particles: 80
+sizeFrom: 1
+sizeTo: 50
+sizeInterp: circleOut
+colorInterp: smooth2
+lifetime: 280
+cone: 360
+length: 1300
+colorFrom: FF5959AA
+colorTo: 9D383800
+}
+{
+type: SoundEffect
+sound: sfoth-core-explosion
+maxPitch: 0.85
+minPitch: 0.85
+minVolume: 5
+maxVolume: 5
+effect: none
+}
+]
+trailEffect: none
+}
