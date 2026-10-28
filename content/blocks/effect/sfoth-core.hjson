@@ -99,28 +99,30 @@ colorTo: 9D383800
 }
 {
 type: ParticleEffect
-particles: 650
-sizeFrom: 1
-sizeTo: 80
+particles: 100
+sizeFrom: 80
+sizeTo: 0
 line: true
-sizeInterp: circleOut
+interp: circleOut
+sizeInterp: pow5In
 colorInterp: smooth2
 lifetime: 540
 cone: 360
-length: 1300
+length: 500
 colorFrom: FF5959AA
 colorTo: 9D383800
 }
 {
 type: ParticleEffect
 particles: 80
-sizeFrom: 1
-sizeTo: 50
-sizeInterp: circleOut
+sizeFrom: 50
+sizeTo: 1
+interp: circleOut
+sizeInterp: pow5In
 colorInterp: smooth2
 lifetime: 280
 cone: 360
-length: 1300
+length: 500
 colorFrom: FF5959AA
 colorTo: 9D383800
 }
