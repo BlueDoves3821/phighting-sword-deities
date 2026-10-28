@@ -130,27 +130,29 @@ explodeEffect: {
         {
             type: ParticleEffect
             particles: 125
-            sizeFrom: 1
-            sizeTo: 80
+            sizeFrom: 80
+            sizeTo: 1
             line: true
-            sizeInterp: circleOut
+            interp: circleOut
+            sizeInterp: pow5In
             colorInterp: smooth2
             lifetime: 280
             cone: 360
-            length: 1300
+            length: 400
             colorFrom: E2BAF5AA
             colorTo: 8A729700
         }
         {
             type: ParticleEffect
             particles: 80
-            sizeFrom: 1
-            sizeTo: 50
-            sizeInterp: circleOut
+            sizeFrom: 50
+            sizeTo: 1
+            interp: circleOut
+            sizeInterp: pow5In
             colorInterp: smooth2
             lifetime: 280
             cone: 360
-            length: 1300
+            length: 400
             colorFrom: E2BAF5AA
             colorTo: 8A729700
         }
