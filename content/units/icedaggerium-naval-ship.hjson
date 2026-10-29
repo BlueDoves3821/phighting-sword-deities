@@ -1,0 +1,95 @@
+type: naval
+name: "[#97CCE1]Icedaggerium []Naval Ship"
+description: '''
+A basic naval attack unit, fires freezing homing rounds, can self-regenerate.
+'''
+details: '''
+due to the inclusion of darkheartium[#70ac30][], the unit is immune to the [#70ac30]darkheart's []curse.
+the unit's status immunities comes from it being tested on both erekir & serpulo, however, it is not tested on any other planet, it may still be effected by whatever liquid it's sailing on.
+'''
+envDisabled: 0
+hidden: false
+health: 800
+armor: 5
+speed: 1.25
+drag: 0.14
+hitSize: 16
+accel: 0.5
+rotateSpeed: 6.5
+trailLength: 16
+waveTrailX: 4
+trailScl: 1.2
+faceTarget: false
+moveSound: shipMove
+immunities: [wet, burning, melting, tarred, freezing, icedaggers-freezing, darkhearts-curse]
+abilities:[
+ {
+    type: RegenAbility
+    percentAmount: 0.05
+ }
+ {
+  type: LiquidExplodeAbility
+  liquid: icedaggerium-liquid
+  amount: 500
+  radScale: 1.25
+  radAmountScale: 1
+ }
+]
+weapons: [
+{
+reload: 10
+name: ins-weapon
+x: 0
+y: 7
+aiControllable: true
+useAmmo: false
+mirror: false
+rotate: true
+inaccuracy: 5
+shootCone: 10
+shootSound: shootMissileSmall
+bullet: {
+    type: MissileBulletType
+    trailWidth: 2.5
+    trailLength: 4
+    frontColor: 97CCE1
+    backColor: 80ACBE
+    trailColor: 80ACBE
+    speed: 6
+	   lifetime: 120
+    damage: 120
+    shootEffect: shootSmallColor
+    smokeEffect: shootSmallSmoke
+    	hitEffect: hitLancer
+    homingPower: 0.1
+	   pierce: true
+    pierceCap: 3
+    shrinkY: 0
+    collidesTeam: true
+    healPercent: 0.25
+    status: icedaggers-freezing
+    statusDuration: 720
+    fragSpread: 5
+    fragBullets: 5
+    fragBullet: {
+    type: LiquidBulletType
+    liquid: icedaggerium-liquid
+    damage: 10
+    lifetime: 10
+    speed: 6.25
+    status: icedaggers-freezing
+    statusDuration: 640
+    collidesTeam: true
+    healPercent: 0.1
+}
+}
+}
+]
+  research: {
+    parent: icedaggerium-flame-suppressant-unit
+    requirements: [
+      swordium/50
+      icedaggerium/50
+      darkheartium/10
+]
+}
