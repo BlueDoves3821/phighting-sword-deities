@@ -114,6 +114,15 @@ ghostwalkerium/10
     ]
  }
 {
+    unit: icedaggerium-naval-ship
+    time: 300
+    requirements: [
+      swordium/50
+      icedaggerium/50
+      darkheartium/10
+    ]
+ }
+{
     unit: illuminaium-empowerer
     time: 900
     requirements: [
