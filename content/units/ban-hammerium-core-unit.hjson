@@ -2,7 +2,7 @@ type: payload
 payloadCapacity: 12000
 
 speed: 3.52
-name: "[#3A3A82]Ban-hammerium []Core Unit"
+name: "[#3A3A82]Ban-Hammerium []Core Unit"
 description: "Core unit of the [#3A3A82]ban-hammerium []core, fires an aoe attack that stuns enemies, can also pickup units/buildings.
 "
 engineSize: 0
@@ -27,7 +27,7 @@ drag: 0.1
 moveSound: loopHover2
 moveSoundVolume: 0.25
 moveSoundPitchMin: 0.15
-moveSoundPitchMax: 0.5
+moveSoundPitchMax: 0.65
 immunities: [ban-hammers-stun, unmoving]
 knockbackMultiplier: 0.05
 engineColor: 3A3A82

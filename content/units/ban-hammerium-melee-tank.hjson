@@ -1,5 +1,5 @@
 type: mech
-name: "[#3A3A82]Ban-hammerium []Melee Tank"
+name: "[#3A3A82]Ban-Hammerium []Melee Tank"
 description: '''
 A [#3A3A82]ban-hammerium []unit, can only melee, has an extremely high shield health, but regenerates it slowly, is mostly resistant to knockback.
 '''
@@ -75,7 +75,7 @@ bullet: {
 ]
 accel: 0.2
 drag: 0.1
-speed: 0.6
+speed: 0.625
   research: {
     parent: sfoth-unit-factory
     requirements: [
