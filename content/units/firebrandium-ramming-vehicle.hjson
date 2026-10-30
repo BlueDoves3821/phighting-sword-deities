@@ -73,6 +73,16 @@ shoot: {
    firstShotDelay: 24
 }
 bullet: {
+   type: SapBulletType
+   pierce: false
+   damage: 0
+   lifetime: 0
+   length: 90
+   fragSpread: 0
+   fragRandomSpread: 0
+   fragBullets: 1
+   fragAngle: 0
+   fragBullet: {
 		type: BasicBulletType
     width: 16
     recoil: 0
@@ -101,6 +111,7 @@ bullet: {
 shootEffect: none
 }
 }
+}
     {
     name: fbrv-dash
     shootY: 0
@@ -115,8 +126,6 @@ shootEffect: none
     soundPitchMin: 1.5
     soundPitchMax: 1.5
     recoil: 0
-    frontColor: 861C00FF
-    backColor: 86100FF
     top: false
     shoot: {
    firstShotDelay: 24
@@ -124,18 +133,42 @@ shootEffect: none
     shootStatus: unmoving
     shootStatusDuration: 24
     bullet: {
-    type: BulletType
-    speed: 1
-    splashDamageRadius: 90
-    splashDamage: 140
-    splashDamagePierce: true
+    type: SapBulletType
+    pierce: false
+    damage: 0
     lifetime: 0
-    width: 0
-    height: 0
+    length: 90
     recoil: -15
-    hitEffect: none
+    chargeEffect: {
+    type: MultiEffect
+    lifetime: 45
+    effects: [
+    {
+    type: WaveEffect
+    lifetime: 24
+    sizeFrom: 90
+    sizeTo: 0
+    interp: circleOut
+    strokeFrom: 0
+    strokeTo: 8
+    colorFrom: 861C0000
+    colorTo: 861C00ff
+    }
+    {
+    type: WaveEffect
+    lifetime: 24
+    sizeFrom: 70
+    sizeTo: 0
+    interp: circleOut
+    strokeFrom: 0
+    strokeTo: 8
+    colorFrom: 861C0000
+    colorTo: 861C00ff
+    }
+    ]
+	   }
     despawnEffect: {
-type: MultiEffect
+    type: MultiEffect
     effects: [
     {
     type: WaveEffect
@@ -162,37 +195,24 @@ type: MultiEffect
     }
 ]
 }
+    fragSpread: 0
+    fragRandomSpread: 0
+    fragBullets: 1
+    fragAngle: 0
+    fragBullet: {
+    type: BulletType
+    speed: 1
+    splashDamageRadius: 90
+    splashDamage: 140
+    splashDamagePierce: true
+    lifetime: 0
+    width: 0
+    height: 0
+    hitEffect: none
     shootEffect: none
     smokeEffect: none
-chargeEffect: {
-type: MultiEffect
-lifetime: 45
-effects: [
-    {
-    type: WaveEffect
-    lifetime: 24
-    sizeFrom: 90
-    sizeTo: 0
-    interp: circleOut
-    strokeFrom: 0
-    strokeTo: 8
-    colorFrom: 861C0000
-    colorTo: 861C00ff
-    }
-    {
-    type: WaveEffect
-    lifetime: 24
-    sizeFrom: 70
-    sizeTo: 0
-    interp: circleOut
-    strokeFrom: 0
-    strokeTo: 8
-    colorFrom: 861C0000
-    colorTo: 861C00ff
-    }
-    ]
-	}
      }
+    }
     }
 ]
   research: {
