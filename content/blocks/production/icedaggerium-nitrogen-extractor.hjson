@@ -1,0 +1,59 @@
+type: HeatCrafter
+name: "[#97CCE1]Icedaggerium []Nitrogen Extractor"
+description: "Extracts nitrogen from the air, requires heat to extract nitrogen."
+details: '''
+just don't ask where the nitrogen's coming from somewhere like gier, notva or any other planet/asteroid without an atmosphere.
+'''
+size: 3
+hasLiquids: true
+liquidCapacity: 1000
+health: 850
+category: crafting
+heatRequirement: 10
+maxEfficiency: 5
+craftEffect: none
+outputLiquid: nitrogen/2.5
+consumes: {
+  power: 1.5
+}
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+  }
+  {
+ type: DrawLiquidTile
+ drawLiquid: nitrogen
+  }
+  {
+   type: DrawDefault
+  }
+   {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+    {
+        type: DrawCrucibleFlame
+        flameColor: F0E3FF96
+        flameRadiusScl: 0
+        circleStroke: 0
+        flameRad: 0
+        particleRad: 14
+      }
+  ]
+}
+ambientSound: loopExtract
+ambientSoundVolume: 0.1
+ 	requirements: [
+		swordium/75
+   icedaggerium/75
+	]
+  research: {
+    parent: icedaggerium-electrolyzer
+    requirements: [
+      swordium/75
+      icedaggerium/75
+]
+}
