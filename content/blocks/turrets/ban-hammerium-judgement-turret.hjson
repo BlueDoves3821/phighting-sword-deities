@@ -23,6 +23,9 @@ details: '''
     shootSound: none
     ammoPerShot: 20
     shootCone: 360
+    rotate: false
+    rotateDraw: false
+    rotateDrawEditor: false
     liquidCapacity: 500
     coolantMultiplier: 2
     coolant: {

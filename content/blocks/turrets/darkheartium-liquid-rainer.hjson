@@ -23,6 +23,9 @@ rotateSpeed: 0
 inaccuracy: 360
 velocityRnd: 0.1
 shootCone: 360
+rotate: false
+rotateDraw: false
+rotateDrawEditor: false
 shootY: 0
 shoot: {
   shots: 30

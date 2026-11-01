@@ -5,6 +5,9 @@ Fires 40 accelerating homing projectiles at all directions, can home onto enemie
 '''
 reload: 95
 shootCone: 360
+rotate: false
+rotateDraw: false
+rotateDrawEditor: false
 rotateSpeed: 0
 targetGround: true
 targetAir: true

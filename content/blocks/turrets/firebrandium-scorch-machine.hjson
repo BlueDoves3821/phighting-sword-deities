@@ -12,6 +12,9 @@ velocityRnd: 0.1
 reload: 10
 inaccuracy: 20
 shootCone: 360
+rotate: false
+rotateDraw: false
+rotateDrawEditor: false
 rotateSpeed: 0
 shootSound: shootFlame
 shootEffect: fire
