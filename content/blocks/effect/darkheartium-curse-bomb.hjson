@@ -1,0 +1,154 @@
+name: "[#70AC30]Darkheartium []Curse Bomb"
+    type: PowerTurret
+    description: "When an enemy unit gets close enough, it detonates itself, applying [#70ac30]darkheart's []curse to all units caught in a radius, spills [#70ac30]darkheartium []liquid after detonation."
+details: "keep away from any important buildings due to it's explosive nature, along with the [#70ac30]darkheartium []liquid being extremely flammable."
+    hideDetails: false
+    category: effect
+    size: 2
+    health: 800
+    armor: 100
+    baseExplosiveness: 1000
+    range: 100
+    rotateSpeed: 0
+    reload: 45
+    recoil: 0
+    consumesPower: false
+    shootSound: none
+    chargeSound: ispt-charge
+    shootY: 0
+    shootCone: 360
+    soundPitchMin: 1
+    soundPitchMax: 1
+    rotate: false
+    rotateDraw: false
+    rotateDrawEditor: false
+    shoot: {
+    firstShotDelay: 45
+  }
+    shootType: {
+    shootSound: ispt-shoot
+    killShooter: true
+    damage: 0
+type: MissileBulletType
+splashDamageRadius: 100
+splashDamage: 7000
+splashDamagePierce: true
+damage: 0
+collides: false
+status: darkhearts-curse
+statusDuration: 2400
+instantDisappear: true
+despawnEffect: {
+type: MultiEffect
+effects: [
+ {
+  type: ExplosionEffect
+  smokeColor: 5B5B5B80
+  smokeRad: 90
+  smokes: 48
+  smokeSize: 9
+  smokeSizeBase: 0
+  sparkColor: 70AC3080
+  sparkLen: 12
+  sparkRad: 90
+  sparks: 80
+  sparkStroke: 4
+  waveColor: 70AC30
+  waveLife: 120
+  waveRad: 110
+  lifetime: 240
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 100
+            sizeTo: 300
+            strokeFrom: 2
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 120
+            colorFrom: A6FF47FF
+            colorTo: 70AC3000
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 100
+            sizeTo: 100
+            colorFrom: A6FF47FF
+            colorTo: 70AC3000
+            lifetime: 180
+            particles: 1
+}
+]
+}
+fragBullets: 1
+fragBullet: {
+spawnUnit: darkheartium-curse-bomb-liquid-explosion
+}
+// charge effect recycled from illuminaium spt before it's charging delay was removed, modified to fit the darkheart theme.
+chargeEffect: {
+type: MultiEffect
+    effects: [
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 30
+    length: 0
+    lifetime: 45
+    sizeInterp: circleOut
+    colorFrom: 70AC3000
+    colorTo: A6FF47FF
+    region: large-orb-back
+    cone: 360
+	}
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 32
+    length: 0
+    lifetime: 45
+    sizeInterp: circleOut
+    colorFrom: 70AC3000
+    colorTo: A6FF47FF
+    region: mine-bullet
+    spin: 10
+    cone: 360
+	}
+    {
+    type: WaveEffect
+    lifetime: 45
+    sizeFrom: 60
+    sizeTo: 0
+    strokeFrom: 4
+    strokeTo: 0
+    sizeInterp: circleOut
+    colorFrom: 70AC3000
+    colorTo: A6FF47FF
+}
+   {
+    type: WaveEffect
+    lifetime: 45
+    sizeFrom: 100
+    sizeTo: 100
+    strokeFrom: 2
+    strokeTo: 2
+    colorInterp: sineOut
+    colorFrom: 70AC3000
+    colorTo: A6FF47FF
+}
+]
+}
+}
+requirements: [
+      swordium/120
+      darkheartium/120
+  ]
+  research: {
+    parent: darkheartium-converter
+    requirements: [
+      swordium/120
+      darkheartium/120
+]
+}
