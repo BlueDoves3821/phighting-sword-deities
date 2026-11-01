@@ -1,0 +1,36 @@
+//Missile unit that spills darkheartium liquid upon instant death.
+type: missile
+name: "[#70ac30]Darkheartium []Curse Bomb Liquid Explosion"
+template: MissileUnitType
+flying: true
+speed: 0
+physics: false
+lifetime: 0
+lowAltitude: true
+hitSize: 10
+useUnitCap: false
+health: 1
+drawCell: false
+hidden: true
+engineSize: 0
+deathSound: dbc-shoot
+shootSound: none
+abilities:[
+ {
+  type: LiquidExplodeAbility
+  liquid: darkheartium-liquid
+  amount: 800
+  radScale: 10
+  radAmountScale: 6
+ }
+]
+weapons: [
+  {
+    shootOnDeath: true
+    bullet: {
+    damage: 0
+    instantDisappear: true
+    killShooter: true
+    }
+  }
+]
