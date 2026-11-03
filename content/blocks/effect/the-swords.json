@@ -1,10 +1,10 @@
 {  
     "localizedName": "The Swords",
-    "description": "This tech tree contains buildings related to the swords, a group of powerful inphernals.",
+    "description": "The tech tree of PHIGHTING! [#FF5959]SWORD[] DEITIES, The Swords are a group of 7 powerful inphernals created by an unknown higher power.",
     "alwaysUnlocked": true,
     "buildVisibility": "editorOnly",
-    "type": "LightBlock",
-    "health": 800,
+    "type": "Wall",
+    "health": 0,
     "size": 2,
    "research": {
   "root": true,
