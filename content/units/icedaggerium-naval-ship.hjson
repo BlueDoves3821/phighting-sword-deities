@@ -22,6 +22,8 @@ trailScl: 1.2
 faceTarget: false
 moveSound: shipMove
 immunities: [wet, burning, melting, tarred, freezing, icedaggers-freezing, darkhearts-curse]
+targetHealing: true
+commands: [move, enterPayload, repair]
 abilities:[
  {
     type: RegenAbility
