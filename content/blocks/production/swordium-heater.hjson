@@ -17,6 +17,7 @@ type: HeatProducer
   consumes: {
   power: 1.5
 }
+  conductivePower: true
   warmupRate: 2
   rotateDraw: false
   heatOutput: 20

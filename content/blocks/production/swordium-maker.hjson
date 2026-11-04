@@ -11,6 +11,7 @@ consumes: {
   items: [
   ]
 }
+conductivePower: true
 craftEffect: hitLaserColor
 craftTime: 30
 outputItems: [

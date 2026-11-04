@@ -48,6 +48,7 @@ consumes: {
   ]
   power: 1
 }
+conductivePower: true
 outputLiquids: [
   hydrogen/0.833333333
   ozone/0.833333333

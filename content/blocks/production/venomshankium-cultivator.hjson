@@ -16,6 +16,7 @@ liquids: [water/0.5]
 }
 power: 1.5
 }
+conductivePower: true
 craftEffect: none
 liquidCapacity: 200
 itemCapacity: 60

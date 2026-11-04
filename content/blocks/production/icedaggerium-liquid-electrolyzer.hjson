@@ -48,6 +48,7 @@ consumes: {
   ]
   power: 1
 }
+conductivePower: true
 outputLiquids: [
   hydrogen/1.66666667
   water/1.66666667

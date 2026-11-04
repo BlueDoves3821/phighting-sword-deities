@@ -15,6 +15,7 @@ consumes: {
   ]
    power: 2
 }
+conductivePower: true
 craftEffect: none
 ambientSound: loopMachine2
 craftTime: 20

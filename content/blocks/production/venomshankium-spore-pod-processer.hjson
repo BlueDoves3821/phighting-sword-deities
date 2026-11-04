@@ -19,6 +19,7 @@ spore-pod/2
 }
 power: 0.666666667
 }
+conductivePower: true
 ambientSound: loopCutter
 ambientSoundVolume: 0.08
 craftEffect: none
