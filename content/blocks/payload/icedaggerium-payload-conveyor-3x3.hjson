@@ -1,0 +1,21 @@
+ name: "[#97CCE1]Icedaggerium []Payload Conveyor"
+description: '''
+Like the [#ff5959]swordium []payload conveyor, but it can be placed on deep liquids.
+'''
+    type: PayloadConveyor
+    size: 3
+    moveTime: 25
+    payloadLimit: 3
+    placeableLiquid: true
+    requirements: [
+     swordium/10
+     icedaggerium/10
+    ]
+    category: units
+research: {
+    parent: icedaggerium-payload-conveyor
+    requirements: [
+      swordium/10
+      icedaggerium/10
+]
+}

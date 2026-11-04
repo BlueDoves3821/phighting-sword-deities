@@ -1,6 +1,6 @@
  name: "[#ff5959]Swordium []Payload Conveyor"
 description: '''
-A faster payload conveyor, enlarged to accomidate larger units.
+A faster payload conveyor, enlarged to accommodate larger units.
 '''
     type: PayloadConveyor
     size: 5
