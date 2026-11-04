@@ -1,12 +1,19 @@
 type: PowerNode
 name: "[#E2BAF5]Illuminaium []Power Node"
-description: "An excellent power node."
+description: "An excellent power node, can hold power like a battery."
 size: 1
 health: 400
 laserRange: 65
 maxNodes: 50
 laserColor1: E2BAF5ff
 laserColor2: 8A7297ff
+consumes: {
+powerBuffered: 10000
+}
+outputsPower: true
+hasPower: true
+consumesPower: true
+conductivePower: true
 	requirements: [
 		swordium/20
   illuminaium/20

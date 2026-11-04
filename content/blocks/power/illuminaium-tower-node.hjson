@@ -1,10 +1,18 @@
 type: PowerNode
 name: "[#E2BAF5]Illuminaium []Tower Node"
-description: "A long-ranged power node, limited connections."
+description: "A long-ranged power node, limited connections, can hold power like a battery."
 size: 2
 health: 750
 laserRange: 200
+laserScale: 0.65
 maxNodes: 5
+consumes: {
+powerBuffered: 40000
+}
+outputsPower: true
+hasPower: true
+consumesPower: true
+conductivePower: true
 laserColor1: E2BAF5ff
 laserColor2: 8A7297ff
 	requirements: [
