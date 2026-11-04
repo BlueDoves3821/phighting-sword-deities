@@ -22,7 +22,7 @@ size: 4
 inaccuracy: 8
 velocityRnd: 0.02
 shootCone: 25
-shootY: 6.4
+shootY: 6.25
 shoot: {
   shots: 9
 }
@@ -30,6 +30,8 @@ ammoTypes: {
   darkheartium-liquid: {
     type: LiquidBulletType
     liquid: darkheartium-liquid
+    pierce: true
+    pierceCap: 40
     ammoMultiplier: 1
     damage: 150
     lifetime: 58

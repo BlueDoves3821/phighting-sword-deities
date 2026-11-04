@@ -29,6 +29,8 @@ ammoTypes: {
   water: {
     type: LiquidBulletType
     liquid: water
+    pierce: true
+    pierceCap: 10
     ammoMultiplier: 1
     damage: 0
     knockback: 10
@@ -38,6 +40,8 @@ ammoTypes: {
   cryofluid: {
     type: LiquidBulletType
     liquid: cryofluid
+    pierce: true
+    pierceCap: 10
     ammoMultiplier: 1
     damage: 0
     knockback: 10
@@ -47,6 +51,8 @@ ammoTypes: {
   icedaggerium-liquid: {
     type: LiquidBulletType
     liquid: icedaggerium-liquid
+    pierce: true
+    pierceCap: 10
     ammoMultiplier: 1
     damage: 0
     knockback: 10
@@ -58,6 +64,8 @@ ammoTypes: {
   darkheartium-liquid: {
     type: LiquidBulletType
     liquid: darkheartium-liquid
+    pierce: true
+    pierceCap: 20
     ammoMultiplier: 0.25
     damage: 50
     knockback: 10

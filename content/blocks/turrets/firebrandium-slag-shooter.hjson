@@ -30,6 +30,8 @@ ammoTypes: {
     intervalSpread: 50
     intervalBullet: {
       type: LiquidBulletType
+      pierce: true
+      pierceCap: 5
       liquid: slag
       damage: 100
       drag: 0.001

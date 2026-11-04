@@ -34,6 +34,8 @@ ammoTypes: {
   darkheartium-liquid: {
     type: LiquidBulletType
     liquid: darkheartium-liquid
+    pierce: true
+    pierceCap: 20
     ammoMultiplier: 0.75
     damage: 30
     lifetime: 85

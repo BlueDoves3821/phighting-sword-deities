@@ -22,7 +22,7 @@ size: 3
 inaccuracy: 17
 velocityRnd: 0.2
 shootCone: 25
-shootY: 5
+shootY: 4.5
 shoot: {
   shots: 9
 }
@@ -34,6 +34,8 @@ ammoTypes: {
   water: {
     type: LiquidBulletType
     liquid: water
+    pierce: true
+    pierceCap: 15
     ammoMultiplier: 1
     damage: 2.5
     knockback: 10
@@ -43,6 +45,8 @@ ammoTypes: {
   cryofluid: {
     type: LiquidBulletType
     liquid: cryofluid
+    pierce: true
+    pierceCap: 15
     ammoMultiplier: 1
     damage: 3.25
     knockback: 10
@@ -52,6 +56,8 @@ ammoTypes: {
   icedaggerium-liquid: {
     type: LiquidBulletType
     liquid: icedaggerium-liquid
+    pierce: true
+    pierceCap: 15
     ammoMultiplier: 1
     damage: 5
     knockback: 10
@@ -63,6 +69,8 @@ ammoTypes: {
   darkheartium-liquid: {
     type: LiquidBulletType
     liquid: darkheartium-liquid
+    pierce: true
+    pierceCap: 20
     ammoMultiplier: 0.25
     damage: 80
     knockback: 10
