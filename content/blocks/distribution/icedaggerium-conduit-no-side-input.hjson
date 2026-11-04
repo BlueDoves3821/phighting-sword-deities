@@ -1,0 +1,23 @@
+  type: ArmoredConduit
+  category: liquid
+  name: "[#97CCE1]Icedaggerium []Conduit (No Side-Input)",
+  description: "A conduit made out of [#ff5959]swordium[] & [#97CCE1]icedaggerium[], has higher pressure, liquid capacity & does not leak, does not allow side inputs."
+  leaks: false
+  health: 100
+  liquidCapacity: 60
+  placeableLiquid: true
+  liquidPressure: 2.5
+  bridgeReplacement: swordium-liquid-bridge
+  junctionReplacement: swordium-liquid-junction
+requirements: [
+		swordium/3
+   icedaggerium/3
+	]
+	category: liquid
+  research: {
+    parent: icedaggerium-conduit
+    requirements: [
+      swordium/10
+      icedaggerium/10
+]
+}
