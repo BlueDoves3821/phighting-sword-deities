@@ -28,6 +28,7 @@ liquids: {
         optional: true
         }
 }
+conductivePower: true
 requirements: [
     swordium/650
     ban-hammerium/650
