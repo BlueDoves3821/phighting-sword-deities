@@ -27,6 +27,7 @@ liquidBoostIntensity: 2
       optional: true
     }
   }
+conductivePower: true
 drillEffect: mineBig
 updateEffect: pulverize
 updateEffectChance: 0.06

@@ -30,6 +30,7 @@ optionalBoostIntensity: 4
       optional: true
     }
   }
+  conductivePower: true
   research: {
     parent: illuminaium-drill
     requirements: [
