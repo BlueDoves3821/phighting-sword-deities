@@ -69,6 +69,7 @@ consumes: {
 power: 3.33333333
 items: venomshankium/20
 }
+conductivePower: true
   research: {
     parent: venomshankium-minion-launcher
     requirements: [

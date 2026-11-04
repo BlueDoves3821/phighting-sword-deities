@@ -27,6 +27,7 @@ Pulls in air units, dealing massive damage, high-ranged, but it's incredibly dem
   ]
   power: 5
 }
+  conductivePower: true
   itemCapacity: 20
   liquidCapacity: 200
   status: icedaggers-freezing

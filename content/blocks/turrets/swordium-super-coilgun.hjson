@@ -26,6 +26,7 @@ swordium/450
     power: 5.5
   }
   hasPower: true
+  conductivePower: true
 ammoTypes: {
 swordium: {
     type: BasicBulletType

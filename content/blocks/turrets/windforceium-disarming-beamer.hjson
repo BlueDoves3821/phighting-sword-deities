@@ -39,6 +39,7 @@ shootType: {
 consumes: {
 power: 3.33333333
 }
+conductivePower: true
   research: {
     parent: windforceium-disarmer
     requirements: [
