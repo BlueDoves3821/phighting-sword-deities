@@ -17,6 +17,7 @@ consumes: {
   power: 4
   liquid: ban-hammerium-lubricant/0.25
 }
+conductivePower: true
 liquidCapacity: 650
 requirements: [
   swordium/1200
