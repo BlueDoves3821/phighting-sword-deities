@@ -32,7 +32,7 @@ requirements: [
   ]
   objectives: [
   {
-    type: capturedSector
+    type: SectorComplete
     preset: planetaryTerminal
   }
   ]
