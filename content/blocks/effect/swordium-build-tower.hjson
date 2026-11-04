@@ -12,6 +12,7 @@ swordium/160
   consumes: {
     power: 2.5
   }
+  conductivePower: true
   category: effect
   research: {
     parent: swordium-buildings
