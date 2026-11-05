@@ -1,0 +1,38 @@
+type: WallCrafter
+name: "[#ff5959]Swordium []Wall Grinder"
+description: '''
+Grinds the wall into fine sand for refinement/mixing, may be useful in certain suitiations.
+'''
+health: 750
+size: 2
+consumesPower: false
+drillTime: 15
+output: sand
+attribute: sand
+warmupSpeed: 0.01
+rotateSpeed: 8
+itemCapacity: 250
+liquidCapacity: 100
+liquidBoostIntensity: 4
+  consumes:
+  {
+    liquid:
+    {
+      liquid: water
+      amount: 0.31
+      booster: true
+      optional: true
+    }
+  }
+ambientSound: loopDrill
+ambientSoundVolume: 0.05
+research: {
+    parent: swordium-drill
+    requirements: [
+      swordium/55
+]
+}
+requirements: [
+swordium/55
+]
+category: production
