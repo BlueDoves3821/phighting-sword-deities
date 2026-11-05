@@ -1,0 +1,32 @@
+type: GenericCrafter
+name: "[#ff5959]Swordium []Grinder"
+description: '''
+Grinds [#ff5959]swordium []into a powder fine enough to be considered sand, mostly used to add extra sand for refinement/mixing in production machines that require sand.
+'''
+details: "not to be confused with the wall grinder."
+hideDetails: false
+size: 2
+health: 400
+itemCapacity: 150
+consumes: {
+  items: [
+    swordium/1
+  ]
+}
+ambientSound: loopDrill
+craftEffect: none
+updateEffect: mine
+craftTime: 10
+outputItems: [
+   sand/4
+]
+research: {
+    parent: swordium-wall-grinder
+    requirements: [
+    swordium/25
+]
+}
+category: crafting
+requirements: [
+  swordium/25
+]
