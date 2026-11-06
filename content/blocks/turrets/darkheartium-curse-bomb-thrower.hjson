@@ -1,0 +1,125 @@
+type: ItemTurret
+requirements: [
+swordium/200
+darkheartium/200
+]
+name: "[#70ac30]Darkheartium []Curse Bomb Thrower"
+description: '''
+Throws [#70ac30]darkheartium []curse bombs at units, requires more [#70ac30]darkheartium []to operate in order to compensate the missing [#ff5959]swordium[].
+'''
+health: 1100
+maxAmmo: 220
+category: turret
+range: 1200
+smokeEffect: smoke
+shootSound: shootPayload
+reload: 360
+recoil: 7
+shake: 2
+size: 3
+drawer: {
+type: DrawTurret
+parts: [
+{
+suffix: "-payload"
+progress: reload
+color: ffffff
+colorTo: ffffff00
+under: true
+outline: false
+y: 0
+}
+]
+}
+ammoTypes: {
+  darkheartium: {
+    type: ArtilleryBulletType
+    parts: [
+      {
+        type: RegionPart
+        name: sword-deities-mod-darkheartium-curse-bomb-thrower-payload
+        layer: 111
+        outline: false
+        progress: life
+        moveRot: 90
+      }
+    ]
+    damage: 0
+    splashDamage: 0
+    splashDamageRadius: 0
+    lifetime: 720
+    speed: 5
+    trailMult: 0
+    trailSize: 0
+    shootEffect: none
+    despawnSound: none
+    hitSound: none
+    fragBullets: 1
+    fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 100
+splashDamage: 7000
+splashDamagePierce: true
+damage: 0
+collides: false
+status: darkhearts-curse
+statusDuration: 2400
+instantDisappear: true
+despawnEffect: {
+type: MultiEffect
+effects: [
+ {
+  type: ExplosionEffect
+  smokeColor: 5B5B5B80
+  smokeRad: 90
+  smokes: 48
+  smokeSize: 9
+  smokeSizeBase: 0
+  sparkColor: 70AC3080
+  sparkLen: 12
+  sparkRad: 90
+  sparks: 80
+  sparkStroke: 4
+  waveColor: 70AC30
+  waveLife: 120
+  waveRad: 110
+  lifetime: 240
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 100
+            sizeTo: 300
+            strokeFrom: 2
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 120
+            colorFrom: A6FF47C2
+            colorTo: 70AC3000
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 100
+            sizeTo: 100
+            colorFrom: A6FF47C2
+            colorTo: 70AC3000
+            lifetime: 180
+            particles: 1
+}
+]
+}
+fragBullets: 1
+fragBullet: {
+spawnUnit: darkheartium-curse-bomb-liquid-explosion
+}
+}
+}
+}
+ammoPerShot: 220
+research: {
+    parent: darkheartium-curse-bomb
+    requirements: [
+swordium/200
+darkheartium/200
+]
+}
