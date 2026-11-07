@@ -1,0 +1,10 @@
+name: "[#EBE161]Valkium"
+description: '''
+[#EBE161]"Let's get this party started!"[]
+A support-esque material, used for supporting allies, are cousins with [#ff5959]swordium []& [#3A3A82]ban-hammerium[], has [#861C00]firebrandium[] as their grandfather & is a brother with [#C46BE3]domium[].
+'''
+color: EBE161
+  research: {
+    parent: firebrandium
+    requirements: []
+}

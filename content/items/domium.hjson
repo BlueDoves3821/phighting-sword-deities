@@ -1,0 +1,10 @@
+name: "[#C46BE3]Domium"
+description: '''
+[#C46BE3]"Let out your true power."[]
+A support-esque material, used for supporting allies, are cousins with [#ff5959]swordium []& [#3A3A82]ban-hammerium[], has [#861C00]firebrandium[] as their grandfather & is a brother with [#EBE161]valkium[].
+'''
+color: C46BE3
+  research: {
+    parent: firebrandium
+    requirements: []
+}
