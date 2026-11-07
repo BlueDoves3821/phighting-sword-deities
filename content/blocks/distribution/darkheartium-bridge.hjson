@@ -3,7 +3,7 @@
   description: "Very high ranged bridge, basically an orthogonal mass driver with instant transport time, explosive.",
   hasPower: false
   transportTime: 0.0025
-  itemCapacity: 5
+  itemCapacity: 30
   health: 130
   baseExplosiveness: 40
   range: 150
