@@ -1,0 +1,90 @@
+type: ItemTurret
+name: "[#C46BE3]Domium []RESEMP Turret"
+description: '''
+RESEMP stands for "Repair Supression Electromagnetic Pulse"
+when the projectile hits a power building, like batteries, reactors & any buildings that uses power, it chains extra damage to other power buildings or units.
+it also suppresses repairing buildings like menders & regen projectors.
+lastly, it can home onto units/buildings.
+'''
+reload: 4.5
+shootCone: 5
+rotateSpeed: 6
+targetGround: true
+targetAir: true
+range: 1000
+recoil: 1
+size: 3
+health: 500
+AmmoPerShot: 1
+maxAmmo: 50
+shootSound: illuminaium-weapon-shoot
+shootShake: 4
+soundPitchMin: 0.7
+soundPitchMax: 0.9
+inaccuracy: 0
+drawer: {
+type: DrawTurret
+parts: [
+{
+suffix: "-barrel"
+progress: recoil
+under: true
+moveY: -0.5
+}
+]
+}
+liquidCapacity: 200
+coolEffect: vaporSmall
+coolantMultiplier: 2
+consumes: {
+  coolant: {
+    amount: 0.25
+  }
+}
+ammoTypes: {
+domium: {
+type: EmpBulletType
+damage: 350
+speed: 5
+lifetime: 200
+height: 15
+width: 15
+backColor: AB5EC7
+frontColor: C46BE3
+trailEffect: heatReactorSmoke
+trailChance: 1
+trailColor: 9652AE
+homingPower: 0.05
+pierce: true
+pierceBuilding: true
+pierceCap: 20
+        
+applyEffect: "heal"
+chainEffect: "hitLaserColor"
+hitPowerEffect: "shockwave"
+hitUnits: true
+powerDamageScl: 5
+powerSclDecrease: 1.25
+radius: 120
+timeDuration: 1200
+timeIncrease: 2.5
+unitDamageScl: 1
+
+suppressionRange: 120
+suppressionDuration: 1200
+suppressionEffectChance: 50
+suppressColor: C46BE3C8
+}
+}
+requirements: [
+    swordium/140
+    domium/140
+]
+research: {
+  parent: domium-converter
+}
+category: turret
+researchCost: [
+  swordium/140
+  domium/140
+]

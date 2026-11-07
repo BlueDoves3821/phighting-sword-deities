@@ -1,0 +1,99 @@
+type: ItemTurret
+name: "[#EBE161]Valkium []Turret"
+description: '''
+Fires [#e2baf5]illuminaium[]-esque accelerating projectiles that heal ally blocks, can take coolant.
+'''
+reload: 5.25
+shootY: 2.3
+shootCone: 5
+rotateSpeed: 6
+targetGround: true
+targetAir: true
+targetHealing: true
+range: 1000
+recoil: 1
+size: 3
+health: 600
+AmmoPerShot: 2
+maxAmmo: 50
+shootSound: valkium-weapon-shoot
+shootShake: 1
+inaccuracy: 0.25
+liquidCapacity: 250
+coolEffect: vaporSmall
+coolantMultiplier: 2.5
+consumes: {
+  coolant: {
+    amount: 0.25
+  }
+}
+ammoTypes: {
+    valkium: {
+  type: BasicBulletType
+  shootEffect:{
+    type: MultiEffect
+    effects:[shootSmokeSquare, {
+    type: WaveEffect
+    colorFrom: EBE161FF
+    colorTo: B4AC4A00
+    sizeTo: 4
+    strokeFrom: 4
+    lifetime: 24
+    }
+    ]
+}
+  smokeEffect: vaporSmall
+  homingPower: 0.2
+  speed: 10
+  drag: -0.0025
+  lifetime: 3000
+  trailLength: 10
+  trailWidth: 1.5
+  trailColor: EBE161
+  type: BasicBulletType
+  frontColor: ffffff
+  backColor: EBE161
+  sprite: mine-bullet
+  damage: 50
+  splashDamage: 50
+  splashDamageRadius: 26
+  hitEffect: hitBulletColor
+  despawnEffect: none
+  fragBullets: 8
+  fragSpread: 45
+  pierce: true
+  pierceCap: 5
+  knockback: 1.25
+  healPercent: 10
+  collidesTeam: true
+  healColor: EBE161
+  fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 0
+    toColor: EBE161
+    length: 25
+    lifetime: 15
+    width: 12
+    hitLarge: true
+    damage: 50
+    impact: true
+    healPercent: 2.5
+    collidesTeam: true
+    healColor: EBE161
+    }
+  fragRandomSpread: 0
+  hitColor: EBE161
+}
+    }
+requirements: [
+    swordium/120
+    valkium/120
+]
+research: {
+  parent: valkium-converter
+}
+category: turret
+researchCost: [
+  swordium/120
+  valkium/120
+]
