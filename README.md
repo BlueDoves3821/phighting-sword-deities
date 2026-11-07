@@ -9,15 +9,7 @@ This mod is considered to be unfair due to some of the content being OP,
 but then again, play it your own way!
 
 ## What's Next With PHIGHTING! SWORD DEITIES
-Currently, major updates will be temporarily slowed due to burnout, which means version 2.15, which would've added the flipside brothers of valkium & domium.
-<p align="center">
-  <img src="archives/hq item icons/valkium-hq.png" width="100">
-  <img src="archives/hq item icons/domium-hq.png" width="100">
-</p>
-  
-will be released later, and to that, i'm sorry about it.
-
-(note: the flipside update has been moved back to version 2.15, version 2.2's soon-to-be-added content has shifted to something else entirely.)
+Currently, there's no important updates at the moment after releasing the flipside update, if there's anything i can start working on, i'll put it here.
 ### Information About This Mod
 PHIGHTING! SWORD DEITES Is a mindustry mod made by BlueDoves3821.
 
@@ -43,7 +35,12 @@ You're also able to create ban-hammerium by converting windforceium.
 <p align="center">
   <img src="archives/hq item icons/ban-hammerium-hq.png" width="120"
 </p>
-
+  
+Or support your allies with valkium & domium!
+<p align="center">
+    <img src="archives/hq item icons/valkium-hq.png" width="100">
+  <img src="archives/hq item icons/domium-hq.png" width="100">
+</p>
 Currently, there are around 200+ pieces of content, which includes a mobile swordium core for mobile bases.
 <p align="center">
 <img src="sprites/blocks/effects/cores/swordium-core.png" width="100">
@@ -76,4 +73,4 @@ Tweaks may happen from time to time.
 One new content may be added every couple of days, but sometimes it'll be weeks.
 There's also a stand-alone add-on for this mod called ["Swordium Assisters"](https://github.com/BlueDoves3821/sword-deities-swordium-assisters)
 which had to be seperated due to concerns of being too op if included in the mod.
-And tbh, i did not expect this mod to gain a bit of traction, so uh, thank you. -BlueDoves3821
+And tbh, i did not expect this mod to gain a bit of traction, so uh, thank you. - BlueDoves3821.
