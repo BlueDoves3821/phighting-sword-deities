@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: "[#EBE161]Valkium []Converter"
+description: '''
+Converts [#ff5959]swordium []and [#861C00]firebrandium []into [#EBE161]Valkium.
+'''
+size: 2
+health: 400
+itemCapacity: 50
+consumes: {
+  items: [
+    swordium/1
+    firebrandium/1
+  ]
+}
+craftEffect: hitLaserColor
+craftTime: 10
+outputItems: [
+   valkium/2
+]
+research: {
+    parent: flipsideium-converter
+    requirements: [
+    swordium/100
+    valkium/50
+]
+}
+category: crafting
+requirements: [
+  swordium/50
+  valkium/25
+]

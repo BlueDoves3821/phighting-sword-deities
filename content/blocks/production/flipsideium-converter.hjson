@@ -1,0 +1,29 @@
+type: Separator
+  name: "[#EBE161]Flip[][#C46BE3]side[]ium Converter"
+  description: "Converts [#ff5959]swordium []into either [#EBE161]valkium []or [#C46BE3]domium."
+	size: 2
+ itemCapacity: 50
+ health: 400
+	craftTime: 10
+	hasItems: true
+	hasLiquids: false
+	hasPower: false
+ craftEffect: hitLaserColor
+ ambientSound: loopMachine
+	consumes: {
+   items: [
+    swordium/1
+  ]
+	}
+researchCost: [
+  swordium/120
+]
+research: swordium-maker
+requirements: [
+  swordium/60
+]
+	category: crafting
+	results: [
+		valkium/1
+   domium/1
+	]
