@@ -1,0 +1,63 @@
+type: RegenProjector
+name: "[#EBE161]Valkium []Regen Projector"
+description: '''
+Slowly repairs blocks in a huge radius, much higher range than the [#70ac30]darkheartium []mender, but doesn't heal as much.
+'''
+size: 3
+range: 100
+healPercent: 0.085
+health: 800
+hasPower: false
+hasItems: true
+baseColor: EBE161
+phaseColor: EBE161
+phaseBoost: 60
+effect: lava
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: EBE161
+    }
+    {
+      type: DrawPulseShape
+      color: EBE161
+      square: false
+    }
+    {
+      type: DrawShape
+      color: EBE161
+      radius: 4
+      useWarmupRadius: true
+      timeScl: 2
+    }
+  ]
+}
+itemCapacity: 20
+consumes: {
+items: {
+items: [
+valkium/5
+]
+booster: true
+optional: true
+}
+}
+itemDuration: 300
+requirements: [
+swordium/100
+valkium/50
+]
+  research: {
+    parent: valkium-converter
+    requirements: [
+      swordium/100
+      valkium/50
+]
+}
+category: effect

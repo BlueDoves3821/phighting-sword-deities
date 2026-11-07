@@ -1,0 +1,35 @@
+type: OverdriveProjector
+  name: "[#C46BE3]Domium []Sectordriver"
+  description: '''
+Overdrives everything in a very large radius, can be boosted to 6.5x with [#C46BE3]domium[].
+'''
+  category: effect
+  reload: 60
+  range: 1800
+  speedBoost: 2
+  speedBoostPhase: 5.5
+  phaseRangeBoost: 0
+  useTime: 240
+  itemCapacity: 35
+baseColor: C46BE3
+phaseColor: C46BE3
+consumes: {
+    items: {
+      items: [ "domium/5" ]
+      booster: true
+      optional: true
+    }
+  }
+size: 5
+ambientSoundVolume: 0.45
+requirements: [
+  swordium/150
+  domium/150
+]
+research: {
+  parent: domium-converter
+  requirements: [
+    swordium/150
+    domium/150
+  ]
+}
