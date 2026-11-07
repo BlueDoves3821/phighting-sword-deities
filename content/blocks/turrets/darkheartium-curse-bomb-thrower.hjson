@@ -44,6 +44,7 @@ ammoTypes: {
         moveRot: 90
       }
     ]
+    absorbable: false
     damage: 0
     splashDamage: 0
     splashDamageRadius: 0
@@ -57,6 +58,7 @@ ammoTypes: {
     fragBullets: 1
     fragBullet: {
 type: MissileBulletType
+absorbable: false
 splashDamageRadius: 100
 splashDamage: 7000
 splashDamagePierce: true
