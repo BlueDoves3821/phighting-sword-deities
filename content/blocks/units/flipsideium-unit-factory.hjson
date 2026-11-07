@@ -1,0 +1,55 @@
+Name: "[#EBE161]Flip[][#C46BE3]side[]ium Unit Factory"
+description: '''
+Constructs support units by utlizing [#ff5959]swordium []& either [#EBE161]valkium []or [#C46BE3]domium[].
+'''
+type: UnitFactory
+size: 3
+consumesPower: false
+plans: [
+   {
+    unit: domium-resemp-unit
+    time: 1600
+    requirements: [
+swordium/130
+domium/130
+    ]
+ }
+   {
+    unit: domium-support-unit
+    time: 1200
+    requirements: [
+swordium/100
+domium/100
+    ]
+ }
+   {
+    unit: valkium-coilgun-unit
+    time: 2400
+    requirements: [
+swordium/175
+valkium/175
+    ]
+ }
+   {
+    unit: valkium-support-unit
+    time: 1200
+    requirements: [
+swordium/100
+valkium/100
+    ]
+ }
+]
+requirements: [
+swordium/150
+domium/80
+valkium/80
+]
+  research: {
+    parent: flipsideium-converter
+    requirements: [
+      swordium/150
+      domium/80
+      valkium/80
+]
+}
+category: units
