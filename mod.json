@@ -1,16 +1,18 @@
 {
 "name": "sword-deities-mod"
-"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES [#3A3A82[]]2.1"
-author: BlueDoves3821
+"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES [#EBE161[]]2[[]].[#C46BE3[]]15"
+"subtitle": "see you on the [#EBE161[]]flip[[]][#C46BE3[]]side[[]]!"
+"author": "BlueDoves3821"
 "description": '''
-[#ff5959[]]PREPARE YOURSELF!
+[#ffffff[]]WE'LL SEE YOU ON THE [#EBE161[]]FLIP[#ffffff[]][#C46BE3[]]SIDE[#ffffff[]]!
 
-[#ffffff[]]Version 2.1 introduces a new material called [#3A3A82[]]Ban-Hammerium[#ffffff[]].
-A material for tanky/high damage output purposes made from converting [#929EAE[]]windforceium[#ffffff[]].
+[#ffffff[]]Version 2.15 introduces 2 new materials called [#EBE161[]]Valkium [#ffffff[]]& [#C46BE3[]]Domium[#ffffff[]].
+2 materials for supporting purposes made from converting [#FF5959[]]swordium[#ffffff[]] for both materials or with [#861C00[]]firebrandium[#ffffff[]] for individual conversion.
 
 [#ffffff[]]A mod about [#ff5959[]]sword [#ffffff[]]& the 7 sword deities from PHIGHTING!
+[grey[]](along with 3 characters related to the swords)
 
-Create [#ff5959[]]swordium [#ffffff[]]& convert it into either [#70AC30[]]darkheartium[#ffffff[]], [#861C00[]]firebrandium[#ffffff[]], [#C2C2C2[]]ghostwalkerium[#ffffff[]], [#97CCE1[]]icedaggerium[#ffffff[]], [#E2BAF5[]]illuminaium[#ffffff[]], [#A4C360[]]venomshankium [#ffffff[]]or [#929EAE[]]windforceium[#ffffff[]]!
+[#ffffff[]]Create [#ff5959[]]swordium [#ffffff[]]& convert it into either [#70AC30[]]darkheartium[#ffffff[]], [#861C00[]]firebrandium[#ffffff[]], [#C2C2C2[]]ghostwalkerium[#ffffff[]], [#97CCE1[]]icedaggerium[#ffffff[]], [#E2BAF5[]]illuminaium[#ffffff[]], [#A4C360[]]venomshankium [#ffffff[]]or [#929EAE[]]windforceium[#ffffff[]]!
 
 [#ffffff[]]There's multiple types of turrets, production buildings, units & even a mobile core that you can place down anywhere!
 
@@ -21,7 +23,6 @@ What's special about this mod is that it can be utilized in either erekir, serpu
 [red[]]note: this mod can be considered as unfair to some, but then again, play it your own way!
 '''
 "version": "2.14"
-"subtitle": "i have a [#3A3A82[]]ban-hammer!"
 "minGameVersion": "136.1"
 "dependencies": [ ]
 "hideBrowser": false
