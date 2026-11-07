@@ -1,0 +1,99 @@
+type: mech
+name: "[#EBE161]Valkium []Support Unit"
+description: '''
+A support unit made out of [#ff5959]swordium []& [#EBE161]valkium[], applies [#EBE161]valk's []boost to ally units in a radius, cannot apply it's own status & [#C46BE3]dom's[].
+'''
+envDisabled: 0
+hidden: false
+armor: 10
+health: 2500
+rotateSpeed: 8
+hitSize: 16
+canDrown: false
+stepShake: 2
+itemCapacity: 0
+mineItems: []
+canBoost: true
+boostMultiplier: 2
+stepSound: mechStep
+engineSize: 4
+engineOffset: 6
+engineColor: EBE161
+buildSpeed: 10
+buildRange: 600
+immunities: [valks-boost, doms-power]
+commands: [move, enterPayload, assist, rebuild]
+weapons: [
+{
+ name: vsu-shotgun
+ reload: 10
+ x: 7
+ y: 6
+ top: true
+	xRand: 0
+ spacing: 3
+ layerOffset: -0.001
+	innacuracy: 0
+	rotate: false
+	shoot: {
+		type: ShootSpread
+		shots: 3
+		spread: 1
+	}
+	shootCone: 25
+ mirror: true
+ recoil: 1
+	shootSound: shootDiffuse
+ ejectEffect: none
+ bullet: {
+ type: LaserBulletType
+	hitSize: 4
+	lifetime: 12
+	drawSize: 110
+	collidesAir: true
+ damage: 250
+	length: 100
+ colors: [
+ EBE161,
+ ffffff
+ ]
+	pierce: true
+	pierceCap: 10
+	pierceBuilding: true
+ knockback: -2.5
+ }
+ }
+]
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 18
+  max: 1000
+  regen: 8
+  cooldown: 240
+  width: 4
+  angle: 365
+  color: EBE161
+  whenShooting: true
+  pushUnits: false
+ }
+  {
+    type: StatusFieldAbility
+    effect: valks-boost
+    duration: 48000
+    reload: 300
+    color: EBE161ff
+    range: 120
+  }
+]
+accel: 0.2
+drag: 0.1
+speed: 1.85
+research: {
+    parent: flipsideium-unit-factory
+    requirements: [
+      swordium/100
+      valkium/100
+]
+}

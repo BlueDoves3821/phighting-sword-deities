@@ -1,0 +1,186 @@
+  template: ErekirUnitType
+  name: '''
+[#EBE161]Valkium []Coilgun Unit
+'''
+
+  description: '''
+Think of this unit as a mashup of the [#EBE161]valkium []turret & the [#ff5959]swordium []super coilgun, fires a fast-moving projectile that decimates buildings & units, frags into healing projectiles.
+'''
+  envDisabled: 0
+  hidden: false
+  lightRadius: 60
+  type: legs
+  canDrown: false
+  legCount: 4
+  legLength: 10
+  legSpeed: 0.5
+  legExtension: -3
+  legMoveSpace: 1.35
+  rotateSpeed: 5
+  speed: 1.85
+  accel: 0.4
+  drag: 0.4
+  faceTarget: true
+  flying: false
+  health: 2600
+  armor: 4
+  hitSize: 10
+  lowAltitude: true
+  hovering: true
+  canDrown: false
+  stepSound: flipside-walker-step
+  commands: [move, enterPayload, repair, assist]
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0d
+  radius: 20
+  max: 2000
+  regen: 5
+  cooldown: 120
+  width: 3
+  angle: 360
+  color: EBE161
+  whenShooting: false
+  chanceDeflect: 1
+ }
+]
+
+weapons: [
+    {
+rotate: false
+mirror: true
+name: valkium-coilgun-unit
+x: 0
+y: 0
+reload: 120
+recoil: 0
+shootSound: ssc-shoot
+chargeSound: ssc-charge
+soundPitchMin: 1
+soundPitchMax: 1
+top: false
+inaccuracy: 0
+shootY: 2
+shoot: {
+    firstShotDelay: 60
+  }
+bullet: {
+recoil: 9
+type: BasicBulletType
+    sprite: shell-back
+    hitSound: explosionPlasmaSmall
+    hitSoundVolume: 1.25
+    frontColor: EBE161
+    backColor: EBE161
+    chargeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          particles: 1
+          sizeFrom: 0
+          sizeTo: 10
+          length: 0
+          lifetime: 60
+          region: circle-shadow
+          colorFrom: B4AC4A00
+          colorTo: EBE161FF
+          cone: 360
+        }
+        {
+          type: WaveEffect
+          lifetime: 60
+          sizeFrom: 40
+          sizeTo: 0
+          strokeFrom: 0
+          strokeTo: 6
+          colorFrom: B4AC4A00
+          colorTo: EBE161FF
+        }
+      ]
+    }
+    status: unmoving
+    statusDuration: 120
+    damage: 300
+    knockback: 60
+    splashDamage: 150
+    splashDamageRadius: 85
+    buildingDamageMultiplier: 2.5
+    shieldDamageMultiplier: 2
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 20
+    hitShake: 5
+    height: 15
+    width: 15
+    speed: 20
+    lifetime: 120
+    healPercent: 30
+    collidesTeam: true
+    healColor: EBE161
+    shootEffect: {
+      type: WaveEffect
+      lifetime: 20
+      sizeFrom: 0
+      sizeTo: 50
+      strokeFrom: 0
+      strokeTo: 7
+      colorFrom: EBE161FF
+      colorTo: B4AC4A00
+    }
+    fragSpread: 5
+    fragBullets: 3
+    fragBullet: {
+  type: BasicBulletType
+  homingPower: 0.5
+  speed: 10
+  drag: -0.0025
+  lifetime: 1000
+  trailLength: 5
+  trailWidth: 1.5
+  trailColor: EBE161
+  type: BasicBulletType
+  frontColor: ffffff
+  backColor: EBE161
+  sprite: mine-bullet
+  damage: 100
+  splashDamage: 100
+  splashDamageRadius: 26
+  hitEffect: hitBulletColor
+  despawnEffect: none
+  fragBullets: 8
+  fragSpread: 45
+  pierce: true
+  pierceCap: 5
+  knockback: 1.25
+  healPercent: 15
+  collidesTeam: true
+  healColor: EBE161
+  fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 0
+    toColor: EBE161
+    length: 25
+    lifetime: 15
+    width: 12
+    hitLarge: true
+    damage: 100
+    impact: true
+    healPercent: 4.5
+    collidesTeam: true
+    healColor: EBE161
+    }
+  fragRandomSpread: 0
+  hitColor: EBE161
+}
+}
+}
+]
+  research: {
+    parent: flipsideium-unit-factory
+    requirements: [
+      swordium/175
+      valkium/175
+]
+}

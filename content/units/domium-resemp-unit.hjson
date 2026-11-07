@@ -1,0 +1,106 @@
+  template: ErekirUnitType
+  name: '''
+[#C46BE3]Domium []RESEMP Unit
+'''
+
+  description: '''
+RESEMP stands for "Repair Supression Electromagnetic Pulse"
+A mobile version of the [#C46BE3]domium []RESEMP turret, fires weaker versions of it's projectile.
+'''
+  envDisabled: 0
+  hidden: false
+  lightRadius: 60
+  type: legs
+  canDrown: false
+  legCount: 4
+  legLength: 10
+  legSpeed: 0.5
+  legExtension: -3
+  legMoveSpace: 1.35
+  rotateSpeed: 5
+  speed: 1.85
+  accel: 0.4
+  drag: 0.4
+  faceTarget: true
+  flying: false
+  health: 2600
+  armor: 4
+  hitSize: 10
+  lowAltitude: true
+  hovering: true
+  canDrown: false
+  stepSound: flipside-walker-step
+  commands: [move, enterPayload, assist]
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 20
+  max: 2000
+  regen: 5
+  cooldown: 120
+  width: 3
+  angle: 360
+  color: C46BE3
+  whenShooting: false
+  chanceDeflect: 1
+ }
+]
+
+weapons: [
+    {
+rotate: false
+mirror: true
+name: resemp-weapon
+x: 0
+y: 0
+reload: 4.5
+recoil: 0.25
+shootSound: illuminaium-weapon-shoot
+top: false
+soundPitchMin: 0.7
+soundPitchMax: 0.9
+inaccuracy: 0
+shootY: 6
+bullet: {
+type: EmpBulletType
+damage: 100
+speed: 5
+lifetime: 200
+height: 6
+width: 6
+backColor: AB5EC7
+frontColor: C46BE3
+trailEffect: heatReactorSmoke
+trailChance: 1
+trailColor: 9652AE
+homingPower: 0.1
+pierce: true
+pierceBuilding: true
+pierceCap: 7
+        
+applyEffect: "heal"
+chainEffect: "hitLaserColor"
+hitPowerEffect: "shockwave"
+hitUnits: true
+powerDamageScl: 2.5
+powerSclDecrease: 1
+radius: 60
+timeDuration: 600
+timeIncrease: 1.25
+unitDamageScl: 1
+
+suppressionRange: 60
+suppressionDuration: 600
+suppressionEffectChance: 50
+suppressColor: C46BE3C8
+}
+}
+]
+  research: {
+    parent: flipsideium-unit-factory
+    requirements: [
+      swordium/130
+      domium/130
+]
+}
