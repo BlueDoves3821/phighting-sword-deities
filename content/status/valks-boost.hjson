@@ -1,0 +1,45 @@
+name: "[#EBE161]Valk's []Boost"
+description: '''
+[#EBE161]Valk []has boosted you with fast health regeneration & 4x movement speed.
+[grey]please note that the apply sfx uses the same sfx as [#C46BE3]dom's [grey]power due to their sfx being difficult to isolate.
+'''
+speedMultiplier: 4
+damage: -16.6666667
+outline: false
+effect: {
+    type: ParticleEffect
+    particles: 2
+    colorFrom: EBE16140
+    colorTo: EBE16100
+    sizeFrom: 2
+    sizeTo: 1
+    strokeFrom: 4
+    strokeTo: 0
+    region: circle-shadow
+    lifetime: 180
+}
+applyEffect: {
+type: MultiEffect
+effects:[
+       {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 50
+        strokeFrom: 3
+        strokeTo: 2
+        interp: sineOut
+        lifetime: 80
+        colorFrom: EBE161c8
+        colorTo: EBE16100
+        }
+{
+type: SoundEffect
+sound: flipside-horn-sfx
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}

@@ -1,0 +1,45 @@
+name: "[#C46BE3]Dom's []Power"
+description: '''
+[#C46BE3]Dom []has empowered you with 5x damage & 2.5x reload speed.
+[grey]note: in the original game, [#C46BE3]dom [grey]would've empowered you by instantly recharging your ult, but since this game doesn't have an ult to charge, well this may do.
+'''
+damageMultiplier: 5
+reloadMultiplier: 2.5
+outline: false
+effect: {
+    type: ParticleEffect
+    particles: 2
+    colorFrom: C46BE340
+    colorTo: C46BE300
+    sizeFrom: 2
+    sizeTo: 1
+    strokeFrom: 4
+    strokeTo: 0
+    region: circle-shadow
+    lifetime: 180
+}
+applyEffect: {
+type: MultiEffect
+effects:[
+       {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 50
+        strokeFrom: 3
+        strokeTo: 2
+        interp: sineOut
+        lifetime: 80
+        colorFrom: C46BE3c8
+        colorTo: C46BE300
+        }
+{
+type: SoundEffect
+sound: flipside-horn-sfx
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}
