@@ -1,5 +1,6 @@
+// just realized i misspelled illuminaium again, and i didn't notice since june 26th until now when i decided to add the large illuminaium battery.
 type: Battery
-name: "[#E2BAF5]Illumunaium []Battery"
+name: "[#E2BAF5]Illuminaium []Battery"
 description: '''
 A tiny battery that can hold alot of power.
 '''

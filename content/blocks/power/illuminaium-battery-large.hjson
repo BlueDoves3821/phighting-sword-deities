@@ -1,0 +1,28 @@
+type: Battery
+name: "Large [#E2BAF5]Illuminaium []Battery"
+description: '''
+A large battery that can hold alot of power.
+'''
+    size: 2
+    health: 1000
+    emitLight: true
+    hasPower: true
+    baseExplosiveness: 25
+    insulated: false
+    fullLightColor: E2BAF5
+    emptyLightColor: 989AA4
+    consumes: {
+        powerBuffered: 34000
+    }
+	requirements: [
+		swordium/40
+  illuminaium/40
+	]
+	category: power
+  research: {
+    parent: illuminaium-battery
+    requirements: [
+      swordium/40
+      illuminaium/40
+]
+}
