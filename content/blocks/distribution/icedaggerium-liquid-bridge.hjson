@@ -1,0 +1,21 @@
+  type: LiquidBridge
+  name: "[#97CCE1]Icedaggerium []Liquid Bridge",
+  description: "High ranged liquid bridge, can be used to skip over large amounts of terrains & buildings, has a much higher liquid capacity & faster transport time.",
+  hasPower: false
+  transportTime: 0.02
+  liquidCapacity: 500
+  placeableLiquid: true
+  health: 175
+  range: 50
+	requirements: [
+		swordium/30
+   icedaggerium/30
+	]
+	category: liquid
+  research: {
+    parent: icedaggerium-conduit
+    requirements: [
+      swordium/30
+      icedaggerium/30
+]
+}
