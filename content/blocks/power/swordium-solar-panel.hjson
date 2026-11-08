@@ -7,6 +7,7 @@ A small solar panel that's surprisingly free, used to start the [#FF5959]swordiu
 	size: 1
 	hasPower: true
 	powerProduction: 0.5
+ powerConductive: true
 	requirements: [
 	]
 	category: power
