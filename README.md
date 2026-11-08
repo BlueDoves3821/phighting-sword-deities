@@ -41,7 +41,7 @@ Or support your allies with valkium & domium!
     <img src="archives/hq item icons/valkium-hq.png" width="100">
   <img src="archives/hq item icons/domium-hq.png" width="100">
 </p>
-Currently, there are around 200+ pieces of content, which includes a mobile swordium core for mobile bases.
+Currently, there are around 280+ pieces of content, which includes a mobile swordium core for mobile bases.
 <p align="center">
 <img src="sprites/blocks/effects/cores/swordium-core.png" width="100">
 </p>
