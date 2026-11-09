@@ -1,0 +1,31 @@
+
+    type: BaseShield
+    name: '''
+[#E2BAF5]Illuminaium []N.E.S.S
+    '''
+    description: '''
+The N.E.S.S stands for "No-Entry Sector Shield" which means enemies cannot even spawn in the sector, Requires 50 [#E2BAF5]illuminaium []to activate it, sandbox-exclusive block.
+'''
+	rebuildable: true
+ size: 3
+	sides: 8
+	shieldRotation: 45
+	radius: 2000
+ health: 2000
+ hasPower: false
+ hasItems: true
+ itemCapacity: 100
+ ambientSoundVolume: 0.1
+ ambientSound: loopShield
+consumes: {
+  items: [
+    illuminaium/50
+  ]
+}
+requirements: [
+  swordium/500
+  illuminaium/500
+]
+buildVisibility: sandboxOnly
+hideDatabase: true
+category: effect
