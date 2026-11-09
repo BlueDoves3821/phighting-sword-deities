@@ -1,6 +1,6 @@
 name: "[#70AC30]Darkheartium []Curse Bomb"
     type: PowerTurret
-    description: "When an enemy unit gets close enough, it detonates itself, applying [#70ac30]darkheart's []curse to all units caught in a radius, spills [#70ac30]darkheartium []liquid after detonation."
+    description: "When an enemy unit gets close enough, it detonates itself, applying [#70ac30]darkheart's []curse to all units caught in a radius, spills [#70ac30]darkheartium []liquid after detonation, deals less damage if the bomb's destroyed instead of detonating."
 details: "keep away from any important buildings due to it's explosive nature, along with the [#70ac30]darkheartium []liquid being extremely flammable."
     hideDetails: false
     category: effect
@@ -31,12 +31,12 @@ details: "keep away from any important buildings due to it's explosive nature, a
     damage: 0
 type: MissileBulletType
 splashDamageRadius: 100
-splashDamage: 7000
+splashDamage: 13000
 splashDamagePierce: true
 damage: 0
 collides: false
 status: darkhearts-curse
-statusDuration: 2400
+statusDuration: 3000
 instantDisappear: true
 despawnEffect: {
 type: MultiEffect
@@ -139,6 +139,65 @@ type: MultiEffect
     colorTo: A6FF47FF
 }
 ]
+}
+}
+destroyBullet: {
+type: MissileBulletType
+absorbable: false
+splashDamageRadius: 100
+splashDamage: 7000
+splashDamagePierce: true
+damage: 0
+collides: false
+status: darkhearts-curse
+statusDuration: 2400
+instantDisappear: true
+despawnEffect: {
+type: MultiEffect
+effects: [
+ {
+  type: ExplosionEffect
+  smokeColor: 5B5B5B80
+  smokeRad: 90
+  smokes: 48
+  smokeSize: 9
+  smokeSizeBase: 0
+  sparkColor: 70AC3080
+  sparkLen: 12
+  sparkRad: 90
+  sparks: 80
+  sparkStroke: 4
+  waveColor: 70AC30
+  waveLife: 120
+  waveRad: 110
+  lifetime: 240
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 100
+            sizeTo: 300
+            strokeFrom: 2
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 120
+            colorFrom: A6FF47C2
+            colorTo: 70AC3000
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 100
+            sizeTo: 100
+            colorFrom: A6FF47C2
+            colorTo: 70AC3000
+            lifetime: 180
+            particles: 1
+}
+]
+}
+fragBullets: 1
+fragBullet: {
+spawnUnit: darkheartium-curse-bomb-liquid-explosion
 }
 }
 requirements: [
