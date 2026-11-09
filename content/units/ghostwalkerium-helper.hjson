@@ -111,7 +111,7 @@ abilities:[
 	radius: 95
 	regen: 8.5
 	max: 2500
-	cooldown: 1
+	cooldown: 20
  
  }
  {

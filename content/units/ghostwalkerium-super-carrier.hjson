@@ -82,7 +82,7 @@ abilities:[
 	radius: 150
 	regen: 10
 	max: 4000
-	cooldown: 1
+	cooldown: 20
  
  }
   {
