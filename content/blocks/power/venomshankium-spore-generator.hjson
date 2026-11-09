@@ -3,7 +3,6 @@ name: "[#A4C360]Venomshankium []Spore Generator"
 description: '''
 Generates power when placed on spore-y locations, for the most amount of power, place it on very spore-ful areas.
 '''
-details: "i'm sorry if there ain't enough [#A4C360]venomshankium []content"
 health: 350
 category: power
 powerProduction: 5
