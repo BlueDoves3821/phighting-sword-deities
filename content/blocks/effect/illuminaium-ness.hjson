@@ -10,7 +10,7 @@ The N.E.S.S stands for "No-Entry Sector Shield" which means enemies cannot even 
  size: 3
 	sides: 8
 	shieldRotation: 45
-	radius: 2000
+	radius: 6000
  health: 2000
  hasPower: false
  hasItems: true
