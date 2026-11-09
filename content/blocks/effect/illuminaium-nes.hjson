@@ -16,6 +16,8 @@ The N.E.S stands for "No-Entry Shield" which means enemies cannot enter the forc
  hasPower: false
  hasItems: true
  itemCapacity: 100
+ ambientSoundVolume: 0.1
+ ambientSound: loopShield
 consumes: {
   items: [
     illuminaium/50
