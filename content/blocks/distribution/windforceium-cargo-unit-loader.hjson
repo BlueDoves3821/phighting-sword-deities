@@ -1,0 +1,33 @@
+type: UnitCargoLoader
+name: "[#929eae]Windforceium []Cargo Unit Loader"
+description: '''
+Creates an non-auto-targetable cargo drone that moves large amounts of items to a drop-off point.
+'''
+details: '''
+The usage of [#c2c2c2]ghostwalkerium []in it's construction is only applied to the drone itself, meaning the building is still auto-targetable.
+'''
+size: 2
+health: 700
+unitType: windforceium-cargo-unit
+buildTime: 300
+consumes: {
+  power: 1
+}
+polyColor: 929eae
+squareSprite: false
+polyRadius: 6
+itemCapacity: 1500
+category: distribution
+research: {
+parent: windforceium-mass-driver
+requirements: [
+swordium/200
+windforceium/200
+ghostwalkerium/20
+]
+}
+requirements: [
+  swordium/200
+  windforceium/200
+  ghostwalkerium/20
+]

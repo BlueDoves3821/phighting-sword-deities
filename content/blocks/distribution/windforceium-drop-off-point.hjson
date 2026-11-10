@@ -1,0 +1,21 @@
+type: UnitCargoUnloadPoint
+name: "[#929eae]Windforceium []Drop-Off Point"
+description: '''
+The drop-off point of the [#929eae]windforceium []cargo unit.
+'''
+itemCapacity: 1500
+health: 700
+size: 2
+category: distribution
+squareSprite: false
+research: {
+parent: windforceium-cargo-unit-loader
+requirements: [
+swordium/100
+windforceium/100
+]
+}
+requirements: [
+  swordium/100
+  windforceium/100
+]
