@@ -1,0 +1,68 @@
+type: tether
+name: "[#929eae]Windforceium []Cargo Unit"
+description: "A modified [#ff5959]swordium []mini core unit, moves large amounts of items to a drop-off point from it's cargo loader, has [#c2c2c2]ghostwalkerium []added during it's construction, allowing it to be non-targetable."
+flying: true
+controller: CargoAI
+isEnemy: false
+logicControllable: false
+allowedInPayloads: false
+playerControllable: false
+payloadCapacity: 0
+lowAltitude: false
+drag: 0.06
+speed: 5.25
+rotateSpeed: 10
+hitSize: 12
+accel: 0.1
+engineSize: 0
+itemCapacity: 2000
+health: 900
+hidden: true
+targetable: false
+priority: -1
+moveSound: loopThruster
+moveSoundVolume: 0.35
+moveSoundPitchMin: 0.85
+moveSoundPitchMax: 1.125
+engineColor: 929EAE
+engines: [
+  {
+    x: 0
+    y: -7
+    radius: 3
+    rotation: 270
+  } 
+] 
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 15
+  max: 300
+  regen: 5
+  cooldown: 60
+  width: 3
+  angle: 360
+  color: 929eae
+  whenShooting: false
+  pushUnits: false
+ }
+  {
+    type: MoveEffectAbility
+    color: 929eaec8
+    effect: missileTrail
+    x: 6
+    y: -6
+    interval: 3
+    minVelocity: 0.1
+  }
+  {
+    type: MoveEffectAbility
+    color: 929eaec8
+    effect: missileTrail
+    x: -6
+    y: -6
+    interval: 3
+    minVelocity: 0.1
+  }
+]
