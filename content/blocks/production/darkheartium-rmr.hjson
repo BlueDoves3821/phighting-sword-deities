@@ -1,4 +1,4 @@
-// block may be considered for depercation, but for now, it'll be kept as a sandbox exclusive block.
+// block is no longer be considered for depercation unless if there's other plans that'll happen sometime.
 type: Separator
   name: "[#70AC30]Darkheartium []R.M.R"
   description: "R.M.R stands for random material reconstituter, takes [#70AC30]darkheartium []& turns it into random materials, currently, only serpulo, erekir & P[#FF5959]S[]D materials
