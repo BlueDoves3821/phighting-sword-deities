@@ -1,0 +1,85 @@
+type: CoreBlock
+name: '''
+[#C46BE3]Domium []Core
+'''
+description: '''
+A core made with [#ff5959]swordium []& [#C46BE3]domium[].
+[grey]along with a bit of [#861C00]firebrandium[].
+ it's a support core, meant to support allies, when destroyed, it fires an aoe emp that chains on enemy power blocks/units.
+'''
+details: "An accelerator for this core is not viable."
+health: 10000
+armor: 10
+itemCapacity: 24000
+size: 3
+category: effect
+unitType: flipsideium-core-unit
+unitCapModifier: 25
+requirements: [
+  swordium/500
+  domium/500
+  firebrandium/25
+]
+research: {
+    parent: domium-converter
+    requirements: [
+swordium/500
+domium/500
+firebrandium/25
+]
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+type: EmpBulletType
+damage: 1000
+instantDisappear: true
+pierce: true
+splashDamageRadius: 250
+splashDamage: 650
+splashDamagePierce: true
+pierceCap: 10
+applyEffect: "heal"
+chainEffect: "hitLaserColor"
+hitPowerEffect: "shockwave"
+hitUnits: true
+powerDamageScl: 5
+powerSclDecrease: 1
+radius: 250
+timeDuration: 600
+timeIncrease: 1.25
+unitDamageScl: 2.5
+despawnEffect: [
+     {
+            type: WaveEffect
+            sizeFrom: 250
+            sizeTo: 300
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 120
+            colorFrom: C46BE3FF
+            colorTo: 9652AE00
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 250
+            sizeTo: 250
+            interp: exp5Out
+            colorFrom: C46BE350
+            colorTo: 9652AE00
+            lifetime: 120
+            particles: 1
+        }
+{
+type: SoundEffect
+sound: acceleratorConstruct
+maxPitch: 1
+minPitch: 1
+minVolume: 2
+maxVolume: 2
+effect: none
+}
+]
+trailEffect: none
+}

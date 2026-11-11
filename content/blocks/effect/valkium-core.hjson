@@ -1,0 +1,76 @@
+type: CoreBlock
+name: '''
+[#EBE161]Valkium []Core
+'''
+description: '''
+A core made with [#ff5959]swordium []& [#EBE161]valkium[].
+[grey]along with a bit of [#861C00]firebrandium[].
+ it's a support core, meant to support allies, when destroyed, it heals ally blocks to 80% of the block's health.
+'''
+details: "An accelerator for this core is not viable."
+health: 10000
+armor: 10
+itemCapacity: 24000
+size: 3
+category: effect
+unitType: flipsideium-core-unit
+unitCapModifier: 25
+requirements: [
+  swordium/500
+  valkium/500
+  firebrandium/25
+]
+research: {
+    parent: valkium-converter
+    requirements: [
+swordium/500
+valkium/500
+firebrandium/25
+]
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 250
+splashDamage: 300
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+collidesTeam: true
+healPercent: 80
+healColor: EBE161
+despawnEffect: [
+     {
+            type: WaveEffect
+            sizeFrom: 250
+            sizeTo: 300
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 120
+            colorFrom: EBE161FF
+            colorTo: B4AC4A00
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 250
+            sizeTo: 250
+            interp: exp5Out
+            colorFrom: EBE16150
+            colorTo: B4AC4A00
+            lifetime: 120
+            particles: 1
+        }
+{
+type: SoundEffect
+sound: acceleratorConstruct
+maxPitch: 1
+minPitch: 1
+minVolume: 2
+maxVolume: 2
+effect: none
+}
+]
+trailEffect: none
+}
