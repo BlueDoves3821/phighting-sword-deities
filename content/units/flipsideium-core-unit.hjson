@@ -1,0 +1,258 @@
+type: payload
+name: '''
+[#EBE161]Flip[][#C46BE3]side[]ium []Core Unit
+'''
+description: '''
+Core unit of both the [#C46BE3]domium []& the [#EBE161]valkium[] core, can carry payloads.
+'''
+envDisabled: 0
+hidden: false
+health: 2000
+payloadCapacity: 2200
+speed: 5
+rotateSpeed: 10
+hitSize: 15
+flying: true
+moveSound: loopHover2
+moveSoundVolume: 0.35
+moveSoundPitchMin: 0.7
+moveSoundPitchMax: 1.2
+engineSize: 0
+mineRange: 850
+mineFloor: true
+mineSpeed: 45
+mineTier: 100
+mineWalls: true
+itemCapacity: 750
+mineItems: []
+buildRange: 850
+buildSpeed: 45
+engineColor: EBE161
+engines: [
+  {
+    x: 0
+    y: -9
+    radius: 4
+    rotation: 270
+  } 
+] 
+abilities:[
+ {
+    type: RepairFieldAbility
+    amount: 1200
+    range: 50
+    reload: 60
+    activeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 80
+          sizeFrom: 0
+          sizeTo: 50
+          interp: pow3Out
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: EBE16188
+          colorTo: C46BE300
+        }
+      ]
+    }
+}
+
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 20
+  max: 750
+  regen: 5
+  cooldown: 60
+  width: 3
+  angle: 90
+  color: C46BE3
+  whenShooting: false
+ }
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 20
+  max: 750
+  regen: 5
+  cooldown: 60
+  width: 3
+  angle: 90
+  angleOffset: 90
+  color: EBE161
+  whenShooting: false
+ }
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 20
+  max: 750
+  regen: 5
+  cooldown: 60
+  width: 3
+  angle: 90
+  angleOffset: 180
+  color: C46BE3
+  whenShooting: false
+ }
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 20
+  max: 750
+  regen: 5
+  cooldown: 60
+  width: 3
+  angle: 90
+  angleOffset: 270
+  color: EBE161
+  whenShooting: false
+ }
+  {
+    type: MoveEffectAbility
+    color: C46BE3c8
+    effect: overclocked
+    x: 7
+    y: -7
+    interval: 1
+    minVelocity: 0.1
+  }
+  {
+    type: MoveEffectAbility
+    color: EBE161c8
+    effect: mineWallSmall
+    x: 0
+    y: -8
+    interval: 1
+    minVelocity: 0.1
+  }
+  {
+    type: MoveEffectAbility
+    color: C46BE3c8
+    effect: overclocked
+    x: -7
+    y: -7
+    interval: 1
+    minVelocity: 0.1
+  }
+]
+weapons: [
+    {
+        mirror: false
+        rotate: false
+        name: fscu-valk-weapon
+        shoot: {
+            shots: 1
+        }
+        inaccuracy: 2
+        x: 0
+        y: 6
+        reload: 3.75
+        recoil: 0
+    shootSound: valkium-weapon-shoot
+        bullet: {
+ type: BasicBulletType
+ shootEffect:{
+    type: MultiEffect
+    effects:[shootSmokeSquare, {
+    type: WaveEffect
+    colorFrom: EBE161FF
+    colorTo: B4AC4A00
+    sizeTo: 4
+    strokeFrom: 4
+    lifetime: 24
+    }
+    ]
+}
+  smokeEffect: vaporSmall
+  homingPower: 0.2
+  speed: 5
+  drag: -0.0025
+  lifetime: 1200
+  trailLength: 2
+  trailWidth: 1.5
+  trailColor: EBE161
+  type: BasicBulletType
+  frontColor: ffffff
+  backColor: EBE161
+  sprite: mine-bullet
+  damage: 35
+  splashDamage: 35
+  splashDamageRadius: 20
+  hitEffect: hitBulletColor
+  despawnEffect: none
+  fragBullets: 8
+  fragSpread: 45
+  pierce: true
+  pierceCap: 2
+  knockback: 1.25
+  healPercent: 3.5
+  collidesTeam: true
+  healColor: EBE161
+  fragBullet: {
+    type: ShrapnelBulletType
+    serrations: 0
+    toColor: EBE161
+    length: 25
+    lifetime: 15
+    width: 12
+    hitLarge: true
+    damage: 25
+    impact: true
+    healPercent: 1
+    collidesTeam: true
+    healColor: EBE161
+    }
+  fragRandomSpread: 0
+  hitColor: EBE161
+}
+    }
+
+    {
+rotate: false
+mirror: true
+name: fscu-dom-weapon
+x: 0
+y: 6
+reload: 7.5
+recoil: 0
+shootSound: illuminaium-weapon-shoot
+inaccuracy: 2
+bullet: {
+type: EmpBulletType
+damage: 50
+speed: 4.25
+lifetime: 1200
+height: 4
+width: 4
+backColor: AB5EC7
+frontColor: C46BE3
+trailEffect: heatReactorSmoke
+trailChance: 1
+homingPower: 0.2
+pierce: true
+pierceBuilding: true
+pierceCap: 3
+        
+applyEffect: "heal"
+chainEffect: "hitLaserColor"
+hitPowerEffect: "shockwave"
+hitUnits: true
+powerDamageScl: 2.5
+powerSclDecrease: 1
+radius: 20
+timeDuration: 300
+timeIncrease: 1.25
+unitDamageScl: 1
+
+suppressionRange: 20
+suppressionDuration: 300
+suppressionEffectChance: 50
+suppressColor: C46BE3C8
+}
+}
+]
+  alwaysUnlocked: true
