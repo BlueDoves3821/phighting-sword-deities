@@ -12,7 +12,7 @@ hasItems: true
 baseColor: EBE161
 phaseColor: EBE161
 phaseBoost: 60
-effect: lava
+effect: overclocked
 drawer: {
   type: DrawMulti
   drawers: [
