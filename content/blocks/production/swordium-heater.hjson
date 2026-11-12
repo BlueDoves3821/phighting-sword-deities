@@ -18,6 +18,7 @@ type: HeatProducer
   power: 1.5
 }
   conductivePower: true
+  hasItems: false
   warmupRate: 2
   rotateDraw: false
   heatOutput: 20

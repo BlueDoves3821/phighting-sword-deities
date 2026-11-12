@@ -1,0 +1,40 @@
+type: HeatProducer
+name: "[#861C00]Firebrandium []Omni Heater"
+description: "Creates alot of heat omni-directionally using [#861C00]firebrandium[]."
+size: 3
+heatOutput: 100
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}
+consumes: {
+  items: [
+    firebrandium/20
+  ]
+}
+itemCapacity: 60
+squareSprite: false
+warmupRate: 2
+craftTime: 480
+requirements: [
+ swordium/120
+ firebrandium/120
+]
+craftEffect: none
+rotate: false
+loopSound: loopHum
+category: crafting
+research: {
+parent: firebrandium-heater
+requirements: [
+  swordium/120
+  firebrandium/120
+]
+}
