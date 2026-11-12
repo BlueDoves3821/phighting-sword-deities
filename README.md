@@ -9,7 +9,7 @@ This mod is considered to be unfair due to some of the content being OP,
 but then again, play it your own way!
 
 ## What's Next With PHIGHTING! SWORD DEITIES
-Currently, there's no important updates at the moment after releasing the flipside update, if there's anything i can start working on, i'll put it here.
+Currently, there's no important updates at the moment, if there's anything i can start working on, i'll put it here.
 ### Information About This Mod
 PHIGHTING! SWORD DEITES Is a mindustry mod made by BlueDoves3821.
 
