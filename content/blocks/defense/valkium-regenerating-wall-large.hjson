@@ -1,0 +1,74 @@
+type: RegenProjector
+name: "Large [#EBE161]Valkium []Regenerating Wall"
+description: '''
+Slowly repairs itself after being damaged, when destroyed, it releases a burst of healing that heals nearby blocks.
+'''
+size: 2
+range: 2
+healPercent: 1
+health: 4000
+hasPower: false
+hasItems: true
+baseColor: EBE161
+effect: overclocked
+placeableLiquid: true
+destroySound: blockExplodeWall
+hasItems: false
+requirements: [
+swordium/32
+valkium/32
+]
+  research: {
+    parent: valkium-regenerating-wall
+    requirements: [
+      swordium/32
+      valkium/32
+]
+}
+category: defense
+destroyBulletSameTeam: true
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 60
+splashDamage: 0
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+collidesTeam: true
+healPercent: 40
+healColor: EBE161
+despawnEffect: [
+     {
+            type: WaveEffect
+            sizeFrom: 60
+            sizeTo: 90
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 60
+            colorFrom: EBE161FF
+            colorTo: B4AC4A00
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 60
+            sizeTo: 60
+            interp: exp5Out
+            colorFrom: EBE16150
+            colorTo: B4AC4A00
+            lifetime: 60
+            particles: 1
+        }
+{
+type: SoundEffect
+sound: healWave
+maxPitch: 0.85
+minPitch: 0.85
+minVolume: 2.5
+maxVolume: 2.5
+effect: none
+}
+]
+trailEffect: none
+}
