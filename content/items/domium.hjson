@@ -4,6 +4,8 @@ description: '''
 A support-esque material, used for supporting allies, are cousins with [#ff5959]swordium []& [#3A3A82]ban-hammerium[], has [#861C00]firebrandium[] as their grandfather & is a brother with [#EBE161]valkium[].
 '''
 color: C46BE3
+charge: 0.85
+explosiveness: 0.25
   research: {
     parent: firebrandium
     requirements: []
