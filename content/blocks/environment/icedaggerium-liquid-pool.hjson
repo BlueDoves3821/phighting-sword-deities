@@ -1,5 +1,6 @@
 type: Floor
 name: "[#97CCE1]Icedaggerium []Liquid"
+description: "A pool of [#97cce1]icedaggerium []liquid, freezes units who step into the pool."
 speedMultiplier: 0.85
 variants: 0
 isLiquid: true

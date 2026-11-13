@@ -1,5 +1,9 @@
 type: Floor
 name: "[#70AC30]Darkheartium []Liquid"
+description: '''
+A pool of [#70ac30]darkheartium[] liquid, curses units who step into the pool.
+[red]WARNING: IF EVEN ONE SPECK OF FIRE TOUCHES THE [#70AC30]DARKHEARTIUM [][red]LIQUID POOL, IT'LL IGNITE THE LIQUID & SPREAD FIRE TO THE ENTIRE POOL!
+'''
 speedMultiplier: 0.75
 variants: 0
 isLiquid: true

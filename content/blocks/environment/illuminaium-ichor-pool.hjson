@@ -1,5 +1,6 @@
 type: Floor
 name: "[#E2BAF5]Illuminaium []Ichor"
+description: "A pool of [#e2baf5]illuminaium []ichor, empowers units who step into the pool."
 speedMultiplier: 1.25
 variants: 0
 isLiquid: true

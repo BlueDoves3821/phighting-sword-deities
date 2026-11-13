@@ -1,5 +1,6 @@
 type: Floor
 name: "[#3A3A82]Ban-Hammerium []Lubricant"
+description: "A pool of [#3a3a82]ban-hammerium []lubricant, slows units who step into the pool due to it's extreme viscosity."
 speedMultiplier: 0.75
 variants: 0
 isLiquid: true

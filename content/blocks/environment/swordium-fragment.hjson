@@ -1,0 +1,9 @@
+// Ore block only added for testing purposes
+type: OreBlock
+name: "[#ff5959]Swordium[] Fragment"
+description: "Fragmented pieces of [grey]never-ending [][#ff5959]swordium[], can be mined."
+itemDrop: swordium
+playerUnmineable: false
+oreDefault: false
+oreScale: 40
+oreThreshold: 0.94
