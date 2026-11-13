@@ -11,7 +11,15 @@ crushDamage: 13.5
 template: ErekirUnitType
 envDisabled: 0
 hidden: false
-treadPullOffset: 6
+treadPullOffset: 3
+treadRects: [
+    {
+        x: -70
+        y: -40
+        width: 64
+        height: 16
+    }
+]
 targetAir: false
 health: 17000
 armor: 45
