@@ -1,6 +1,8 @@
 type: tether
 name: "[#929eae]Windforceium []Cargo Unit"
 description: "A modified [#ff5959]swordium []mini core unit, moves large amounts of items to a drop-off point from it's cargo loader, has [#c2c2c2]ghostwalkerium []added during it's construction, allowing it to be non-targetable."
+envDisabled: 0
+hidden: false
 flying: true
 controller: CargoAI
 isEnemy: false
