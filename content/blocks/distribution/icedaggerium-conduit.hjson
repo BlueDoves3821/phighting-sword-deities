@@ -7,7 +7,7 @@
   liquidCapacity: 60
   placeableLiquid: true
   liquidPressure: 2.5
-  bridgeReplacement: swordium-liquid-bridge
+  bridgeReplacement: icedaggerium-liquid-bridge
   junctionReplacement: swordium-liquid-junction
 requirements: [
 		swordium/3

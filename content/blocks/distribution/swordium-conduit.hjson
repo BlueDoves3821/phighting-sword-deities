@@ -1,7 +1,7 @@
   type: Conduit
   category: liquid
   name: "[#ff5959]Swordium []Conduit",
-  description: "A conduit made out of [#ff5959]swordium."
+  description: "A conduit made out of [#ff5959]swordium[]."
   leaks: true
   health: 85
   liquidCapacity: 30

@@ -1,6 +1,6 @@
   type: Duct
   name: "[#ff5959]Swordium []Duct (No Side-Input)"
-  description: "A duct made out of [#ff5959]swordium, []does not allow side inputs."
+  description: "A duct made out of [#ff5959]swordium[], []does not allow side inputs."
   size: 1
   health: 85
   itemCapacity: 2

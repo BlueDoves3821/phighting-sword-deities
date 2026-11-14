@@ -1,7 +1,7 @@
 type: StackConveyor
 name: "[#ff5959]Swordium []Stack Duct"
 description: '''
-A stack duct made from [#ff5959]swordium.
+A stack duct made from [#ff5959]swordium[], carries items in batches of 30.
 '''
 health: 110
 speed: 0.32

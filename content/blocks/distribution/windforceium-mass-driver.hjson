@@ -2,7 +2,7 @@
   name: "[#929EAE]Windforceium []Mass Driver"
   health: 1000
   description: '''
-A mass driver made out of [#ff5959]swordium []& [#929eae]windforceium,[] has a slow projectile.
+A mass driver made out of [#ff5959]swordium []& [#929eae]windforceium[], has a slow projectile.
 '''
   itemCapacity: 850
   reload: 30

@@ -1,6 +1,6 @@
 name: "[#ff5959]Swordium []Unloader"
 description: '''
-Made with [#ff5959]swordium, []fast unloading speed.
+Made with [#ff5959]swordium[], fast unloading speed.
 '''
 	type: Unloader
 	health: 200
