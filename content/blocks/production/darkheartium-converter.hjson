@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "[#70AC30]Darkheartium []Converter"
 description: '''
-Converts [#ff5959]swordium []into [#70AC30]darkheartium.
+Converts [#ff5959]swordium []into [#70AC30]darkheartium[].
 '''
 size: 2
 health: 400

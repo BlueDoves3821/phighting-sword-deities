@@ -1,6 +1,6 @@
 type: Separator
   name: "[#EBE161]Flip[][#C46BE3]side[]ium Converter"
-  description: "Converts [#ff5959]swordium []into either [#EBE161]valkium []or [#C46BE3]domium."
+  description: "Converts [#ff5959]swordium []into either [#EBE161]valkium []or [#C46BE3]domium[]."
 	size: 2
  itemCapacity: 50
  health: 400

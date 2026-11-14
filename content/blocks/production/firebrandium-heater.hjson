@@ -1,6 +1,6 @@
 type: HeatProducer
   name: "[#861C00]Firebrandium []Heater"
-  description: "Produces a large amount of heat using [#861C00]firebrandium."
+  description: "Produces a large amount of heat using [#861C00]firebrandium[]."
   size: 2
   health: 600
   drawer: {

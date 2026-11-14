@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "[#EBE161]Valkium []Converter"
 description: '''
-Converts [#ff5959]swordium []and [#861C00]firebrandium []into [#EBE161]Valkium.
+Converts [#ff5959]swordium []and [#861C00]firebrandium []into [#EBE161]valkium[].
 '''
 size: 2
 health: 400

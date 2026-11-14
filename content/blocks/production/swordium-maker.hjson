@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "[#ff5959]Swordium []Maker"
 description: '''
-Creates [#ff5959]swordium[], the base material for this mod, requires power to start producing [#ff5959]swordium.
+Creates [#ff5959]swordium[], the base material for this mod, requires power to start producing [#ff5959]swordium[].
 '''
 size: 2
 health: 400

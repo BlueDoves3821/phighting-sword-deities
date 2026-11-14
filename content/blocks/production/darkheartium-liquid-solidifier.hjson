@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "[#70AC30]Darkheartium []Liquid Solidifier"
 description: '''
-Solidifies [#70ac30]darkheartium []liquid by using [#ff5959]swordium [] as a place for the liquid to bind to.
+Solidifies [#70ac30]darkheartium []liquid by using [#ff5959]swordium[] as a place for the liquid to bind to.
 '''
 size: 2
 health: 510

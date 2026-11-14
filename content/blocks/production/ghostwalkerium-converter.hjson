@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "[#C2C2C2]Ghostwalkerium []Converter"
 description: '''
-Converts [#ff5959]swordium []into [#C2C2C2]ghostwalkerium.
+Converts [#ff5959]swordium []into [#C2C2C2]ghostwalkerium[].
 '''
 details: '''
 anything built with [#C2C2C2]ghostwalkerium []cannot be auto-targeted, requires manual targeting to attack it.

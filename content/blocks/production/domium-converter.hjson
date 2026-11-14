@@ -1,7 +1,7 @@
 type: GenericCrafter
 name: "[#C46BE3]Domium []Converter"
 description: '''
-Converts [#ff5959]swordium []and [#861C00]firebrandium []into [#C46BE3]domium.
+Converts [#ff5959]swordium []and [#861C00]firebrandium []into [#C46BE3]domium[].
 '''
 size: 2
 health: 400
