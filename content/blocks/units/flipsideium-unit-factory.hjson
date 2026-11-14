@@ -23,6 +23,16 @@ domium/100
     ]
  }
    {
+    unit: flipsideium-assister
+    time: 3000
+    requirements: [
+swordium/250
+domium/250
+valkium/250
+firebrandium/50
+]
+}
+   {
     unit: valkium-coilgun-unit
     time: 2400
     requirements: [
