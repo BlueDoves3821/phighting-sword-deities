@@ -1,0 +1,44 @@
+type: Accelerator
+name: "[#EBE161]Flip[][#C46BE3]side[]ium Core Accelerator"
+description: '''
+An accelerator for the [#EBE161]flip[][#C46BE3]side[]ium core,
+utilizes [#929EAE]windforceium[], [#97CCE1]icedaggerium []liquid & a bit of [#861C00]firebrandium[] in order to accelerate the core.
+[red]Note: Please capture the planetary launch terminal before unlocking this!
+'''
+consumes: {
+ power: 15
+ liquids: [
+    icedaggerium-liquid/1.67
+  ]
+}
+health: 12000
+armor: 50
+size: 8
+category: effect
+ringColor: EBE161ff
+lightningColor: C46BE3ff
+liquidCapacity: 1000
+launchBlock: flipsideium-core
+requirements: [
+  swordium/3500
+  valkium/2000
+  domium/2000
+  windforceium/200
+  firebrandium/50
+]
+	research: {
+	parent: flipsideium-core
+	requirements: [
+  swordium/3500
+  valkium/2000
+  domium/2000
+  windforceium/200
+  firebrandium/50
+  ]
+  objectives: [
+  {
+    type: SectorComplete
+    preset: planetaryTerminal
+  }
+  ]
+}

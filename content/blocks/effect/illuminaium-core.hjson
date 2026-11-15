@@ -7,7 +7,7 @@ A large core made with [#ff5959]swordium []& [#e2baf5]illuminaium[], has a large
 '''
 health: 35100
 armor: 50
-itemCapacity: 85000
+itemCapacity: 100000
 size: 6
 category: effect
 unitType: illuminaium-ship-core

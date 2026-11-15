@@ -1,0 +1,114 @@
+type: CoreBlock
+name: '''
+[#EBE161]Flip[][#C46BE3]side[]ium Core
+'''
+description: '''
+A large core made with [#ff5959]swordium[], [#EBE161]valkium[], [#C46BE3]domium[] & a bit of [#861C00]firebrandium[], it's a large support core.
+'''
+health: 20000
+armor: 20
+itemCapacity: 85000
+size: 6
+category: effect
+unitType: flipsideium-core-unit
+unitCapModifier: 55
+thrusterLength: 30
+requirements: [
+  swordium/1500
+  valkium/1500
+  domium/1500
+  firebrandium/250
+]
+research: {
+    parent: flipsideium-converter
+    requirements: [
+swordium/1500
+valkium/1500
+domium/1500
+firebrandium/250
+]
+objectives: ["valkium-core", "domium-core"]
+}
+destroyBulletSameTeam: true
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 540
+splashDamage: 2000
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+collidesTeam: true
+healPercent: 100
+healColor: EBE161
+trailEffect: none
+despawnEffect: [
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 120
+smokes: 48
+smokeSize: 9
+smokeSizeBase: 0
+sparkColor: EBE16180
+sparkLen: 15
+sparkRad: 150
+sparks: 60
+sparkStroke: 4
+waveColor: C46BE3
+waveLife: 240
+waveRad: 540
+lifetime: 480
+}
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 120
+smokes: 48
+smokeSize: 9
+smokeSizeBase: 0
+sparkColor: C46BE380
+sparkLen: 15
+sparkRad: 125
+sparks: 60
+sparkStroke: 4
+waveColor: 000000
+waveLife: 0
+waveRad: 0
+lifetime: 480
+}
+{
+type: WaveEffect
+sizeFrom: 540
+sizeTo: 900
+strokeFrom: 6
+strokeTo: 2
+interp: pow4Out
+lifetime: 240
+colorFrom: C46BE3A4
+colorTo: B4AC4A00
+}
+{
+type: ParticleEffect
+particles: 1
+sizeFrom: 540
+sizeTo: 540
+length: 0
+spin: 0
+layer: 109
+lifetime: 240
+interp: pow4Out
+colorFrom: EBE161A4
+colorTo: 9652AE00
+}
+{
+type: SoundEffect
+sound: acceleratorConstruct
+maxPitch: 1
+minPitch: 1
+minVolume: 2.5
+maxVolume: 2.5
+effect: none
+}
+]
+trailEffect: none
+}
