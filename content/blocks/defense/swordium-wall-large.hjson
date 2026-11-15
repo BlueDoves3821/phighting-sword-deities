@@ -1,6 +1,6 @@
 name: "Large [#ff5959]Swordium []Wall"
 description: '''
-A wall made out of [#ff5959]swordium, []can be placed on deep liquids.
+A wall made out of [#ff5959]swordium[], can be placed on deep liquids.
 '''
     type: Wall
     placeableLiquid: true

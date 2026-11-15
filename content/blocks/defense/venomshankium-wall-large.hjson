@@ -1,6 +1,6 @@
 name: "Large [#A4C360]Venomshankium []Wall"
 description: '''
-A wall made out of [#A4C360]venomshankium, []intentionally fragile, can be placed on deep liquids, when destroyed, it spawns [#A4C360]venomshankium's []minions, slightly explosive.
+A wall made out of [#A4C360]venomshankium[], intentionally fragile, can be placed on deep liquids, when destroyed, it spawns [#A4C360]venomshankium's []minions, slightly explosive.
 '''
     type: Wall
     placeableLiquid: true

@@ -1,6 +1,6 @@
 name: "[#E2BAF5]Illuminaium []Wall"
 description: '''
-A wall made out of [#E2BAF5]illuminaium, []can be placed on deep liquids, deflects most projectiles, shoots out lightning when attacked.
+A wall made out of [#E2BAF5]illuminaium[], can be placed on deep liquids, deflects most projectiles, shoots out lightning when attacked.
 '''
     type: Wall
     placeableLiquid: true
