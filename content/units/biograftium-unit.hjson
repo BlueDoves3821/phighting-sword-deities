@@ -1,11 +1,18 @@
+// while the unit's addition from a couple months back was for a map & " probably" had no connection to either sword or the 7 sword deities, the crossroads update had new dialouge between biograft & sword, the biograft glitches out trying to communicate to sword, and upon elimination of sword, it has a chance to say that "(it) fear(s) no sword."
+
 type: mech
-name: "[#ff6a00]Biograftium []Unit"
+name: "[#FF5405]Biograftium []Unit"
 description: '''
-An enemy seen on the "Survive The [#ff6100]Biograftium []Units" map, can also be built, only in sandbox.
+An enemy seen on the "Survive The [#FF5405]Biograftium []Units" map, can also be built, only in sandbox.
 '''
+details: '''
+UNIT [#FF5405]BIOGRAFT[] MODEL: [#FF5405]ZETA[].
+THE FOOT-SOLDIER OF BLACKROCK, INVENTED BY THE GREAT [#FF0066]SUBSPACE TRIPMINE[].
+'''
+hideDetails: false
 envDisabled: 0
 hideDatabase: true
-hidden: true
+hidden: false
 drag: 0.15
 speed: 1
 buildSpeed: 10
