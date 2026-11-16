@@ -1,6 +1,7 @@
 Name: SFOTH Unit Factory
 description: '''
 Constructs multiple types of units by utlizing [#ff5959]swordium []& any sword deity materials.
+[grey](along with some [][#3a3a82]ban-hammerium [][grey]units)
 '''
 type: UnitFactory
 size: 5
