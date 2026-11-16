@@ -1,6 +1,7 @@
 Name: "[#FF5405]Biograftium []Unit Factory"
 description: '''
 Can only build [#FF5405]biograftium []units seen on "Survive The [#FF5405]Biograftium[] Units", sandbox only.
+[grey]note: remove [#ff5959]swordium []from the unit factory to stop producing [#FF5405]biograftium []units due to it being hidden.
 '''
 type: UnitFactory
 size: 3
