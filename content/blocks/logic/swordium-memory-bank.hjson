@@ -1,0 +1,15 @@
+type: memoryBlock
+name: "[#ff5959]Swordium []Memory Bank"
+description: Stores data given to it by processors.
+size: 2
+memoryCapacity: 512
+requirements: [
+	swordium/40
+]
+	 research: {
+		parent: swordium-memory-cell
+		requirements: [
+  	swordium/40
+]
+	}
+category: logic
