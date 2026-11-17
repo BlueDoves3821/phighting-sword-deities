@@ -1,0 +1,7 @@
+Here, the texts details on why this design became unused,
+of course you can replace the textures with the unused ones, if you want to,
+but BlueDoves3821 did not use these textures for a reason.
+
+SFOTH Unit Factory Redesign:
+Redesign based on the "SFOTH Core" (in which it uses 8 decal colors)
+unsed in favor of the "swordium" design. (where it uses only one)
