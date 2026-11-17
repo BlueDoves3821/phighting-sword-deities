@@ -42,7 +42,7 @@ Or support your allies with valkium & domium!
     <img src="archives/hq item icons/valkium-hq.png" width="100">
   <img src="archives/hq item icons/domium-hq.png" width="100">
 </p>
-Currently, there are around 280+ pieces of content, which includes a mobile swordium core for mobile bases.
+Currently, there are around 300+ pieces of content, which includes a mobile swordium core for mobile bases.
 <p align="center">
 <img src="sprites/blocks/effects/cores/swordium-core.png" width="100">
 </p>
@@ -50,23 +50,23 @@ a ban-hammerium judgement turret that tells you that your verdict is... guilty!
 <p align="center">
   <img src="sprites/blocks/turrets/ban-hammerium-judgement-turret-preview.png" width="100">
 </p>
-a illuminaium n.e.s to invalidate an area to the enemy.
+an illuminaium n.e.s to invalidate an area to the enemy.
 <p align="center">
   <img src="sprites/blocks/effects/illuminaium-nesl.png" width="140">
 </p>
-or disarm an ememy for almost 17 minutes with the windforceium disarmer.
+or explode some enemies with the darkheartium curse bomb.
 <p align="center">
-  <img src="sprites/blocks/turrets/windforceium-disarmer.png" width="100">
+  <img src="sprites/blocks/effects/darkheartium-curse-bomb-base.png" width="100">
 </p>
 along many more that couldn't fit here!
 
 This mod also includes custom maps too, most of them are just defending the swordium core, but some you'll attack a base.
 
 ## PHIGHTING! SWORD DEITIES has a special ability: It has multi-planetary construction!
-Because PHIGHTING! Sword Deities has it's own tech tree, whether if it's erekir, serpulo or any modded planet, you can construct the modded buildings on it!
+Because PHIGHTING! SWORD DEITIES has it's own tech tree, whether if it's erekir, serpulo or any modded planet, you can construct the modded buildings on it!
 **provided that the sector doesn't have restricted blocks set.**
 
-**researching PHIGHTING! SWORD DEITIES requires the materials to be on serpulo.**
+_**researching PHIGHTING! SWORD DEITIES requires the materials to be on serpulo.**_
 
 ## Closing Thoughts
 Because this mod is being worked on by a single user, updates are prone to be slow.
