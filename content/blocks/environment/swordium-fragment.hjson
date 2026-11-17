@@ -1,9 +1,9 @@
-// Ore block only added for testing purposes
+// Ore block only added for testing purposes, appears as default ore
 type: OreBlock
 name: "[#ff5959]Swordium[] Fragment"
 description: "Fragmented pieces of [grey]never-ending [][#ff5959]swordium[], can be mined."
 itemDrop: swordium
 playerUnmineable: false
-oreDefault: false
-oreScale: 40
-oreThreshold: 0.94
+oreDefault: true
+oreScale: 50
+oreThreshold: 0.9
