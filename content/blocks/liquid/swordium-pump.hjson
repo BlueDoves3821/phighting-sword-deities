@@ -1,0 +1,22 @@
+  name: "[#ff5959]Swordium []Pump",
+  description: '''
+Does not require power to operate, can hold alot of liquid.
+'''
+  type: Pump
+  size: 2
+  health: 560
+  liquidCapacity: 3000
+  pumpAmount: 1.25
+  hasPower: false
+  placeableLiquid: true
+  squareSprite: false
+	requirements: [
+		swordium/40
+	]
+	category: liquid
+  research: {
+    parent: swordium-conduit
+    requirements: [
+      swordium/40
+]
+}

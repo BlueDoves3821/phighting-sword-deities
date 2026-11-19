@@ -1,0 +1,21 @@
+name: "[#ff5959]Swordium []Liquid Container"
+description: '''
+Holds pretty much the same amount of liquid as the pump.
+'''
+type: LiquidRouter
+health: 560
+size: 2
+hasLiquids: true
+liquidCapacity: 3000
+category: liquid
+  placeableLiquid: true
+	requirements: [
+		swordium/40
+	]
+	category: liquid
+  research: {
+    parent: swordium-pump
+    requirements: [
+      swordium/40
+]
+}

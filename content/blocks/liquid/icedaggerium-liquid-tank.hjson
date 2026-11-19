@@ -1,0 +1,26 @@
+name: "[#97CCE1]Icedaggerium []Liquid Tank"
+description: '''
+Holds the equivalent of 2.75 ponds of liquid reserve.
+'''
+details: '''
+may be useful to store liquid that was extracted from the opposite side of the map, provided a pump powerful enough & some liquid bridges was used.
+'''
+type: LiquidRouter
+health: 925
+size: 3
+hasLiquids: true
+liquidCapacity: 17500
+category: liquid
+  placeableLiquid: true
+	requirements: [
+		swordium/85
+   icedaggerium/85
+	]
+	category: liquid
+  research: {
+    parent: icedaggerium-conduit
+    requirements: [
+      swordium/85
+      icedaggerium/85
+]
+}
