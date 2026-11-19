@@ -1,0 +1,23 @@
+type: LiquidVoid
+name: "[#861C00]Firebrandium []Incinerator (Liquids Only)"
+description: '''
+Incinerates any inputted liquids whilst ignoring inputted items, perfect for disposing un-usable liquids like neoplasm.
+'''
+size: 1
+health: 150
+category: crafting
+consumesPower: false
+hasItems: false
+liquidCapacity: 1000
+	requirements: [
+		swordium/10
+  firebrandium/10
+	]
+	category: liquid
+  research: {
+    parent: firebrandium-incinerator
+    requirements: [
+      swordium/10
+      firebrandium/10
+]
+}
