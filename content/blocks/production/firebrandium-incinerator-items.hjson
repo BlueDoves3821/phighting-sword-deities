@@ -1,0 +1,23 @@
+type: ItemVoid
+name: "[#861C00]Firebrandium []Incinerator (Items Only)"
+description: '''
+Incinerates any inputted items whilst ignoring inputted liquids, perfect for disposing any extra items.
+'''
+size: 1
+health: 150
+category: crafting
+consumesPower: false
+hasLiquids: false
+liquidCapacity: 0
+	requirements: [
+		swordium/10
+  firebrandium/10
+	]
+	category: crafting
+  research: {
+    parent: firebrandium-incinerator
+    requirements: [
+      swordium/10
+      firebrandium/10
+]
+}
