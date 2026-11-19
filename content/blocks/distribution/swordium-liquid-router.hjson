@@ -10,6 +10,7 @@ health: 80
 liquidCapacity: 250
 category: liquid
 squareSprite: false
+placeableLiquid: true
 requirements: [
   swordium/2
 ]
