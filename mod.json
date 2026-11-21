@@ -1,28 +1,27 @@
 {
 "name": "sword-deities-mod"
-"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES [#EBE161[]]2[[]].[#C46BE3[]]15"
-"subtitle": "see you on the [#EBE161[]]flip[[]][#C46BE3[]]side[[]]!"
+"displayName": "PHIGHTING! [#ff5959[]]SWORD [[]]DEITIES"
+"subtitle": "I have a [#ff5959[]]sword[[]]!"
 "author": "BlueDoves3821"
 "description": '''
-[#ffffff[]]WE'LL SEE YOU ON THE [#EBE161[]]FLIP[#ffffff[]][#C46BE3[]]SIDE[#ffffff[]]!
-
-[#ffffff[]]Version 2.15 introduces 2 new materials called [#EBE161[]]Valkium [#ffffff[]]& [#C46BE3[]]Domium[#ffffff[]].
-2 materials for supporting purposes made from converting [#FF5959[]]swordium[#ffffff[]] for both materials or with [#861C00[]]firebrandium[#ffffff[]] for individual conversion.
+[#ff5959[]]PREPARE YOURSELF!
 
 [#ffffff[]]A mod about [#ff5959[]]sword [#ffffff[]]& the 7 sword deities from PHIGHTING!
 [grey[]](along with 3 characters related to the swords)
 
-[#ffffff[]]Create [#ff5959[]]swordium [#ffffff[]]& convert it into either [#70AC30[]]darkheartium[#ffffff[]], [#861C00[]]firebrandium[#ffffff[]], [#C2C2C2[]]ghostwalkerium[#ffffff[]], [#97CCE1[]]icedaggerium[#ffffff[]], [#E2BAF5[]]illuminaium[#ffffff[]], [#A4C360[]]venomshankium [#ffffff[]]or [#929EAE[]]windforceium[#ffffff[]]!
+[#ffffff[]]Create [#ff5959[]]swordium [#ffffff[]]& convert it into either [#70AC30[]]darkheartium[#ffffff[]], [#861C00[]]firebrandium[#ffffff[]], [#C2C2C2[]]ghostwalkerium[#ffffff[]], [#97CCE1[]]icedaggerium[#ffffff[]], [#E2BAF5[]]illuminaium[#ffffff[]], [#A4C360[]]venomshankium [#ffffff[]]or [#929EAE[]]windforceium[#ffffff[]], along with [#3a3a82[]]ban-hammerium[#ffffff[]] & the [#EBE161[]]flip[#ffffff[]][#C46BE3[]]side[#ffffff[]] group of [#EBE161[]]valkium [#ffffff[]]& [#C46BE3[]]domium[#ffffff[]].
 
-[#ffffff[]]There's multiple types of turrets, production buildings, units & even a mobile core that you can place down anywhere!
+There's multiple types of turrets, production buildings, units & even a mobile [#ff5959[]]swordium [#ffffff[]]core that you can place down anywhere!
 
-What's special about this mod is that it can be utilized in either erekir, serpulo or any planet mod.
+What's special about this mod is that it has interplanetary construction!
+whether if it's erekir, serpulo or any planet mod, you can construct the mod's factories there!
 [grey[]]provided that the sector doesn't have restricted blocks.
-[grey[]]also note that researching PHIGHTING [#ff5959[]]SWORD [grey[]]DEITIES requires the materials to be on serpulo.
+
+[grey[]]please note that researching PHIGHTING! [#ff5959[]]SWORD [grey[]]DEITIES requires the materials to be on serpulo.
   
 [red[]]note: this mod can be considered as unfair to some, but then again, play it your own way!
 '''
-"version": "2.15"
+"version": "2.16"
 "minGameVersion": "136.1"
 "dependencies": [ ]
 "hideBrowser": false
