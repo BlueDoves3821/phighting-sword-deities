@@ -1,0 +1,25 @@
+type: StackConveyor
+name: "[#3a3a82]Ban-Hammerium []M.T.D"
+description: '''
+M.T.D stands for "Mass Transportation Duct"
+can carry alot more items per stack than the [#e2baf5]illuminaium[] stack duct, but it's more expensive & moves items much slower.
+'''
+health: 850
+speed: 0.05
+itemCapacity: 500
+category: distribution
+bridgeReplacement: swordium-bridge
+junctionReplacement: swordium-junction
+requirements: [
+swordium/12
+ban-hammerium/12
+windforceium/6
+]
+research: {
+    parent: ban-hammerium-converter
+    requirements: [
+swordium/12
+ban-hammerium/12
+windforceium/6
+]
+}
