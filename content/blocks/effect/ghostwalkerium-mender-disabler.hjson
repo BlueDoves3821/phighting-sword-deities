@@ -1,0 +1,187 @@
+name: "[#C2C2C2]Ghostwalkerium[] Mender Disabler"
+    type: PowerTurret
+    description: "Disables all enemy menders/regen projectors in the entire sector, cannot be auto-targeted, requires manual control."
+    hideDetails: false
+    category: effect
+    size: 5
+    health: 1750
+    armor: 40
+    baseExplosiveness: 0
+    range: 8000
+    rotateSpeed: 0
+    reload: 600
+    shake: 5
+    recoil: 0
+    consumesPower: false
+    targetable: false
+    priority: -2
+    shootSound: none
+    chargeSound: illuminaium-railgun-charge
+    shootY: 0
+    shootCone: 360
+    soundPitchMin: 0.5
+    soundPitchMax: 0.5
+    rotate: false
+    rotateDraw: false
+    rotateDrawEditor: false
+    targetGround: false
+    targetAir: false
+    shoot: {
+    firstShotDelay: 180
+  }
+// the charge region was supposed to glow when the disabler is charging, not glowing idlely, but i kinda liked the way it looked, so it glows idlely.
+    drawer: {
+    type: DrawTurret
+    parts: [
+    {
+    suffix: "-cooldown"
+    progress: reload
+    color: FFFFFFFF
+    colorTo: FFFFFF00
+    top: false
+    outline: false
+    y: 0
+    }
+{
+suffix: "-charging"
+progress: charge
+color: FFFFFF
+colorTo: C2C2C200
+outline: false
+}
+    ]
+    }
+    shootType: {
+    shootSound: illuminaium-railgun-shoot
+    killShooter: false
+    damage: 0
+       type: BombBulletType
+       splashDamageRadius: 8000
+       splashDamage: 0
+       suppressionRange: 8000
+       suppressionDuration: 60000
+       suppressionEffectChance: 50
+       suppressColor: C8C8C8C2
+       instantDisappear: true 
+       absorbable: false
+       hittable: false 
+       collidesAir: true 
+       status: slow
+       statusDuration: 6000
+
+despawnEffect: {
+type: MultiEffect
+effects: [
+        {
+ type: ParticleEffect
+ length: 0
+ sizeFrom: 8000
+ sizeTo: 8000
+ colorFrom: FFFFFFC2
+ colorTo: C2C2C200
+ lifetime: 240
+ particles: 1
+}
+{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 8000
+strokeFrom: 10
+strokeTo: 5
+sizeInterp: pow5Out
+colorInterp: exp5Out
+lifetime: 640
+colorFrom: FFFFFFC2
+colorTo: C2C2C200
+}
+{
+type: SoundEffect
+sound: dbc-shoot
+maxPitch: 0.75
+minPitch: 0.75
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+{
+type: SoundEffect
+sound: acceleratorLaunch
+maxPitch: 0.65
+minPitch: 0.65
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+{
+type: SoundEffect
+sound: blockExplodeElectricBig
+maxPitch: 0.8
+minPitch: 0.8
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}
+chargeEffect: {
+type: MultiEffect
+    effects: [
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 20
+    sizeTo: 60
+    length: 0
+    lifetime: 180
+    colorFrom: C2C2C200
+    colorTo: FFFFFFFF
+    region: large-orb-back
+    cone: 360
+    sizeInterp: sineIn
+    colorInterp: pow10Out
+	}
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 20
+    sizeTo: 65
+    length: 0
+    lifetime: 180
+    colorFrom: C2C2C200
+    colorTo: FFFFFFFF
+    region: mine-bullet
+    spin: 2
+    cone: 360
+    sizeInterp: sineIn
+    colorInterp: pow10Out
+	}
+{
+type: ParticleEffect
+    baseLength: -1000
+    length: 1000
+    particles: 120
+    colorFrom: C2C2C200
+    colorTo: FFFFFFD1
+    sizeInterp: sineIn
+    colorInterp: pow10Out
+    interp: pow5In
+    sizeFrom: 10
+    sizeTo: 5
+    strokeTo: 0
+    region: circle-shadow
+    lifetime: 180
+}
+]
+}
+}
+requirements: [
+      swordium/750
+      ghostwalkerium/750
+  ]
+  research: {
+    parent: ghostwalkerium-converter
+    requirements: [
+      swordium/750
+      ghostwalkerium/750
+]
+}
