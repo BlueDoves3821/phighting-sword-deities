@@ -6,7 +6,7 @@ Constructs buildings up to 4x4 in size, does not require power.
 ''' 
 size: 5
 hasPower: false
-maxBlockSize: 4
+maxBlockSize: 5
 buildSpeed: 2
 filter: [
 ]
