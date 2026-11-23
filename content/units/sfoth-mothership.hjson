@@ -24,20 +24,32 @@ mineTier: 100
 mineWalls: true
 itemCapacity: 7500
 mineItems: []
+fallSpeed: 0.005
 immunities: [windforces-disarmerment, darkhearts-curse, disarmed]
 buildRange: 1500
 buildSpeed: 150
 loopSound: loopHover2
 loopSoundVolume: 1
 engineSize: 6
-engineColor: FF5959
 engines: [
   {
     x: 0
     y: -29
     radius: 9
     rotation: 270
-  } 
+  }
+  {
+    x: 13
+    y: -30
+    radius: 4
+    rotation: 270
+  }
+  {
+    x: -13
+    y: -30
+    radius: 4
+    rotation: 270
+  }
 ] 
 abilities:[
  {
