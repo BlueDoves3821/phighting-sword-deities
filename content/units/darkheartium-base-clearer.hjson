@@ -81,7 +81,7 @@ weapons: [
         killShooter: true
         type: BasicBulletType
         splashDamageRadius: 2000
-        splashDamage: 180
+        splashDamage: 300
         splashDamagePierce: true
         width: 0.000001
         height: 0.000001
