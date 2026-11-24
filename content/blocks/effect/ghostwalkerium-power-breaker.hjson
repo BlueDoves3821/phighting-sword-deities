@@ -15,7 +15,7 @@ cannot be auto-targeted, requires 100 [#c2c2c2]ghostwalkerium[] & manual weapon 
     rotateSpeed: 0
     reload: 600
     shake: 5
-    recoil: 2
+    recoil: 0
     consumesPower: false
     targetable: false
     priority: -2
