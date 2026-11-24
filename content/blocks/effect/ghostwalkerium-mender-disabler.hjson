@@ -52,10 +52,10 @@ outline: false
     ]
     }
     shootType: {
-    shootSound: illuminaium-railgun-shoot
     killShooter: false
     damage: 0
        type: BombBulletType
+       shootSound: illuminaium-railgun-shoot
        splashDamageRadius: 8000
        splashDamage: 0
        suppressionRange: 8000

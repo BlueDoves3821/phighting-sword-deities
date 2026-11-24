@@ -2,13 +2,14 @@ name: "[#C2C2C2]Ghostwalkerium[] Power Breaker"
     type: PowerTurret
     description: '''
 deals massive damage to every block that uses power in the entire sector,
+can also cause collateral damage to non-powered blocks,
 cannot be auto-targeted, requires 100 [#c2c2c2]ghostwalkerium[] & manual weapon control.
 [red]WARNING: THIS WEAPON SPAWNS ALOT OF FRAG BULLETS, MAY CAUSE ISSUES IN LOW-END DEVICES.
 '''
     hideDetails: false
     category: effect
     size: 5
-    health: 1850
+    health: 1900
     armor: 40
     baseExplosiveness: 0
     range: 8000
@@ -59,17 +60,18 @@ outline: false
     ]
     }
     shootType: {
+    type: BasicBulletType
     shootSound: illuminaium-railgun-shoot
     damage: 0
     instantDisappear: true
-    fragBullets: 750
+    fragBullets: 1000
   fragBullet: {
 type: EmpBulletType
 shieldDamageMultiplier: 10
 absorbable: false
-damage: 200
+damage: 100
 speed: 150
-lifetime: 240
+lifetime: 600
 height: 15
 width: 15
 shrinkY: 0
