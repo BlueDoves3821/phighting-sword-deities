@@ -1,0 +1,220 @@
+name: "[#C2C2C2]Ghostwalkerium[] Power Breaker"
+    type: PowerTurret
+    description: '''
+deals massive damage to every block that uses power in the entire sector,
+cannot be auto-targeted, requires 100 [#c2c2c2]ghostwalkerium[] & manual weapon control.
+[red]WARNING: THIS WEAPON SPAWNS ALOT OF FRAG BULLETS, MAY CAUSE ISSUES IN LOW-END DEVICES.
+'''
+    hideDetails: false
+    category: effect
+    size: 5
+    health: 1850
+    armor: 40
+    baseExplosiveness: 0
+    range: 8000
+    rotateSpeed: 0
+    reload: 600
+    shake: 5
+    recoil: 2
+    consumesPower: false
+    targetable: false
+    priority: -2
+    shootSound: none
+    chargeSound: illuminaium-railgun-charge
+    shootY: 0
+    shootCone: 360
+    rotate: false
+    rotateDraw: false
+    rotateDrawEditor: false
+    soundPitchMin: 0.5
+    soundPitchMax: 0.5
+    itemCapacity: 100
+    consumes: {
+items: ghostwalkerium/100
+}
+    targetGround: false
+    targetAir: false
+    shoot: {
+    firstShotDelay: 180
+  }
+    drawer: {
+    type: DrawTurret
+    parts: [
+    {
+    suffix: "-cooldown"
+    progress: reload
+    color: FFFFFFFF
+    colorTo: FFFFFF00
+    top: false
+    outline: false
+    y: 0
+    }
+{
+suffix: "-charging"
+progress: charge
+color: FFFFFF
+colorTo: C2C2C200
+outline: false
+}
+    ]
+    }
+    shootType: {
+    shootSound: illuminaium-railgun-shoot
+    damage: 0
+    instantDisappear: true
+    fragBullets: 750
+  fragBullet: {
+type: EmpBulletType
+shieldDamageMultiplier: 10
+absorbable: false
+damage: 200
+speed: 150
+lifetime: 240
+height: 15
+width: 15
+shrinkY: 0
+shrinkX: 0
+backColor: C2C2C284
+frontColor: FFFFFF84
+pierce: true
+pierceBuilding: true
+pierceCap: 200
+sprite: circle-bullet
+        
+applyEffect: "heal"
+chainEffect: "chainEmp"
+hitPowerEffect: "coreBurn"
+hitUnits: false
+powerDamageScl: 1000
+powerSclDecrease: 1
+radius: 80
+timeDuration: 0
+timeIncrease: 0
+unitDamageScl: 0
+  }
+despawnEffect: {
+type: MultiEffect
+effects: [
+        {
+ type: ParticleEffect
+ length: 0
+ sizeFrom: 80
+ sizeTo: 80
+ colorFrom: FFFFFFC2
+ colorTo: C2C2C200
+ lifetime: 240
+ particles: 1
+}
+{
+ type: ParticleEffect
+ length: 0
+ sizeFrom: 8000
+ sizeTo: 8000
+ colorFrom: FFFFFF35
+ colorTo: C2C2C200
+ lifetime: 240
+ particles: 1
+}
+{
+type: WaveEffect
+sizeFrom: 80
+sizeTo: 640
+strokeFrom: 2.5
+strokeTo: 1
+sizeInterp: pow5Out
+colorInterp: exp5Out
+lifetime: 240
+colorFrom: FFFFFFC2
+colorTo: C2C2C200
+}
+{
+type: SoundEffect
+sound: dbc-shoot
+maxPitch: 0.9
+minPitch: 0.9
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+{
+type: SoundEffect
+sound: acceleratorConstruct
+maxPitch: 0.7
+minPitch: 0.7
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+{
+type: SoundEffect
+sound: blockExplodeElectricBig
+maxPitch: 0.8
+minPitch: 0.8
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+}
+chargeEffect: {
+type: MultiEffect
+    effects: [
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 10
+    sizeTo: 30
+    length: 0
+    lifetime: 180
+    colorFrom: C2C2C200
+    colorTo: FFFFFFFF
+    region: large-orb-back
+    cone: 360
+    sizeInterp: sineIn
+    colorInterp: pow10Out
+	}
+{
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 15
+    sizeTo: 35
+    length: 0
+    lifetime: 180
+    colorFrom: C2C2C200
+    colorTo: FFFFFFFF
+    region: mine-bullet
+    spin: 2
+    cone: 360
+    sizeInterp: sineIn
+    colorInterp: pow10Out
+	}
+{
+type: ParticleEffect
+    baseLength: -250
+    length: 250
+    particles: 60
+    colorFrom: C2C2C200
+    colorTo: FFFFFFD1
+    sizeInterp: sineIn
+    colorInterp: pow10Out
+    interp: pow5In
+    sizeFrom: 10
+    sizeTo: 1
+    strokeTo: 0
+    region: circle-shadow
+    lifetime: 180
+}
+]
+}
+}
+requirements: [
+      swordium/1000
+      ghostwalkerium/1000
+  ]
+  research: {
+    parent: ghostwalkerium-mender-disabler
+    requirements: [
+      swordium/1000
+      ghostwalkerium/1000
+]
+}
