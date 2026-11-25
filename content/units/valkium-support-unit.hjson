@@ -61,6 +61,9 @@ weapons: [
 	pierceCap: 10
 	pierceBuilding: true
  knockback: -2.5
+ healPercent: 12.5
+ collidesTeam: true
+ healColor: EBE161
  }
  }
 ]

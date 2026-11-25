@@ -76,6 +76,7 @@ weapons: [
       despawnEffect: none
       collidesTeam: true
       healPercent: 20
+      healColor: FFFFFF
     }
   }
  ]

@@ -68,6 +68,7 @@ bullet:{
     shootEffect: shootSmokeDisperse
     smokeEffect: shootSmokeSquare
     healPercent: 20
+    healColor: FFFFFF
     colors: [
       C2C2C2,
       ffffff
