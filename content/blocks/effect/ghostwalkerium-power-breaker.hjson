@@ -68,6 +68,8 @@ outline: false
   fragBullet: {
 type: EmpBulletType
 shieldDamageMultiplier: 10
+reflectable: false
+hittable: false
 absorbable: false
 damage: 100
 speed: 150
