@@ -12,7 +12,8 @@ speed: 7
 rotateSpeed: 5
 hitSize: 6
 flying: true
-defaultController: DefenderAI
+defaultCommand: assist
+commands: [move, enterPayload, assist]
 immunities: [
 illuminas-power
 ]
