@@ -1,0 +1,191 @@
+type: PowerTurret
+  name: "SFOTH Core Explosion Block"
+description: '''
+Imitates an explosion similar to the SFOTH core, sandbox only.
+[red]DISCLAIMER: It is not advised to construct alot of this block, it will cause lag if alot of it is destroyed.
+'''
+details: '''
+[grey](note: this block is for chaotic purposes, [#70ac30]a bit of chaos is fun... don't you think?[grey])
+'''
+    hideDetails: true
+    category: effect
+    size: 1
+    health: 10
+    baseExplosiveness: 25
+    placeableLiquid: true
+    range: 0
+    rotateSpeed: 0
+    reload: 60
+    shake: 0
+    recoil: 0
+    consumesPower: false
+    targetable: false
+    priority: 3
+    shootSound: none
+    shootY: 0
+    shootCone: 360
+    rotate: false
+    rotateDraw: false
+    rotateDrawEditor: false
+    targetGround: false
+    targetAir: false
+    shootType: {
+    damage: 0
+    killShooter: true
+}
+requirements: [
+   darkheartium/10
+   firebrandium/10
+   ghostwalkerium/10
+   icedaggerium/10
+   illuminaium/10
+		swordium/10
+   venomshankium/10
+   windforceium/10
+	]
+  BuildVisibility: sandboxOnly
+  alwaysUnlocked: true
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 1200
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+suppressionRange: 1200
+suppressionDuration: 4800
+suppressionEffectChance: 50
+suppressColor: FF5959C2
+collides: false
+status: darkhearts-curse
+statusDuration: 24000
+fragBullets: 1
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 1200
+splashDamage: 20
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: windforces-disarmerment
+statusDuration: 24000
+fragBullets: 450
+fragBullet: {
+type: EmpBulletType
+reflectable: false
+hittable: false
+absorbable: false
+damage: 20
+speed: 150
+lifetime: 600
+height: 5
+width: 5
+shrinkY: 0
+shrinkX: 0
+backColor: C2C2C284
+frontColor: FFFFFF84
+pierce: true
+pierceBuilding: true
+pierceCap: 200
+sprite: mine-bullet
+        
+applyEffect: "heal"
+chainEffect: "chainEmp"
+hitPowerEffect: "coreBurn"
+hitUnits: false
+powerDamageScl: 100
+powerSclDecrease: 1
+radius: 80
+timeDuration: 0
+timeIncrease: 0
+unitDamageScl: 0
+}
+}
+despawnEffect: [
+{
+type: ExplosionEffect
+smokeColor: 5B5B5B
+smokeRad: 90
+smokes: 48
+smokeSize: 9
+smokeSizeBase: 0
+sparkColor: FF595980
+sparkLen: 12
+sparkRad: 90
+sparks: 80
+sparkStroke: 4
+waveColor: FF5959
+waveLife: 640
+waveRad: 110
+lifetime: 540
+}
+{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 750
+strokeFrom: 6
+strokeTo: 2
+interp: exp5Out
+lifetime: 640
+colorFrom: FF5959FF
+colorTo: 9D383800
+}
+{
+ type: ParticleEffect
+ length: 0
+ sizeFrom: 8000
+ sizeTo: 8000
+ colorFrom: FF59594D
+ colorTo: 9D383800
+ lifetime: 480
+ particles: 1
+}
+{
+type: ParticleEffect
+particles: 100
+sizeFrom: 80
+sizeTo: 0
+line: true
+interp: circleOut
+sizeInterp: pow5In
+colorInterp: smooth2
+lifetime: 540
+cone: 360
+length: 500
+colorFrom: FF5959AA
+colorTo: 9D383800
+}
+{
+type: ParticleEffect
+particles: 80
+sizeFrom: 50
+sizeTo: 1
+interp: circleOut
+sizeInterp: pow5In
+colorInterp: smooth2
+lifetime: 280
+cone: 360
+length: 500
+colorFrom: FF5959AA
+colorTo: 9D383800
+}
+{
+type: SoundEffect
+sound: sfoth-core-explosion
+maxPitch: 1
+minPitch: 1
+minVolume: 5
+maxVolume: 5
+effect: none
+}
+{
+type: SoundEffect
+sound: acceleratorLaunch
+maxPitch: 1
+minPitch: 1
+minVolume: 2.5
+maxVolume: 2.5
+effect: none
+}
+]
+trailEffect: none
+}
