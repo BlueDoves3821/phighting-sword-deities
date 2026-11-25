@@ -1,0 +1,26 @@
+type: PayloadLoader
+name: "[#ff5959]Swordium []Payload Loader (3X3)"
+description: '''
+Loads either items or liquids into a payload container, best paired with a payload mass driver to send a good amount of items/liquids over large distances.
+'''
+size: 3
+consumesPower: false
+loadPowerDynamic: false
+maxPowerConsumption: 0
+health: 640
+itemCapacity: 2500
+liquidCapacity: 2500
+maxBlockSize: 3
+loadTime: 1
+itemsLoaded: 150
+liquidsLoaded: 200
+requirements: [
+swordium/120
+]
+  research: {
+    parent: swordium-payload-conveyor-3x3
+    requirements: [
+      swordium/120
+]
+}
+category: units

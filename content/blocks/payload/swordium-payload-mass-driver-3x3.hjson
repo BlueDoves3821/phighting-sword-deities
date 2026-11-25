@@ -1,0 +1,22 @@
+type: PayloadMassDriver
+name: "[#ff5959]Swordium []Payload Mass Driver (3X3)"
+description: '''
+Transports payloads over massive distances.
+'''
+health: 950
+category: units
+reload: 120
+chargeTime: 60
+range: 4000
+maxPayloadSize: 3
+consumesPower: false
+size: 3
+research: {
+parent: swordium-payload-conveyor-3x3
+requirements: [
+swordium/110
+]
+}
+requirements: [
+swordium/110
+]

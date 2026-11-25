@@ -9,6 +9,7 @@ reload: 120
 chargeTime: 60
 range: 4000
 maxPayloadSize: 5
+consumesPower: false
 size: 5
 research: {
 parent: swordium-payload-conveyor

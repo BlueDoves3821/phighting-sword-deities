@@ -1,0 +1,24 @@
+type: PayloadUnloader
+name: "[#ff5959]Swordium []Payload Unloader (3X3)"
+description: '''
+Unloads either items or liquids from payload containers, best paired with a payload mass driver to receive large amounts of items/liquids over large distances.
+'''
+size: 3
+consumesPower: false
+health: 640
+itemCapacity: 2500
+liquidCapacity: 2500
+maxBlockSize: 3
+offloadSpeed: 8
+itemsLoaded: 150
+liquidsLoaded: 200
+requirements: [
+swordium/95
+]
+  research: {
+    parent: swordium-payload-loader-3x3
+    requirements: [
+      swordium/95
+]
+}
+category: units

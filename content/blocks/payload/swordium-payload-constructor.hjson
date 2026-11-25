@@ -1,0 +1,23 @@
+// don't know why i decided to name this "building constructor" but atleast it's re-named to "payload constructor"
+type: Constructor
+name: "[#ff5959]Swordium []Payload Constructor"
+description: 
+'''
+Constructs buildings up to 5x5 in size, does not require power.
+''' 
+size: 5
+hasPower: false
+maxBlockSize: 5
+buildSpeed: 2
+filter: [
+]
+requirements: [
+swordium/200
+]
+category: units
+research: {
+    parent: swordium-payload-conveyor
+    requirements: [
+      swordium/200
+]
+}
