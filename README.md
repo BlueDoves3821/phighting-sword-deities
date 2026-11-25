@@ -4,12 +4,12 @@
   <img src="sprites-override/ui/logo.png" width="900" alt="PSD LOGO">
 </p>
 
-### Disclaimer!
-This mod is considered to be unfair due to some of the content being OP,
-but then again, play it your own way!
+### DISCLAIMER!
+This mod is considered to be unfair due to it's multiplanetary construction feature, along with some of the content being OP,
+but then again, play it your own way, however you want!
 
 ## What's Next With PHIGHTING! SWORD DEITIES
-- Currently, there's no important updates at the moment, if there's anything i can start working on, i'll put it here soon.
+- Major updates will be temporarily paused for now, very minor updates, which either adds a new block or modifies an existing block, may be more frequent for the time being.
 
 ### Information About This Mod
 PHIGHTING! SWORD DEITES Is a mindustry mod made by BlueDoves3821.
@@ -62,7 +62,7 @@ along many more that couldn't fit here!
 
 This mod also includes custom maps too, most of them are just defending the swordium core, but some you'll attack a base.
 
-## PHIGHTING! SWORD DEITIES has a special ability: It has multi-planetary construction!
+## PHIGHTING! SWORD DEITIES has a special ability: It has multiplanetary construction!
 Because PHIGHTING! SWORD DEITIES has it's own tech tree, whether if it's erekir, serpulo or any modded planet, you can construct the modded buildings on it!
 **provided that the sector doesn't have restricted blocks set.**
 
