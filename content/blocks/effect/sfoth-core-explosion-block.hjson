@@ -1,5 +1,5 @@
 type: PowerTurret
-  name: "SFOTH Core Explosion Block"
+name: "SFOTH Core Explosion Block"
 description: '''
 Imitates an explosion similar to the SFOTH core, sandbox only.
 [red]DISCLAIMER: It is not advised to construct alot of this block, it will cause lag if alot of it is destroyed.
@@ -29,6 +29,8 @@ details: '''
     rotateDrawEditor: false
     targetGround: false
     targetAir: false
+    BuildVisibility: sandboxOnly
+    hideDatabase: true
     shootType: {
     damage: 0
     killShooter: true
@@ -43,8 +45,6 @@ requirements: [
    venomshankium/10
    windforceium/10
 	]
-  BuildVisibility: sandboxOnly
-  alwaysUnlocked: true
 destroyBullet: {
 type: MissileBulletType
 splashDamageRadius: 1200
