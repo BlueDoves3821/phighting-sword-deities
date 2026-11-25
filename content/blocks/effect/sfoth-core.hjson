@@ -6,7 +6,8 @@ description: '''
 This is it, the largest core in PHIGHTING! [#ff5959]SWORD []DEITIES, every sword deity materials was used to build this core, you best believe it's worth it in the end.
 '''
 details: '''
-Well, there's an accelerator for this core now, interesting...
+[red]WARNING: DO NOT LET THE SFOTH CORE BE DESTROYED.
+THE [#70AC30]DEITY OF CHAOS[red] SMILES TO THE DESTRUCTION OF IT.
 '''
 health: 87500
 armor: 80
@@ -51,7 +52,7 @@ splashDamage: 20
 splashDamagePierce: true
 instantDisappear: true
 suppressionRange: 1200
-suppressionDuration: 1200
+suppressionDuration: 4800
 suppressionEffectChance: 50
 suppressColor: FF5959C2
 collides: false
@@ -67,6 +68,37 @@ instantDisappear: true
 collides: false
 status: windforces-disarmerment
 statusDuration: 24000
+fragBullets: 450
+fragBullet: {
+type: EmpBulletType
+reflectable: false
+hittable: false
+absorbable: false
+damage: 20
+speed: 150
+lifetime: 600
+height: 5
+width: 5
+shrinkY: 0
+shrinkX: 0
+backColor: C2C2C284
+frontColor: FFFFFF84
+pierce: true
+pierceBuilding: true
+pierceCap: 200
+sprite: mine-bullet
+        
+applyEffect: "heal"
+chainEffect: "chainEmp"
+hitPowerEffect: "coreBurn"
+hitUnits: false
+powerDamageScl: 100
+powerSclDecrease: 1
+radius: 80
+timeDuration: 0
+timeIncrease: 0
+unitDamageScl: 0
+}
 }
 despawnEffect: [
 {
@@ -96,6 +128,16 @@ interp: exp5Out
 lifetime: 640
 colorFrom: FF5959FF
 colorTo: 9D383800
+}
+{
+ type: ParticleEffect
+ length: 0
+ sizeFrom: 8000
+ sizeTo: 8000
+ colorFrom: FF59594D
+ colorTo: 9D383800
+ lifetime: 480
+ particles: 1
 }
 {
 type: ParticleEffect
@@ -133,6 +175,15 @@ maxPitch: 1
 minPitch: 1
 minVolume: 5
 maxVolume: 5
+effect: none
+}
+{
+type: SoundEffect
+sound: acceleratorLaunch
+maxPitch: 1
+minPitch: 1
+minVolume: 2.5
+maxVolume: 2.5
 effect: none
 }
 ]
