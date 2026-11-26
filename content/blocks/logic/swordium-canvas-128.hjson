@@ -1,13 +1,74 @@
+// finally updated the canvas block.
 type: CanvasBlock
 name: "[#ff5959]Swordium []Canvas (128x128)"
 description: '''
-a drawable canvas, 128x128 pixel resolution.
+A drawable canvas, 128x128 pixel resolution, color palette is based on 3 shades of the mod's item color, alternative colors for some item colors are also available for drawing.
 '''
+details: "note: the blank canvas will be a solid #3a3a82 block, it is the hex color of the [#3a3a82]ban-hammerium []item color."
 size: 3
 health: 500
 padding: 3
 canvasSize: 128
 category: logic
+palette: [
+//ban-hammerium
+976913151
+859009791
+757949695
+
+//darkheartium
+1890332927
+1586571519
+1164516863
+
+//domium
+3295405055
+2875115519
+2522001151
+
+//firebrandium
+2249982207
+1880555775
+1360068863
+
+//ghostwalkerium
+3267543807
+2745410559
+2004318207
+
+//icedaggerium
+2546786815
+2158804735
+1568508927
+543278335
+441624063
+322730495
+
+//illuminaium
+3803903487
+3198013183
+2322765823
+
+//swordium
+4284045823
+3628813311
+2637707519
+
+//valkium
+3957416447
+3469039103
+3031190271
+
+//venomshankium
+2764267775
+2326089983
+1702313215
+
+//windforceium
+2459873023
+2089128959
+1516334079
+]
 	requirements: [
 		swordium/50
 	]
