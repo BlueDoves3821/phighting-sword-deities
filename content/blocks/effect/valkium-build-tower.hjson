@@ -1,0 +1,25 @@
+type: BuildTurret
+name: "[#EBE161]Valkium []Build Tower",
+description: "An upgraded [#ff5959]swordium []build tower, automatically rebuilds destroyed buildings, it'll also assists construction with other units with building capabilities."
+requirements: [
+swordium/200
+valkium/125
+]
+  health: 1200
+  size: 3
+  range: 800
+  buildSpeed: 5
+  hasPower: true
+  consumes: {
+    power: 3
+  }
+  conductivePower: true
+  category: effect
+  research: {
+    parent: valkium-converter
+    requirements: [
+      swordium/200
+      valkium/125
+]
+objectives: ["swordium-build-tower"]
+}
