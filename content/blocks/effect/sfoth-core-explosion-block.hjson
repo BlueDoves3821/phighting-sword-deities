@@ -7,7 +7,7 @@ Imitates an explosion similar to the SFOTH core, sandbox only.
 details: '''
 [grey](note: this block is for chaotic purposes, [#70ac30]a bit of chaos is fun... don't you think?[grey])
 '''
-    hideDetails: true
+    hideDetails: false
     category: effect
     size: 1
     health: 10
