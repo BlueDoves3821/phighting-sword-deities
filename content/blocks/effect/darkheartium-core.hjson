@@ -33,6 +33,49 @@ instantDisappear: true
 collides: false
 status: darkhearts-curse
 statusDuration: 7200
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+despawnUnit: darkheartium-curse-bomb-liquid-explosion
+despawnUnitRadius: 0
+fragBullets: 1
+fragBullet: {
+type: BasicBulletType
+    width: 10
+    height: 10
+    frontColor: A6FF47
+    backColor: 70AC30
+    shrinkX: 0
+    shrinkY: 0
+    absorbable: false
+    sprite: large-orb
+    spin: 2.5
+    damage: 0
+    lifetime: 120
+    speed: 0
+    drag: 5
+    intervalBullets: 25
+    bulletInterval: 0
+    intervalRandomSpread: 360
+    intervalSpread: 360
+    despawnEffect: none
+    intervalBullet: {
+      type: LiquidBulletType
+      pierce: true
+      pierceCap: 50
+      liquid: darkheartium-liquid
+      lifetime: 120
+      speed: 5
+      damage: 20
+      drag: 0.001
+      pierce: true
+      pierceCap: 50
+      pierceBuilding: true
+      status: darkhearts-curse
+      statusDuration: 600
+}
+}
+}
 despawnEffect: [
 {
 type: ExplosionEffect
@@ -63,12 +106,22 @@ colorFrom: A6FF47FF
 colorTo: 70AC3000
 }
 {
+type: ParticleEffect
+length: 0
+sizeFrom: 100
+sizeTo: 100
+colorFrom: A6FF47FF
+colorTo: 70AC3000
+lifetime: 180
+particles: 1
+}
+{
 type: SoundEffect
 sound: dbc-shoot
 maxPitch: 1
 minPitch: 1
-minVolume: 10
-maxVolume: 10
+minVolume: 7
+maxVolume: 7
 effect: none
 }
 ]
